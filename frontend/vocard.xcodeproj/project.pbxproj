@@ -12,6 +12,8 @@
 		8833272D2AE219E7003D3E6F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833272C2AE219E7003D3E6F /* Item.swift */; };
 		8833272F2AE219E8003D3E6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8833272E2AE219E8003D3E6F /* Assets.xcassets */; };
 		883327322AE219E8003D3E6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 883327312AE219E8003D3E6F /* Preview Assets.xcassets */; };
+		883327392AE26072003D3E6F /* CardFrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883327382AE26072003D3E6F /* CardFrontView.swift */; };
+		8833273B2AE26203003D3E6F /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833273A2AE26203003D3E6F /* CardData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		8833272C2AE219E7003D3E6F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8833272E2AE219E8003D3E6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		883327312AE219E8003D3E6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		883327382AE26072003D3E6F /* CardFrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontView.swift; sourceTree = "<group>"; };
+		8833273A2AE26203003D3E6F /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				883327282AE219E7003D3E6F /* vocardApp.swift */,
 				8833272A2AE219E7003D3E6F /* ContentView.swift */,
+				883327382AE26072003D3E6F /* CardFrontView.swift */,
+				8833273A2AE26203003D3E6F /* CardData.swift */,
 				8833272C2AE219E7003D3E6F /* Item.swift */,
 				8833272E2AE219E8003D3E6F /* Assets.xcassets */,
 				883327302AE219E8003D3E6F /* Preview Content */,
@@ -140,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8833273B2AE26203003D3E6F /* CardData.swift in Sources */,
+				883327392AE26072003D3E6F /* CardFrontView.swift in Sources */,
 				8833272B2AE219E7003D3E6F /* ContentView.swift in Sources */,
 				8833272D2AE219E7003D3E6F /* Item.swift in Sources */,
 				883327292AE219E7003D3E6F /* vocardApp.swift in Sources */,
