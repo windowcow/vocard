@@ -45,10 +45,12 @@ struct CardShape: Shape {
 
 struct CardShapeView: View {
     var body: some View {
-        VStack {
+        ZStack {
             CardShape()
+                .aspectRatio(contentMode: .fill)
                 .padding()
         }
+        .background(.red)
         
     }
 }
