@@ -11,11 +11,58 @@ struct CardFrontView: View {
     @State var cardData: CardData
     
     var body: some View {
-        VStack {
-            Text("SCORE: \(cardData.learningScore)")
+        GeometryReader { geo in
+            VStack {
+                Spacer()
+
+                HStack {
+                    Spacer()
+                    
+                    Text("SCORE  **\(cardData.learningScore)**")
+                        .font(.title3)
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+
+                }
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+
+                Text("\(cardData.originalWord)")
+                    .font(.largeTitle)
+                    .bold()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+
+
+            }
+            
         }
-        .scaledToFit()
-        .background(.green, in: CardShape())
+        .background(Color.blue.gradient , in: CardShape())
+
+        
     }
 }
 
@@ -23,14 +70,14 @@ struct CardFrontView: View {
     ZStack {
         CardFrontView(cardData:
             CardData(
-                originalWord: "사과",
-                translatedWord: "apple",
+                originalWord: "apple",
+                translatedWord: "사과",
                 englishDefinition: "a round fruit with red, yellow, or green skin and firm white flesh",
                 exampleSentence: "She ate a fresh apple for breakfast.",
                 learningScore: 5,
                 consecutiveCorrectStreak: 3
             )
         )
+        .padding()
     }
-    
 }
