@@ -65,11 +65,10 @@
 			children = (
 				8847B5C02AEBAC580026D8DF /* Assets.xcassets */,
 				8847B5CA2AEBACC90026D8DF /* Shapes */,
-				8847B5C32AEBAC580026D8DF /* CardBackView.swift */,
+				887D0B492AEBB41B00231570 /* CardView */,
 				8847B5C22AEBAC580026D8DF /* Preview Content */,
 				883327282AE219E7003D3E6F /* vocardApp.swift */,
 				8833272A2AE219E7003D3E6F /* ContentView.swift */,
-				883327382AE26072003D3E6F /* CardFrontView.swift */,
 				8833273A2AE26203003D3E6F /* CardData.swift */,
 				8833272C2AE219E7003D3E6F /* Item.swift */,
 			);
@@ -83,6 +82,15 @@
 				8847B5C12AEBAC580026D8DF /* CardFrontShape.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		887D0B492AEBB41B00231570 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				8847B5C32AEBAC580026D8DF /* CardBackView.swift */,
+				883327382AE26072003D3E6F /* CardFrontView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
