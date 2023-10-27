@@ -14,6 +14,8 @@ struct CardBackView: View {
         GeometryReader { geo in
             VStack {
                 Spacer()
+                Spacer()
+                Spacer()
 
                 HStack {
                     Spacer()
@@ -26,9 +28,6 @@ struct CardBackView: View {
                     Spacer()
 
                 }
-                Spacer()
-                Spacer()
-                Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
