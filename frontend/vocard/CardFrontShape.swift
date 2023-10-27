@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardShape: Shape {
+struct CardFrontShape: Shape {
     func path(in rect: CGRect) -> Path {
         var path = Path()
         let width = rect.size.width
@@ -46,7 +46,7 @@ struct CardShape: Shape {
 struct CardShapeView: View {
     var body: some View {
         ZStack {
-            CardShape()
+            CardFrontShape()
                 .aspectRatio(contentMode: .fill)
                 .padding()
         }
