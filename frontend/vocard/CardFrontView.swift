@@ -60,7 +60,7 @@ struct CardFrontView: View {
             }
             
         }
-        .background(Color.blue.gradient , in: CardShape())
+        .background(Color("CardFrontColor") , in: CardShape())
 
         
     }
