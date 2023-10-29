@@ -11,54 +11,51 @@ struct CardFrontView: View {
     @State var cardData: CardData
     
     var body: some View {
-        GeometryReader { geo in
-            VStack {
-                Spacer()
+        VStack {
+            Spacer()
 
-                HStack {
-                    Spacer()
-                    
-                    Text("SCORE  **\(cardData.learningScore)**")
-                        .font(.title3)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-
-                }
+            HStack {
+                Spacer()
+                
+                Text("SCORE  **\(cardData.learningScore)**")
+                    .font(.title3)
                 Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-                Text("\(cardData.originalWord)")
-                    .font(.largeTitle)
-                    .bold()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
 
             }
-            
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+
+            Text("\(cardData.originalWord)")
+                .font(.largeTitle)
+                .bold()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+            Spacer()
+
+
         }
         .background(Color("CardFrontColor") , in: CardFrontShape())
 
