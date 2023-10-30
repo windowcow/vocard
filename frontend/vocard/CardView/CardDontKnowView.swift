@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardDontKnowView': View {
+struct CardDontKnowView: View {
     @State var cardData: CardData
     
     var body: some View {
@@ -71,15 +71,7 @@ struct CardDontKnowView': View {
 
 #Preview {
     ZStack {
-        CardDontKnowView'(cardData:
-            CardData(
-                originalWord: "apple",
-                translatedWord: "사과",
-                englishDefinition: "a round fruit with red, yellow, or green skin and firm white flesh",
-                exampleSentence: "She ate a fresh apple for breakfast.",
-                learningScore: 5,
-                consecutiveCorrectStreak: 3
-            )
-        )
-        .padding()
-    }}
+        CardDontKnowView(cardData: CardData.example)
+            .padding()
+    }
+}

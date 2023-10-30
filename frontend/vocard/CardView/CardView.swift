@@ -19,7 +19,7 @@ struct CardView: View {
         case .front:
             CardFrontView(cardData: .example)
         case .back:
-            CardDontKnowView'(cardData: .example)
+            CardDontKnowView(cardData: .example)
         }
     }
 }
