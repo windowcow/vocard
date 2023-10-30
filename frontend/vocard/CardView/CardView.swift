@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum CardSide {
-    case front, back
+    case front, detail, quiz
 }
 
 struct CardView: View {
@@ -18,8 +18,10 @@ struct CardView: View {
         switch cardSide {
         case .front:
             CardFrontView(cardData: .example)
-        case .back:
-            CardDontKnowView(cardData: .example)
+        case .detail:
+            CardDetailView(cardData: .example)
+        case .quiz:
+            CardQuizView(quiz: Quiz.example)
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CardDontKnowView: View {
+struct CardDetailView: View {
     @State var cardData: CardData
     
     var body: some View {
@@ -71,7 +71,7 @@ struct CardDontKnowView: View {
 
 #Preview {
     ZStack {
-        CardDontKnowView(cardData: CardData.example)
+        CardDetailView(cardData: CardData.example)
             .padding()
     }
 }

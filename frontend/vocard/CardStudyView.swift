@@ -47,7 +47,7 @@ struct CardStudyView: View {
             Divider()
                 .background(.white)
             
-            CardDontKnowView(
+            CardDetailView(
                 cardData: CardData.example
             )
             .padding()
