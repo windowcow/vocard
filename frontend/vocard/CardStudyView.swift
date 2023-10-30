@@ -8,9 +8,6 @@
 import SwiftUI
 import SwiftData
 
-enum CardStudyViewBottomType {
-    case front, detail, quiz
-}
 
 struct CardStudyViewTop: View {
     var body: some View {
@@ -43,17 +40,16 @@ struct CardStudyView: View {
             
             CardStudyViewTop()
                 .padding(.horizontal)
+                .foregroundStyle(.white)
             
             Divider()
                 .background(.white)
+            Spacer()
             
-            CardDetailView(
-                cardData: CardData.example
-            )
-            .padding()
+            CardView()
+                .padding()
         }
         .background(.black)
-        .foregroundStyle(.white)
 
     }
 }

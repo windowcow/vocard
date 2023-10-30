@@ -11,59 +11,61 @@ struct CardDetailView: View {
     @State var cardData: CardData
     
     var body: some View {
-        VStack {
-            Spacer()
-            Spacer()
-            Spacer()
+        GeometryReader { geo in
+            VStack {
+                HStack {
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Text("SCORE  **\(cardData.learningScore)**")
+                        .font(.title3)
+                    Spacer()
 
-            HStack {
+                }
+                .padding(.top)
                 Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
-                Text("SCORE  **\(cardData.learningScore)**")
-                    .font(.title3)
+                Spacer()
+                Spacer()
+                Spacer()
                 Spacer()
 
-            }
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
+                Text("\(cardData.originalWord)")
+                    .font(.largeTitle)
+                    .bold()
+                
+                
+                Text("\(cardData.englishDefinition)")
+                    .padding()
+                    .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
+                    .padding()
 
-            Text("\(cardData.originalWord)")
-                .font(.largeTitle)
-                .bold()
-            
-            
-            Text("\(cardData.englishDefinition)")
-                .padding()
+                Spacer()
+                VStack {
+                    Image("SampleImage")
+                        .resizable()
+                        .scaledToFill()
+                        .padding()
+                    Text("\(cardData.exampleSentence)")
+                        .padding()
+                }
+                
                 .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
                 .padding()
-
-            Spacer()
-            VStack {
-                Image("SampleImage")
-                    .resizable()
-                    .scaledToFill()
-                    .padding()
-                Text("\(cardData.exampleSentence)")
-                    .padding()
+                Spacer()
             }
-            
-            .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
-            .padding()
-            Spacer()
+            .foregroundStyle(.white)
+            .background(Color("CardBackColor") ,
+                        in: CardBackShape())
+            .frame(width: geo.size.width,
+                   height: geo.size.height)
         }
-        .foregroundStyle(.white)
-        .background(Color("CardBackColor") ,
-                    in: CardBackShape())
+        
 
         
     }

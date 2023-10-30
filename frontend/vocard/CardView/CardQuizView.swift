@@ -31,22 +31,68 @@ struct CardQuizView: View {
     let quiz: Quiz
 
     var body: some View {
-        VStack {
-            HStack {
-                Text("Q")
-                    .font(.largeTitle)
-                    .bold()
-                Text(quiz.question)
+        GeometryReader { geo in
+            VStack {
+                HStack {
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Text("-> 3 TIMES")
+                    
+
+                    Spacer()
+
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Text("Q")
+                        .font(.largeTitle)
+                        .bold()
+                        .padding(.leading)
+                    Text(quiz.question)
+                    Spacer()
+                }
+                .frame(width: geo.size.width)
+                .padding()
+                Spacer()
+                VStack(alignment: .leading, spacing: 10) {
+                    Button(action: {}) {
+                        Text(quiz.choice1)
+                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
+                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                    }
+                    Button(action: {}) {
+                        Text(quiz.choice2)
+                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
+                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                    }
+                    Button(action: {}) {
+                        Text(quiz.choice3)
+                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
+                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                    }
+                    Button(action: {}) {
+                        Text(quiz.choice4)
+                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
+                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                    }
+                }
+                .foregroundStyle(.black)
+                
+                Spacer()
+
             }
-            VStack(alignment: .leading, spacing: 10) {
-                Text(quiz.choice1)
-                Text(quiz.choice2)
-                Text(quiz.choice3)
-                Text(quiz.choice4)
-            }
+            .padding()
+
+            .frame(width: geo.size.width,
+                   height: geo.size.height)
+            .background(.white, in: CardBackShape())
+            
         }
-        .padding()
-        .background(.white, in: CardBackShape())
+        
     }
 }
 

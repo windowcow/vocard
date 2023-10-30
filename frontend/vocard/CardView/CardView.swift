@@ -18,6 +18,7 @@ struct CardView: View {
         switch cardSide {
         case .front:
             CardFrontView(cardData: .example)
+                .draggable(cardSide: $cardSide)
         case .detail:
             CardDetailView(cardData: .example)
         case .quiz:

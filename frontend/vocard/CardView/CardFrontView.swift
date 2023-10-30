@@ -11,53 +11,57 @@ struct CardFrontView: View {
     @State var cardData: CardData
     
     var body: some View {
-        VStack {
-            Spacer()
+        GeometryReader { geo in
+            VStack {
+                HStack {
+                    Spacer()
+                    
+                    Text("SCORE  **\(cardData.learningScore)**")
+                        .font(.title3)
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
 
-            HStack {
-                Spacer()
-                
-                Text("SCORE  **\(cardData.learningScore)**")
-                    .font(.title3)
+                }
+                .padding(.top)
                 Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+
+                Text("\(cardData.originalWord)")
+                    .font(.largeTitle)
+                    .bold()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+                Spacer()
+
 
             }
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-
-            Text("\(cardData.originalWord)")
-                .font(.largeTitle)
-                .bold()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-            Spacer()
-
-
+            .background(Color("CardFrontColor") , in: CardFrontShape())
+            .frame(width: geo.size.width,
+                   height: geo.size.height)
         }
-        .background(Color("CardFrontColor") , in: CardFrontShape())
+        
 
         
     }
@@ -65,16 +69,7 @@ struct CardFrontView: View {
 
 #Preview {
     ZStack {
-        CardFrontView(cardData:
-            CardData(
-                originalWord: "apple",
-                translatedWord: "사과",
-                englishDefinition: "a round fruit with red, yellow, or green skin and firm white flesh",
-                exampleSentence: "She ate a fresh apple for breakfast.",
-                learningScore: 5,
-                consecutiveCorrectStreak: 3
-            )
-        )
-        .padding()
+        CardFrontView(cardData: .example)
+            .draggable(cardSide: Binding<CardSide>.constant(CardSide.front))
     }
 }
