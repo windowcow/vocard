@@ -48,6 +48,7 @@ struct CardStudyView: View {
             
             CardView()
                 .padding()
+            
         }
         .background(.black)
 

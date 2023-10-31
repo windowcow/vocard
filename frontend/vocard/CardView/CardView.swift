@@ -15,15 +15,34 @@ struct CardView: View {
     @State private var cardSide: CardSide = .front
     
     var body: some View {
-        switch cardSide {
-        case .front:
-            CardFrontView(cardData: .example)
-                .draggable(cardSide: $cardSide)
-        case .detail:
-            CardDetailView(cardData: .example)
-        case .quiz:
-            CardQuizView(quiz: Quiz.example)
+        GeometryReader { geo in
+            switch cardSide {
+            case .front:
+                CardFrontView(cardData: .example)
+                    .frame(width: geo.size.width,
+                           height: geo.size.height / 8 * 7,
+                           alignment: .top)
+                    .draggable(cardSide: $cardSide)
+            case .detail:
+                CardDetailView(cardData: .example)
+                    .frame(width: geo.size.width,
+                           height: geo.size.height / 8 * 7,
+                           alignment: .top)
+            case .quiz:
+                VStack {
+                    CardQuizView(quiz: Quiz.example)
+                        .frame(width: geo.size.width,
+                               height: geo.size.height / 8 * 7,
+                               alignment: .top)
+                    
+                    CardQuizBottomButtonView()
+                        .frame(width: geo.size.width,
+                               height: geo.size.height / 8 * 1,
+                               alignment: .bottom)
+                }
+            }
         }
+        
     }
 }
 

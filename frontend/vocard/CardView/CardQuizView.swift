@@ -96,7 +96,6 @@ struct CardQuizView: View {
     }
 }
 
-
 #Preview {
     ZStack {
         Color.black
