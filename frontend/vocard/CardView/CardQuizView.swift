@@ -29,8 +29,8 @@ struct Quiz {
 struct QuizContentsView: View {
     let quiz: Quiz
     let geo: GeometryProxy
-    @State private var selectedOption: Int?
-    @State private var isScored: Bool = false
+    @Binding var selectedOption: Int?
+    let isScored: Bool = false
 
     var body: some View {
         HStack {
@@ -85,7 +85,7 @@ struct QuizContentsView: View {
 
 struct CardQuizView: View {
     let quiz: Quiz
-    @State private var selectedOption: Int?
+    @State private var selectedOption: Int? = nil
     @State private var isScored: Bool = false
 
     var body: some View {
@@ -108,7 +108,7 @@ struct CardQuizView: View {
                 .frame(height: geo.size.height / 10,
                        alignment: .top)
                 
-                QuizContentsView(quiz: quiz, geo: geo)
+                QuizContentsView(quiz: quiz, geo: geo, selectedOption: $selectedOption)
                 
                 Spacer()
 
