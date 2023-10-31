@@ -29,10 +29,13 @@ struct Quiz {
 
 struct CardQuizView: View {
     let quiz: Quiz
+    @State private var selectedOption: Int?
 
     var body: some View {
         GeometryReader { geo in
             VStack {
+                Color.clear.frame(height: 20)
+
                 HStack {
                     Spacer()
                     Spacer()
@@ -45,7 +48,8 @@ struct CardQuizView: View {
                     Spacer()
 
                 }
-                .padding(.vertical)
+                .frame(height: geo.size.height / 10,
+                       alignment: .top)
                 
                 HStack {
                     Text("Q")
@@ -56,28 +60,32 @@ struct CardQuizView: View {
                     Spacer()
                 }
                 .frame(width: geo.size.width)
-                .padding()
+                .padding(.horizontal)
                 Spacer()
-                VStack(alignment: .leading, spacing: 10) {
-                    Button(action: {}) {
+                VStack(alignment: .leading, spacing: 20) {
+                    Button {
+                        
+                    } label: {
                         Text(quiz.choice1)
-                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
-                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                            .customButtonStyle(geo: geo)
                     }
-                    Button(action: {}) {
+                    Button{
+                        
+                    } label:  {
                         Text(quiz.choice2)
-                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
-                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                            .customButtonStyle(geo: geo)
                     }
-                    Button(action: {}) {
+                    Button {
+                        
+                    } label: {
                         Text(quiz.choice3)
-                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
-                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                            .customButtonStyle(geo: geo)
                     }
-                    Button(action: {}) {
+                    Button {
+                        
+                    } label: {
                         Text(quiz.choice4)
-                            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
-                            .background(.gray, in: RoundedRectangle(cornerRadius: 10))
+                            .customButtonStyle(geo: geo)
                     }
                 }
                 .foregroundStyle(.black)
@@ -85,7 +93,6 @@ struct CardQuizView: View {
                 Spacer()
 
             }
-            .padding()
 
             .frame(width: geo.size.width,
                    height: geo.size.height)
@@ -96,6 +103,13 @@ struct CardQuizView: View {
     }
 }
 
+extension View {
+    func customButtonStyle(geo: GeometryProxy) -> some View {
+        self
+            .frame(width: geo.size.width * 8 / 9, height: geo.size.height / 15)
+            .background(Color.quizOption , in: RoundedRectangle(cornerRadius: 10))
+    }
+}
 #Preview {
     ZStack {
         Color.black
