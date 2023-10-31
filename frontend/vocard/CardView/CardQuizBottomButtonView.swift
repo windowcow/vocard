@@ -11,7 +11,9 @@ struct CardQuizBottomButtonView: View {
     var body: some View {
         GeometryReader { geo in
             HStack {
-                Button(action: {}) {
+                Button {
+                    // next card
+                } label: {
                     Text("PASS")
                         .frame(width: geo.size.width / 13 * 4, height: geo.size.height / 3 * 2 )
 
@@ -21,7 +23,10 @@ struct CardQuizBottomButtonView: View {
                         .foregroundStyle(.white)
                 }
                 Spacer()
-                Button(action: {}) {
+                Button {
+                    // submit
+                    
+                } label: {
                     Text("SUBMIT")
                         .frame(width: geo.size.width / 13 * 8, height: geo.size.height / 3 * 2 )
 
@@ -35,6 +40,7 @@ struct CardQuizBottomButtonView: View {
             .background(.clear, in: .rect)
         }
     }
+    
 }
 
 #Preview {
