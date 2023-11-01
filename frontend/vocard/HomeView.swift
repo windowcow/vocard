@@ -101,9 +101,9 @@ struct StartStudyView: View {
                     .bold()
                     .padding(.vertical, 40)
                 
-                Button(action: {
+                Button {
                     
-                }, label: {
+                } label: {
                     Text("시작하기")
                         .foregroundColor(.white)
                         .padding()
@@ -114,7 +114,7 @@ struct StartStudyView: View {
                                 .fill(Color("BlackTxt"))
                         )
                     
-                })
+                }
             })
             .padding(.horizontal, 20)
             .padding(.vertical, 20)
