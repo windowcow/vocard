@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     var body: some View {
         ZStack{
-            Color("MainBgr").ignoresSafeArea()
-            VStack(content: {
+            Color("MainBgr")
+                .ignoresSafeArea()
+            VStack {
                 HeaderView()
                 WordCountView()
                 WordCountChartView()
@@ -19,7 +21,7 @@ struct HomeView: View {
                 StartStudyView()
                 Spacer(minLength: 30)
                 HistoryBtnView()
-            })
+            }
             
         }
     }
@@ -27,7 +29,7 @@ struct HomeView: View {
 
 struct HeaderView: View {
     var body: some View {
-        HStack(content: {
+        HStack {
             Image("icon_logo")
             Spacer()
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
@@ -42,7 +44,7 @@ struct HeaderView: View {
                     .foregroundColor(.white)
                     .padding(11)
             })
-        })
+        }
         .padding(.bottom, 25)
         .padding(.top, 5)
         .padding(.horizontal, 30)
@@ -83,6 +85,7 @@ struct WordCountChartView: View {
 
 
 struct StartStudyView: View {
+    @State private var cardStudyViewPresented: Bool = false
     var body: some View {
         VStack(alignment:.leading, spacing: 0, content: {
             // 다음에 학습할 단어 올 부분
@@ -102,7 +105,7 @@ struct StartStudyView: View {
                     .padding(.vertical, 40)
                 
                 Button {
-                    
+                    cardStudyViewPresented.toggle()
                 } label: {
                     Text("시작하기")
                         .foregroundColor(.white)
@@ -114,6 +117,9 @@ struct StartStudyView: View {
                                 .fill(Color("BlackTxt"))
                         )
                     
+                }
+                .fullScreenCover(isPresented: $cardStudyViewPresented) {
+                    CardStudyView()
                 }
             })
             .padding(.horizontal, 20)

@@ -86,7 +86,7 @@ struct OnBoardingView: View {
     let contents: String
     
     var body: some View {
-        VStack(spacing: 18, content: {
+        VStack(spacing: 18) {
             Rectangle()
                 .fill(Color.gray)
                 .frame(width: 300, height: 300)
@@ -99,7 +99,7 @@ struct OnBoardingView: View {
                 .foregroundColor(Color("OnboardingTxt"))
                 .font(.system(size: 14.0))
                 .multilineTextAlignment(.center)
-        })
+        } 
     }
 }
 
