@@ -26,7 +26,7 @@ struct OnBoardingContent: Identifiable {
     var x: Double
     
     static let onBoardingList: [OnBoardingContent] = [
-        OnBoardingContent(img_btm: Image("OnBoarding_1_1"), img_top: Image("OnBoarding_1_2"), title: "카드로 쉽게 암기하기", contents: "카드 형태로 빠르게 넘기며 단어를 암기하세요.\n넘기기만 해도 외워지는 알고리즘으로 추천해드려요.", x: -65.0),
+        OnBoardingContent(img_btm: Image("Onboarding_1_1"), img_top: Image("Onboarding_1_2"), title: "카드로 쉽게 암기하기", contents: "카드 형태로 빠르게 넘기며 단어를 암기하세요.\n넘기기만 해도 외워지는 알고리즘으로 추천해드려요.", x: -65.0),
         OnBoardingContent(img_btm: Image("OnBoarding_2_1"),img_top: Image("OnBoarding_2_2"),title: "직접 만드는 예문과 이미지", contents: "예문을 직접 만들면 단어가 더 잘외워져요.\n보카드가 문법을 확인하고 그에 맞는 이미지를 생성해요.", x: -70.0),
         OnBoardingContent(img_btm: Image("OnBoarding_3_1"),img_top: Image("OnBoarding_3_2"),title: "매일 알람받기", contents: "매일매일 단어를 암기해봐요.\n설정한 시간에 보카드와 만날 수 있게 알려드릴게요.", x: -60.0),
         OnBoardingContent(img_btm: Image("OnBoarding_4_1"),img_top: Image("OnBoarding_4_2"),title: "암기를 확인하는 퀴즈", contents: "카드를 넘기기 전에 퀴즈로 한번 더 확인할 수 있어요.\n모르는 단어를 그냥 넘어가지 않게 막아줘요.", x: -30.0)
