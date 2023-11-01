@@ -15,4 +15,12 @@ struct CardData {
     var learningScore: Int // 학습 정도 0...100
     var consecutiveCorrectStreak: Int // 연속으로 맞춘 횟수 0...4
     
+    static let example = CardData(
+        originalWord: "apple",
+        translatedWord: "사과",
+        englishDefinition: "A round fruit with red, yellow, or green skin and firm white flesh.",
+        exampleSentence: "She ate a fresh apple for breakfast.",
+        learningScore: 85,
+        consecutiveCorrectStreak: 3
+    )
 }

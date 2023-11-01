@@ -25,8 +25,11 @@ struct vocardApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
+//            CardStudyView()
+//                .statusBarHidden()
         }
         .modelContainer(sharedModelContainer)
+
     }
 }
