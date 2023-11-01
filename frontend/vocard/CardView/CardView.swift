@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum CardSide {
-    case front, detail, quiz
+    case front, detail, quiz, detailEdit
 }
 
 struct CardView: View {
@@ -28,6 +28,13 @@ struct CardView: View {
                     .frame(width: geo.size.width,
                            height: geo.size.height / 8 * 6,
                            alignment: .top)
+                    .onLongPressGesture {
+                        withAnimation(.spring) {
+                            cardSide = .detailEdit
+                        }
+                    }
+            case .detailEdit:
+                CardDetailEditView(cardData: .example)
             case .quiz:
                 VStack {
                     CardQuizView(quiz: Quiz.example)
