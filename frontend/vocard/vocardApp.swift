@@ -25,8 +25,9 @@ struct vocardApp: App {
 
     var body: some Scene {
         WindowGroup {
-            CardStudyView()
-                .statusBarHidden()
+            LoginView()
+//            CardStudyView()
+//                .statusBarHidden()
         }
         .modelContainer(sharedModelContainer)
 
