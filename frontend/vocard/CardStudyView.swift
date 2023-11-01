@@ -44,6 +44,7 @@ struct CardStudyView: View {
             
             Divider()
                 .background(.white)
+            
             Spacer()
             
             CardView()

@@ -11,8 +11,8 @@ struct CardDetailView: View {
     @State var cardData: CardData
     
     var body: some View {
-        GeometryReader { geo in
             VStack {
+                Spacer()
                 HStack {
                     Spacer()
                     Spacer()
@@ -25,9 +25,6 @@ struct CardDetailView: View {
 
                 }
                 .padding(.top)
-                Spacer()
-                Spacer()
-                Spacer()
                 Spacer()
                 Spacer()
                 Spacer()
@@ -54,7 +51,6 @@ struct CardDetailView: View {
                     Text("\(cardData.exampleSentence)")
                         .padding()
                 }
-                
                 .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
                 .padding()
                 Spacer()
@@ -62,12 +58,6 @@ struct CardDetailView: View {
             .foregroundStyle(.white)
             .background(Color("CardBackColor") ,
                         in: CardBackShape())
-            .frame(width: geo.size.width,
-                   height: geo.size.height)
-        }
-        
-
-        
     }
 }
 

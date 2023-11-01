@@ -26,7 +26,7 @@ struct CardView: View {
             case .detail:
                 CardDetailView(cardData: .example)
                     .frame(width: geo.size.width,
-                           height: geo.size.height / 8 * 7,
+                           height: geo.size.height / 8 * 6,
                            alignment: .top)
             case .quiz:
                 VStack {
