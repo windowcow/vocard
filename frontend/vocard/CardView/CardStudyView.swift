@@ -34,23 +34,27 @@ struct CardStudyViewTop: View {
 
 struct CardStudyView: View {
     var body: some View {
-        VStack {
-            
-            CardStudyViewTop()
-                .padding(.horizontal)
-                .foregroundStyle(.white)
-            
-            Divider()
-                .background(.white)
-            
-            Spacer()
-            
-            CardView()
-                .padding()
-            
+        GeometryReader { geo in
+            VStack {
+                CardStudyViewTop()
+                    .padding(.horizontal)
+                    .foregroundStyle(.white)
+                
+                Divider()
+                    .background(.white)
+                
+                Spacer()
+                
+                CardView()
+                .frame(width: geo.size.width * 8 / 9 ,
+                       height: geo.size.width * 11 / 7)
+                
+                CardViewBottom()
+                
+            }
+            .background(.black)
         }
-        .frame(width: .infinity, height: .infinity)
-        .background(.black)
+        
 
     }
 }
