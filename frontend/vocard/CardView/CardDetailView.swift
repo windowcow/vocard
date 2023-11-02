@@ -21,6 +21,8 @@ struct CardDetailView: View {
                     Text("\(cardData.originalWord)")
                         .font(.largeTitle)
                         .bold()
+                        .position(x: geo.size.width / 2,
+                                  y: geo.size.height / 5)
     
                     Text("\(cardData.englishDefinition)")
                         .padding()
@@ -38,16 +40,9 @@ struct CardDetailView: View {
                     .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))                    .padding()
                     
                 }
-                .padding(.top, geo.size.height / 9)
-                
-                
-                
             }
-            
             .background(Color.cardBack ,
                         in: CardBackShape())
-            .frame(width: geo.size.width ,
-                   height: geo.size.width * 11 / 7)
             .foregroundStyle(.white)
         }
     }

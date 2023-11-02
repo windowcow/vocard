@@ -33,26 +33,39 @@ struct CardStudyViewTop: View {
 }
 
 struct CardStudyView: View {
+    @State private var cardSide: CardSide = .front
+
     var body: some View {
         GeometryReader { geo in
-            VStack {
-                CardStudyViewTop()
-                    .padding(.horizontal)
-                    .foregroundStyle(.white)
-                
-                Divider()
-                    .background(.white)
-                
-                Spacer()
-                
-                CardView()
-                .frame(width: geo.size.width * 8 / 9 ,
-                       height: geo.size.width * 11 / 7)
-                
-                CardViewBottom()
-                
+            ZStack {
+                Color.black
+                    .ignoresSafeArea()
+                VStack {
+                    CardStudyViewTop()
+                        .padding(.horizontal)
+                        .foregroundStyle(.white)
+                        .frame(width: geo.size.width,
+                               height: geo.size.height / 10)
+                    Divider()
+                    Spacer()
+
+                        .background(.white)
+                    
+                    CardView(cardSide: $cardSide)
+                        .frame(width: geo.size.width * 9 / 10,
+                               height: geo.size.height * 3 / 4,
+                               alignment: .center)
+                    
+                    Spacer()
+                    
+                    CardStudyViewBottomView(cardSide: cardSide)
+                        .frame(width: geo.size.width,
+                               height: geo.size.height / 3)
+                    
+                }
+                .frame(width: .infinity,
+                       height: .infinity)
             }
-            .background(.black)
         }
         
 

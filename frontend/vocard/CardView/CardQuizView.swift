@@ -71,7 +71,6 @@ struct CardQuizView: View {
                         Text(quiz.question)
                         Spacer()
                     }
-                    .frame(width: geo.size.width)
                     .padding(.horizontal)
                     VStack(alignment: .leading, spacing: 20) {
                         OptionButton(selectedOption: $selectedOption,
@@ -92,11 +91,12 @@ struct CardQuizView: View {
                                      currentOptionNumber: 4)
                     }
                 }
+                .frame(width: .infinity,
+                       height: .infinity)
+
                 .foregroundStyle(.black)
 
             }
-            .frame(width: geo.size.width,
-                   height: geo.size.width * 12 / 7)
             .background(.white, in: CardBackShape())
             
         }

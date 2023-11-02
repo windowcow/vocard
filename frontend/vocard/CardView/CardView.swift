@@ -12,7 +12,8 @@ enum CardSide {
 }
 
 struct CardView: View {
-    @State private var cardSide: CardSide = .front
+    @Binding  var cardSide: CardSide
+    @Namespace var namespace
     
     var body: some View {
         GeometryReader { geo in
@@ -20,6 +21,8 @@ struct CardView: View {
             case .front:
                 CardFrontView(cardData: .example)
                     .draggable(cardSide: $cardSide)
+                    .matchedGeometryEffect(id: "card",
+                                           in: namespace)
             case .detail:
                 CardDetailView(cardData: .example)
                     .onLongPressGesture {
@@ -27,20 +30,22 @@ struct CardView: View {
                             cardSide = .detailEdit
                         }
                     }
+                    .matchedGeometryEffect(id: "card",
+                                           in: namespace)
+
             case .detailEdit:
                 CardDetailEditView(cardData: .example)
             case .quiz:
-                VStack {
-                    CardQuizView(quiz: Quiz.example)
+                CardQuizView(quiz: Quiz.example)
+                    .matchedGeometryEffect(id: "card",
+                                           in: namespace)
+
                     
-                    CardQuizBottomButtonView()
-                }
             }
         }
-        
     }
 }
 
 #Preview {
-    CardView()
+    CardView(cardSide: Binding<CardSide>.constant(.detail))
 }

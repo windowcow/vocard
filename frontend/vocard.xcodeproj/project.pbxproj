@@ -65,10 +65,11 @@
 		8801CB352AF256F2008F6D8F /* CardView */ = {
 			isa = PBXGroup;
 			children = (
+				887D0B4A2AEBD4F700231570 /* CardStudyView.swift */,
+				8801CB232AF2568A008F6D8F /* CardQuizBottomButtonView.swift */,
 				8801CB272AF2568A008F6D8F /* CardView.swift */,
 				8801CB242AF2568A008F6D8F /* CardFrontView.swift */,
 				8801CB252AF2568A008F6D8F /* CardDetailView.swift */,
-				8801CB232AF2568A008F6D8F /* CardQuizBottomButtonView.swift */,
 				8801CB262AF2568A008F6D8F /* CardQuizView.swift */,
 			);
 			path = CardView;
@@ -112,7 +113,6 @@
 				8801CB142AF253E0008F6D8F /* HomeView.swift */,
 				8801CB132AF253E0008F6D8F /* MyPageView.swift */,
 				8801CB0B2AEF49E9008F6D8F /* DraggableModifier.swift */,
-				887D0B4A2AEBD4F700231570 /* CardStudyView.swift */,
 				8847B5C22AEBAC580026D8DF /* Preview Content */,
 				8833273A2AE26203003D3E6F /* CardData.swift */,
 				8833272C2AE219E7003D3E6F /* Item.swift */,

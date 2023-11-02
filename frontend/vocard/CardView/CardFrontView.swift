@@ -22,8 +22,6 @@ struct CardFrontView: View {
                     .font(.largeTitle)
                     .bold()
             }
-            .frame(width: geo.size.width ,
-                   height: geo.size.width * 11 / 7)
             .background(Color("CardFrontColor") , in: CardFrontShape())
             
         }
