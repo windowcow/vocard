@@ -55,6 +55,7 @@ struct BeforeLoginView: View {
                 
                 Button(action: {
                     // todo: kakao login 실행 부분 작성
+                    tryLogin()
                 }, label: {
                     Image("kakao_login_btn")
                         .resizable()

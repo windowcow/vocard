@@ -8,19 +8,43 @@
 import SwiftUI
 
 struct MyPageView: View {
+    @State var newCardProbability: Double = 0.0
+    var roundedValue: Int {
+        Int(newCardProbability)
+    }
     var body: some View {
         ZStack{
-            Color("MainBgr").ignoresSafeArea()
-            VStack(alignment: .leading, content: {
+            Color("MainBgr")
+                .ignoresSafeArea()
+            VStack(alignment: .leading) {
                 Text("My Page")
                     .foregroundColor(.white)
                     .font(.system(size: 36.0))
+                Divider()
+                    .background(Color.white)
                 LogoutView()
-                Divider().background(.white)
-                BtnItem(btnText: "오늘의 목표치 설정")
-                BtnItem(btnText: "단어 기록 초기화")
-                BtnItem(btnText: "회원 탈퇴")
-            }).padding(.horizontal, 30)
+                
+                VStack(alignment: .leading) {
+                    Text("새로운 카드 등장 확률")
+                        .font(.title3)
+                        .foregroundStyle(.white)
+                    HStack {
+                        Slider(value: $newCardProbability,
+                               in: 0...100)
+                        Text("\(roundedValue)%")
+                            .foregroundStyle(.white)
+                    }
+                    Divider()
+                        .background(.white)
+                    BtnItem(btnText: "오늘의 목표치 설정")
+                    BtnItem(btnText: "단어 기록 초기화")
+                    BtnItem(btnText: "회원 탈퇴")
+                }
+                .padding(.vertical)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 30)
         }
     }
 }
@@ -31,9 +55,9 @@ struct LogoutView: View {
             Text("홍길동 님")
                 .foregroundColor(.white)
             Spacer()
-            Button(action: {
+            Button {
                 // 로그아웃 로직
-            }, label: {
+            } label: {
                 Text("로그아웃")
                     .font(.system(size: 16.0))
                     .foregroundColor(.white)
@@ -44,8 +68,8 @@ struct LogoutView: View {
                             .fill(Color("MainBgr"))
                             .stroke(Color.white, lineWidth: 2)
                     )
-            })
-        }).padding(.vertical, 45)
+            }
+        })
     }
 }
 
@@ -72,5 +96,5 @@ struct BtnItem: View {
 }
 
 #Preview {
-    MyPageView()
+    MyPageView(newCardProbability: 30)
 }

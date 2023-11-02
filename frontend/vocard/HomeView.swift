@@ -28,16 +28,23 @@ struct HomeView: View {
 }
 
 struct HeaderView: View {
+    @State var isMyPagePresented: Bool = false
+    
     var body: some View {
         HStack {
             Image("icon_logo")
             Spacer()
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button {
+                isMyPagePresented.toggle()
+            } label: {
                 Text("My Page")
                     .font(.system(size: 16.0))
                     .foregroundColor(.white)
                     .padding(11)
-            })
+            }
+            .sheet(isPresented: $isMyPagePresented) {
+                MyPageView()
+            }
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 Text("Alarm")
                     .font(.system(size: 16.0))
