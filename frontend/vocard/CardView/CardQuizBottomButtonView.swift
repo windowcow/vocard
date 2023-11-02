@@ -9,38 +9,35 @@ import SwiftUI
 
 struct CardQuizBottomButtonView: View {
     var body: some View {
-        GeometryReader { geo in
-            HStack {
+        GeometryReader { geometry in
+            HStack(spacing: 20){
                 Button {
                     // next card
                 } label: {
                     Text("PASS")
-                        .frame(width: geo.size.width / 13 * 4, height: geo.size.height / 3 * 2 )
-
+                        .frame(width: geometry.size.width / 4)
+                        .padding()
                         .background(.quizPassButton,
                                     in: PassButtonShape())
                         .font(.title3)
                         .foregroundStyle(.white)
                 }
-                Spacer()
+                
                 Button {
                     // submit
                     
                 } label: {
                     Text("SUBMIT")
-                        .frame(width: geo.size.width / 13 * 8, height: geo.size.height / 3 * 2 )
-
+                        .frame(width: geometry.size.width * 2 / 4)
+                        .padding()
                         .background(.quizSubmitButton,
                                     in: SubmitButtonShape())
                         .font(.title3)
                         .foregroundStyle(.black)
-
                 }
             }
-            .background(.clear, in: .rect)
         }
     }
-    
 }
 
 #Preview {

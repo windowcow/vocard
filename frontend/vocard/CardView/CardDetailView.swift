@@ -11,53 +11,45 @@ struct CardDetailView: View {
     @State var cardData: CardData
     
     var body: some View {
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Text("SCORE  **\(cardData.learningScore)**")
-                        .font(.title3)
-                    Spacer()
-
-                }
-                .padding(.top)
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-                Text("\(cardData.originalWord)")
-                    .font(.largeTitle)
-                    .bold()
-                
-                
-                Text("\(cardData.englishDefinition)")
-                    .padding()
-                    .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
-                    .padding()
-
-                Spacer()
+        GeometryReader { geo in
+            ZStack {
+                Text("SCORE  **\(cardData.learningScore)**")
+                    .font(.title3)
+                    .position(x: geo.size.width * 3 / 4,
+                              y: geo.size.height / 20)
                 VStack {
-                    Image("SampleImage")
-                        .resizable()
-                        .scaledToFill()
+                    Text("\(cardData.originalWord)")
+                        .font(.largeTitle)
+                        .bold()
+    
+                    Text("\(cardData.englishDefinition)")
                         .padding()
-                    Text("\(cardData.exampleSentence)")
+                        .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
                         .padding()
+                    
+                    VStack {
+                        Image("SampleImage")
+                            .resizable()
+                            .scaledToFill()
+                            .padding()
+                        Text("\(cardData.exampleSentence)")
+                            .padding()
+                    }
+                    .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))                    .padding()
+                    
                 }
-                .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
-                .padding()
-                Spacer()
+                .padding(.top, geo.size.height / 9)
+                
+                
+                
             }
-            .foregroundStyle(.white)
-            .background(Color("CardBackColor") ,
+            
+            .background(Color.cardBack ,
                         in: CardBackShape())
+            .frame(width: geo.size.width ,
+                   height: geo.size.width * 11 / 7)
+            .foregroundStyle(.white)
+        }
     }
 }
 
@@ -102,7 +94,8 @@ struct CardDetailEditView: View {
 
 #Preview {
     ZStack {
-        
-        CardDetailEditView(cardData: CardData.example)
+        CardDetailView(cardData: CardData.example)
+
+//        CardDetailEditView(cardData: CardData.example)
     }
 }

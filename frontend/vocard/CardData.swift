@@ -14,6 +14,7 @@ struct CardData {
     var exampleSentence: String // 영어 예문
     var learningScore: Int // 학습 정도 0...100
     var consecutiveCorrectStreak: Int // 연속으로 맞춘 횟수 0...4
+    var quizes: [Quiz]
     
     static let example = CardData(
         originalWord: "conversation",
@@ -21,6 +22,7 @@ struct CardData {
         englishDefinition: "oral exchange of sentiments, observations, opinions, or ideas",
         exampleSentence: "I like having conversations with my friend.",
         learningScore: 20,
-        consecutiveCorrectStreak: 1
+        consecutiveCorrectStreak: 1,
+        quizes: [Quiz.example]
     )
 }

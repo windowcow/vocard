@@ -12,58 +12,21 @@ struct CardFrontView: View {
     
     var body: some View {
         GeometryReader { geo in
-            VStack {
-                HStack {
-                    Spacer()
-                    
-                    Text("SCORE  **\(cardData.learningScore)**")
-                        .font(.title3)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-
-                }
-                .padding(.top)
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
+            ZStack {
+                Text("SCORE  **\(cardData.learningScore)**")
+                    .font(.title3)
+                    .position(x: geo.size.width / 4,
+                              y: geo.size.height / 20)
+                
                 Text("\(cardData.originalWord)")
                     .font(.largeTitle)
                     .bold()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-                Spacer()
-
-
             }
+            .frame(width: geo.size.width ,
+                   height: geo.size.width * 11 / 7)
             .background(Color("CardFrontColor") , in: CardFrontShape())
-            .frame(width: geo.size.width,
-                   height: geo.size.height)
+            
         }
-        
-
-        
     }
 }
 

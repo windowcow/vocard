@@ -25,97 +25,78 @@ struct Quiz {
         answer: 3
     )
 }
-
-struct QuizContentsView: View {
-    let quiz: Quiz
-    let geo: GeometryProxy
+struct OptionButton: View {
     @Binding var selectedOption: Int?
-    let isScored: Bool = false
+    let isScored: Bool
+    let quiz: Quiz
+    let currentOptionNumber: Int
 
     var body: some View {
-        HStack {
-            Text("Q")
-                .font(.largeTitle)
-                .bold()
-                .padding(.leading)
-            Text(quiz.question)
-            Spacer()
+        Button {
+            selectedOption = currentOptionNumber
+        } label: {
+            Text(quiz.choice1)
+                
+                .padding(.vertical)
+                .padding(.horizontal, 150)
+                .background(.quizOption, in: .rect(cornerRadius: 15))
+                .optionStyle(answer: quiz.answer,
+                             currentOption: currentOptionNumber, selectedOption: $selectedOption, isScored: isScored)
+
         }
-        .frame(width: geo.size.width)
-        .padding(.horizontal)
-        Spacer()
-        VStack(alignment: .leading, spacing: 20) {
-            Button {
-                selectedOption = 1
-            } label: {
-                Text(quiz.choice1)
-                    .customButtonStyle(geo: geo)
-                    .optionStyle(answer: quiz.answer, currentOption: 1, selectedOption: $selectedOption, isScored: isScored)
-
-            }
-            Button{
-                selectedOption = 2
-            } label:  {
-                Text(quiz.choice2)
-                    .customButtonStyle(geo: geo)
-                    .optionStyle(answer: quiz.answer, currentOption: 2, selectedOption: $selectedOption, isScored: isScored)
-
-            }
-            Button {
-                selectedOption = 3
-            } label: {
-                Text(quiz.choice3)
-                    .customButtonStyle(geo: geo)
-                    .optionStyle(answer: quiz.answer, currentOption: 3, selectedOption: $selectedOption, isScored: isScored)
-
-            }
-            Button {
-                selectedOption = 4
-            } label: {
-                Text(quiz.choice4)
-                    .customButtonStyle(geo: geo)
-                    .optionStyle(answer: quiz.answer, currentOption: 4, selectedOption: $selectedOption, isScored: isScored)
-
-            }
-        }
-        .foregroundStyle(.black)
     }
 }
 
-
 struct CardQuizView: View {
     let quiz: Quiz
+    var cardData = CardData.example
     @State private var selectedOption: Int? = nil
     @State private var isScored: Bool = false
+    
 
     var body: some View {
         GeometryReader { geo in
-            VStack {
-                Color.clear.frame(height: 20)
-
-                HStack {
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    Text("-> 3 TIMES")
-                    
-
-                    Spacer()
-
+            ZStack {
+                Text("-> 3 TIMES")
+                    .font(.title3)
+                    .position(x: geo.size.width * 3 / 4,
+                              y: geo.size.height / 20)
+                
+                VStack {
+                    HStack {
+                        Text("Q")
+                            .font(.largeTitle)
+                            .bold()
+                            .padding(.leading)
+                        Text(quiz.question)
+                        Spacer()
+                    }
+                    .frame(width: geo.size.width)
+                    .padding(.horizontal)
+                    VStack(alignment: .leading, spacing: 20) {
+                        OptionButton(selectedOption: $selectedOption,
+                                     isScored: isScored,
+                                     quiz: quiz,
+                                     currentOptionNumber: 1)
+                        OptionButton(selectedOption: $selectedOption,
+                                     isScored: isScored,
+                                     quiz: quiz,
+                                     currentOptionNumber: 2)
+                        OptionButton(selectedOption: $selectedOption,
+                                     isScored: isScored,
+                                     quiz: quiz,
+                                     currentOptionNumber: 3)
+                        OptionButton(selectedOption: $selectedOption,
+                                     isScored: isScored,
+                                     quiz: quiz,
+                                     currentOptionNumber: 4)
+                    }
                 }
-                .frame(height: geo.size.height / 10,
-                       alignment: .top)
-                
-                QuizContentsView(quiz: quiz, geo: geo, selectedOption: $selectedOption)
-                
-                Spacer()
+                .foregroundStyle(.black)
 
             }
-
             .frame(width: geo.size.width,
-                   height: geo.size.height)
+                   height: geo.size.width * 12 / 7)
             .background(.white, in: CardBackShape())
             
         }

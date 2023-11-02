@@ -65,11 +65,11 @@
 		8801CB352AF256F2008F6D8F /* CardView */ = {
 			isa = PBXGroup;
 			children = (
-				8801CB252AF2568A008F6D8F /* CardDetailView.swift */,
+				8801CB272AF2568A008F6D8F /* CardView.swift */,
 				8801CB242AF2568A008F6D8F /* CardFrontView.swift */,
+				8801CB252AF2568A008F6D8F /* CardDetailView.swift */,
 				8801CB232AF2568A008F6D8F /* CardQuizBottomButtonView.swift */,
 				8801CB262AF2568A008F6D8F /* CardQuizView.swift */,
-				8801CB272AF2568A008F6D8F /* CardView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";

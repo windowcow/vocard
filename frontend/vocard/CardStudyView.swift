@@ -19,8 +19,6 @@ struct CardStudyViewTop: View {
                     .font(.title2)
                     .fontWeight(.heavy)
             }
-            .fixedSize(horizontal: false,
-                       vertical: true)
             Spacer()
             Button(action: {}){
                 Text("MENU")
@@ -51,6 +49,7 @@ struct CardStudyView: View {
                 .padding()
             
         }
+        .frame(width: .infinity, height: .infinity)
         .background(.black)
 
     }

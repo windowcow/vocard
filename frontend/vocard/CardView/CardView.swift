@@ -19,15 +19,9 @@ struct CardView: View {
             switch cardSide {
             case .front:
                 CardFrontView(cardData: .example)
-                    .frame(width: geo.size.width,
-                           height: geo.size.height / 8 * 7,
-                           alignment: .top)
                     .draggable(cardSide: $cardSide)
             case .detail:
                 CardDetailView(cardData: .example)
-                    .frame(width: geo.size.width,
-                           height: geo.size.height / 8 * 6,
-                           alignment: .top)
                     .onLongPressGesture {
                         withAnimation(.spring) {
                             cardSide = .detailEdit
@@ -38,14 +32,8 @@ struct CardView: View {
             case .quiz:
                 VStack {
                     CardQuizView(quiz: Quiz.example)
-                        .frame(width: geo.size.width,
-                               height: geo.size.height / 8 * 7,
-                               alignment: .top)
                     
                     CardQuizBottomButtonView()
-                        .frame(width: geo.size.width,
-                               height: geo.size.height / 8 * 1,
-                               alignment: .bottom)
                 }
             }
         }
