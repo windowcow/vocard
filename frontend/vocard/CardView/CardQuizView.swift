@@ -17,11 +17,11 @@ struct Quiz {
     let answer: Int
     
     static let example = Quiz(
-        question: "What's the capital of France?",
-        choice1: "Berlin",
-        choice2: "Madrid",
-        choice3: "Paris",
-        choice4: "Rome",
+        question: "Which of the following is not typically associated with a meaningful conversation?",
+        choice1: "Respect for differing viewpoints.",
+        choice2: "Active listening.",
+        choice3: "Frequent interruptions.",
+        choice4: "Thoughtful responses.",
         answer: 3
     )
 }
@@ -30,20 +30,28 @@ struct OptionButton: View {
     let isScored: Bool
     let quiz: Quiz
     let currentOptionNumber: Int
+    var options: [String] {
+        [quiz.choice1, quiz.choice2, quiz.choice3, quiz.choice4]
+    }
 
     var body: some View {
-        Button {
-            selectedOption = currentOptionNumber
-        } label: {
-            Text(quiz.choice1)
-                
-                .padding(.vertical)
-                .padding(.horizontal, 150)
-                .background(.quizOption, in: .rect(cornerRadius: 15))
-                .optionStyle(answer: quiz.answer,
-                             currentOption: currentOptionNumber, selectedOption: $selectedOption, isScored: isScored)
+        GeometryReader { geo in
+            HStack {
+                Button {
+                    selectedOption = currentOptionNumber
+                } label: {
+                    Text(options[currentOptionNumber - 1])
+                        .frame(width: geo.size.width * 5 / 6 , height: geo.size.height)
+                        .background(.quizOption, in: .rect(cornerRadius: 15))
+                        .optionStyle(answer: quiz.answer,
+                                     currentOption: currentOptionNumber, selectedOption: $selectedOption, isScored: isScored)
+            }
+                .frame(width: geo.size.width)
+            
 
+            }
         }
+       
     }
 }
 
@@ -71,12 +79,14 @@ struct CardQuizView: View {
                         Text(quiz.question)
                         Spacer()
                     }
+                    .padding(.top, 100)
                     .padding(.horizontal)
-                    VStack(alignment: .leading, spacing: 20) {
+                    VStack(spacing: 20) {
                         OptionButton(selectedOption: $selectedOption,
                                      isScored: isScored,
                                      quiz: quiz,
                                      currentOptionNumber: 1)
+                        
                         OptionButton(selectedOption: $selectedOption,
                                      isScored: isScored,
                                      quiz: quiz,
@@ -90,6 +100,10 @@ struct CardQuizView: View {
                                      quiz: quiz,
                                      currentOptionNumber: 4)
                     }
+                    .frame(height: geo.size.height / 2)
+                    
+
+                    
                 }
                 .frame(width: .infinity,
                        height: .infinity)

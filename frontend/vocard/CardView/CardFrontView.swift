@@ -13,8 +13,8 @@ struct CardFrontView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                Text("SCORE  **\(cardData.learningScore)**")
-                    .font(.title3)
+                Text(" ")
+                    .font(.title)
                     .position(x: geo.size.width / 4,
                               y: geo.size.height / 20)
                 
