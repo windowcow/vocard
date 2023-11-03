@@ -33,8 +33,24 @@ struct OnBoardingContent: Identifiable {
     ]
 }
 
+struct KakaoLoginButton: View {
+    @Binding var tryLogIn: Bool
+    
+    var body: some View {
+        Button { 
+            tryLogIn.toggle()
+        } label: {
+            Image("kakao_login_btn")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300)
+        }
+    }
+}
+
 struct BeforeLoginView: View {
     @Binding var isLoggedIn: Bool
+    
     let onBoardingList: [OnBoardingContent] = OnBoardingContent.onBoardingList
     
     var body: some View {
@@ -53,14 +69,7 @@ struct BeforeLoginView: View {
                 .tabViewStyle(PageTabViewStyle())
                 .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
                 
-                Button(action: {
-                    // todo: kakao login 실행 부분 작성
-                    tryLogin()
-                }, label: {
-                    Image("kakao_login_btn")
-                        .resizable()
-                        .frame(width: 320, height: 50)
-                }).padding(.top,10)
+                KakaoLoginButton(tryLogIn: $isLoggedIn)
             })
         }
     

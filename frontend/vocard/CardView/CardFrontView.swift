@@ -8,22 +8,11 @@
 import SwiftUI
 
 struct CardFrontView: View {
-    @State var cardData: CardData
-    
+    let cardData: CardData
     var body: some View {
-        GeometryReader { geo in
-            ZStack {
-                Text(" ")
-                    .font(.title)
-                    .position(x: geo.size.width / 4,
-                              y: geo.size.height / 20)
-                
-                Text("\(cardData.originalWord)")
-                    .font(.largeTitle)
-                    .bold()
-            }
-            .background(Color("CardFrontColor") , in: CardFrontShape())
-            
+        ZStack {
+            CardFrontBackgroundView(backgroundColor: Color.cardFront)
+            CardWordTextView(cardData: cardData, cardType: .front)
         }
     }
 }

@@ -7,46 +7,77 @@
 
 import SwiftUI
 
+enum DefinitionType {
+    case English, Korean
+}
 struct CardDetailView: View {
-    @State var cardData: CardData
+    let cardData: CardData
+    @State private var definitionType: DefinitionType = .English
+
     
     var body: some View {
-        GeometryReader { geo in
-            ZStack {
-                Text("SCORE  **\(cardData.learningScore)**")
-                    .font(.title3)
-                    .position(x: geo.size.width * 3 / 4,
-                              y: geo.size.height / 20)
-                VStack {
-                    Text("\(cardData.originalWord)")
-                        .font(.largeTitle)
-                        .bold()
-                        .position(x: geo.size.width / 2,
-                                  y: geo.size.height / 5)
-    
-                    Text("\(cardData.englishDefinition)")
-                        .padding()
-                        .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
-                        .padding()
-                    
-                    VStack {
-                        Image("SampleImage")
-                            .resizable()
-                            .scaledToFill()
-                            .padding()
-                        Text("\(cardData.exampleSentence)")
-                            .padding()
-                    }
-                    .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))                    .padding()
-                    
-                }
+        ZStack {
+            CardBackBackgroundView(backgroundColor: .cardBack)
+            VStack(spacing: 20) {
+                Color.clear
+                    .frame(height: 25)
+                CardWordTextView(cardData: .example, cardType: .detail)
+                CardDetailDefinition(cardData: cardData,
+                                     definitionType: $definitionType)
+                CardDetailExampleImageSentenceView(cardData: cardData)
             }
-            .background(Color.cardBack ,
-                        in: CardBackShape())
-            .foregroundStyle(.white)
+        }
+        .foregroundStyle(.white)
+    }
+}
+
+struct CardDetailDefinition: View {
+    let cardData: CardData
+    @Binding var definitionType: DefinitionType
+    
+    var body: some View {
+        Button {
+            if definitionType == .English {
+                definitionType = .Korean
+            } else {
+                definitionType = .English
+            }
+        } label: {
+            Text(definitionType == .English ? cardData.englishDefinition : cardData.translatedWord)
+                .frame(width: 288, height: 60)
+                .background(.cardBackInside, in: .rect(cornerRadius: 10))
         }
     }
 }
+
+struct CardWordTextView: View {
+    let cardData: CardData
+    let cardType: CardSide
+    
+    var body: some View {
+        Text(cardData.originalWord)
+            .foregroundStyle(cardType == .front ? .black : .white)
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+    }
+}
+
+struct CardDetailExampleImageSentenceView: View {
+    let cardData: CardData
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Image("SampleImage")
+                .resizable()
+                .frame(width: 200, height: 200)
+            Text(cardData.exampleSentence)
+                .frame(width: 250)
+        }
+        .frame(width: 288, height: 279)
+        .background(.cardBackInside, in: .rect(cornerRadius: 10))
+    }
+}
+
 struct CardDetailExample: View {
     @State var cardData: CardData
 
@@ -85,48 +116,6 @@ struct CardDetailExample: View {
     }
 }
 
-struct CardDetailAddView: View {
-    @State var cardData: CardData
-    @State var text: String = ""
-    
-    var body: some View {
-        GeometryReader { geo in
-            VStack {
-                Spacer(minLength: 50)
-
-                Text("\(cardData.originalWord)")
-                    .font(.largeTitle)
-                    .bold()
-                
-                Spacer()
-                VStack {
-                    ZStack {
-                        Image("DetailAddImage")
-                            .resizable()
-                            .scaledToFill()
-                            .padding()
-                        ProgressView()
-                    }
-                    
-                    TextField("", text: $text)
-                        .padding()
-                        .background(.gray, in: .rect(cornerRadius: 10))
-                    Text("VOCARD의 평가")
-                    ProgressView()
-                        .padding()
-                        .frame(width: 350)
-                        .background(.gray, in: .rect(cornerRadius: 10))
-
-                }
-                .background(Color("CardBackInsideColor"), in: .rect(cornerRadius: 15))
-                .padding()
-            }
-            .foregroundStyle(.white)
-            .background(Color.cardBackInside, in: .rect(cornerRadius: 15))
-            .scaledToFit()
-        }
-    }
-}
 
 struct CardDetailEditView: View {
     @State var cardData: CardData
@@ -144,15 +133,16 @@ struct CardDetailEditView: View {
             }
         }
         .scrollTargetBehavior(.paging)
-
-        
     }
 }
 
+
+
+
 #Preview {
     ZStack {
-//        CardDetailView(cardData: CardData.example)
+        CardDetailView(cardData: CardData.example)
 
-        CardDetailEditView(cardData: CardData.example)
+//        CardDetailEditView(cardData: CardData.example)
     }
 }

@@ -19,31 +19,28 @@ struct CardStudyViewBottomView: View {
                 CardDetailBottomButtonView()
             case .quiz:
                 CardQuizBottomButtonView()
-            case .detailEdit:
-                EmptyView()
             }
         }
-        .frame(width: .infinity,
-               height: .infinity,
-               alignment: .center)
     }
 }
 
 struct CardDetailBottomButtonView: View {
     var body: some View {
-        HStack(spacing: 20) {
+        GeometryReader { geo in
             Button {
                 
             } label: {
-                Text("NEXT")
-                    .padding()
-                    .background(.quizPassButton,
-                                in: PassButtonShape())
-                    .font(.title3)
-                    .foregroundStyle(.white)
+                ZStack {
+                    PassButtonShape()
+                        .fill(.cardBack)
+                        .aspectRatio(5, contentMode: .fit)
+                    Text("NEXT")
+                        .font(.title3)
+                        .foregroundStyle(.white)
+                }
             }
         }
-        .frame(width: .infinity, height: .infinity)
+        
     }
 }
 
@@ -81,5 +78,8 @@ struct CardQuizBottomButtonView: View {
 }
 
 #Preview {
-    CardQuizBottomButtonView()
+    CardDetailBottomButtonView()
+        .aspectRatio(contentMode: .fit)
+
+
 }

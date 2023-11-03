@@ -24,6 +24,9 @@
 		883327292AE219E7003D3E6F /* vocardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883327282AE219E7003D3E6F /* vocardApp.swift */; };
 		8833272D2AE219E7003D3E6F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833272C2AE219E7003D3E6F /* Item.swift */; };
 		8833273B2AE26203003D3E6F /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833273A2AE26203003D3E6F /* CardData.swift */; };
+		8843DD2E2AF4FEA90047FCF3 /* CardDetailAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843DD2D2AF4FEA90047FCF3 /* CardDetailAddView.swift */; };
+		8843DD302AF52AC40047FCF3 /* CardFrontBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843DD2F2AF52AC40047FCF3 /* CardFrontBackgroundView.swift */; };
+		8843DD322AF52B1B0047FCF3 /* CardBackBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843DD312AF52B1B0047FCF3 /* CardBackBackgroundView.swift */; };
 		8847B5C72AEBAC580026D8DF /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8847B5C22AEBAC580026D8DF /* Preview Content */; };
 		887D0B4B2AEBD4F700231570 /* CardStudyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D0B4A2AEBD4F700231570 /* CardStudyView.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		883327282AE219E7003D3E6F /* vocardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocardApp.swift; sourceTree = "<group>"; };
 		8833272C2AE219E7003D3E6F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8833273A2AE26203003D3E6F /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		8843DD2D2AF4FEA90047FCF3 /* CardDetailAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailAddView.swift; sourceTree = "<group>"; };
+		8843DD2F2AF52AC40047FCF3 /* CardFrontBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontBackgroundView.swift; sourceTree = "<group>"; };
+		8843DD312AF52B1B0047FCF3 /* CardBackBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackBackgroundView.swift; sourceTree = "<group>"; };
 		8847B5C22AEBAC580026D8DF /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		887D0B4A2AEBD4F700231570 /* CardStudyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStudyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,11 +72,14 @@
 			isa = PBXGroup;
 			children = (
 				887D0B4A2AEBD4F700231570 /* CardStudyView.swift */,
-				8801CB232AF2568A008F6D8F /* CardQuizBottomButtonView.swift */,
 				8801CB272AF2568A008F6D8F /* CardView.swift */,
+				8801CB232AF2568A008F6D8F /* CardQuizBottomButtonView.swift */,
 				8801CB242AF2568A008F6D8F /* CardFrontView.swift */,
 				8801CB252AF2568A008F6D8F /* CardDetailView.swift */,
 				8801CB262AF2568A008F6D8F /* CardQuizView.swift */,
+				8843DD2D2AF4FEA90047FCF3 /* CardDetailAddView.swift */,
+				8843DD2F2AF52AC40047FCF3 /* CardFrontBackgroundView.swift */,
+				8843DD312AF52B1B0047FCF3 /* CardBackBackgroundView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -191,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8801CB282AF2568A008F6D8F /* CardQuizBottomButtonView.swift in Sources */,
+				8843DD322AF52B1B0047FCF3 /* CardBackBackgroundView.swift in Sources */,
 				8801CB292AF2568A008F6D8F /* CardFrontView.swift in Sources */,
 				8801CB2A2AF2568A008F6D8F /* CardDetailView.swift in Sources */,
 				8801CB3C2AF2576D008F6D8F /* CardFrontShape.swift in Sources */,
@@ -201,12 +211,14 @@
 				8833273B2AE26203003D3E6F /* CardData.swift in Sources */,
 				887D0B4B2AEBD4F700231570 /* CardStudyView.swift in Sources */,
 				8801CB0C2AEF49E9008F6D8F /* DraggableModifier.swift in Sources */,
+				8843DD2E2AF4FEA90047FCF3 /* CardDetailAddView.swift in Sources */,
 				8801CB202AF253E0008F6D8F /* LoginView.swift in Sources */,
 				8801CB3A2AF2576D008F6D8F /* CardBackShape.swift in Sources */,
 				8801CB3D2AF2576D008F6D8F /* PassButtonShape.swift in Sources */,
 				8833272D2AE219E7003D3E6F /* Item.swift in Sources */,
 				8801CB1B2AF253E0008F6D8F /* HomeView.swift in Sources */,
 				883327292AE219E7003D3E6F /* vocardApp.swift in Sources */,
+				8843DD302AF52AC40047FCF3 /* CardFrontBackgroundView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

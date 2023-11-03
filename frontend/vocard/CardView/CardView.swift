@@ -8,40 +8,31 @@
 import SwiftUI
 
 enum CardSide {
-    case front, detail, quiz, detailEdit
+    case front, detail, quiz
 }
 
 struct CardView: View {
-    @Binding  var cardSide: CardSide
+    @Binding var cardSide: CardSide
     @Namespace var namespace
+    @State private var isCardDetailEditPresented: Bool = false
     
     var body: some View {
-        GeometryReader { geo in
-            switch cardSide {
-            case .front:
-                CardFrontView(cardData: .example)
-                    .draggable(cardSide: $cardSide)
-                    .matchedGeometryEffect(id: "card",
-                                           in: namespace)
-            case .detail:
-                CardDetailView(cardData: .example)
-                    .onLongPressGesture {
-                        withAnimation(.spring) {
-                            cardSide = .detailEdit
-                        }
+        switch cardSide {
+        case .front:
+            CardFrontView(cardData: .example)
+                .draggable(cardSide: $cardSide)
+        case .detail:
+            CardDetailView(cardData: .example)
+                .fullScreenCover(isPresented: $isCardDetailEditPresented) {
+                    CardDetailEditView(cardData: .example)
+                }
+                .onLongPressGesture {
+                    withAnimation(.spring) {
+                        isCardDetailEditPresented.toggle()
                     }
-                    .matchedGeometryEffect(id: "card",
-                                           in: namespace)
-
-            case .detailEdit:
-                CardDetailEditView(cardData: .example)
-            case .quiz:
-                CardQuizView(quiz: Quiz.example)
-                    .matchedGeometryEffect(id: "card",
-                                           in: namespace)
-
-                    
-            }
+                }
+        case .quiz:
+            CardQuizView(quiz: Quiz.example)
         }
     }
 }
