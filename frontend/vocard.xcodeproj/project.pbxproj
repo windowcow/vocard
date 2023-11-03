@@ -21,6 +21,7 @@
 		8801CB3B2AF2576D008F6D8F /* SubmitButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB382AF2576D008F6D8F /* SubmitButtonShape.swift */; };
 		8801CB3C2AF2576D008F6D8F /* CardFrontShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB362AF2576D008F6D8F /* CardFrontShape.swift */; };
 		8801CB3D2AF2576D008F6D8F /* PassButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB392AF2576D008F6D8F /* PassButtonShape.swift */; };
+		88282AFF2AF53F6800BADCBC /* QuizDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88282AFE2AF53F6800BADCBC /* QuizDataModel.swift */; };
 		883327292AE219E7003D3E6F /* vocardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883327282AE219E7003D3E6F /* vocardApp.swift */; };
 		8833272D2AE219E7003D3E6F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833272C2AE219E7003D3E6F /* Item.swift */; };
 		8833273B2AE26203003D3E6F /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833273A2AE26203003D3E6F /* CardData.swift */; };
@@ -46,6 +47,7 @@
 		8801CB372AF2576D008F6D8F /* CardBackShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackShape.swift; sourceTree = "<group>"; };
 		8801CB382AF2576D008F6D8F /* SubmitButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonShape.swift; sourceTree = "<group>"; };
 		8801CB392AF2576D008F6D8F /* PassButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassButtonShape.swift; sourceTree = "<group>"; };
+		88282AFE2AF53F6800BADCBC /* QuizDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDataModel.swift; sourceTree = "<group>"; };
 		883327252AE219E7003D3E6F /* vocard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883327282AE219E7003D3E6F /* vocardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocardApp.swift; sourceTree = "<group>"; };
 		8833272C2AE219E7003D3E6F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				8801CB3E2AF2577F008F6D8F /* Shapes */,
 				8801CB352AF256F2008F6D8F /* CardView */,
 				8801CB182AF253E0008F6D8F /* Assets.xcassets */,
+				88282AFE2AF53F6800BADCBC /* QuizDataModel.swift */,
 				8801CB192AF253E0008F6D8F /* LoginView.swift */,
 				8801CB142AF253E0008F6D8F /* HomeView.swift */,
 				8801CB132AF253E0008F6D8F /* MyPageView.swift */,
@@ -203,6 +206,7 @@
 				8843DD322AF52B1B0047FCF3 /* CardBackBackgroundView.swift in Sources */,
 				8801CB292AF2568A008F6D8F /* CardFrontView.swift in Sources */,
 				8801CB2A2AF2568A008F6D8F /* CardDetailView.swift in Sources */,
+				88282AFF2AF53F6800BADCBC /* QuizDataModel.swift in Sources */,
 				8801CB3C2AF2576D008F6D8F /* CardFrontShape.swift in Sources */,
 				8801CB2B2AF2568A008F6D8F /* CardQuizView.swift in Sources */,
 				8801CB2C2AF2568A008F6D8F /* CardView.swift in Sources */,
