@@ -9,6 +9,28 @@ import SwiftUI
 import SwiftData
 
 
+
+struct CardStudyView: View {
+    @State private var cardSide: CardSide = .front
+
+    var body: some View {
+        ZStack {
+            Color.mainBgr
+                .ignoresSafeArea()
+            VStack {
+                CardStudyTopBar()
+                Spacer()
+                CardView(cardSide: $cardSide)
+                Spacer()
+            }
+        }
+        
+        
+        
+
+    }
+}
+
 struct CardStudyTopBar: View {
     var body: some View {
         VStack {
@@ -36,27 +58,6 @@ struct CardStudyTopBar: View {
         .foregroundStyle(.white)
     }
     
-}
-
-struct CardStudyView: View {
-    @State private var cardSide: CardSide = .front
-
-    var body: some View {
-        ZStack {
-            Color.mainBgr
-                .ignoresSafeArea()
-            VStack {
-                CardStudyTopBar()
-                Spacer()
-                CardView(cardSide: $cardSide)
-                Spacer()
-            }
-        }
-        
-        
-        
-
-    }
 }
 
 #Preview {
