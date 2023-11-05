@@ -11,7 +11,7 @@ enum CardSide {
     case front, detail, quiz
 }
 
-struct CardView: View {
+struct CardStudyPageMiddle: View {
     @Binding var cardSide: CardSide
     @Namespace var namespace
     @State private var isCardDetailEditPresented: Bool = false
@@ -19,12 +19,12 @@ struct CardView: View {
     var body: some View {
         switch cardSide {
         case .front:
-            CardFrontView(cardData: .example)
+            CardFrontView(cardData: .example1)
                 .draggable(cardSide: $cardSide)
         case .detail:
-            CardDetailView(cardData: .example)
+            CardDetailView(cardData: .example1)
                 .fullScreenCover(isPresented: $isCardDetailEditPresented) {
-                    CardDetailEditView(cardData: .example)
+                    CardDetailEditView(cardData: .example1)
                 }
                 .onLongPressGesture {
                     withAnimation(.spring) {
@@ -38,5 +38,5 @@ struct CardView: View {
 }
 
 #Preview {
-    CardView(cardSide: Binding<CardSide>.constant(.detail))
+    CardStudyPageMiddle(cardSide: Binding<CardSide>.constant(.detail))
 }

@@ -15,14 +15,10 @@ struct DraggableModifier: ViewModifier {
     func body(content: Content) -> some View {
         return content
             .offset(offsetState)
-//            .rotationEffect(
-//                .degrees(offsetState.width / 20.0),
-//                anchor: .bottom
-//            )
             .rotation3DEffect(
                 .degrees(offsetState.width / 2),
                 axis: (x: 0.0, y: -1.0, z: 0.0),
-                anchor: .leading
+                anchor: offsetState.width > 0 ? .trailing : .leading
             )
             .gesture(
                 DragGesture()

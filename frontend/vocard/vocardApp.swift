@@ -12,7 +12,7 @@ import SwiftData
 struct vocardApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Item.self, Quiz.self, CardData.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -26,8 +26,7 @@ struct vocardApp: App {
     var body: some Scene {
         WindowGroup {
             LoginView()
-//            CardStudyView()
-//                .statusBarHidden()
+                
         }
         .modelContainer(sharedModelContainer)
 

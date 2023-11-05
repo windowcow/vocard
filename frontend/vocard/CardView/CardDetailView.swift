@@ -21,7 +21,7 @@ struct CardDetailView: View {
             VStack(spacing: 20) {
                 Color.clear
                     .frame(height: 25)
-                CardWordTextView(cardData: .example, cardType: .detail)
+                CardWordTextView(cardData: .example1, cardType: .detail)
                 CardDetailDefinition(cardData: cardData,
                                      definitionType: $definitionType)
                 CardDetailExampleImageSentenceView(cardData: cardData)
@@ -43,7 +43,7 @@ struct CardDetailDefinition: View {
                 definitionType = .English
             }
         } label: {
-            Text(definitionType == .English ? cardData.englishDefinition : cardData.translatedWord)
+            Text(definitionType == .English ? cardData.englishDefinition : cardData.koreanDefinition)
                 .frame(width: 288, height: 60)
                 .background(.cardBackInside, in: .rect(cornerRadius: 10))
         }
@@ -141,7 +141,7 @@ struct CardDetailEditView: View {
 
 #Preview {
     ZStack {
-        CardDetailView(cardData: CardData.example)
+        CardDetailView(cardData: CardData.example1)
 
 //        CardDetailEditView(cardData: CardData.example)
     }

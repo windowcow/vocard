@@ -52,5 +52,5 @@ struct CardDetailAddView: View {
 }
 
 #Preview {
-    CardDetailEditView(cardData: .example)
+    CardDetailEditView(cardData: .example1)
 }

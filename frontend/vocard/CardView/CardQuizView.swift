@@ -38,7 +38,7 @@ struct OptionButton: View {
 
 struct CardQuizView: View {
     let quiz: Quiz
-    var cardData = CardData.example
+    var cardData = CardData.example1
     @State private var selectedOption: Int? = nil
     @State private var isScored: Bool = false
     

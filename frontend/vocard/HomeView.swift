@@ -126,7 +126,7 @@ struct StartStudyView: View {
                     
                 }
                 .fullScreenCover(isPresented: $cardStudyViewPresented) {
-                    CardStudyView()
+                    CardStudyPage()
                 }
             })
             .padding(.horizontal, 20)

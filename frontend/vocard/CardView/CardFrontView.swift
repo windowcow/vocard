@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardFrontView: View {
     let cardData: CardData
+    
     var body: some View {
         ZStack {
             CardFrontBackgroundView(backgroundColor: Color.cardFront)
@@ -19,7 +20,7 @@ struct CardFrontView: View {
 
 #Preview {
     ZStack {
-        CardFrontView(cardData: .example)
+        CardFrontView(cardData: .example1)
             .draggable(cardSide: Binding<CardSide>.constant(CardSide.front))
     }
 }
