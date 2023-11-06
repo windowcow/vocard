@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct DraggableModifier: ViewModifier {
+struct CardDragModifier: ViewModifier {
     @GestureState var offsetState: CGSize = CGSize.zero
     @Binding var cardSide: CardSide
 
@@ -43,8 +43,8 @@ struct DraggableModifier: ViewModifier {
 
 
 extension View {
-    func draggable(cardSide: Binding<CardSide>) -> some View {
-        self.modifier(DraggableModifier(cardSide: cardSide))
+    func cardDragModifier(cardSide: Binding<CardSide>) -> some View {
+        self.modifier(CardDragModifier(cardSide: cardSide))
     }
 }
 

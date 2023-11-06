@@ -21,6 +21,6 @@ struct CardFrontView: View {
 #Preview {
     ZStack {
         CardFrontView(cardData: .example1)
-            .draggable(cardSide: Binding<CardSide>.constant(CardSide.front))
+            .cardDragModifier(cardSide: Binding<CardSide>.constant(CardSide.front))
     }
 }

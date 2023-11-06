@@ -122,7 +122,10 @@ struct OptionModifier: ViewModifier {
 
 extension View {
     func optionStyle(answer: Int, currentOption: Int, selectedOption: Binding<Int?>, isScored: Bool) -> some View {
-        self.modifier(OptionModifier(answer: answer, currentOption: currentOption, selectedOption: selectedOption, isScored: isScored))
+        self.modifier(OptionModifier(answer: answer, 
+                                     currentOption: currentOption,
+                                     selectedOption: selectedOption,
+                                     isScored: isScored))
     }
 }
 

@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-enum CardSide {
-    case front, detail, quiz
-}
 
 struct CardStudyPageMiddle: View {
     @Binding var cardSide: CardSide
@@ -20,7 +17,7 @@ struct CardStudyPageMiddle: View {
         switch cardSide {
         case .front:
             CardFrontView(cardData: .example1)
-                .draggable(cardSide: $cardSide)
+                .cardDragModifier(cardSide: $cardSide)
         case .detail:
             CardDetailView(cardData: .example1)
                 .fullScreenCover(isPresented: $isCardDetailEditPresented) {
