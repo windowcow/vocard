@@ -21,15 +21,47 @@ struct CardStudyPage: View {
                 Spacer()
                 CardStudyPageMiddle()
                 Spacer()
-                CardStudyPageBottom(cardSide: currentCard.cardSide)
+                CardStudyPageBottom()
             }
         }
     }
     
-}
+    @ViewBuilder
+    func CardStudyPageBottom() -> some View {
+        switch currentCard.cardSide {
+        case .front:
+            EmptyView()
+        case .detail:
+            Button {
+                
+            } label: {
+                Text("NEXT")
+                    .foregroundStyle(.white)
+                    .frame(width: 330, height: 63, alignment: .center)
+                    .background(.cardFacedDownBackground, in: NextButtonShape())
+                
+            }
+        case .quiz:
+            Button {
+                
+            } label: {
+                HStack(spacing: 23) {
+                    Text("PASS")
+                        .foregroundStyle(.white)
+                        .frame(width: 107, height: 63, alignment: .center)
+                        .background(.cardFacedDownBackground, in: PassButtonShape())
+                    Text("SUBMIT")
+                        .foregroundStyle(.black)
+                        .frame(width: 200, height: 63, alignment: .center)
+                        .background(.quizSubmitButton, in: NextButtonShape())
 
-struct CardStudyPageTop: View {
-    var body: some View {
+                }
+                
+            }
+        }
+    }
+    
+    func CardStudyPageTop() -> some View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
@@ -54,8 +86,9 @@ struct CardStudyPageTop: View {
         }
         .foregroundStyle(.white)
     }
-    
 }
+
+
 struct CardStudyPageMiddle: View {
     @Environment(CurrentCard.self) var currentCard
     @GestureState var offsetState: CGSize = CGSize.zero
@@ -95,6 +128,7 @@ struct CardStudyPageMiddle: View {
             
         }
     }
+    
 
     var body: some View {
         card()
@@ -150,44 +184,12 @@ struct CardStudyPageMiddle: View {
     }
 }
 
-
-struct CardStudyPageBottom: View {
-    let cardSide: CardSide
-    var body: some View {
-        switch cardSide {
-        case .front:
-            EmptyView()
-        case .detail:
-            Button {
-                
-            } label: {
-                Text("NEXT")
-                    .foregroundStyle(.white)
-                    .frame(width: 330, height: 63, alignment: .center)
-                    .background(.cardFacedDownBackground, in: NextButtonShape())
-                
-            }
-        case .quiz:
-            Button {
-                
-            } label: {
-                HStack(spacing: 23) {
-                    Text("PASS")
-                        .foregroundStyle(.white)
-                        .frame(width: 107, height: 63, alignment: .center)
-                        .background(.cardFacedDownBackground, in: PassButtonShape())
-                    Text("SUBMIT")
-                        .foregroundStyle(.black)
-                        .frame(width: 200, height: 63, alignment: .center)
-                        .background(.quizSubmitButton, in: NextButtonShape())
-
-                }
-                
-            }
-        }
+struct CardMovementModifier: ViewModifier {
+    func body(content: Content) -> some View {
         
     }
 }
+
 
 #Preview {
     CardStudyPage()

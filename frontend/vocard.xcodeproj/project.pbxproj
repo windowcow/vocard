@@ -118,8 +118,8 @@
 		883327272AE219E7003D3E6F /* vocard */ = {
 			isa = PBXGroup;
 			children = (
-				88ABCA792AFA350800A7978F /* CurrentCard.swift */,
 				883327282AE219E7003D3E6F /* vocardApp.swift */,
+				88ABCA792AFA350800A7978F /* CurrentCard.swift */,
 				8801CB3E2AF2577F008F6D8F /* Shapes */,
 				8801CB352AF256F2008F6D8F /* CardView */,
 				8801CB182AF253E0008F6D8F /* Assets.xcassets */,
