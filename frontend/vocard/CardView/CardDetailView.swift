@@ -11,23 +11,21 @@ enum DefinitionType {
     case English, Korean
 }
 struct CardDetailView: View {
-    let cardData: CardData
+    @Environment(CurrentCard.self) var currentCard
     @State private var definitionType: DefinitionType = .English
     @Namespace var namespace
     
     var body: some View {
         ZStack {
             CardBackgroundView(cardFaceDirection: .faceDown,
-                               backgroundColor: .cardBack)
-                .matchedGeometryEffect(id: "cardBackground", in: namespace)
+                               backgroundColor: .cardFacedDownBackground)
 
             VStack(spacing: 20) {
                 Color.clear
                     .frame(height: 25)
-                CardWordTextView(cardData: .example1, cardType: .detail)
-                CardDetailDefinition(cardData: cardData,
-                                     definitionType: $definitionType)
-                CardDetailExampleImageSentenceView(cardData: cardData)
+                CardWordTextView()
+                CardDetailDefinition(definitionType: $definitionType)
+                CardDetailExampleImageSentenceView()
             }
         }
         .foregroundStyle(.white)
@@ -35,7 +33,7 @@ struct CardDetailView: View {
 }
 
 struct CardDetailDefinition: View {
-    let cardData: CardData
+    @Environment(CurrentCard.self) var currentCard
     @Binding var definitionType: DefinitionType
     
     var body: some View {
@@ -46,7 +44,7 @@ struct CardDetailDefinition: View {
                 definitionType = .English
             }
         } label: {
-            Text(definitionType == .English ? cardData.englishDefinition : cardData.koreanDefinition)
+            Text(definitionType == .English ? currentCard.cardData.englishDefinition : currentCard.cardData.koreanDefinition)
                 .frame(width: 288, height: 60)
                 .background(.cardBackInside, in: .rect(cornerRadius: 10))
         }
@@ -54,26 +52,25 @@ struct CardDetailDefinition: View {
 }
 
 struct CardWordTextView: View {
-    let cardData: CardData
-    let cardType: CardSide
+    @Environment(CurrentCard.self) var currentCard
     
     var body: some View {
-        Text(cardData.originalWord)
-            .foregroundStyle(cardType == .front ? .black : .white)
+        Text(currentCard.cardData.originalWord)
+            .foregroundStyle(currentCard.cardSide == .front ? .black : .white)
             .font(.largeTitle)
             .fontWeight(.heavy)
     }
 }
 
 struct CardDetailExampleImageSentenceView: View {
-    let cardData: CardData
-    
+    @Environment(CurrentCard.self) var currentCard
+
     var body: some View {
         VStack(spacing: 20) {
             Image("SampleImage")
                 .resizable()
                 .frame(width: 200, height: 200)
-            Text(cardData.exampleSentence)
+            Text(currentCard.cardData.exampleSentence)
                 .frame(width: 250)
         }
         .frame(width: 288, height: 279)
@@ -142,10 +139,10 @@ struct CardDetailEditView: View {
 
 
 
-#Preview {
-    ZStack {
-        CardDetailView(cardData: CardData.example1)
-
-//        CardDetailEditView(cardData: CardData.example)
-    }
-}
+//#Preview {
+//    ZStack {
+//        CardDetailView(cardData: CardData.example1)
+//
+////        CardDetailEditView(cardData: CardData.example)
+//    }
+//}

@@ -24,8 +24,10 @@ struct vocardApp: App {
     }()
 
     var body: some Scene {
+        var currentCard: CurrentCard = CurrentCard()
         WindowGroup {
             LoginView()
+                .environment(currentCard)
                 
         }
         .modelContainer(sharedModelContainer)

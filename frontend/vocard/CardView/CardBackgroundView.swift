@@ -25,6 +25,8 @@ struct CardBackgroundView: View {
             CardBackShape()
                 .fill(backgroundColor)
                 .frame(width: 338, height: 553)
+                .reflectedAboutY()
+
         }
             
 

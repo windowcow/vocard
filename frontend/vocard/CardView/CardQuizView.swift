@@ -47,7 +47,6 @@ struct CardQuizView: View {
         ZStack {
             CardBackgroundView(cardFaceDirection: .faceDown,
                                backgroundColor: .white)
-                .matchedGeometryEffect(id: "cardBackground", in: namespace)
 
             VStack(spacing: 20) {
                 HStack {
