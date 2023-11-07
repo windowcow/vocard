@@ -9,35 +9,54 @@ import SwiftUI
 import SwiftData
 import Observation
 
-//struct CurrentCardSide: PreferenceKey {
-//    static var defaultValue: CardSide = .front
-//    static func reduce(value: inout CardSide, nextValue: () -> CardSide) {
-//        value = nextValue()
-//    }
-//}
-//
-//extension View {
-//    func setCurrentCardSide(_ cardSide: CardSide) -> some View {
-//        preference(key: CurrentCardSide.self, value: cardSide)
-//    }
-//}
+struct CardStudyPage: View {
+    @Environment(CurrentCard.self) var currentCard
 
-//struct CurrentWordData: EnvironmentKey {
-//    static var defaultValue: CardData = .example1
-//}
-//
-//extension EnvironmentValues {
-//    var currentCard: CardData {
-//        get { self[CurrentWordData.self]}
-//        set { self[CurrentWordData.self] = newValue }
-//    }
-//}
-@Observable class CurrentCard {
-    var cardData: CardData = .example1
-    var cardSide: CardSide = .front
+    var body: some View {
+        ZStack {
+            Color.mainBgr
+                .ignoresSafeArea()
+            VStack {
+                CardStudyPageTop()
+                Spacer()
+                CardStudyPageMiddle()
+                Spacer()
+                CardStudyPageBottom(cardSide: currentCard.cardSide)
+            }
+        }
+    }
+    
 }
 
-struct CardView: View {
+struct CardStudyPageTop: View {
+    var body: some View {
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Text("TODAY'S WORD")
+                        .font(.title2)
+                    Text("128")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                }
+                Spacer()
+                Button(action: {}){
+                    Text("MENU")
+                        .padding([.horizontal])
+                        .padding([.vertical], 8)
+                        .foregroundStyle(.black)
+                        .background(.white, in: .rect(cornerRadius: 20))
+                }
+            }
+            .padding(.horizontal)
+            Divider()
+                .background(.white)
+        }
+        .foregroundStyle(.white)
+    }
+    
+}
+struct CardStudyPageMiddle: View {
     @Environment(CurrentCard.self) var currentCard
     @GestureState var offsetState: CGSize = CGSize.zero
     @State private var isCardDetailEditPresented: Bool = false
@@ -131,54 +150,6 @@ struct CardView: View {
     }
 }
 
-
-struct CardStudyPage: View {
-    @Environment(CurrentCard.self) var currentCard
-
-    var body: some View {
-        ZStack {
-            Color.mainBgr
-                .ignoresSafeArea()
-            VStack {
-                CardStudyPageTop()
-                Spacer()
-                CardView()
-                Spacer()
-                CardStudyPageBottom(cardSide: currentCard.cardSide)
-            }
-        }
-    }
-    
-}
-
-struct CardStudyPageTop: View {
-    var body: some View {
-        VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("TODAY'S WORD")
-                        .font(.title2)
-                    Text("128")
-                        .font(.title2)
-                        .fontWeight(.heavy)
-                }
-                Spacer()
-                Button(action: {}){
-                    Text("MENU")
-                        .padding([.horizontal])
-                        .padding([.vertical], 8)
-                        .foregroundStyle(.black)
-                        .background(.white, in: .rect(cornerRadius: 20))
-                }
-            }
-            .padding(.horizontal)
-            Divider()
-                .background(.white)
-        }
-        .foregroundStyle(.white)
-    }
-    
-}
 
 struct CardStudyPageBottom: View {
     let cardSide: CardSide

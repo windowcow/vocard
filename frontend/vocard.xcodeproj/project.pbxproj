@@ -29,6 +29,7 @@
 		887D0B4B2AEBD4F700231570 /* CardStudyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D0B4A2AEBD4F700231570 /* CardStudyPage.swift */; };
 		88ABCA762AF9E55A00A7978F /* CardBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABCA752AF9E55A00A7978F /* CardBackgroundView.swift */; };
 		88ABCA782AFA23AD00A7978F /* CurrentCardObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABCA772AFA23AD00A7978F /* CurrentCardObservable.swift */; };
+		88ABCA7A2AFA350800A7978F /* CurrentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABCA792AFA350800A7978F /* CurrentCard.swift */; };
 		88B2D2892AF86DD60055BAC7 /* CardSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2D2882AF86DD60055BAC7 /* CardSide.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		887D0B4A2AEBD4F700231570 /* CardStudyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStudyPage.swift; sourceTree = "<group>"; };
 		88ABCA752AF9E55A00A7978F /* CardBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackgroundView.swift; sourceTree = "<group>"; };
 		88ABCA772AFA23AD00A7978F /* CurrentCardObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCardObservable.swift; sourceTree = "<group>"; };
+		88ABCA792AFA350800A7978F /* CurrentCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentCard.swift; sourceTree = "<group>"; };
 		88B2D2882AF86DD60055BAC7 /* CardSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 		883327272AE219E7003D3E6F /* vocard */ = {
 			isa = PBXGroup;
 			children = (
+				88ABCA792AFA350800A7978F /* CurrentCard.swift */,
 				883327282AE219E7003D3E6F /* vocardApp.swift */,
 				8801CB3E2AF2577F008F6D8F /* Shapes */,
 				8801CB352AF256F2008F6D8F /* CardView */,
@@ -223,6 +226,7 @@
 				887D0B4B2AEBD4F700231570 /* CardStudyPage.swift in Sources */,
 				88B2D2892AF86DD60055BAC7 /* CardSide.swift in Sources */,
 				88ABCA782AFA23AD00A7978F /* CurrentCardObservable.swift in Sources */,
+				88ABCA7A2AFA350800A7978F /* CurrentCard.swift in Sources */,
 				8843DD2E2AF4FEA90047FCF3 /* CardDetailAddView.swift in Sources */,
 				8801CB202AF253E0008F6D8F /* LoginView.swift in Sources */,
 				8801CB3A2AF2576D008F6D8F /* CardBackShape.swift in Sources */,
