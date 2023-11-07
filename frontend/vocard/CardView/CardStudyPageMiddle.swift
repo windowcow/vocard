@@ -16,8 +16,7 @@ struct CardStudyPageMiddle: View {
     var body: some View {
         switch cardSide {
         case .front:
-            CardFrontView(cardData: .example1)
-                .cardDragModifier(cardSide: $cardSide)
+            CardFrontView(cardSide: $cardSide, cardData: .example1)
         case .detail:
             CardDetailView(cardData: .example1)
                 .fullScreenCover(isPresented: $isCardDetailEditPresented) {
@@ -28,8 +27,10 @@ struct CardStudyPageMiddle: View {
                         isCardDetailEditPresented.toggle()
                     }
                 }
+
         case .quiz:
             CardQuizView(quiz: Quiz.example)
+
         }
     }
 }

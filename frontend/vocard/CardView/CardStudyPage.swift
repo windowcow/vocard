@@ -21,6 +21,10 @@ struct CardStudyPage: View {
                 CardStudyPageTop()
                 Spacer()
                 CardStudyPageMiddle(cardSide: $cardSide)
+                    .shadow(color: .gray,
+                            radius: 20,
+                            x: 0.0,
+                            y: 0.0)
                 Spacer()
                 CardStudyPageBottom(cardSide: cardSide)
             }

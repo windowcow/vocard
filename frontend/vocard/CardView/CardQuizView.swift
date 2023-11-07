@@ -41,11 +41,14 @@ struct CardQuizView: View {
     var cardData = CardData.example1
     @State private var selectedOption: Int? = nil
     @State private var isScored: Bool = false
-    
+    @Namespace var namespace
 
     var body: some View {
         ZStack {
-            CardBackBackgroundView(backgroundColor: .white)
+            CardBackgroundView(cardFaceDirection: .faceDown,
+                               backgroundColor: .white)
+                .matchedGeometryEffect(id: "cardBackground", in: namespace)
+
             VStack(spacing: 20) {
                 HStack {
                     Text("Q")
@@ -79,8 +82,6 @@ struct CardQuizView: View {
             }
         }
         .font(.system(size: 16))
-
-        
     }
 }
 

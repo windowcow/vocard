@@ -13,11 +13,14 @@ enum DefinitionType {
 struct CardDetailView: View {
     let cardData: CardData
     @State private var definitionType: DefinitionType = .English
-
+    @Namespace var namespace
     
     var body: some View {
         ZStack {
-            CardBackBackgroundView(backgroundColor: .cardBack)
+            CardBackgroundView(cardFaceDirection: .faceDown,
+                               backgroundColor: .cardBack)
+                .matchedGeometryEffect(id: "cardBackground", in: namespace)
+
             VStack(spacing: 20) {
                 Color.clear
                     .frame(height: 25)
