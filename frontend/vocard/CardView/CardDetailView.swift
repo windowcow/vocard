@@ -7,60 +7,9 @@
 
 import SwiftUI
 
-enum DefinitionType {
-    case English, Korean
-}
-struct CardDetailView: View {
-    @Environment(CurrentCard.self) var currentCard
-    @State private var definitionType: DefinitionType = .English
-    @Namespace var namespace
-    
-    var body: some View {
-        ZStack {
-            CardBackgroundView(cardFaceDirection: .faceDown,
-                               backgroundColor: .cardFacedDownBackground)
 
-            VStack(spacing: 20) {
-                Color.clear
-                    .frame(height: 25)
-                CardWordTextView()
-                CardDetailDefinition(definitionType: $definitionType)
-                CardDetailExampleImageSentenceView()
-            }
-        }
-        .foregroundStyle(.white)
-    }
-}
 
-struct CardDetailDefinition: View {
-    @Environment(CurrentCard.self) var currentCard
-    @Binding var definitionType: DefinitionType
-    
-    var body: some View {
-        Button {
-            if definitionType == .English {
-                definitionType = .Korean
-            } else {
-                definitionType = .English
-            }
-        } label: {
-            Text(definitionType == .English ? currentCard.cardData.englishDefinition : currentCard.cardData.koreanDefinition)
-                .frame(width: 288, height: 60)
-                .background(.cardBackInside, in: .rect(cornerRadius: 10))
-        }
-    }
-}
 
-struct CardWordTextView: View {
-    @Environment(CurrentCard.self) var currentCard
-    
-    var body: some View {
-        Text(currentCard.cardData.originalWord)
-            .foregroundStyle(currentCard.cardSide == .front ? .black : .white)
-            .font(.largeTitle)
-            .fontWeight(.heavy)
-    }
-}
 
 struct CardDetailExampleImageSentenceView: View {
     @Environment(CurrentCard.self) var currentCard

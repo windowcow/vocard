@@ -36,54 +36,6 @@ struct OptionButton: View {
     }
 }
 
-struct CardQuizView: View {
-    let quiz: Quiz
-    var cardData = CardData.example1
-    @State private var selectedOption: Int? = nil
-    @State private var isScored: Bool = false
-    @Namespace var namespace
-
-    var body: some View {
-        ZStack {
-            CardBackgroundView(cardFaceDirection: .faceDown,
-                               backgroundColor: .white)
-
-            VStack(spacing: 20) {
-                HStack {
-                    Text("Q")
-                        .padding()
-                        .font(.largeTitle)
-                        .bold()
-                    Text(quiz.question)
-                        .frame(width: 213)
-                }
-                .padding(.horizontal, 20)
-                
-                VStack(spacing: 20) {
-                    OptionButton(selectedOption: $selectedOption,
-                                 isScored: isScored,
-                                 quiz: quiz,
-                                 currentOptionNumber: 1)
-                    
-                    OptionButton(selectedOption: $selectedOption,
-                                 isScored: isScored,
-                                 quiz: quiz,
-                                 currentOptionNumber: 2)
-                    OptionButton(selectedOption: $selectedOption,
-                                 isScored: isScored,
-                                 quiz: quiz,
-                                 currentOptionNumber: 3)
-                    OptionButton(selectedOption: $selectedOption,
-                                 isScored: isScored,
-                                 quiz: quiz,
-                                 currentOptionNumber: 4)
-                }
-            }
-        }
-        .font(.system(size: 16))
-    }
-}
-
 extension View {
     func customButtonStyle(geo: GeometryProxy) -> some View {
         self
@@ -132,11 +84,11 @@ extension View {
 ///  Option Modifier <<<
 
 
-#Preview {
-    ZStack {
-        Color.black
-        CardQuizView(quiz: Quiz.example)
-            
-
-    }
-}
+//#Preview {
+//    ZStack {
+//        Color.black
+//        CardQuizView(quiz: Quiz.example)
+//            
+//
+//    }
+//}

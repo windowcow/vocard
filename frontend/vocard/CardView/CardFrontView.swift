@@ -8,28 +8,29 @@
 import SwiftUI
 
 enum CardDirection {
-    case left, right
+    case left
+    case right
 }
 
-struct AppSettings {
-    static var cardMenuChangeOffsetCriterion: CGFloat = 90
-}
+struct CardDragSettings {
+    static let cardMenuOffsetCriterion: CGFloat = 90
 
-//struct CardFrontView: View {
-//    @Binding var cardSide: CardSide
-//    @Namespace var namespace
-//    
-//    let cardData: CardData
-//    
-//    
-//    
-//    var body: some View {
-//        
-//        
-//        
-//        
-//    }
-//}
+    // 카드가 왼쪽에 있는지 판단하는 범위
+    static var cardAtLeftRange: Range<CGFloat> {
+        -CGFloat.infinity..<(-cardMenuOffsetCriterion)
+    }
+
+    // 카드가 오른쪽에 있는지 판단하는 범위
+    static var cardAtRightRange: Range<CGFloat> {
+        cardMenuOffsetCriterion..<CGFloat.infinity
+    }
+
+    // 추가적으로 중간 범위도 정의할 수 있습니다
+    static var cardAtCenterRange: Range<CGFloat> {
+        // 중간 범위를 정의하는 로직 (예시)
+        -cardMenuOffsetCriterion..<cardMenuOffsetCriterion
+    }
+}
 
 
 struct ReflectedAboutY: ViewModifier {
