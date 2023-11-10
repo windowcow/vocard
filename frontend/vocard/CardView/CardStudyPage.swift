@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 import Observation
 
-@Observable fileprivate class CardStudyPageViewModel {
+@Observable  class CardStudyPageViewModel {
     /// enums
     var isCardDetailEditPresented = false
     var definitionType: DefinitionType = .english
@@ -24,16 +24,16 @@ import Observation
 
     
     /// state datas
-    var cardOffsetGestureState: GestureState<CGSize> = .init(initialValue: .zero)
+    var cardOffset: CGSize = .zero
 
     
 }
 
-fileprivate enum DefinitionType {
+ enum DefinitionType {
     case english, korean
 }
 
-fileprivate enum CardViewStatus {
+ enum CardViewStatus {
     enum CardFrontStatus {
         case left, middle, right
     }
@@ -134,7 +134,7 @@ struct CardStudyPage: View {
     @ViewBuilder
     func CardStudyPageMiddle() -> some View {
         card()
-            .cardMovement(currentCard.cardOffsetState)
+            .cardMovement(viewModel)
             
     }
     @ViewBuilder
@@ -315,11 +315,31 @@ struct CardStudyPage: View {
 
 
 extension View {
-    func cardMovement(@GestureState _ offset: CGSize) -> some View {
+    func cardMovement(_ viewModel: CardStudyPageViewModel) -> some View {
         self
-            .modifier(CardMovementModifier(offsetState: offset))
+            .modifier(CardMovementModifier(viewModel: viewModel))
     }
 }
+
+struct CardMovementSettings {
+    static var offsetCriteria: CGFloat = 90
+}
+
+enum CardMovementLocation {
+    case left, center, right
+    
+    var range: Range<CGFloat> {
+        switch self {
+        case .left:
+            -CGFloat.infinity ..< -CardMovementSettings.offsetCriteria
+        case .center:
+            -CardMovementSettings.offsetCriteria ..< CardMovementSettings.offsetCriteria
+        case .right:
+            -CardMovementSettings.offsetCriteria ..< CGFloat.infinity
+        }
+    }
+}
+    
 
 struct CardMovementModifier: ViewModifier {
     func isCardOffsetOutsideBoundary(_ direction: CardDirection, @GestureState _ currentOffset: CGSize) -> Bool {
@@ -343,7 +363,8 @@ struct CardMovementModifier: ViewModifier {
     }
 
     
-    @GestureState var offsetState: CGSize
+    @GestureState var offsetState: CGSize = .zero
+    @Bindable var viewModel: CardStudyPageViewModel
     @State private var isCardDetailEditPresented: Bool = false
     @Environment(CurrentCard.self) var currentCard
     
@@ -365,14 +386,24 @@ struct CardMovementModifier: ViewModifier {
                     .updating($offsetState) { value, state, t in
                         withAnimation {
                             state = value.translation
+                            switch state.width {
+                            case let x where CardMovementLocation.center.range ~= x:
+                                viewModel.cardViewStatus = .front(.middle)
+                            case let x where CardMovementLocation.left.range ~= x:
+                                viewModel.cardViewStatus = .front(.left)
+                            case let x where CardMovementLocation.right.range ~= x:
+                                viewModel.cardViewStatus = .front(.right)
+                            default:
+                                viewModel.cardViewStatus = .front(.middle)
+                            }
                         }
                     }
                     .onEnded { value in
                         withAnimation {
                             if isCardOffsetOutsideBoundary(.left, value.translation) {
-                                currentCard.cardSideState = .detail
+                                viewModel.cardViewStatus = .back(.detail)
                             } else if isCardOffsetOutsideBoundary(.right, value.translation){
-                                currentCard.cardSideState = .quiz
+                                viewModel.cardViewStatus = .back(.quiz)
                             }
                         }
                     }
