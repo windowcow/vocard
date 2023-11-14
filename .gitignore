@@ -1,0 +1,5 @@
+
+backend/vocard/secrets.json
+.vscode/settings.json
+backend/vocard/serviceAccountCredentials.json
+backend/utils/playground.py
