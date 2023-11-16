@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct CardDetailAddView: View {
-    @State var cardData: CardData
+    @State var cardData: CardDataModel
     @State var text: String = ""
     
     var body: some View {
@@ -49,8 +49,4 @@ struct CardDetailAddView: View {
             .scaledToFit()
         }
     }
-}
-
-#Preview {
-    CardDetailEditView(cardData: .example1)
 }

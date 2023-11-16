@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 import Observation
 
+
 @Observable  class CardStudyPageViewModel {
     /// enums
     var isCardDetailEditPresented = false
@@ -33,7 +34,7 @@ import Observation
     case english, korean
 }
 
- enum CardViewStatus {
+enum CardViewStatus: Equatable {
     enum CardFrontStatus {
         case left, middle, right
     }
@@ -41,7 +42,7 @@ import Observation
     enum CardBackStatus {
         case detail, quiz
     }
-
+    
     case front(CardFrontStatus)
     case back(CardBackStatus)
 }
@@ -49,8 +50,17 @@ import Observation
 
 
 struct CardStudyPage: View {
-    @Environment(CurrentCard.self) var currentCard
+    
+    @Query var deckDataModel: [DeckDataModel]
+    @Query var userSettingsDataModel: [UserSettingsDataModel]
+
+    @Query var allCards: [CardDataModel]
+    
     @State private var viewModel = CardStudyPageViewModel()
+    
+    @State private var deck: DeckDataModel = DeckDataModel(userSettingDataModel: UserSettingsDataModel(undealtCardAppearProbability: 50))
+    
+    @State var currentCard: CardDataModel = CardDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
     
     var body: some View {
         ZStack {
@@ -63,6 +73,24 @@ struct CardStudyPage: View {
                 Spacer()
                 CardStudyPageBottom()
             }
+        }
+        .task {
+            deck = deckDataModel[0]
+            deck.userSettingDataModel = userSettingsDataModel[0]
+            
+            deck.sortedDealtCards = allCards.filter({ card in
+                card.recentViewDate != nil
+            })
+            
+            deck.sortedDealtCards = allCards.filter({ card in
+                card.recentViewDate == nil
+            })
+            .sorted(by: { card1, card2 in
+                card1.weight > card2.weight
+            })
+            
+            currentCard = deck.drawACard()
+            
         }
     }
     
@@ -98,33 +126,42 @@ struct CardStudyPage: View {
     
     @ViewBuilder
     func CardStudyPageBottom() -> some View {
-        switch currentCard.cardSideState {
+        switch viewModel.cardViewStatus {
         case .front:
             EmptyView()
-        case .detail:
-            Button {
-                
-            } label: {
-                Text("NEXT")
-                    .foregroundStyle(.white)
-                    .frame(width: 330, height: 63, alignment: .center)
-                    .background(.cardFacedDownBackground, in: NextButtonShape())
-                
-            }
-        case .quiz:
-            Button {
-                
-            } label: {
-                HStack(spacing: 23) {
-                    Text("PASS")
+        case .back(let cardBackStatus):
+            switch cardBackStatus {
+            case .detail:
+                Button {
+                    
+                } label: {
+                    Text("NEXT")
                         .foregroundStyle(.white)
-                        .frame(width: 107, height: 63, alignment: .center)
-                        .background(.cardFacedDownBackground, in: PassButtonShape())
-                    Text("SUBMIT")
-                        .foregroundStyle(.black)
-                        .frame(width: 200, height: 63, alignment: .center)
-                        .background(.quizSubmitButton, in: NextButtonShape())
-
+                        .frame(width: 330, height: 63, alignment: .center)
+                        .background(.cardFacedDownBackground, in: NextButtonShape())
+                    
+                }
+                
+            case .quiz:
+                HStack(spacing: 23) {
+                    Button {
+                        
+                    } label: {
+                        
+                        Text("PASS")
+                            .foregroundStyle(.white)
+                            .frame(width: 107, height: 63, alignment: .center)
+                            .background(.cardFacedDownBackground, in: PassButtonShape())
+                    }
+                    Button {
+                        
+                    } label: {
+                        Text("SUBMIT")
+                            .foregroundStyle(.black)
+                            .frame(width: 200, height: 63, alignment: .center)
+                            .background(.quizSubmitButton, in: NextButtonShape())
+                    }
+                    
                 }
                 
             }
@@ -162,15 +199,15 @@ struct CardStudyPage: View {
             switch cardBackStatus {
             case .detail:
                 CardDetailView()
-                    .popover(isPresented: $viewModel.isCardDetailEditPresented) {
-                        CardDetailEditView(cardData: .example1)
-                            .presentationCompactAdaptation(.fullScreenCover)
-                    }
-                    .onLongPressGesture {
-                        withAnimation(.spring) {
-                            viewModel.isCardDetailEditPresented.toggle()
-                        }
-                    }
+//                    .popover(isPresented: $viewModel.isCardDetailEditPresented) {
+//                        CardDetailEditView(cardData: .example1)
+//                            .presentationCompactAdaptation(.popover)
+//                    }
+//                    .onLongPressGesture {
+//                        withAnimation(.spring) {
+//                            viewModel.isCardDetailEditPresented.toggle()
+//                        }
+//                    }
                 
             case .quiz:
                 CardQuizView()
@@ -217,6 +254,7 @@ struct CardStudyPage: View {
             
         }
     }
+    
     @ViewBuilder
     func card() -> some View {
         ZStack {
@@ -237,13 +275,20 @@ struct CardStudyPage: View {
                     .frame(height: 25)
                 CardWordTextView()
                 CardDetailDefinition()
-                CardDetailExampleImageSentenceView()
-            }
+                VStack(spacing: 20) {
+                    Image("SampleImage")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                    Text(currentCard.exampleSentence)
+                        .frame(width: 250)
+                }
+                .frame(width: 288, height: 279)
+                .background(.cardBackInside, in: .rect(cornerRadius: 10))            }
         }
         .foregroundStyle(.white)
     }
 
-    
+    @ViewBuilder
     func CardDetailDefinition() -> some View {
         
         Button {
@@ -253,21 +298,28 @@ struct CardStudyPage: View {
                 viewModel.definitionType = .english
             }
         } label: {
-            Text(viewModel.definitionType == .english ? currentCard.cardData.englishDefinition : currentCard.cardData.koreanDefinition)
+            Text(viewModel.definitionType == .english ? currentCard.englishDefinition : currentCard.koreanDefinition)
                 .frame(width: 288, height: 60)
                 .background(.cardBackInside, in: .rect(cornerRadius: 10))
         }
     }
 
-    struct CardWordTextView: View {
-        @Environment(CurrentCard.self) var currentCard
-        
-        var body: some View {
-            Text(currentCard.cardData.originalWord)
-                .foregroundStyle(currentCard.cardSideState == .front ? .black : .white)
+    @ViewBuilder
+    func CardWordTextView() -> some View {
+        switch viewModel.cardViewStatus {
+        case .front:
+            Text(currentCard.originalWord)
+                .foregroundStyle(.black)
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+        case .back:
+            Text(currentCard.originalWord)
+                .foregroundStyle(.white)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
         }
+        
+        
     }
     
     @ViewBuilder
@@ -282,7 +334,7 @@ struct CardStudyPage: View {
                         .padding()
                         .font(.largeTitle)
                         .bold()
-                    Text(currentCard.cardData.quizes.first!.question)
+                    Text(currentCard.quizes.first!.question)
                         .frame(width: 213)
                 }
                 .padding(.horizontal, 20)
@@ -290,20 +342,20 @@ struct CardStudyPage: View {
                 VStack(spacing: 20) {
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.cardData.quizes.first!,
+                                 quiz: currentCard.quizes.first!,
                                  currentOptionNumber: 1)
                     
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.cardData.quizes.first!,
+                                 quiz: currentCard.quizes.first!,
                                  currentOptionNumber: 2)
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.cardData.quizes.first!,
+                                 quiz: currentCard.quizes.first!,
                                  currentOptionNumber: 3)
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.cardData.quizes.first!,
+                                 quiz: currentCard.quizes.first!,
                                  currentOptionNumber: 4)
                 }
             }
@@ -335,60 +387,44 @@ enum CardMovementLocation {
         case .center:
             -CardMovementSettings.offsetCriteria ..< CardMovementSettings.offsetCriteria
         case .right:
-            -CardMovementSettings.offsetCriteria ..< CGFloat.infinity
+            CardMovementSettings.offsetCriteria ..< CGFloat.infinity
         }
     }
 }
     
 
 struct CardMovementModifier: ViewModifier {
-    func isCardOffsetOutsideBoundary(_ direction: CardDirection, @GestureState _ currentOffset: CGSize) -> Bool {
-        if direction == .left {
-            return currentOffset.width <= -CardDragSettings.cardMenuOffsetCriterion
-        } else {
-            return currentOffset.width >= CardDragSettings.cardMenuOffsetCriterion
-        }
-    }
-    
-    func isNothingSelected() -> Bool {
-        return !isLeftSelected() && !isRightSelected()
-    }
-    
-    func isLeftSelected() -> Bool {
-        return isCardOffsetOutsideBoundary(.left, offsetState)
-    }
-    
-    func isRightSelected() -> Bool {
-        return isCardOffsetOutsideBoundary(.right, offsetState)
-    }
+    @Bindable var viewModel: CardStudyPageViewModel
 
+    @State private var isCardDetailEditPresented: Bool = false
     
     @GestureState var offsetState: CGSize = .zero
-    @Bindable var viewModel: CardStudyPageViewModel
-    @State private var isCardDetailEditPresented: Bool = false
-    @Environment(CurrentCard.self) var currentCard
-    
-    func body(content: Content) -> some View {
-        content
-            .visualEffect { content, geometryProxy in
-                content
-                    .offset(offsetState)
-                    .rotation3DEffect(
-                        .degrees(offsetState.width),
-                        axis: (x: 0.0, y: -1.0, z: 0.0),
-                        anchor: offsetState.width > 0 ? .trailing : .leading
-                    )
-            }
-            .animation(.spring.speed(2), value: offsetState)
 
-            .gesture(
-                DragGesture()
-                    .updating($offsetState) { value, state, t in
-                        withAnimation {
+    func body(content: Content) -> some View {
+        switch viewModel.cardViewStatus {
+        case .front:
+            content
+                .visualEffect { (content, geometryProxy)  in
+                    content
+                        .offset(offsetState)
+                        .rotation3DEffect(
+                            .degrees(offsetState.width),
+                            axis: (x: 0.0, y: -1.0, z: 0.0),
+                            anchor: offsetState.width > 0 ? .trailing : .leading
+                        )
+                }
+                .animation(.spring.speed(2), value: offsetState)
+                .gesture(
+                    DragGesture()
+                        .updating($offsetState) { value, state, t in
+                            withAnimation {
+                                
+                            }
                             state = value.translation
+
                             switch state.width {
-                            case let x where CardMovementLocation.center.range ~= x:
-                                viewModel.cardViewStatus = .front(.middle)
+    //                        case let x where CardMovementLocation.center.range ~= x:
+    //                            viewModel.cardViewStatus = .front(.middle)
                             case let x where CardMovementLocation.left.range ~= x:
                                 viewModel.cardViewStatus = .front(.left)
                             case let x where CardMovementLocation.right.range ~= x:
@@ -397,21 +433,30 @@ struct CardMovementModifier: ViewModifier {
                                 viewModel.cardViewStatus = .front(.middle)
                             }
                         }
-                    }
-                    .onEnded { value in
-                        withAnimation {
-                            if isCardOffsetOutsideBoundary(.left, value.translation) {
-                                viewModel.cardViewStatus = .back(.detail)
-                            } else if isCardOffsetOutsideBoundary(.right, value.translation){
-                                viewModel.cardViewStatus = .back(.quiz)
+                        .onEnded { value in
+                            withAnimation {
+                                switch value.translation.width {
+                                case let x where CardMovementLocation.center.range ~= x:
+                                    viewModel.cardViewStatus = .front(.middle)
+                                case let x where CardMovementLocation.left.range ~= x:
+                                    viewModel.cardViewStatus = .back(.detail)
+                                case let x where CardMovementLocation.right.range ~= x:
+                                    viewModel.cardViewStatus = .back(.quiz)
+                                default:
+                                    viewModel.cardViewStatus = .front(.middle)
+                                    print("123")
+                                }
                             }
                         }
-                    }
-            )
+                )
+        case .back:
+            content
+        }
+        
     }
 }
 
-
-#Preview {
-    CardStudyPage()
-}
+//
+//#Preview {
+//    CardStudyPage()
+//}

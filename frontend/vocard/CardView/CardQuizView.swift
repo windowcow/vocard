@@ -10,7 +10,7 @@ import SwiftUI
 struct OptionButton: View {
     @Binding var selectedOption: Int?
     let isScored: Bool
-    let quiz: Quiz
+    let quiz: QuizDataModel
     let currentOptionNumber: Int
     var options: [String] {
         [quiz.choice1, quiz.choice2, quiz.choice3, quiz.choice4]

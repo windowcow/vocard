@@ -8,27 +8,24 @@
 import SwiftUI
 
 
-
-
-
-struct CardDetailExampleImageSentenceView: View {
-    @Environment(CurrentCard.self) var currentCard
-
-    var body: some View {
-        VStack(spacing: 20) {
-            Image("SampleImage")
-                .resizable()
-                .frame(width: 200, height: 200)
-            Text(currentCard.cardData.exampleSentence)
-                .frame(width: 250)
-        }
-        .frame(width: 288, height: 279)
-        .background(.cardBackInside, in: .rect(cornerRadius: 10))
-    }
-}
+//struct CardDetailExampleImageSentenceView: View {
+//    @Bindable var currentCard: CardDataModel
+//
+//    var body: some View {
+//        VStack(spacing: 20) {
+//            Image("SampleImage")
+//                .resizable()
+//                .frame(width: 200, height: 200)
+//            Text(currentCard.exampleSentence)
+//                .frame(width: 250)
+//        }
+//        .frame(width: 288, height: 279)
+//        .background(.cardBackInside, in: .rect(cornerRadius: 10))
+//    }
+//}
 
 struct CardDetailExample: View {
-    @State var cardData: CardData
+    @State var cardData: CardDataModel
 
     var body: some View {
         GeometryReader { geo in
@@ -65,25 +62,25 @@ struct CardDetailExample: View {
     }
 }
 
-
-struct CardDetailEditView: View {
-    @State var cardData: CardData
-
-    var body: some View {
-        ScrollView([.horizontal]) {
-            HStack(alignment: .center) {
-                CardDetailExample(cardData: cardData)
-                    .containerRelativeFrame(.horizontal, count: 2, span: 2, spacing: 10, alignment: .center)
-                    .scrollTargetBehavior(.paging)
-                CardDetailAddView(cardData: cardData)
-                    .containerRelativeFrame(.horizontal, count: 2, span: 2, spacing: 10, alignment: .center)
-                    .scrollTargetBehavior(.paging)
-
-            }
-        }
-        .scrollTargetBehavior(.paging)
-    }
-}
+//
+//struct CardDetailEditView: View {
+//    @State var cardData: CardData
+//
+//    var body: some View {
+//        ScrollView([.horizontal]) {
+//            HStack(alignment: .center) {
+//                CardDetailExample(cardData: cardData)
+//                    .containerRelativeFrame(.horizontal, count: 2, span: 2, spacing: 10, alignment: .center)
+//                    .scrollTargetBehavior(.paging)
+//                CardDetailAddView(cardData: cardData)
+//                    .containerRelativeFrame(.horizontal, count: 2, span: 2, spacing: 10, alignment: .center)
+//                    .scrollTargetBehavior(.paging)
+//
+//            }
+//        }
+//        .scrollTargetBehavior(.paging)
+//    }
+//}
 
 
 

@@ -1,0 +1,12 @@
+{
+  "data" : [
+    {
+      "filename" : "word_data.json",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
