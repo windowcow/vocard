@@ -6,4 +6,4 @@ dj-rest-auth
 djangorestframework-simplejwt
 openai
 django_filters
-django-environ
+drf-spectacular

@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     'userexample',
     'user_stats',
     'openai_api',
+    'drf_spectacular',
     # OAuth
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
@@ -117,7 +118,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'vocard.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -127,8 +127,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
 
 # Authentication
 AUTH_USER_MODEL = 'authentication.User'
@@ -151,7 +149,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
-
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 # SOCIAL_AUTH_KAKAO_SCOPE = ['nickname']
@@ -196,3 +194,10 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Vocard API',
+    'DESCRIPTION': 'Vocard API Endpoints for SWE3028',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+}

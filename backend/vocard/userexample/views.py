@@ -5,13 +5,27 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from django.conf import settings
 from rest_framework.permissions import AllowAny, IsAuthenticated, IsAuthenticatedOrReadOnly
-
+from drf_spectacular.utils import extend_schema, inline_serializer
+from rest_framework import serializers
 
 # firebase initialization 
 firebase = pyrebase.initialize_app(getattr(settings, "FIREBASE_CONFIG"))
 authen = firebase.auth()
 db = firebase.database()
 
+# @extend_schema(
+#     methods='POST',
+#     request=inline_serializer(
+#         name='requestSerializer',
+#         fields={
+#             'sentence': serializers.CharField()
+#         }
+#     ),
+#     description="Add the provided sentence to the user's user_example entry",
+#     responses={
+#         201: 
+#     }
+# )
 
 @api_view(['GET', 'POST'])
 def user_example_list(request, usr_id):

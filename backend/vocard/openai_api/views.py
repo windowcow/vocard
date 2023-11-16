@@ -5,6 +5,8 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.conf import settings
 from openai import OpenAI
+from drf_spectacular.utils import extend_schema, inline_serializer
+from rest_framework import serializers
 
 # firebase initialization 
 firebase = pyrebase.initialize_app(getattr(settings, "FIREBASE_CONFIG"))
@@ -12,6 +14,33 @@ authen = firebase.auth()
 db = firebase.database()
 storage = firebase.storage()
 client = OpenAI(api_key=getattr(settings, "OPENAI_API_KEY"))
+
+@extend_schema(
+    request=inline_serializer(
+        name='requestSerializer',
+        fields={
+            'style': serializers.CharField(),
+            'sentence': serializers.CharField()
+        }
+    ),
+    description="Generate an image based on word and user sentence",
+    responses={
+        201: inline_serializer(
+            name='img_url',
+            fields={
+                "img_url": serializers.CharField()
+            }
+        ),
+        500: inline_serializer(
+            name='error',
+            fields={
+                "error": serializers.CharField(default="Failed to POST"),
+                "style": serializers.CharField(),
+                "sentence": serializers.CharField()
+            }
+        )
+    }
+)
 
 @api_view(['POST'])
 def img_generate(request):
@@ -31,9 +60,35 @@ def img_generate(request):
             return Response(
                 {'error': 'Failed to POST!',
                  'style': request.data['style'],
-                 'example': request.data['sentence']},
+                 'sentence': request.data['sentence']},
                  status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+@extend_schema(
+    request=inline_serializer(
+        name='requestSerializer',
+        fields={
+            'word': serializers.CharField(),
+            'dfn': serializers.CharField(),
+            'sentence': serializers.CharField(),
+        }
+    ),
+    description="Receive evaluation from ChatGPT on a certain user sentence based on the request word and definition",
+    responses={
+        200: inline_serializer(
+            name='responseSerializer',
+            fields={
+                "response": serializers.CharField()
+            }
+        ),
+        500: inline_serializer(
+            name='errorSerializer',
+            fields={
+                "error": serializers.CharField(default="exception_message"),
+            }
+        )
+    }
+)
 
 @api_view(['POST'])
 def grade_example(request):
