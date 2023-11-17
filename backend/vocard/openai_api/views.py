@@ -17,7 +17,7 @@ client = OpenAI(api_key=getattr(settings, "OPENAI_API_KEY"))
 
 @extend_schema(
     request=inline_serializer(
-        name='requestSerializer',
+        name='imgRequest',
         fields={
             'style': serializers.CharField(),
             'sentence': serializers.CharField()
@@ -26,13 +26,13 @@ client = OpenAI(api_key=getattr(settings, "OPENAI_API_KEY"))
     description="Generate an image based on word and user sentence",
     responses={
         201: inline_serializer(
-            name='img_url',
+            name='imgResponse',
             fields={
                 "img_url": serializers.CharField()
             }
         ),
         500: inline_serializer(
-            name='error',
+            name='imgError',
             fields={
                 "error": serializers.CharField(default="Failed to POST"),
                 "style": serializers.CharField(),
@@ -66,7 +66,7 @@ def img_generate(request):
 
 @extend_schema(
     request=inline_serializer(
-        name='requestSerializer',
+        name='evalRequest',
         fields={
             'word': serializers.CharField(),
             'dfn': serializers.CharField(),
@@ -76,14 +76,14 @@ def img_generate(request):
     description="Receive evaluation from ChatGPT on a certain user sentence based on the request word and definition",
     responses={
         200: inline_serializer(
-            name='responseSerializer',
+            name='evalResponse',
             fields={
                 "response": serializers.CharField()
             }
         ),
         500: inline_serializer(
-            name='errorSerializer',
-            fields={
+            name='evalError',
+            fields={                                                
                 "error": serializers.CharField(default="exception_message"),
             }
         )
