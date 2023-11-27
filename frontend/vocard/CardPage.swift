@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-@Observable fileprivate class CardPageViewModel {
-    var cardViewStatus: CardViewStatus = .back(.detail)
+@Observable class CardPageViewModel {
+    var cardViewStatus: CardViewStatus = .front(.middle)
 }
 
 struct CardPage: View {
-    @State private var vm: CardPageViewModel = CardPageViewModel()
+    @Environment(CardPageViewModel.self) var vm
     
     var body: some View {
         VStack {
@@ -23,15 +23,14 @@ struct CardPage: View {
             
                 .background(.gray)
             CardPage_Middle()
-                .environment(vm)
                 .padding()
 
             
             Spacer()
 
             CardPage_Bottom()
-                .environment(vm)
         }
+        .background(.black)
     }
 }
 
@@ -56,6 +55,7 @@ struct CardPage_Top: View {
             .foregroundStyle(.black)
             .tint(.white)
         }
+        .padding(.horizontal)
     }
 }
 
@@ -63,19 +63,26 @@ struct CardPage_Middle: View {
     @Environment(CardPageViewModel.self) private var vm
     
     var body: some View {
-        CardPage_CardView_CardBackground(cardViewStatus: vm.cardViewStatus)
-            .overlay {
-                CardPage_CardView_CardForeground()
+        ViewThatFits {
+            CardPage_CardView_CardBackground(cardViewStatus: vm.cardViewStatus)
+                .overlay {
+                    CardPage_CardView_CardForeground()
 
-            }
+                }
+        }
+        .cardDrag(vm)
+
+
     }
 }
 
 struct CardPage_CardView_CardBackground: View {
+    @Environment(CardPageViewModel.self) private var vm
+    
     var cardViewStatus: CardViewStatus
     
     var body: some View {
-        switch cardViewStatus {
+        switch vm.cardViewStatus {
         case .front(let cardFrontStatus):
             switch cardFrontStatus {
             case .middle:
@@ -369,7 +376,72 @@ struct CardPage_Bottom: View {
     }
 }
 
+extension View {
+    func cardDrag(_ vm: CardPageViewModel) -> some View {
+        self
+            .modifier(CardMovement(vm: vm))
+    }
+}
 
+
+struct CardMovement: ViewModifier {
+    @Bindable var vm: CardPageViewModel
+    @GestureState var offsetState: CGSize = .zero
+
+    func body(content: Content) -> some View {
+        switch vm.cardViewStatus {
+        case .front:
+            content
+                .visualEffect { (content, geometryProxy)  in
+                    content
+                        .offset(offsetState.applying(.init(scaleX: -1, y: 1)))
+                        .rotation3DEffect(
+                            .degrees(offsetState.width),
+                            axis: (x: 0.0, y: 1.0, z: 0.0)
+//                            anchor: offsetState.width > 0 ? .trailing : .leading
+                        )
+                        .scaleEffect((200 - offsetState.width.magnitude) / 200 < 0.5 ? 0.5 : (200 - offsetState.width.magnitude) / 200)
+                }
+                .animation(.spring.speed(2), value: offsetState)
+                .gesture(
+                    DragGesture()
+                        .updating($offsetState) { value, state, t in
+                            withAnimation {
+                                state = value.translation
+
+                                switch state.width {
+                                case let x where CardMovementLocation.left.range ~= x:
+                                    vm.cardViewStatus = .front(.left)
+                                case let x where CardMovementLocation.right.range ~= x:
+                                    vm.cardViewStatus = .front(.right)
+                                default:
+                                    vm.cardViewStatus = .front(.middle)
+                                }
+                            }
+                            
+                        }
+                        .onEnded { value in
+                            withAnimation {
+                                switch value.translation.width {
+                                case let x where CardMovementLocation.center.range ~= x:
+                                    vm.cardViewStatus = .front(.middle)
+                                case let x where CardMovementLocation.left.range ~= x:
+                                    vm.cardViewStatus = .back(.detail)
+                                case let x where CardMovementLocation.right.range ~= x:
+                                    vm.cardViewStatus = .back(.quiz)
+                                default:
+                                    vm.cardViewStatus = .front(.middle)
+                                    print("123")
+                                }
+                            }
+                        }
+                )
+        case .back:
+            content
+        }
+        
+    }
+}
 #Preview {
     CardPage()
         .background(.black)

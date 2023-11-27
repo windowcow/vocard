@@ -13,7 +13,8 @@ struct vocardApp: App {
 
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            CardPage()
+                .environment(CardPageViewModel())
         }
         .modelContainer(sampleContainer)
     }
