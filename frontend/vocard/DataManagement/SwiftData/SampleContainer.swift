@@ -19,13 +19,15 @@ let sampleContainer: ModelContainer = {
     do {
         let container = try ModelContainer(for: schema, configurations: [modelConfiguration])
         
-        let sampleQuiz = QuizDataModel.quiz
-        container.mainContext.insert(sampleQuiz)
-        CardDataModel.card.forEach { card in
-            let tempQuiz = QuizDataModel(backingData: sampleQuiz.persistentBackingData)
-            container.mainContext.insert(tempQuiz)
-            card.quizes.append(tempQuiz)
-            container.mainContext.insert(card)
+        let sampleQuizs = QuizDataModel.quizs
+        sampleQuizs.forEach { sampleQuiz in
+            container.mainContext.insert(sampleQuiz)
+        }
+        
+        for i in 0...3 {
+            CardDataModel.card[i].quizes.append(sampleQuizs[i])
+            container.mainContext.insert(CardDataModel.card[i])
+
         }
         
         let userSettingsDataModel = UserSettingsDataModel(undealtCardAppearProbability: 50)

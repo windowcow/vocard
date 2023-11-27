@@ -9,14 +9,32 @@ import SwiftData
 
 @Model
 class DeckDataModel {
+    var allCards = [CardDataModel]()
     var sortedDealtCards = [CardDataModel]()
     var sortedUndealtCards = [CardDataModel]()
     var userSettingDataModel: UserSettingsDataModel
 
     init(userSettingDataModel: UserSettingsDataModel) {
+
+        self.allCards = []
         self.sortedDealtCards = []
         self.sortedUndealtCards = []
         self.userSettingDataModel = userSettingDataModel
+    }
+    
+    func sortDecks() {
+        sortedDealtCards = allCards.filter({ card in
+            card.recentViewDate != nil
+        })
+        .sorted(by: { card1, card2 in
+            card1.weight > card2.weight
+        })
+        sortedUndealtCards = allCards.filter({ card in
+            card.recentViewDate == nil
+        })
+        .sorted(by: { card1, card2 in
+            card1.weight > card2.weight
+        })
     }
     
     func drawACard() -> CardDataModel {

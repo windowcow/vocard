@@ -28,7 +28,7 @@ import Foundation
     
     var weight: Double {
         guard let recentViewDate = recentViewDate else {
-            return 1
+            return .infinity
         }
         switch self.consecutiveReviewSuccessStreak {
         case .zero:
@@ -48,7 +48,8 @@ import Foundation
 
         case .five:
             return Date.now.timeIntervalSince(recentViewDate) / ConsecutiveReviewSuccessStreak.five.requiredInterval
-
+        case .six:
+            return .infinity
         }
     }
     
@@ -61,7 +62,7 @@ import Foundation
     
     
     enum ConsecutiveReviewSuccessStreak: Int, Codable {
-        case zero = 0, one, two, three, four, five
+        case zero = 0, one, two, three, four, five, six // six는 완전 공부한거
         
         var requiredInterval: TimeInterval {
             switch self {
@@ -77,8 +78,27 @@ import Foundation
                 return .Day * 7
             case .five:
                 return .Day * 30
+            case .six:
+                return .Day * .infinity
             }
             
+        }
+    }
+}
+
+extension CardDataModel {
+    func reviewSuccess() {
+        self.consecutiveReviewSuccessStreak = ConsecutiveReviewSuccessStreak.init(rawValue: self.consecutiveReviewSuccessStreak.rawValue + 1) ?? ConsecutiveReviewSuccessStreak.zero
+        self.recentViewDate = .now
+    }
+    
+    func reviewFail() {
+        if self.consecutiveReviewSuccessStreak == .zero {
+            return
+        } else {
+            self.consecutiveReviewSuccessStreak = ConsecutiveReviewSuccessStreak.init(rawValue: self.consecutiveReviewSuccessStreak.rawValue - 1) ?? ConsecutiveReviewSuccessStreak.zero
+            self.recentViewDate = .now
+
         }
     }
 }

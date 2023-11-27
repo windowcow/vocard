@@ -47,7 +47,17 @@ enum CardViewStatus: Equatable {
     case back(CardBackStatus)
 }
 
-
+struct CurrentCard: EnvironmentKey {
+    static var defaultValue: CardDataModel = CardDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
+    
+    
+}
+extension EnvironmentValues {
+    var currentCard: CardDataModel {
+        get { self[CurrentCard.self] }
+        set { self[CurrentCard.self] = newValue }
+    }
+}
 
 struct CardStudyPage: View {
     
@@ -61,6 +71,8 @@ struct CardStudyPage: View {
     @State private var deck: DeckDataModel = DeckDataModel(userSettingDataModel: UserSettingsDataModel(undealtCardAppearProbability: 50))
     
     @State var currentCard: CardDataModel = CardDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
+    @State private var isCardQuizResultPopupPresented: Bool = false
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
@@ -74,21 +86,13 @@ struct CardStudyPage: View {
                 CardStudyPageBottom()
             }
         }
+        .environment(\.currentCard, currentCard)
         .task {
             deck = deckDataModel[0]
             deck.userSettingDataModel = userSettingsDataModel[0]
             
-            deck.sortedDealtCards = allCards.filter({ card in
-                card.recentViewDate != nil
-            })
-            
-            deck.sortedDealtCards = allCards.filter({ card in
-                card.recentViewDate == nil
-            })
-            .sorted(by: { card1, card2 in
-                card1.weight > card2.weight
-            })
-            
+            deck.allCards = allCards
+            deck.sortDecks()
             currentCard = deck.drawACard()
             
         }
@@ -133,7 +137,12 @@ struct CardStudyPage: View {
             switch cardBackStatus {
             case .detail:
                 Button {
-                    
+                    currentCard.reviewFail()
+
+                    deck.sortDecks()
+                    currentCard = deck.drawACard()
+                    viewModel.cardViewStatus = .front(.middle)
+
                 } label: {
                     Text("NEXT")
                         .foregroundStyle(.white)
@@ -145,7 +154,12 @@ struct CardStudyPage: View {
             case .quiz:
                 HStack(spacing: 23) {
                     Button {
+                        currentCard.reviewFail()
                         
+                        deck.sortDecks()
+                        currentCard = deck.drawACard()
+                        viewModel.cardViewStatus = .front(.middle)
+
                     } label: {
                         
                         Text("PASS")
@@ -154,13 +168,68 @@ struct CardStudyPage: View {
                             .background(.cardFacedDownBackground, in: PassButtonShape())
                     }
                     Button {
+                        if let selectedOption = viewModel.selectedOption  {
+                            if selectedOption == currentCard.quizes.first!.answer {
+                                currentCard.reviewSuccess()
+                            } else {
+                                currentCard.reviewFail()
+
+                            }
+                        }
+
                         
+
                     } label: {
                         Text("SUBMIT")
                             .foregroundStyle(.black)
                             .frame(width: 200, height: 63, alignment: .center)
                             .background(.quizSubmitButton, in: NextButtonShape())
                     }
+                    .sheet(isPresented: $isCardQuizResultPopupPresented) {
+                        deck.sortDecks()
+                        currentCard = deck.drawACard()
+                        viewModel.cardViewStatus = .front(.middle)
+                        viewModel.selectedOption = nil
+                    } content: {
+                        if let selectedOption = viewModel.selectedOption  {
+                            if selectedOption == currentCard.quizes.first!.answer {
+                                VStack {
+                                    Text("맞았습니다.")
+                                    Button("확인") {
+                                        dismiss()
+                                    }
+                                    .buttonStyle(.borderedProminent)
+                                    .controlSize(.large)
+
+                                }
+                                .frame(width: 200, height: 150)
+                            } else {
+                                VStack {
+                                    Text("틀렸습니다.")
+                                    Button("확인") {
+                                        dismiss()
+                                    }
+                                    .buttonStyle(.borderedProminent)
+                                    .controlSize(.large)
+                                }
+                                .frame(width: 200, height: 150)
+                            }
+                        }
+                    }
+
+                    
+//                    .sheet(item: Binding<Identifiable?>, onDismiss: {
+//                        <#code#>
+//                    }, content: { Identifiable in
+//                        <#code#>
+//                    })(isPresented: $isCardQuizResultPopupPresented) {
+//                        ZStack {
+//                            Text("맞았습니다.")
+//                        }
+//                        .foregroundStyle(.white)
+//                        .frame(width: 200, height: 150)
+//                    }
+//                    
                     
                 }
                 
@@ -199,20 +268,39 @@ struct CardStudyPage: View {
             switch cardBackStatus {
             case .detail:
                 CardDetailView()
-//                    .popover(isPresented: $viewModel.isCardDetailEditPresented) {
-//                        CardDetailEditView(cardData: .example1)
-//                            .presentationCompactAdaptation(.popover)
-//                    }
-//                    .onLongPressGesture {
-//                        withAnimation(.spring) {
-//                            viewModel.isCardDetailEditPresented.toggle()
-//                        }
-//                    }
                 
             case .quiz:
                 CardQuizView()
             }
         }
+    }
+    
+    @ViewBuilder
+    func StarView() -> some View {
+        let text = switch currentCard.consecutiveReviewSuccessStreak {
+        case .zero:
+            "☆☆☆☆☆"
+        case .one:
+            "★☆☆☆☆"
+
+        case .two:
+            "★★☆☆☆"
+
+        case .three:
+            "★★★☆☆"
+
+        case .four:
+            "★★★★☆"
+
+        case .five:
+            "★★★★★"
+
+        case .six:
+            "★★★★★"
+
+        }
+        
+        return Text(text).font(.title).foregroundStyle(.yellow)
     }
     
     @ViewBuilder
@@ -222,9 +310,14 @@ struct CardStudyPage: View {
         case .front(let cardFrontStatus):
             switch cardFrontStatus {
             case .middle:
-                CardFrontShape()
-                    .fill(.cardFacedUpBackground)
-                    .frame(width: 338, height: 553)
+                ZStack {
+                    
+                    CardFrontShape()
+                        .fill(.cardFacedUpBackground)
+                    StarView()
+                        .position(CGPoint(x: 80, y: 30))
+                }
+                .frame(width: 338, height: 553)
             case .left:
                 CardBackShape()
                     .fill(.cardFacedDownBackground)
@@ -312,6 +405,7 @@ struct CardStudyPage: View {
                 .foregroundStyle(.black)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
+            
         case .back:
             Text(currentCard.originalWord)
                 .foregroundStyle(.white)
