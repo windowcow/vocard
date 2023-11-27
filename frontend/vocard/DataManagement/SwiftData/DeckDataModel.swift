@@ -9,9 +9,9 @@ import SwiftData
 
 @Model
 class DeckDataModel {
-    var allCards = [CardDataModel]()
-    var sortedDealtCards = [CardDataModel]()
-    var sortedUndealtCards = [CardDataModel]()
+    var allCards = [WordDataModel]()
+    var sortedDealtCards = [WordDataModel]()
+    var sortedUndealtCards = [WordDataModel]()
     var userSettingDataModel: UserSettingsDataModel
 
     init(userSettingDataModel: UserSettingsDataModel) {
@@ -37,7 +37,7 @@ class DeckDataModel {
         })
     }
     
-    func drawACard() -> CardDataModel {
+    func drawACard() -> WordDataModel {
         if sortedDealtCards.isEmpty {
             return sortedUndealtCards[0]
         } else if sortedUndealtCards.isEmpty {

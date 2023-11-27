@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct CardDetailAddView: View {
-    @State var cardData: CardDataModel
+    @State var cardData: WordDataModel
     @State var text: String = ""
     
     var body: some View {

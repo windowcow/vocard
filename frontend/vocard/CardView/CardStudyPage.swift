@@ -30,30 +30,14 @@ import Observation
     
 }
 
- enum DefinitionType {
-    case english, korean
-}
-
-enum CardViewStatus: Equatable {
-    enum CardFrontStatus {
-        case left, middle, right
-    }
-    
-    enum CardBackStatus {
-        case detail, quiz
-    }
-    
-    case front(CardFrontStatus)
-    case back(CardBackStatus)
-}
 
 struct CurrentCard: EnvironmentKey {
-    static var defaultValue: CardDataModel = CardDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
+    static var defaultValue: WordDataModel = WordDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
     
     
 }
 extension EnvironmentValues {
-    var currentCard: CardDataModel {
+    var currentCard: WordDataModel {
         get { self[CurrentCard.self] }
         set { self[CurrentCard.self] = newValue }
     }
@@ -64,13 +48,13 @@ struct CardStudyPage: View {
     @Query var deckDataModel: [DeckDataModel]
     @Query var userSettingsDataModel: [UserSettingsDataModel]
 
-    @Query var allCards: [CardDataModel]
+    @Query var allCards: [WordDataModel]
     
     @State private var viewModel = CardStudyPageViewModel()
     
     @State private var deck: DeckDataModel = DeckDataModel(userSettingDataModel: UserSettingsDataModel(undealtCardAppearProbability: 50))
     
-    @State var currentCard: CardDataModel = CardDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
+    @State var currentCard: WordDataModel = WordDataModel(originalWord: "", koreanDefinition: "", englishDefinition: "", exampleSentence: "")
     @State private var isCardQuizResultPopupPresented: Bool = false
     @Environment(\.dismiss) var dismiss
     

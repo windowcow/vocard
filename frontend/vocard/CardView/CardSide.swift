@@ -8,5 +8,5 @@
 import Foundation
 
 enum CardSide {
-    case front, detail, quiz
+    case front, back
 }

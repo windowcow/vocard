@@ -10,7 +10,7 @@ import SwiftData
 @MainActor
 let sampleContainer: ModelContainer = {
     let schema = Schema([
-        QuizDataModel.self, CardDataModel.self, UserSettingsDataModel.self, DeckDataModel.self
+        QuizDataModel.self, WordDataModel.self, UserSettingsDataModel.self, DeckDataModel.self
     ])
     
     let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
@@ -25,8 +25,8 @@ let sampleContainer: ModelContainer = {
         }
         
         for i in 0...3 {
-            CardDataModel.card[i].quizes.append(sampleQuizs[i])
-            container.mainContext.insert(CardDataModel.card[i])
+            WordDataModel.card[i].quizes.append(sampleQuizs[i])
+            container.mainContext.insert(WordDataModel.card[i])
 
         }
         

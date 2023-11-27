@@ -25,7 +25,7 @@ import SwiftUI
 //}
 
 struct CardDetailExample: View {
-    @State var cardData: CardDataModel
+    @State var cardData: WordDataModel
 
     var body: some View {
         GeometryReader { geo in

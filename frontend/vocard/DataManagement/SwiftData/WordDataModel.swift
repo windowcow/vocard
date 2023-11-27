@@ -8,7 +8,7 @@
 import SwiftData
 import Foundation
 
-@Model class CardDataModel {
+@Model class WordDataModel {
     
     var originalWord: String // 영어 단어
     var koreanDefinition: String // 한글 뜻 (이 경우에는 사진에 나타나지 않으므로 옵셔널로 표시)
@@ -86,7 +86,7 @@ import Foundation
     }
 }
 
-extension CardDataModel {
+extension WordDataModel {
     func reviewSuccess() {
         self.consecutiveReviewSuccessStreak = ConsecutiveReviewSuccessStreak.init(rawValue: self.consecutiveReviewSuccessStreak.rawValue + 1) ?? ConsecutiveReviewSuccessStreak.zero
         self.recentViewDate = .now
@@ -103,28 +103,28 @@ extension CardDataModel {
     }
 }
 
-extension CardDataModel {
-    static var card: [CardDataModel] =
+extension WordDataModel {
+    static var card: [WordDataModel] =
     [
-        CardDataModel(
+        WordDataModel(
             originalWord: "conversation",
             koreanDefinition: "대화",
             englishDefinition: "oral exchange of sentiments, observations, opinions, or ideas",
             exampleSentence: "I like having conversations with my friend."
         ),
-        CardDataModel(
+        WordDataModel(
             originalWord: "acknowledge",
             koreanDefinition: "인정하다",
             englishDefinition: "accept or admit the existence or truth of",
             exampleSentence: "She acknowledged that she was at fault."
         ),
-        CardDataModel(
+        WordDataModel(
             originalWord: "inspiration",
             koreanDefinition: "영감",
             englishDefinition: "the process of being mentally stimulated to do or feel something",
             exampleSentence: "His talk was an inspiration to me."
         ),
-        CardDataModel(
+        WordDataModel(
             originalWord: "meticulous",
             koreanDefinition: "세심한",
             englishDefinition: "showing great attention to detail; very careful and precise",

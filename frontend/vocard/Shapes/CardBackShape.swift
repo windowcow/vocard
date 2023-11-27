@@ -43,6 +43,19 @@ struct CardBackShape: Shape {
     }
 }
 
+
+struct CardShape: View {
+    var side: CardSide
+    
+    var body: some View {
+        if side == .front {
+            CardFrontShape()
+        } else {
+            CardBackShape()
+        }
+    }
+}
+
 #Preview {
     CardBackShape()
 }
