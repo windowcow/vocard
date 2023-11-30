@@ -18,6 +18,8 @@ import SwiftData
         self.unseenCardDeck = unseenCardDeck
     }
     
+    
+    
     func changeCurrentCard(_ isCurrentCardReviewSuccess: Bool) {
         // 이전 카드 다루기
         if let currentCard = self.currentCard {
@@ -51,3 +53,19 @@ import SwiftData
 }
 
 
+extension Deck {
+    static var sample: Deck {
+        print(1)
+
+        let deck = Deck(seenCardDeck: MaxHeap(elements: []), unseenCardDeck: [])
+        let wordSamples = WordDataModel.samples
+        print(444)
+
+        deck.unseenCardDeck.append(contentsOf: wordSamples)
+        print(4)
+//        deck.changeCurrentCard(true)
+        print(5)
+        print(1)
+        return deck
+    }
+}

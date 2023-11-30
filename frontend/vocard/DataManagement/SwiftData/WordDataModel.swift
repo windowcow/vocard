@@ -19,7 +19,7 @@ import Foundation
     var englishDefinition: String // 영어 뜻
     var exampleSentence: String // 영어 예문
     
-    var quizes = [QuizDataModel]()
+    var quizzes = [QuizDataModel]()
     
     
     
@@ -60,6 +60,10 @@ import Foundation
         self.englishDefinition = englishDefinition
         self.exampleSentence = exampleSentence
     }
+    
+    
+        
+        
     
     
     enum ConsecutiveReviewSuccessStreak: Int, Codable {
@@ -133,6 +137,22 @@ extension WordDataModel {
         )
     ]
     
+}
+
+extension WordDataModel {
+    static var samples: [WordDataModel] {
+        var res: [WordDataModel] = []
+        QuizDataModel.samples.forEach { quiz in
+            let word = WordDataModel(originalWord: "sample", koreanDefinition: "샘플", englishDefinition: "sample",
+                                     exampleSentence: "sample")
+            word.quizzes.append(quiz)
+            print(6)
+            res.append(word)
+            
+        }
+        print(2)
+        return res
+    }
 }
 
 extension TimeInterval {

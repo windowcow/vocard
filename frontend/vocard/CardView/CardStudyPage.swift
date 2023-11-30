@@ -153,7 +153,7 @@ struct CardStudyPage: View {
                     }
                     Button {
                         if let selectedOption = viewModel.selectedOption  {
-                            if selectedOption == currentCard.quizes.first!.answer {
+                            if selectedOption == currentCard.quizzes.first!.answer {
                                 currentCard.reviewSuccess()
                             } else {
                                 currentCard.reviewFail()
@@ -176,7 +176,7 @@ struct CardStudyPage: View {
                         viewModel.selectedOption = nil
                     } content: {
                         if let selectedOption = viewModel.selectedOption  {
-                            if selectedOption == currentCard.quizes.first!.answer {
+                            if selectedOption == currentCard.quizzes.first!.answer {
                                 VStack {
                                     Text("맞았습니다.")
                                     Button("확인") {
@@ -412,7 +412,7 @@ struct CardStudyPage: View {
                         .padding()
                         .font(.largeTitle)
                         .bold()
-                    Text(currentCard.quizes.first!.question)
+                    Text(currentCard.quizzes.first!.question)
                         .frame(width: 213)
                 }
                 .padding(.horizontal, 20)
@@ -420,20 +420,20 @@ struct CardStudyPage: View {
                 VStack(spacing: 20) {
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.quizes.first!,
+                                 quiz: currentCard.quizzes.first!,
                                  currentOptionNumber: 1)
                     
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.quizes.first!,
+                                 quiz: currentCard.quizzes.first!,
                                  currentOptionNumber: 2)
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.quizes.first!,
+                                 quiz: currentCard.quizzes.first!,
                                  currentOptionNumber: 3)
                     OptionButton(selectedOption: $viewModel.selectedOption,
                                  isScored: viewModel.isScored,
-                                 quiz: currentCard.quizes.first!,
+                                 quiz: currentCard.quizzes.first!,
                                  currentOptionNumber: 4)
                 }
             }
