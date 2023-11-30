@@ -8,15 +8,16 @@
 import SwiftData
 import Foundation
 
-@Model class WordDataModel {
+@Model class WordDataModel: Comparable {
+    static func < (lhs: WordDataModel, rhs: WordDataModel) -> Bool {
+        return lhs.weight < rhs.weight
+    }
+    
     
     var originalWord: String // 영어 단어
     var koreanDefinition: String // 한글 뜻 (이 경우에는 사진에 나타나지 않으므로 옵셔널로 표시)
     var englishDefinition: String // 영어 뜻
     var exampleSentence: String // 영어 예문
-    
-    
-    
     
     var quizes = [QuizDataModel]()
     

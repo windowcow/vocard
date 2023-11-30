@@ -6,13 +6,19 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @Observable class CardPageViewModel {
     var cardViewStatus: CardViewStatus = .front(.middle)
+    
+    func resetVM() {
+        cardViewStatus = .front(.middle)
+    }
 }
 
 struct CardPage: View {
     @Environment(CardPageViewModel.self) var vm
+    @Query var deck: [Deck]
     
     var body: some View {
         VStack {
@@ -220,16 +226,50 @@ struct CardPage_CardView_CardForeground: View {
 struct CardPage_CardView_CardForeground_CardFront_Middle: View {
     let word: String = "Consecutive"
     let stars: String = "★★★★★"
+    @Query var deck: [Deck]
 
     var body: some View {
         GeometryReader {
-            Text(stars)
+            StarView(consecutiveReviewSuccessStreak: deck.first?.currentCard?.consecutiveReviewSuccessStreak ?? .zero)
                 .position(CardView_ComponentPosition.star(.front(.middle)).position($0))
-            Text(word)
+            Text(deck.first?.currentCard?.originalWord ?? "No Current Card")
                 .position(x: $0.size.width / 2, y: $0.size.height / 2)
 
         }
     }
+}
+
+
+struct StarView: View {
+    var consecutiveReviewSuccessStreak: WordDataModel.ConsecutiveReviewSuccessStreak
+    
+    var body: some View {
+        let text = switch consecutiveReviewSuccessStreak {
+        case .zero:
+            "☆☆☆☆☆"
+        case .one:
+            "★☆☆☆☆"
+
+        case .two:
+            "★★☆☆☆"
+
+        case .three:
+            "★★★☆☆"
+
+        case .four:
+            "★★★★☆"
+
+        case .five:
+            "★★★★★"
+
+        case .six:
+            "★★★★★"
+
+        }
+        
+        return Text(text).font(.title).foregroundStyle(.yellow)
+    }
+    
 }
 
 struct CardPage_CardView_CardForeground_CardFront_Left: View {
@@ -273,15 +313,17 @@ struct CardPage_CardView_CardForeground_CardDetail: View {
     let image = "SampleImage"
     let exampleSentence = "I like having conversation with my friend."
     
+    @Query var deck: [Deck]
+    
     var body: some View {
         GeometryReader { g in
-            Text(stars)
+            StarView(consecutiveReviewSuccessStreak: deck.first?.currentCard?.consecutiveReviewSuccessStreak ?? .zero)
                 .position(CardView_ComponentPosition.star(.back(.detail)).position(g))
             VStack {
-                Text(word)
+                Text(deck.first?.currentCard?.originalWord ?? "No current Card")
                     .font(.largeTitle)
                 
-                Text(definition)
+                Text(deck.first?.currentCard?.koreanDefinition ?? "")
                     
                     .frame(width: g.size.width * 0.9)
                     .padding(.vertical)
@@ -296,7 +338,7 @@ struct CardPage_CardView_CardForeground_CardDetail: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: g.size.width * 0.65)
-                    Text(exampleSentence)
+                    Text(deck.first?.currentCard?.exampleSentence ?? "")
                 }
                 .padding()
                 .frame(width: g.size.width * 0.9)
@@ -332,6 +374,7 @@ struct CardPage_CardView_CardForeground_CardQuiz: View {
 
 struct CardPage_Bottom: View {
     @Environment(CardPageViewModel.self) private var vm
+    @Query var deck: [Deck]
 
     var body: some View {
         switch vm.cardViewStatus {
@@ -339,7 +382,10 @@ struct CardPage_Bottom: View {
             EmptyView()
         case .back(.detail):
             Button {
-                
+                // 카드 바꾸고
+                deck.first?.changeCurrentCard(false)
+                // VM 바꾸고
+                vm.resetVM()
             } label: {
                 Text("NEXT")
                     .foregroundStyle(.white)
