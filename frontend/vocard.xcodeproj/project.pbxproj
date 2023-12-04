@@ -7,78 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8801CB1A2AF253E0008F6D8F /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB132AF253E0008F6D8F /* MyPageView.swift */; };
-		8801CB1B2AF253E0008F6D8F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB142AF253E0008F6D8F /* HomeView.swift */; };
-		8801CB1F2AF253E0008F6D8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8801CB182AF253E0008F6D8F /* Assets.xcassets */; };
-		8801CB202AF253E0008F6D8F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB192AF253E0008F6D8F /* LoginView.swift */; };
-		8801CB2A2AF2568A008F6D8F /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB252AF2568A008F6D8F /* CardDetailView.swift */; };
-		8801CB2B2AF2568A008F6D8F /* CardQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB262AF2568A008F6D8F /* CardQuizView.swift */; };
-		8801CB3A2AF2576D008F6D8F /* CardBackShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB372AF2576D008F6D8F /* CardBackShape.swift */; };
-		8801CB3B2AF2576D008F6D8F /* SubmitButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB382AF2576D008F6D8F /* SubmitButtonShape.swift */; };
-		8801CB3C2AF2576D008F6D8F /* CardFrontShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB362AF2576D008F6D8F /* CardFrontShape.swift */; };
-		8801CB3D2AF2576D008F6D8F /* PassButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8801CB392AF2576D008F6D8F /* PassButtonShape.swift */; };
-		880676CF2B145C45008DB812 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880676CE2B145C45008DB812 /* Enums.swift */; };
-		880676D32B145D04008DB812 /* CardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880676D22B145D04008DB812 /* CardPage.swift */; };
-		880676D52B149C1F008DB812 /* MaxHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880676D42B149C1F008DB812 /* MaxHeap.swift */; };
-		880676D82B149C47008DB812 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880676D72B149C47008DB812 /* Deck.swift */; };
-		881602D62B0353880026F5EB /* SampleContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881602D52B0353880026F5EB /* SampleContainer.swift */; };
-		881602D82B0353C20026F5EB /* QuizDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881602D72B0353C20026F5EB /* QuizDataModel.swift */; };
-		88282B012AF5F12A00BADCBC /* AlarmPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88282B002AF5F12A00BADCBC /* AlarmPage.swift */; };
-		883327292AE219E7003D3E6F /* vocardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883327282AE219E7003D3E6F /* vocardApp.swift */; };
-		8833273B2AE26203003D3E6F /* WordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8833273A2AE26203003D3E6F /* WordDataModel.swift */; };
-		8843DD2E2AF4FEA90047FCF3 /* CardDetailAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843DD2D2AF4FEA90047FCF3 /* CardDetailAddView.swift */; };
-		8847B5C72AEBAC580026D8DF /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = 8847B5C22AEBAC580026D8DF /* Preview Content */; };
-		884A773E2AF62C3800FC5685 /* NextButtonShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884A773D2AF62C3800FC5685 /* NextButtonShape.swift */; };
-		887D0B4B2AEBD4F700231570 /* CardStudyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887D0B4A2AEBD4F700231570 /* CardStudyPage.swift */; };
-		88925E6E2B05E2E50030B282 /* UserSettingsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88925E6D2B05E2E50030B282 /* UserSettingsDataModel.swift */; };
-		88925E702B05EC080030B282 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88925E6F2B05EC080030B282 /* Array+Extensions.swift */; };
-		88925E722B05F7940030B282 /* DeckDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88925E712B05F7940030B282 /* DeckDataModel.swift */; };
-		889A4C672B18AEE0001DD924 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A4C662B18AEE0001DD924 /* MainPage.swift */; };
-		88ABCA762AF9E55A00A7978F /* CardBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABCA752AF9E55A00A7978F /* CardBackgroundView.swift */; };
-		88ABCA7E2AFE8B0F00A7978F /* View-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABCA7D2AFE8B0F00A7978F /* View-Extensions.swift */; };
-		88B2D2892AF86DD60055BAC7 /* CardSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2D2882AF86DD60055BAC7 /* CardSide.swift */; };
-		88D0F0222B1A016F0088424D /* MainPage_Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0F0212B1A016F0088424D /* MainPage_Top.swift */; };
-		88D0F0242B1A019B0088424D /* MainPage_Middle_StarCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0F0232B1A019B0088424D /* MainPage_Middle_StarCount.swift */; };
-		88D0F0262B1A01F40088424D /* ReviewResultDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0F0252B1A01F40088424D /* ReviewResultDataModel.swift */; };
-		88D0F0282B1A026F0088424D /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D0F0272B1A026F0088424D /* Date+Extensions.swift */; };
+		888B57CE2B1DAA9600117801 /* CardStudyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57AD2B1DAA9600117801 /* CardStudyPage.swift */; };
+		888B57CF2B1DAA9600117801 /* CardStudyPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57AE2B1DAA9600117801 /* CardStudyPage_Middle.swift */; };
+		888B57D02B1DAA9600117801 /* CardStudyPage_Bottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57AF2B1DAA9600117801 /* CardStudyPage_Bottom.swift */; };
+		888B57D12B1DAA9600117801 /* CardStudyPage_Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B02B1DAA9600117801 /* CardStudyPage_Top.swift */; };
+		888B57D22B1DAA9600117801 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B12B1DAA9600117801 /* RootView.swift */; };
+		888B57D32B1DAA9600117801 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B32B1DAA9600117801 /* MainPage.swift */; };
+		888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B42B1DAA9600117801 /* MainPage_Middle.swift */; };
+		888B57D52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift */; };
+		888B57D62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift */; };
+		888B57D72B1DAA9600117801 /* MainPage_Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B72B1DAA9600117801 /* MainPage_Top.swift */; };
+		888B57D82B1DAA9600117801 /* SampleModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B82B1DAA9600117801 /* SampleModelContainer.swift */; };
+		888B57D92B1DAA9600117801 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888B57B92B1DAA9600117801 /* Assets.xcassets */; };
+		888B57DA2B1DAA9600117801 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BB2B1DAA9600117801 /* Int+.swift */; };
+		888B57DB2B1DAA9600117801 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BC2B1DAA9600117801 /* Array+.swift */; };
+		888B57DC2B1DAA9600117801 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BD2B1DAA9600117801 /* Date+.swift */; };
+		888B57DD2B1DAA9600117801 /* Array+CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BE2B1DAA9600117801 /* Array+CardDataModel.swift */; };
+		888B57DE2B1DAA9600117801 /* ReviewResultDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C12B1DAA9600117801 /* ReviewResultDataModel.swift */; };
+		888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C22B1DAA9600117801 /* CardDataModel.swift */; };
+		888B57E02B1DAA9600117801 /* CardDataModel+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */; };
+		888B57E12B1DAA9600117801 /* ReviewResultDataModel+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */; };
+		888B57E22B1DAA9600117801 /* ExampleSentenceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C62B1DAA9600117801 /* ExampleSentenceDataModel.swift */; };
+		888B57E32B1DAA9600117801 /* TargetWordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C72B1DAA9600117801 /* TargetWordDataModel.swift */; };
+		888B57E42B1DAA9700117801 /* QuizDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C82B1DAA9600117801 /* QuizDataModel.swift */; };
+		888B57E52B1DAA9700117801 /* IllustrationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C92B1DAA9600117801 /* IllustrationDataModel.swift */; };
+		888B57E62B1DAA9700117801 /* WordMeaningDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57CA2B1DAA9600117801 /* WordMeaningDataModel.swift */; };
+		888B57E72B1DAA9700117801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888B57CC2B1DAA9600117801 /* Preview Assets.xcassets */; };
+		888B57E82B1DAA9700117801 /* vocardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57CD2B1DAA9600117801 /* vocardApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8801CB132AF253E0008F6D8F /* MyPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
-		8801CB142AF253E0008F6D8F /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		8801CB182AF253E0008F6D8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8801CB192AF253E0008F6D8F /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		8801CB252AF2568A008F6D8F /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
-		8801CB262AF2568A008F6D8F /* CardQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardQuizView.swift; sourceTree = "<group>"; };
-		8801CB362AF2576D008F6D8F /* CardFrontShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFrontShape.swift; sourceTree = "<group>"; };
-		8801CB372AF2576D008F6D8F /* CardBackShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackShape.swift; sourceTree = "<group>"; };
-		8801CB382AF2576D008F6D8F /* SubmitButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonShape.swift; sourceTree = "<group>"; };
-		8801CB392AF2576D008F6D8F /* PassButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassButtonShape.swift; sourceTree = "<group>"; };
-		880676CE2B145C45008DB812 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		880676D22B145D04008DB812 /* CardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPage.swift; sourceTree = "<group>"; };
-		880676D42B149C1F008DB812 /* MaxHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxHeap.swift; sourceTree = "<group>"; };
-		880676D72B149C47008DB812 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
-		881602D52B0353880026F5EB /* SampleContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleContainer.swift; sourceTree = "<group>"; };
-		881602D72B0353C20026F5EB /* QuizDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDataModel.swift; sourceTree = "<group>"; };
-		88282B002AF5F12A00BADCBC /* AlarmPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPage.swift; sourceTree = "<group>"; };
 		883327252AE219E7003D3E6F /* vocard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		883327282AE219E7003D3E6F /* vocardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vocardApp.swift; sourceTree = "<group>"; };
-		8833273A2AE26203003D3E6F /* WordDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDataModel.swift; sourceTree = "<group>"; };
-		8843DD2D2AF4FEA90047FCF3 /* CardDetailAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailAddView.swift; sourceTree = "<group>"; };
-		8847B5C22AEBAC580026D8DF /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
-		884A773D2AF62C3800FC5685 /* NextButtonShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButtonShape.swift; sourceTree = "<group>"; };
-		887D0B4A2AEBD4F700231570 /* CardStudyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStudyPage.swift; sourceTree = "<group>"; };
-		88925E6D2B05E2E50030B282 /* UserSettingsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsDataModel.swift; sourceTree = "<group>"; };
-		88925E6F2B05EC080030B282 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
-		88925E712B05F7940030B282 /* DeckDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckDataModel.swift; sourceTree = "<group>"; };
-		889A4C662B18AEE0001DD924 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
-		88ABCA752AF9E55A00A7978F /* CardBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBackgroundView.swift; sourceTree = "<group>"; };
-		88ABCA7D2AFE8B0F00A7978F /* View-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-Extensions.swift"; sourceTree = "<group>"; };
-		88B2D2882AF86DD60055BAC7 /* CardSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSide.swift; sourceTree = "<group>"; };
-		88D0F0212B1A016F0088424D /* MainPage_Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage_Top.swift; sourceTree = "<group>"; };
-		88D0F0232B1A019B0088424D /* MainPage_Middle_StarCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage_Middle_StarCount.swift; sourceTree = "<group>"; };
-		88D0F0252B1A01F40088424D /* ReviewResultDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewResultDataModel.swift; sourceTree = "<group>"; };
-		88D0F0272B1A026F0088424D /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vocard-Bridging-Header.h"; sourceTree = "<group>"; };
+		888B57AD2B1DAA9600117801 /* CardStudyPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage.swift; sourceTree = "<group>"; };
+		888B57AE2B1DAA9600117801 /* CardStudyPage_Middle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle.swift; sourceTree = "<group>"; };
+		888B57AF2B1DAA9600117801 /* CardStudyPage_Bottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Bottom.swift; sourceTree = "<group>"; };
+		888B57B02B1DAA9600117801 /* CardStudyPage_Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Top.swift; sourceTree = "<group>"; };
+		888B57B12B1DAA9600117801 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		888B57B32B1DAA9600117801 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		888B57B42B1DAA9600117801 /* MainPage_Middle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage_Middle.swift; sourceTree = "<group>"; };
+		888B57B52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage_Middle_WeekChart.swift; sourceTree = "<group>"; };
+		888B57B62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage_Bottom_NextWord.swift; sourceTree = "<group>"; };
+		888B57B72B1DAA9600117801 /* MainPage_Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage_Top.swift; sourceTree = "<group>"; };
+		888B57B82B1DAA9600117801 /* SampleModelContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleModelContainer.swift; sourceTree = "<group>"; };
+		888B57B92B1DAA9600117801 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		888B57BB2B1DAA9600117801 /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		888B57BC2B1DAA9600117801 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		888B57BD2B1DAA9600117801 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		888B57BE2B1DAA9600117801 /* Array+CardDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CardDataModel.swift"; sourceTree = "<group>"; };
+		888B57C12B1DAA9600117801 /* ReviewResultDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewResultDataModel.swift; sourceTree = "<group>"; };
+		888B57C22B1DAA9600117801 /* CardDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDataModel.swift; sourceTree = "<group>"; };
+		888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardDataModel+Sample.swift"; sourceTree = "<group>"; };
+		888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReviewResultDataModel+Samples.swift"; sourceTree = "<group>"; };
+		888B57C62B1DAA9600117801 /* ExampleSentenceDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSentenceDataModel.swift; sourceTree = "<group>"; };
+		888B57C72B1DAA9600117801 /* TargetWordDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetWordDataModel.swift; sourceTree = "<group>"; };
+		888B57C82B1DAA9600117801 /* QuizDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizDataModel.swift; sourceTree = "<group>"; };
+		888B57C92B1DAA9600117801 /* IllustrationDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IllustrationDataModel.swift; sourceTree = "<group>"; };
+		888B57CA2B1DAA9600117801 /* WordMeaningDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordMeaningDataModel.swift; sourceTree = "<group>"; };
+		888B57CC2B1DAA9600117801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		888B57CD2B1DAA9600117801 /* vocardApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vocardApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,57 +79,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8801CB352AF256F2008F6D8F /* CardView */ = {
-			isa = PBXGroup;
-			children = (
-				887D0B4A2AEBD4F700231570 /* CardStudyPage.swift */,
-				8801CB252AF2568A008F6D8F /* CardDetailView.swift */,
-				8801CB262AF2568A008F6D8F /* CardQuizView.swift */,
-				8843DD2D2AF4FEA90047FCF3 /* CardDetailAddView.swift */,
-				88ABCA752AF9E55A00A7978F /* CardBackgroundView.swift */,
-				88B2D2882AF86DD60055BAC7 /* CardSide.swift */,
-			);
-			path = CardView;
-			sourceTree = "<group>";
-		};
-		8801CB3E2AF2577F008F6D8F /* Shapes */ = {
-			isa = PBXGroup;
-			children = (
-				8801CB372AF2576D008F6D8F /* CardBackShape.swift */,
-				8801CB362AF2576D008F6D8F /* CardFrontShape.swift */,
-				8801CB392AF2576D008F6D8F /* PassButtonShape.swift */,
-				8801CB382AF2576D008F6D8F /* SubmitButtonShape.swift */,
-				884A773D2AF62C3800FC5685 /* NextButtonShape.swift */,
-			);
-			path = Shapes;
-			sourceTree = "<group>";
-		};
-		880676CD2B145C19008DB812 /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-				880676CE2B145C45008DB812 /* Enums.swift */,
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		880676D62B149C27008DB812 /* DataStructure */ = {
-			isa = PBXGroup;
-			children = (
-				880676D42B149C1F008DB812 /* MaxHeap.swift */,
-			);
-			path = DataStructure;
-			sourceTree = "<group>";
-		};
-		881602D42B03536C0026F5EB /* DataManagement */ = {
-			isa = PBXGroup;
-			children = (
-				885B11462B03611000D6357A /* SwiftData */,
-				885B11452B03603900D6357A /* Observable */,
-				880676D62B149C27008DB812 /* DataStructure */,
-			);
-			path = DataManagement;
-			sourceTree = "<group>";
-		};
 		8833271C2AE219E7003D3E6F = {
 			isa = PBXGroup;
 			children = (
@@ -162,71 +98,100 @@
 		883327272AE219E7003D3E6F /* vocard */ = {
 			isa = PBXGroup;
 			children = (
-				883327282AE219E7003D3E6F /* vocardApp.swift */,
-				881602D42B03536C0026F5EB /* DataManagement */,
-				88ABCA7F2AFE8B1F00A7978F /* View-Extensions */,
-				8801CB3E2AF2577F008F6D8F /* Shapes */,
-				8801CB352AF256F2008F6D8F /* CardView */,
-				8801CB182AF253E0008F6D8F /* Assets.xcassets */,
-				8801CB192AF253E0008F6D8F /* LoginView.swift */,
-				8801CB142AF253E0008F6D8F /* HomeView.swift */,
-				8801CB132AF253E0008F6D8F /* MyPageView.swift */,
-				88282B002AF5F12A00BADCBC /* AlarmPage.swift */,
-				880676D22B145D04008DB812 /* CardPage.swift */,
-				8847B5C22AEBAC580026D8DF /* Preview Content */,
-				88D0F0292B1A027B0088424D /* Extensions */,
-				88D0F0202B1A01440088424D /* MainPage */,
-				880676CD2B145C19008DB812 /* Enums */,
+				888B57CD2B1DAA9600117801 /* vocardApp.swift */,
+				888B57B92B1DAA9600117801 /* Assets.xcassets */,
+				888B57BA2B1DAA9600117801 /* Extensions */,
+				888B57AB2B1DAA9600117801 /* Pages */,
+				888B57CB2B1DAA9600117801 /* Preview Content */,
+				888B57B82B1DAA9600117801 /* SampleModelContainer.swift */,
+				888B57BF2B1DAA9600117801 /* SwiftData_DataModel */,
+				888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */,
 			);
 			path = vocard;
 			sourceTree = "<group>";
 		};
-		885B11452B03603900D6357A /* Observable */ = {
+		888B57AB2B1DAA9600117801 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				888B57AC2B1DAA9600117801 /* CardStudyPage */,
+				888B57B12B1DAA9600117801 /* RootView.swift */,
+				888B57B22B1DAA9600117801 /* MainPage */,
 			);
-			path = Observable;
+			path = Pages;
 			sourceTree = "<group>";
 		};
-		885B11462B03611000D6357A /* SwiftData */ = {
+		888B57AC2B1DAA9600117801 /* CardStudyPage */ = {
 			isa = PBXGroup;
 			children = (
-				881602D52B0353880026F5EB /* SampleContainer.swift */,
-				88925E6D2B05E2E50030B282 /* UserSettingsDataModel.swift */,
-				8833273A2AE26203003D3E6F /* WordDataModel.swift */,
-				880676D72B149C47008DB812 /* Deck.swift */,
-				881602D72B0353C20026F5EB /* QuizDataModel.swift */,
-				88925E712B05F7940030B282 /* DeckDataModel.swift */,
-				88D0F0252B1A01F40088424D /* ReviewResultDataModel.swift */,
+				888B57AD2B1DAA9600117801 /* CardStudyPage.swift */,
+				888B57AE2B1DAA9600117801 /* CardStudyPage_Middle.swift */,
+				888B57AF2B1DAA9600117801 /* CardStudyPage_Bottom.swift */,
+				888B57B02B1DAA9600117801 /* CardStudyPage_Top.swift */,
 			);
-			path = SwiftData;
+			path = CardStudyPage;
 			sourceTree = "<group>";
 		};
-		88ABCA7F2AFE8B1F00A7978F /* View-Extensions */ = {
+		888B57B22B1DAA9600117801 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				88ABCA7D2AFE8B0F00A7978F /* View-Extensions.swift */,
-				88925E6F2B05EC080030B282 /* Array+Extensions.swift */,
-			);
-			path = "View-Extensions";
-			sourceTree = "<group>";
-		};
-		88D0F0202B1A01440088424D /* MainPage */ = {
-			isa = PBXGroup;
-			children = (
-				889A4C662B18AEE0001DD924 /* MainPage.swift */,
-				88D0F0232B1A019B0088424D /* MainPage_Middle_StarCount.swift */,
-				88D0F0212B1A016F0088424D /* MainPage_Top.swift */,
+				888B57B32B1DAA9600117801 /* MainPage.swift */,
+				888B57B42B1DAA9600117801 /* MainPage_Middle.swift */,
+				888B57B52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift */,
+				888B57B62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift */,
+				888B57B72B1DAA9600117801 /* MainPage_Top.swift */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
 		};
-		88D0F0292B1A027B0088424D /* Extensions */ = {
+		888B57BA2B1DAA9600117801 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				88D0F0272B1A026F0088424D /* Date+Extensions.swift */,
+				888B57BB2B1DAA9600117801 /* Int+.swift */,
+				888B57BC2B1DAA9600117801 /* Array+.swift */,
+				888B57BD2B1DAA9600117801 /* Date+.swift */,
+				888B57BE2B1DAA9600117801 /* Array+CardDataModel.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		888B57BF2B1DAA9600117801 /* SwiftData_DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				888B57C02B1DAA9600117801 /* User_Data */,
+				888B57C52B1DAA9600117801 /* Non_User_Data */,
+			);
+			path = SwiftData_DataModel;
+			sourceTree = "<group>";
+		};
+		888B57C02B1DAA9600117801 /* User_Data */ = {
+			isa = PBXGroup;
+			children = (
+				888B57C12B1DAA9600117801 /* ReviewResultDataModel.swift */,
+				888B57C22B1DAA9600117801 /* CardDataModel.swift */,
+				888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */,
+				888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */,
+			);
+			path = User_Data;
+			sourceTree = "<group>";
+		};
+		888B57C52B1DAA9600117801 /* Non_User_Data */ = {
+			isa = PBXGroup;
+			children = (
+				888B57C62B1DAA9600117801 /* ExampleSentenceDataModel.swift */,
+				888B57C72B1DAA9600117801 /* TargetWordDataModel.swift */,
+				888B57C82B1DAA9600117801 /* QuizDataModel.swift */,
+				888B57C92B1DAA9600117801 /* IllustrationDataModel.swift */,
+				888B57CA2B1DAA9600117801 /* WordMeaningDataModel.swift */,
+			);
+			path = Non_User_Data;
+			sourceTree = "<group>";
+		};
+		888B57CB2B1DAA9600117801 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				888B57CC2B1DAA9600117801 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +226,7 @@
 				TargetAttributes = {
 					883327242AE219E7003D3E6F = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -287,8 +253,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8847B5C72AEBAC580026D8DF /* Preview Content in Resources */,
-				8801CB1F2AF253E0008F6D8F /* Assets.xcassets in Resources */,
+				888B57E72B1DAA9700117801 /* Preview Assets.xcassets in Resources */,
+				888B57D92B1DAA9600117801 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,38 +265,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88ABCA7E2AFE8B0F00A7978F /* View-Extensions.swift in Sources */,
-				8801CB2A2AF2568A008F6D8F /* CardDetailView.swift in Sources */,
-				88925E6E2B05E2E50030B282 /* UserSettingsDataModel.swift in Sources */,
-				88ABCA762AF9E55A00A7978F /* CardBackgroundView.swift in Sources */,
-				881602D62B0353880026F5EB /* SampleContainer.swift in Sources */,
-				88282B012AF5F12A00BADCBC /* AlarmPage.swift in Sources */,
-				8801CB3C2AF2576D008F6D8F /* CardFrontShape.swift in Sources */,
-				88D0F0222B1A016F0088424D /* MainPage_Top.swift in Sources */,
-				88925E702B05EC080030B282 /* Array+Extensions.swift in Sources */,
-				88D0F0282B1A026F0088424D /* Date+Extensions.swift in Sources */,
-				8801CB2B2AF2568A008F6D8F /* CardQuizView.swift in Sources */,
-				88D0F0242B1A019B0088424D /* MainPage_Middle_StarCount.swift in Sources */,
-				8801CB1A2AF253E0008F6D8F /* MyPageView.swift in Sources */,
-				881602D82B0353C20026F5EB /* QuizDataModel.swift in Sources */,
-				8801CB3B2AF2576D008F6D8F /* SubmitButtonShape.swift in Sources */,
-				88925E722B05F7940030B282 /* DeckDataModel.swift in Sources */,
-				8833273B2AE26203003D3E6F /* WordDataModel.swift in Sources */,
-				880676D52B149C1F008DB812 /* MaxHeap.swift in Sources */,
-				887D0B4B2AEBD4F700231570 /* CardStudyPage.swift in Sources */,
-				88B2D2892AF86DD60055BAC7 /* CardSide.swift in Sources */,
-				8843DD2E2AF4FEA90047FCF3 /* CardDetailAddView.swift in Sources */,
-				880676D82B149C47008DB812 /* Deck.swift in Sources */,
-				889A4C672B18AEE0001DD924 /* MainPage.swift in Sources */,
-				8801CB202AF253E0008F6D8F /* LoginView.swift in Sources */,
-				8801CB3A2AF2576D008F6D8F /* CardBackShape.swift in Sources */,
-				884A773E2AF62C3800FC5685 /* NextButtonShape.swift in Sources */,
-				8801CB3D2AF2576D008F6D8F /* PassButtonShape.swift in Sources */,
-				880676D32B145D04008DB812 /* CardPage.swift in Sources */,
-				88D0F0262B1A01F40088424D /* ReviewResultDataModel.swift in Sources */,
-				8801CB1B2AF253E0008F6D8F /* HomeView.swift in Sources */,
-				880676CF2B145C45008DB812 /* Enums.swift in Sources */,
-				883327292AE219E7003D3E6F /* vocardApp.swift in Sources */,
+				888B57E12B1DAA9600117801 /* ReviewResultDataModel+Samples.swift in Sources */,
+				888B57E82B1DAA9700117801 /* vocardApp.swift in Sources */,
+				888B57DB2B1DAA9600117801 /* Array+.swift in Sources */,
+				888B57E02B1DAA9600117801 /* CardDataModel+Sample.swift in Sources */,
+				888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */,
+				888B57DE2B1DAA9600117801 /* ReviewResultDataModel.swift in Sources */,
+				888B57D12B1DAA9600117801 /* CardStudyPage_Top.swift in Sources */,
+				888B57CE2B1DAA9600117801 /* CardStudyPage.swift in Sources */,
+				888B57D82B1DAA9600117801 /* SampleModelContainer.swift in Sources */,
+				888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */,
+				888B57E22B1DAA9600117801 /* ExampleSentenceDataModel.swift in Sources */,
+				888B57D72B1DAA9600117801 /* MainPage_Top.swift in Sources */,
+				888B57D62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift in Sources */,
+				888B57DC2B1DAA9600117801 /* Date+.swift in Sources */,
+				888B57E32B1DAA9600117801 /* TargetWordDataModel.swift in Sources */,
+				888B57DD2B1DAA9600117801 /* Array+CardDataModel.swift in Sources */,
+				888B57CF2B1DAA9600117801 /* CardStudyPage_Middle.swift in Sources */,
+				888B57D02B1DAA9600117801 /* CardStudyPage_Bottom.swift in Sources */,
+				888B57D22B1DAA9600117801 /* RootView.swift in Sources */,
+				888B57D32B1DAA9600117801 /* MainPage.swift in Sources */,
+				888B57E62B1DAA9700117801 /* WordMeaningDataModel.swift in Sources */,
+				888B57D52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift in Sources */,
+				888B57E42B1DAA9700117801 /* QuizDataModel.swift in Sources */,
+				888B57DA2B1DAA9600117801 /* Int+.swift in Sources */,
+				888B57E52B1DAA9700117801 /* IllustrationDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"vocard/Preview Content\"";
@@ -480,6 +440,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.windowcow.vocard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "vocard/vocard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -490,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"vocard/Preview Content\"";
@@ -509,6 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.windowcow.vocard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "vocard/vocard-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

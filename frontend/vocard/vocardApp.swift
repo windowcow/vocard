@@ -1,22 +1,21 @@
 //
-//  vocardApp.swift
-//  vocard
+//  SwiftDataPractice2App.swift
+//  SwiftDataPractice2
 //
-//  Created by windowcow on 10/20/23.
+//  Created by windowcow on 11/30/23.
 //
 
 import SwiftUI
-import SwiftData
+
 
 @main
-struct vocardApp: App {
+struct SwiftDataPractice2App: App {
+    
 
     var body: some Scene {
         WindowGroup {
-//            CardPage()
-//                .environment(CardPageViewModel())
-            MainPage()
+            RootView()
         }
-        .modelContainer(sampleContainer)
+        .modelContainer(sharedModelContainer)
     }
 }
