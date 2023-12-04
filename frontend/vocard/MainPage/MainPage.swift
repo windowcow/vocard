@@ -19,6 +19,7 @@ struct MainPage: View {
             Spacer()
             MainPage_Middle_NextWord()
         }
+        .background(.black)
     }
 }
 
@@ -49,6 +50,14 @@ struct DateStarCount: Identifiable {
     var starCount: Int
 }
 
+extension Date {
+    func getYearMonthDayWeekDayDateComponent() -> DateComponents {
+        return Calendar.autoupdatingCurrent.dateComponents([.year, .month, .day, .weekday], from: self)
+    }
+    
+//    func getNDayFromNowIncludingToday() -> [Date]
+}
+
 
 struct MainPage_Middle_StarCount: View {
     @Query var reviewResult: [ReviewResult]
@@ -61,11 +70,23 @@ struct MainPage_Middle_StarCount: View {
                 ForEach(data) { data in
                     BarMark(x: .value("", data.date),
                             y: .value("", data.starCount))
+                    
                 }
             }
             .chartXAxis {
-                AxisMarks(format: .dateTime.weekday(.abbreviated).locale(Locale(identifier: "ko_KR")), position: .bottom, values: [0, 1, 2, 3, 4, 5, 6, 7].map{Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: Date.now.addingTimeInterval(-TimeInterval.Day * $0))!})
-//                AxisT
+                AxisMarks(position: .bottom ,values: [0, 1, 2, 3, 4, 5, 6, 7].map{Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: Date.now.addingTimeInterval(-TimeInterval.Day * $0))!}) { value in
+                    if let date = value.as(Date.self) {
+                        AxisValueLabel {
+                            Text(date, format: .dateTime.weekday(.abbreviated).locale(Locale(identifier: "ko_KR")))
+                        }
+                        AxisTick(centered: true)
+                        AxisGridLine()
+
+                    }
+                    
+                }
+//                AxisMarks(format: .dateTime.weekday(.abbreviated).locale(Locale(identifier: "ko_KR")), position: .bottom, values: [0, 1, 2, 3, 4, 5, 6, 7].map{Calendar.current.date(bySettingHour: 12, minute: 0, second: 0, of: Date.now.addingTimeInterval(-TimeInterval.Day * $0))!})
+////                AxisTick(centered: true)
             }
             .padding()
             .frame(maxHeight: 300)
