@@ -127,10 +127,10 @@
 		888B57AC2B1DAA9600117801 /* CardStudyPage */ = {
 			isa = PBXGroup;
 			children = (
+				8829CBB82B1E29610071C5CA /* CardMovementModifier.swift */,
 				888B57EF2B1DB53500117801 /* CardStudyPage.swift */,
 				888B57EB2B1DB53500117801 /* CardStudyPage_Top.swift */,
 				888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */,
-				8829CBB82B1E29610071C5CA /* CardMovementModifier.swift */,
 				888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */,
 				888B57EC2B1DB53500117801 /* CardStudyPage_Bottom.swift */,
 			);

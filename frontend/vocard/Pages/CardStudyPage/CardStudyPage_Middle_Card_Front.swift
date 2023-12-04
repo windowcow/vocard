@@ -20,17 +20,34 @@ struct CardStudyPage_Middle_Card_Front: View {
                 CardBackgroundView(backgroundColor: .mint)
                     .overlay {
                         Text(headword)
+                            .rotation3DEffect(
+                                .degrees(0),
+                                                      
+                                axis: (x: 0.0, y: 1.0, z: 0.0)
+                            )
+                            
                     }
             case .left:
                 CardBackgroundView(backgroundColor: .gray)
                     .overlay {
                         Text("DETAIL")
+                            .rotation3DEffect(
+                                .degrees(180),
+                                                      
+                                axis: (x: 0.0, y: 1.0, z: 0.0)
+                            )
+                        
                     }
                 
             case .right:
                 CardBackgroundView(backgroundColor: .gray)
                     .overlay {
                         Text("QUIZ")
+                            .rotation3DEffect(
+                                .degrees(180),
+                                                      
+                                axis: (x: 0.0, y: 1.0, z: 0.0)
+                            )
                     }
             }
         }

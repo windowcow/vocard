@@ -18,6 +18,7 @@ struct CardStudyPage: View {
             VStack {
                 CardStudyPage_Top()
                 CardStudyPage_Middle(cardViewStatus: $cardViewStatus)
+                    .padding()
                 CardStudyPage_Bottom()
             }
             .environment(cardStudyPageViewModel)

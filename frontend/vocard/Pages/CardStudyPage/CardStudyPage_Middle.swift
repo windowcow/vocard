@@ -13,12 +13,10 @@ struct CardStudyPage_Middle: View {
     @Binding var cardViewStatus: CardViewStatus
     
     var body: some View {
-        GeometryReader { g in
-            ZStack {
-                Color.clear
-                CardStudyPage_Middle_Card( cardViewStatus: $cardViewStatus)
-                
-            }
+        ZStack {
+            Color.clear
+            CardStudyPage_Middle_Card( cardViewStatus: $cardViewStatus)
+            
         }
     }
 }
