@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8829CBB92B1E29610071C5CA /* CardMovementModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBB82B1E29610071C5CA /* CardMovementModifier.swift */; };
 		888B57D22B1DAA9600117801 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B12B1DAA9600117801 /* RootView.swift */; };
 		888B57D32B1DAA9600117801 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B32B1DAA9600117801 /* MainPage.swift */; };
 		888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B42B1DAA9600117801 /* MainPage_Middle.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8829CBB82B1E29610071C5CA /* CardMovementModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardMovementModifier.swift; sourceTree = "<group>"; };
 		883327252AE219E7003D3E6F /* vocard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vocard-Bridging-Header.h"; sourceTree = "<group>"; };
 		888B57B12B1DAA9600117801 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -125,11 +127,12 @@
 		888B57AC2B1DAA9600117801 /* CardStudyPage */ = {
 			isa = PBXGroup;
 			children = (
-				888B57EC2B1DB53500117801 /* CardStudyPage_Bottom.swift */,
-				888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */,
-				888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */,
-				888B57EB2B1DB53500117801 /* CardStudyPage_Top.swift */,
 				888B57EF2B1DB53500117801 /* CardStudyPage.swift */,
+				888B57EB2B1DB53500117801 /* CardStudyPage_Top.swift */,
+				888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */,
+				8829CBB82B1E29610071C5CA /* CardMovementModifier.swift */,
+				888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */,
+				888B57EC2B1DB53500117801 /* CardStudyPage_Bottom.swift */,
 			);
 			path = CardStudyPage;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				888B57DE2B1DAA9600117801 /* ReviewResultDataModel.swift in Sources */,
 				888B57F42B1DB53500117801 /* CardStudyPage.swift in Sources */,
 				888B57D82B1DAA9600117801 /* SampleModelContainer.swift in Sources */,
+				8829CBB92B1E29610071C5CA /* CardMovementModifier.swift in Sources */,
 				888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */,
 				888B57E22B1DAA9600117801 /* ExampleSentenceDataModel.swift in Sources */,
 				888B57D72B1DAA9600117801 /* MainPage_Top.swift in Sources */,

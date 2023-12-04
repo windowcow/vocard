@@ -10,12 +10,13 @@ import SwiftUI
 
 struct CardStudyPage_Middle: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
+    @Binding var cardViewStatus: CardViewStatus
     
     var body: some View {
         GeometryReader { g in
             ZStack {
                 Color.clear
-                CardStudyPage_Middle_Card()
+                CardStudyPage_Middle_Card( cardViewStatus: $cardViewStatus)
                 
             }
         }
@@ -24,22 +25,19 @@ struct CardStudyPage_Middle: View {
 
 struct CardStudyPage_Middle_Card: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
-    @State private var currentCardViewState: CardViewStatus = .front(.middle)
+    @State private var vm: CardStudyPageViewModel = CardStudyPageViewModel()
+    @Binding var cardViewStatus: CardViewStatus
     
     var body: some View {
-        switch currentCardViewState {
-        case .front(let currentCardFrontViewState):
-            CardStudyPage_Middle_Card_Front(currentCardFrontViewState: Binding(get: {currentCardFrontViewState},
-                                                                               set: { newValue in
-                currentCardViewState = .front(newValue)
-            }), headword: "")
-        case .back(let cardBackStatus):
-            switch cardBackStatus {
-            case .detail:
-                CardStudyPage_Middle_Card_Detail()
-            case .quiz:
-                CardStudyPage_Middle_Card_Quiz()
-            }
+        switch cardViewStatus {
+        case .front:
+            CardStudyPage_Middle_Card_Front(headword: currentCard?.targetWordDataModel.headWord ?? "Apple")
+                .environment(vm)
+                .movable(vm, $cardViewStatus)
+        case .detail:
+            CardStudyPage_Middle_Card_Detail()
+        case .quiz:
+            CardStudyPage_Middle_Card_Quiz()
         }
     }
 }
@@ -71,113 +69,20 @@ enum CardMovementLocation {
     }
 }
 
+
 enum CardViewStatus: Equatable {
-   enum CardFrontStatus {
-       case left, middle, right
-   }
-   
-   enum CardBackStatus {
-       case detail, quiz
-   }
-   
-   case front(CardFrontStatus)
-   case back(CardBackStatus)
+    case front, detail, quiz
 }
 
-enum DefinitionType {
-    case korean, english
+enum CardViewFrontStatus: Equatable {
+    case middle, left, right
 }
 
 @Observable  class CardStudyPageViewModel {
-    /// enums
-    var isCardDetailEditPresented = false
-    var definitionType: DefinitionType = .english
-    var cardViewStatus: CardViewStatus = .front(.middle)
-    
-    
-    
-    
-    /// normal datas
-    var selectedOption: Int?
-    var isScored: Bool = false
-
-    
-    /// state datas
-    var cardOffset: CGSize = .zero
-
-    
-}
-
-extension View {
-    @ViewBuilder
-    func movable(_ viewModel: CardStudyPageViewModel) -> some View {
-        self.modifier(CardMovementModifier(viewModel: viewModel))
-    }
+    var cardViewStatus: CardViewFrontStatus = .middle
 }
 
 
-struct CardMovementModifier: ViewModifier {
-    @Bindable var viewModel: CardStudyPageViewModel
-
-    @State private var isCardDetailEditPresented: Bool = false
-
-    @GestureState var offsetState: CGSize = .zero
-
-    func body(content: Content) -> some View {
-        switch viewModel.cardViewStatus {
-        case .front:
-            content
-                .visualEffect { (content, geometryProxy)  in
-                    content
-                        .offset(offsetState)
-                        .rotation3DEffect(
-                            .degrees(offsetState.width),
-                            axis: (x: 0.0, y: -1.0, z: 0.0),
-                            anchor: offsetState.width > 0 ? .trailing : .leading
-                        )
-                }
-                .animation(.spring.speed(2), value: offsetState)
-                .gesture(
-                    DragGesture()
-                        .updating($offsetState) { value, state, t in
-                            withAnimation {
-                                
-                            }
-                            state = value.translation
-
-                            switch state.width {
-    //                        case let x where CardMovementLocation.center.range ~= x:
-    //                            viewModel.cardViewStatus = .front(.middle)
-                            case let x where CardMovementLocation.left.range ~= x:
-                                viewModel.cardViewStatus = .front(.left)
-                            case let x where CardMovementLocation.right.range ~= x:
-                                viewModel.cardViewStatus = .front(.right)
-                            default:
-                                viewModel.cardViewStatus = .front(.middle)
-                            }
-                        }
-                        .onEnded { value in
-                            withAnimation {
-                                switch value.translation.width {
-                                case let x where CardMovementLocation.center.range ~= x:
-                                    viewModel.cardViewStatus = .front(.middle)
-                                case let x where CardMovementLocation.left.range ~= x:
-                                    viewModel.cardViewStatus = .back(.detail)
-                                case let x where CardMovementLocation.right.range ~= x:
-                                    viewModel.cardViewStatus = .back(.quiz)
-                                default:
-                                    viewModel.cardViewStatus = .front(.middle)
-                                    print("123")
-                                }
-                            }
-                        }
-                )
-        case .back:
-            content
-        }
-        
-    }
-}
 
 #Preview {
     MainPage()

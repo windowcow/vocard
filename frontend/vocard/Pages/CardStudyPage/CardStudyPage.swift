@@ -11,12 +11,13 @@ import SwiftData
 struct CardStudyPage: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
     @State private var cardStudyPageViewModel: CardStudyPageViewModel = CardStudyPageViewModel()
+    @State private var cardViewStatus: CardViewStatus = .front
     var body: some View {
         ZStack {
             Color.clear
             VStack {
                 CardStudyPage_Top()
-                CardStudyPage_Middle()
+                CardStudyPage_Middle(cardViewStatus: $cardViewStatus)
                 CardStudyPage_Bottom()
             }
             .environment(cardStudyPageViewModel)

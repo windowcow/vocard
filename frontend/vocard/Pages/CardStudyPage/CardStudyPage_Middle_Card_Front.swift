@@ -7,6 +7,37 @@
 
 import SwiftUI
 
+
+struct CardStudyPage_Middle_Card_Front: View {
+    /// switch view
+    @Environment(CardStudyPageViewModel.self) var vm
+    var headword: String
+
+    var body: some View {
+        ZStack {
+            switch vm.cardViewStatus {
+            case .middle:
+                CardBackgroundView(backgroundColor: .mint)
+                    .overlay {
+                        Text(headword)
+                    }
+            case .left:
+                CardBackgroundView(backgroundColor: .gray)
+                    .overlay {
+                        Text("DETAIL")
+                    }
+                
+            case .right:
+                CardBackgroundView(backgroundColor: .gray)
+                    .overlay {
+                        Text("QUIZ")
+                    }
+            }
+        }
+        
+    }
+}
+
 struct CardBackgroundView: View {
     var backgroundColor: Color
     
@@ -15,35 +46,10 @@ struct CardBackgroundView: View {
             backgroundColor
         }
         .aspectRatio(0.66, contentMode: .fit)
+        .clipShape(.rect(cornerRadius: 15))
     }
 }
 
-struct CardStudyPage_Middle_Card_Front: View {
-    /// switch view
-    @Binding var currentCardFrontViewState: CardViewStatus.CardFrontStatus
-    var headword: String
-    
-    var body: some View {
-        switch currentCardFrontViewState {
-        case .middle:
-            CardBackgroundView(backgroundColor: .mint)
-                .overlay {
-                    Text(headword)
-                }
-        case .left:
-            CardBackgroundView(backgroundColor: .mint)
-                .overlay {
-                    Text(headword)
-                }
-            
-        case .right:
-            CardBackgroundView(backgroundColor: .mint)
-                .overlay {
-                    Text(headword)
-                }
-        }
-    }
-}
 
 //#Preview {
 //    MainPage_CardStudyPage_Middle_Card_Front()
