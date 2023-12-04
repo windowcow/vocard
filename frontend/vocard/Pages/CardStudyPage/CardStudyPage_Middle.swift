@@ -15,26 +15,46 @@ struct CardStudyPage_Middle: View {
         GeometryReader { g in
             ZStack {
                 Color.clear
-                MainPage_CardStudyPage_Middle_Card()
+                CardStudyPage_Middle_Card()
                 
             }
         }
     }
 }
 
-struct MainPage_CardStudyPage_Middle_Card: View {
+struct CardStudyPage_Middle_Card: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
-    @Environment(CardStudyPageViewModel.self) var vm
+    @State private var currentCardViewState: CardViewStatus = .front(.middle)
     
     var body: some View {
-        VStack {
-            
+        switch currentCardViewState {
+        case .front(let currentCardFrontViewState):
+            CardStudyPage_Middle_Card_Front(currentCardFrontViewState: Binding(get: {currentCardFrontViewState},
+                                                                               set: { newValue in
+                currentCardViewState = .front(newValue)
+            }), headword: "")
+        case .back(let cardBackStatus):
+            switch cardBackStatus {
+            case .detail:
+                CardStudyPage_Middle_Card_Detail()
+            case .quiz:
+                CardStudyPage_Middle_Card_Quiz()
+            }
         }
-        .movable(vm)
     }
 }
 
+struct CardStudyPage_Middle_Card_Detail: View {
+    var body: some View {
+        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+    }
+}
 
+struct CardStudyPage_Middle_Card_Quiz: View {
+    var body: some View {
+        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+    }
+}
 
 enum CardMovementLocation {
     case left, center, right
