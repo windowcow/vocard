@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+extension Date {
+    func getYearMonthDayWeekDayDateComponent() -> DateComponents {
+        return Calendar.autoupdatingCurrent.dateComponents([.year, .month, .day, .weekday], from: self)
+    }
+}
