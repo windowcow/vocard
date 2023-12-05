@@ -65,7 +65,7 @@ struct CardsPage_CardScroll: View {
 }
 
 #Preview {
-    CardsPage_CardScroll()
+    CardsPage()
         .background(.white)
         .modelContainer(sharedModelContainer)
 }
