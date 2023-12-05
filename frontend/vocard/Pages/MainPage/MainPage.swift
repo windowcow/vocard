@@ -16,6 +16,7 @@ import Charts
 
 struct MainPage: View {
     @Namespace var namespace
+    @Environment(\.modelContext) private var modelContext
     @Query var allCards: [CardData]
     
     @State private var currentCard: CurrentCard = CurrentCard()

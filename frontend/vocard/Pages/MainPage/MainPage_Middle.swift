@@ -10,6 +10,7 @@ import SwiftData
 
 
 struct MainPage_Middle: View {
+    @Environment(\.modelContext) private var modelContext
     @Query var reviewResults: [ReviewData]
     @State private var todaysStarRevenue: Int?
     

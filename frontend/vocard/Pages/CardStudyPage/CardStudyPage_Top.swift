@@ -11,6 +11,7 @@ import SwiftData
 
 
 struct CardStudyPage_Top: View {
+    @Environment(\.modelContext) private var modelContext
     @Query var reviewResultDataModels: [ReviewData]
 //    @State private var reviewToday: [ReviewResultDataModel] = []
     @State private var todaysStars: Int = 0

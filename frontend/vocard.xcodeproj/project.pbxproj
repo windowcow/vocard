@@ -47,6 +47,7 @@
 		888B57F22B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */; };
 		888B57F32B1DB53500117801 /* CardStudyPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */; };
 		888B57F42B1DB53500117801 /* CardStudyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57EF2B1DB53500117801 /* CardStudyPage.swift */; };
+		88A7E8B32B1FBE8F00D6F570 /* QuizData+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A7E8B22B1FBE8F00D6F570 /* QuizData+Predicate.swift */; };
 		88C953D02B1FAD290037DB1F /* CardDataModel+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953CF2B1FAD290037DB1F /* CardDataModel+Predicate.swift */; };
 		88C953D22B1FAD810037DB1F /* MeaningData+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953D12B1FAD810037DB1F /* MeaningData+Predicate.swift */; };
 		88C953D42B1FADD70037DB1F /* WordData+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953D32B1FADD70037DB1F /* WordData+Predicate.swift */; };
@@ -95,6 +96,7 @@
 		888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle_Card_Front.swift; sourceTree = "<group>"; };
 		888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle.swift; sourceTree = "<group>"; };
 		888B57EF2B1DB53500117801 /* CardStudyPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage.swift; sourceTree = "<group>"; };
+		88A7E8B22B1FBE8F00D6F570 /* QuizData+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuizData+Predicate.swift"; sourceTree = "<group>"; };
 		88C953CF2B1FAD290037DB1F /* CardDataModel+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDataModel+Predicate.swift"; sourceTree = "<group>"; };
 		88C953D12B1FAD810037DB1F /* MeaningData+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeaningData+Predicate.swift"; sourceTree = "<group>"; };
 		88C953D32B1FADD70037DB1F /* WordData+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordData+Predicate.swift"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				8829CBBE2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift */,
 				8829CBBA2B1E2EB30071C5CA /* CardStudyPage_Middle_Card_Detail.swift */,
 				8829CBBC2B1E2EC50071C5CA /* CardStudyPage_Middle_Card_Quiz.swift */,
+				88A7E8B22B1FBE8F00D6F570 /* QuizData+Predicate.swift */,
 				888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */,
 				888B57EC2B1DB53500117801 /* CardStudyPage_Bottom.swift */,
 			);
@@ -337,6 +340,7 @@
 				8829CBE32B1F3CA50071C5CA /* CardsPage_Middle_CardScroll.swift in Sources */,
 				888B57DB2B1DAA9600117801 /* Array+.swift in Sources */,
 				888B57E02B1DAA9600117801 /* CardDataModel+Sample.swift in Sources */,
+				88A7E8B32B1FBE8F00D6F570 /* QuizData+Predicate.swift in Sources */,
 				8829CBBF2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift in Sources */,
 				888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */,
 				8829CBEB2B1F44CF0071C5CA /* CardsPage_Top.swift in Sources */,

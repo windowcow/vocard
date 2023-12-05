@@ -12,6 +12,7 @@ struct CardStudyPage_Middle_Card: View {
     @Environment(CurrentCard.self) var currentCard
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
     
+    
 
     var body: some View {
         if let word = currentCard.cardData?.wordData {

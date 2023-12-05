@@ -54,9 +54,9 @@ struct CardDetailEditPage: View {
             
         }
         .clipShape(.rect(cornerRadius: 15))
-        .task {
-            print(card)
-        }
+//        .task {
+//            print(card)
+//        }
     }
 }
 
@@ -76,9 +76,9 @@ struct CardDetailEditPage_Meaning: View {
                     .scaledToFit()
             }
         }
-        .task {
-            print(meaning.meaning)
-        }
+//        .task {
+//            print(meaning.meaning)
+//        }
     }
 }
 

@@ -30,15 +30,15 @@ var sharedModelContainer: ModelContainer {
         let exampleData: [ExampleData] = ExampleData.samples
         let illustrationData: [IllustrationData] = IllustrationData.samples
 
-        for q in quizData {
-            container.mainContext.insert(q)
-        }
+//        for q in quizData {
+//            container.mainContext.insert(q)
+//        }
         for wm in meaningData {
             container.mainContext.insert(wm)
         }
-        for tw in wordData {
-            container.mainContext.insert(tw)
-        }
+//        for tw in wordData {
+//            container.mainContext.insert(tw)
+//        }
         for es in exampleData {
             container.mainContext.insert(es)
         }
@@ -63,7 +63,6 @@ var sharedModelContainer: ModelContainer {
         
         for word in wordData {
             for quiz in quizData {
-                print(quiz)
                 word.quizzes.append(quiz)
                 quiz.wordData = word
             }
@@ -73,10 +72,10 @@ var sharedModelContainer: ModelContainer {
         /// UserData
         var cardDataModels: [CardData] = []
         
-        for targetWordDataModel in wordData {
+        for word in wordData {
             let currentCardDataModel = CardData()
             container.mainContext.insert(currentCardDataModel)
-            currentCardDataModel.wordData = targetWordDataModel
+            currentCardDataModel.wordData = word
             cardDataModels.append(currentCardDataModel)
         }
         

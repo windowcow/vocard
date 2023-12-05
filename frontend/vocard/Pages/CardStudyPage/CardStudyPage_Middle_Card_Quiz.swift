@@ -44,29 +44,17 @@ struct CardStudyPage_Middle_Card_Quiz_ChoiceButton: View {
     }
 }
 
-extension QuizData: Identifiable { }
-extension QuizData {
-    static func predicate(
-        headword: String,
-        senNum: Int
-    ) -> Predicate<QuizData> {
-        return #Predicate<QuizData> { quiz in
-            if let wordData = quiz.wordData {
-                return wordData.headWord == headword && wordData.senseNum == senNum
-            } else {
-                return true
-            }
-        }
-    }
-}
+
 
 
 struct CardStudyPage_Middle_Card_Quiz: View {
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
-    @Query var quizData: [QuizData]
+    @Environment(\.modelContext) private var modelContext
+    @Query private var quizData: [QuizData]
     
     init(_ word: WordData) {
         _quizData = Query(filter: QuizData.predicate(headword: word.headWord, senNum: word.senseNum))
+        print(quizData.debugDescription)
     }
     
     
@@ -76,7 +64,7 @@ struct CardStudyPage_Middle_Card_Quiz: View {
             .overlay {
                 VStack {
                     if let quizData = quizData.first {
-                        Text("Which of the following is not typically associated with a meaningful conversation")
+                        Text(quizData.question)
                             .padding(.top, 50)
                         Spacer()
                         VStack {

@@ -39,7 +39,6 @@ struct CardMovementModifier: ViewModifier {
 
                         switch state.width {
                         case let x where CardMovementLocation.left.range ~= x:
-                            print(111)
                             vm.cardViewStatus = .front(.left)
                         case let x where CardMovementLocation.right.range ~= x:
                             vm.cardViewStatus = .front(.right)

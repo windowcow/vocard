@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct StarView: View {
     let starCount: CardData.CurrentStarCount
@@ -53,6 +54,7 @@ struct StarView: View {
 
 struct CardStudyPage_Middle_Card_Detail: View {
     @Environment(CurrentCard.self) var currentCard
+    @Query var quiz: [QuizData]
     
     var body: some View {
         CardBackgroundView(backgroundColor: .green)
@@ -85,6 +87,9 @@ struct CardStudyPage_Middle_Card_Detail: View {
                 
                 }
                 .foregroundStyle(.white)
+            }
+            .task {
+                print(quiz.debugDescription)
             }
     }
 }

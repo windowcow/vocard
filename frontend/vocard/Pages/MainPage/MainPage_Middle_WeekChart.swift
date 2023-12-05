@@ -10,6 +10,7 @@ import SwiftData
 import Charts
 
 struct MainPage_Middle_WeekChart: View {
+    @Environment(\.modelContext) private var modelContext
     @Query var items: [ReviewData]
     @State var weekChartData: WeekChartData?
 

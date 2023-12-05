@@ -11,9 +11,9 @@ import SwiftData
 
 struct CardStudyPage_Bottom: View {
     @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) private var modelContext
     @Environment(CurrentCard.self) var currentCard
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
-    
     @Query var allCards: [CardData]
 
     @State private var isResultPopoverPresented: Bool = false
@@ -30,7 +30,6 @@ struct CardStudyPage_Bottom: View {
                     try currentCard.cardData?.reviewFailed()
                     currentCard.cardData = allCards.pickOneByProbabilityOf(50)
                     vm.refresh()
-                    print(currentCard.cardData)
 
                 } catch {
                     
