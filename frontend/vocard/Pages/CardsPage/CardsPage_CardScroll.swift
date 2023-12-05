@@ -46,7 +46,6 @@ struct CardsPage_CardScroll: View {
 
     ]
     
-    @Query var allCards: [CardDataModel]
     @Environment(CardsPage_VM.self) private var vm
     
     
@@ -54,13 +53,14 @@ struct CardsPage_CardScroll: View {
         ScrollView(.vertical) {
             LazyVGrid(columns: vm.columnNum == 2 ? gridItem2 : gridItem3,
                       alignment: .center, spacing: 20) {
-                ForEach(allCards) { card in
+                ForEach(vm.cards, id: \.persistentModelID) { card in
                     CardsPage_CardView(card: card)
                 }
             }
                      
         }
         .padding(.horizontal)
+        .animation(.bouncy, value: vm.cards)
     }
 }
 

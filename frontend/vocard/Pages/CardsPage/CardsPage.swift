@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CardsPage: View {
+    @Query var allCards: [CardDataModel]
     @State private var vm: CardsPage_VM = CardsPage_VM()
     
     var body: some View {
@@ -21,6 +23,9 @@ struct CardsPage: View {
             }
         }
         .environment(vm)
+        .task {
+            vm.allCards = allCards
+        }
     }
 }
 

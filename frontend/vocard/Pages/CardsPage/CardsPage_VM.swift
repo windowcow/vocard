@@ -12,6 +12,30 @@ import Foundation
     var selectedDate: Date = Date.now
     var seenFilterType: SeenFilterType = .all
     var filterBy: FilterType = .none(.ascending)
+    var allCards: [CardDataModel] = []
+    
+    init(allCards: [CardDataModel] = []) {
+        self.allCards = allCards
+    }
+    
+    var cards: [CardDataModel] {
+        allCards.filter { card in
+            card.reviewResults.contains { reviewDataModel in
+                selectedDate.ymd == reviewDataModel.reviewDate.ymd
+            }
+            
+        }
+        .filter { card in
+            switch seenFilterType {
+            case .all:
+                return true
+            case .seen:
+                return !card.isUnseen
+            case .unseen:
+                return card.isUnseen
+            }
+        }
+    }
     
     enum SeenFilterType {
         case all, seen, unseen
