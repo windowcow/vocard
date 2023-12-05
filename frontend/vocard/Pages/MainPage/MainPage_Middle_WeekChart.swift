@@ -10,7 +10,7 @@ import SwiftData
 import Charts
 
 struct MainPage_Middle_WeekChart: View {
-    @Query var items: [ReviewResultDataModel]
+    @Query var items: [ReviewData]
     @State var weekChartData: WeekChartData?
 
     var body: some View {
@@ -102,7 +102,7 @@ struct WeekChartData {
     
     var data: [Key:Int] = [:]
     
-    init(_ items: [ReviewResultDataModel]) {
+    init(_ items: [ReviewData]) {
         for item in items {
             switch item.result {
             case .success(let s):

@@ -8,10 +8,10 @@
 import Foundation
 import SwiftData
 
-@Model final class ReviewResultDataModel {
+@Model final class ReviewData {
     var reviewDate: Date
     var result: ReviewResult_ResultAndRevenue
-    @Relationship var cardDataModel: CardDataModel?
+    @Relationship var cardDataModel: CardData?
     
     init(reviewDate: Date = Date.now, result: ReviewResult_ResultAndRevenue) {
         self.reviewDate = reviewDate

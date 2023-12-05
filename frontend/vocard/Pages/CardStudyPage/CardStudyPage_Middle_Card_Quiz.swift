@@ -6,69 +6,94 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CardStudyPage_Middle_Card_Quiz_ChoiceButton: View {
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
     @Environment(CurrentCard.self) var currentCard
 
     var currentChoiceNum: Int
+    var quizData: QuizData
     
     var body: some View {
         @Bindable var vm = vm
-        if let currentQuiz = currentCard.currentCard?.targetWordDataModel.quizzes.first {
-            if vm.selectedChoice ?? 0 == currentChoiceNum  {
-                Button{
-                    vm.selectedChoice = currentChoiceNum
-                } label: {
-                    Text(currentQuiz.choices[currentChoiceNum - 1])
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.borderedProminent)
-                .padding(.horizontal)
-                .controlSize(.extraLarge)
-                .tint(.purple)
+
+        if vm.selectedChoice ?? 0 == currentChoiceNum  {
+            Button{
+                vm.selectedChoice = currentChoiceNum
+            } label: {
+                Text(quizData.choices[currentChoiceNum - 1])
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.borderedProminent)
+            .padding(.horizontal)
+            .controlSize(.extraLarge)
+            .tint(.purple)
+        } else {
+            Button{
+                vm.selectedChoice = currentChoiceNum
+            } label: {
+                Text(quizData.choices[currentChoiceNum - 1])
+                    .frame(maxWidth: .infinity)
+            }
+            .buttonStyle(.bordered)
+            .padding(.horizontal)
+            .controlSize(.extraLarge)
+            .tint(.purple)
+        }
+    }
+}
+
+extension QuizData: Identifiable { }
+extension QuizData {
+    static func predicate(
+        headword: String,
+        senNum: Int
+    ) -> Predicate<QuizData> {
+        return #Predicate<QuizData> { quiz in
+            if let wordData = quiz.wordData {
+                return wordData.headWord == headword && wordData.senseNum == senNum
             } else {
-                Button{
-                    vm.selectedChoice = currentChoiceNum
-                } label: {
-                    Text(currentQuiz.choices[currentChoiceNum - 1])
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.bordered)
-                .padding(.horizontal)
-                .controlSize(.extraLarge)
-                .tint(.purple)
+                return true
             }
         }
     }
 }
 
 
-
 struct CardStudyPage_Middle_Card_Quiz: View {
-    @Environment(CurrentCard.self) var currentCard
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
+    @Query var quizData: [QuizData]
+    
+    init(_ word: WordData) {
+        _quizData = Query(filter: QuizData.predicate(headword: word.headWord, senNum: word.senseNum))
+    }
+    
     
     var body: some View {
         CardBackgroundView(backgroundColor: .white)
             .shadow(radius: 30)
             .overlay {
                 VStack {
-                    Text(currentCard.currentCard?.targetWordDataModel.quizzes.first?.question ?? "Which of the following is not typically associated with a meaningful conversation")
-                        .padding(.top, 50)
-                    Spacer()
-                    VStack {
-                        CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 1)
-                        CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 2)
-                        CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 3)
-                        CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 4)
+                    if let quizData = quizData.first {
+                        Text("Which of the following is not typically associated with a meaningful conversation")
+                            .padding(.top, 50)
+                        Spacer()
+                        VStack {
+                            CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 1, quizData: quizData)
+                            CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 2, quizData: quizData)
+                            CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 3, quizData: quizData)
+                            CardStudyPage_Middle_Card_Quiz_ChoiceButton(currentChoiceNum: 4, quizData: quizData)
+                        }
+                        .buttonStyle(.borderedProminent)
+                        
+                        Spacer()
                     }
-                    .buttonStyle(.borderedProminent)
-                    
-                    Spacer()
-
                 }
             }
+//            .task {
+//                print(quizData.debugDescription)
+//            }
     }
 }
 

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CardsPage_Middle_CardView: View {
-    @Bindable var card: CardDataModel
+    @Bindable var card: CardData
     @State private var isCardsPage_CardView_Detail_Presented = false
     
     var body: some View {
         ZStack {
             Color.clear
-            Text(card.targetWordDataModel.headWord)
+            Text(card.wordData.headWord)
                 .foregroundStyle(.white)
 
         }
@@ -41,13 +41,13 @@ struct CardsPage_Middle_CardView: View {
 }
 
 struct CardDetailEditPage: View {
-    @Bindable var card: CardDataModel
+    @Bindable var card: CardData
     var body: some View {
         ZStack {
             Color.white
             Text("gg")
             LazyVStack {
-                ForEach(card.targetWordDataModel.wordMeaningDataModels, id: \.self) { meaning in
+                ForEach(card.wordData.wordMeaningDataModels, id: \.self) { meaning in
                     CardDetailEditPage_Meaning(meaning: meaning)
                 }
             }

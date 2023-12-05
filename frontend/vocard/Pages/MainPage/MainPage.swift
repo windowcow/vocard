@@ -9,14 +9,14 @@ import SwiftData
 import Charts
 
 @Observable class CurrentCard {
-    var currentCard: CardDataModel?
+    var cardData: CardData?
     
 
 }
 
 struct MainPage: View {
     @Namespace var namespace
-    @Query var allCards: [CardDataModel]
+    @Query var allCards: [CardData]
     
     @State private var currentCard: CurrentCard = CurrentCard()
     @State private var isCardStudyPagePresented = false
@@ -47,7 +47,7 @@ struct MainPage: View {
         }
         // geo end
         .task {
-            currentCard.currentCard = allCards.getCard(unseenCardProb: 50)
+            currentCard.cardData = allCards.getCard(unseenCardProb: 50)
         }
         .environment(currentCard)
     }

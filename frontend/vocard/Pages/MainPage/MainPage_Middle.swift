@@ -10,7 +10,7 @@ import SwiftData
 
 
 struct MainPage_Middle: View {
-    @Query var reviewResults: [ReviewResultDataModel]
+    @Query var reviewResults: [ReviewData]
     @State private var todaysStarRevenue: Int?
     
     var body: some View {

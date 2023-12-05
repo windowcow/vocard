@@ -10,8 +10,8 @@ import SwiftData
 var sharedModelContainer: ModelContainer {
     
     let schema = Schema([
-        CardDataModel.self,
-        ReviewResultDataModel.self,
+        CardData.self,
+        ReviewData.self,
         WordData.self,
         MeaningData.self,
         ExampleData.self,
@@ -71,20 +71,20 @@ var sharedModelContainer: ModelContainer {
         
         
         /// UserData
-        var cardDataModels: [CardDataModel] = []
+        var cardDataModels: [CardData] = []
         
         for targetWordDataModel in wordData {
-            let currentCardDataModel = CardDataModel()
+            let currentCardDataModel = CardData()
             container.mainContext.insert(currentCardDataModel)
-            currentCardDataModel.targetWordDataModel = targetWordDataModel
+            currentCardDataModel.wordData = targetWordDataModel
             cardDataModels.append(currentCardDataModel)
         }
         
         for cardDataModel in cardDataModels {
             for _ in 0...3 {
-                let currentReviewResult = ReviewResultDataModel.makeSample()
+                let currentReviewResult = ReviewData.makeSample()
                 container.mainContext.insert(currentReviewResult)
-                cardDataModel.reviewResults.append(currentReviewResult)
+                cardDataModel.reviewData.append(currentReviewResult)
             }
         }
         

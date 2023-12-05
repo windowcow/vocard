@@ -31,8 +31,8 @@
 		888B57DB2B1DAA9600117801 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BC2B1DAA9600117801 /* Array+.swift */; };
 		888B57DC2B1DAA9600117801 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BD2B1DAA9600117801 /* Date+.swift */; };
 		888B57DD2B1DAA9600117801 /* Array+CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57BE2B1DAA9600117801 /* Array+CardDataModel.swift */; };
-		888B57DE2B1DAA9600117801 /* ReviewResultDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C12B1DAA9600117801 /* ReviewResultDataModel.swift */; };
-		888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C22B1DAA9600117801 /* CardDataModel.swift */; };
+		888B57DE2B1DAA9600117801 /* ReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C12B1DAA9600117801 /* ReviewData.swift */; };
+		888B57DF2B1DAA9600117801 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C22B1DAA9600117801 /* CardData.swift */; };
 		888B57E02B1DAA9600117801 /* CardDataModel+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */; };
 		888B57E12B1DAA9600117801 /* ReviewResultDataModel+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */; };
 		888B57E22B1DAA9600117801 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C62B1DAA9600117801 /* ExampleData.swift */; };
@@ -47,6 +47,9 @@
 		888B57F22B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */; };
 		888B57F32B1DB53500117801 /* CardStudyPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */; };
 		888B57F42B1DB53500117801 /* CardStudyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57EF2B1DB53500117801 /* CardStudyPage.swift */; };
+		88C953D02B1FAD290037DB1F /* CardDataModel+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953CF2B1FAD290037DB1F /* CardDataModel+Predicate.swift */; };
+		88C953D22B1FAD810037DB1F /* MeaningData+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953D12B1FAD810037DB1F /* MeaningData+Predicate.swift */; };
+		88C953D42B1FADD70037DB1F /* WordData+Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C953D32B1FADD70037DB1F /* WordData+Predicate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,8 +79,8 @@
 		888B57BC2B1DAA9600117801 /* Array+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
 		888B57BD2B1DAA9600117801 /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		888B57BE2B1DAA9600117801 /* Array+CardDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+CardDataModel.swift"; sourceTree = "<group>"; };
-		888B57C12B1DAA9600117801 /* ReviewResultDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewResultDataModel.swift; sourceTree = "<group>"; };
-		888B57C22B1DAA9600117801 /* CardDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDataModel.swift; sourceTree = "<group>"; };
+		888B57C12B1DAA9600117801 /* ReviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewData.swift; sourceTree = "<group>"; };
+		888B57C22B1DAA9600117801 /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardDataModel+Sample.swift"; sourceTree = "<group>"; };
 		888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReviewResultDataModel+Samples.swift"; sourceTree = "<group>"; };
 		888B57C62B1DAA9600117801 /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
@@ -92,6 +95,9 @@
 		888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle_Card_Front.swift; sourceTree = "<group>"; };
 		888B57EE2B1DB53500117801 /* CardStudyPage_Middle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle.swift; sourceTree = "<group>"; };
 		888B57EF2B1DB53500117801 /* CardStudyPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage.swift; sourceTree = "<group>"; };
+		88C953CF2B1FAD290037DB1F /* CardDataModel+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CardDataModel+Predicate.swift"; sourceTree = "<group>"; };
+		88C953D12B1FAD810037DB1F /* MeaningData+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeaningData+Predicate.swift"; sourceTree = "<group>"; };
+		88C953D32B1FADD70037DB1F /* WordData+Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordData+Predicate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,9 +227,10 @@
 		888B57C02B1DAA9600117801 /* User_Data */ = {
 			isa = PBXGroup;
 			children = (
-				888B57C12B1DAA9600117801 /* ReviewResultDataModel.swift */,
+				888B57C12B1DAA9600117801 /* ReviewData.swift */,
 				888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */,
-				888B57C22B1DAA9600117801 /* CardDataModel.swift */,
+				888B57C22B1DAA9600117801 /* CardData.swift */,
+				88C953CF2B1FAD290037DB1F /* CardDataModel+Predicate.swift */,
 				888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */,
 			);
 			path = User_Data;
@@ -233,7 +240,9 @@
 			isa = PBXGroup;
 			children = (
 				888B57C72B1DAA9600117801 /* WordData.swift */,
+				88C953D32B1FADD70037DB1F /* WordData+Predicate.swift */,
 				888B57CA2B1DAA9600117801 /* MeaningData.swift */,
+				88C953D12B1FAD810037DB1F /* MeaningData+Predicate.swift */,
 				888B57C82B1DAA9600117801 /* QuizData.swift */,
 				888B57C62B1DAA9600117801 /* ExampleData.swift */,
 				888B57C92B1DAA9600117801 /* IllustrationData.swift */,
@@ -331,12 +340,12 @@
 				8829CBBF2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift in Sources */,
 				888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */,
 				8829CBEB2B1F44CF0071C5CA /* CardsPage_Top.swift in Sources */,
-				888B57DE2B1DAA9600117801 /* ReviewResultDataModel.swift in Sources */,
+				888B57DE2B1DAA9600117801 /* ReviewData.swift in Sources */,
 				888B57F42B1DB53500117801 /* CardStudyPage.swift in Sources */,
 				8829CBE52B1F44730071C5CA /* CardsPage.swift in Sources */,
 				888B57D82B1DAA9600117801 /* SampleModelContainer.swift in Sources */,
 				8829CBB92B1E29610071C5CA /* CardMovementModifier.swift in Sources */,
-				888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */,
+				888B57DF2B1DAA9600117801 /* CardData.swift in Sources */,
 				888B57E22B1DAA9600117801 /* ExampleData.swift in Sources */,
 				888B57D72B1DAA9600117801 /* MainPage_Top.swift in Sources */,
 				888B57D62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift in Sources */,
@@ -347,6 +356,7 @@
 				888B57F22B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift in Sources */,
 				888B57F02B1DB53500117801 /* CardStudyPage_Top.swift in Sources */,
 				888B57D22B1DAA9600117801 /* RootView.swift in Sources */,
+				88C953D22B1FAD810037DB1F /* MeaningData+Predicate.swift in Sources */,
 				888B57D32B1DAA9600117801 /* MainPage.swift in Sources */,
 				888B57E62B1DAA9700117801 /* MeaningData.swift in Sources */,
 				888B57D52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift in Sources */,
@@ -356,7 +366,9 @@
 				8829CBDF2B1F3B8C0071C5CA /* HistoryPage.swift in Sources */,
 				888B57DA2B1DAA9600117801 /* Int+.swift in Sources */,
 				8829CBBB2B1E2EB30071C5CA /* CardStudyPage_Middle_Card_Detail.swift in Sources */,
+				88C953D42B1FADD70037DB1F /* WordData+Predicate.swift in Sources */,
 				888B57E52B1DAA9700117801 /* IllustrationData.swift in Sources */,
+				88C953D02B1FAD290037DB1F /* CardDataModel+Predicate.swift in Sources */,
 				8829CBC12B1F1B570071C5CA /* CardStudyPageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import SwiftData
 
 
 struct CardStudyPage_Top: View {
-    @Query var reviewResultDataModels: [ReviewResultDataModel]
+    @Query var reviewResultDataModels: [ReviewData]
 //    @State private var reviewToday: [ReviewResultDataModel] = []
     @State private var todaysStars: Int = 0
     @Environment(\.dismiss) var dismiss

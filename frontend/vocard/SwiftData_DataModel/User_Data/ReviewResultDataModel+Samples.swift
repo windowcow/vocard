@@ -8,9 +8,9 @@
 import Foundation
 
 
-extension ReviewResultDataModel {
-    static func makeSample() -> ReviewResultDataModel {
-        ReviewResultDataModel(reviewDate: Date.now.randomPastDate(7.day), result: .success(1))
+extension ReviewData {
+    static func makeSample() -> ReviewData {
+        ReviewData(reviewDate: Date.now.randomPastDate(7.day), result: .success(1))
 
     }
 }

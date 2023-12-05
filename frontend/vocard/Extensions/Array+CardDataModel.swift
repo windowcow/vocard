@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Array where Element == CardDataModel {
+extension Array where Element == CardData {
     func getCard(unseenCardProb prob: Int = 50) -> Element? {
 //        print(self.debugDescription)
         /// 본 것 중  복습 가능한 카드

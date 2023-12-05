@@ -8,19 +8,19 @@
 import Foundation
 
 @Observable class CardsPage_VM {
-    var allCards: [CardDataModel] = []
+    var allCards: [CardData] = []
     var columnNum: Int = 3
     var selectedDate: Date = Date.now
     var seenFilterType: SeenFilterType = .all
     var filterBy: FilterType = .none(.ascending)
     
-    init(allCards: [CardDataModel] = []) {
+    init(allCards: [CardData] = []) {
         self.allCards = allCards
     }
     
-    var cards: [CardDataModel] {
+    var cards: [CardData] {
         allCards.filter { card in
-            card.reviewResults.contains { reviewDataModel in
+            card.reviewData.contains { reviewDataModel in
                 selectedDate.ymd == reviewDataModel.reviewDate.ymd
             }
             
@@ -40,7 +40,7 @@ import Foundation
             case .none:
                 true
             case .alphabet:
-                card1.targetWordDataModel.headWord < card2.targetWordDataModel.headWord
+                card1.wordData.headWord < card2.wordData.headWord
             case .stars(let sortOrder):
                 card1.currentStarCount?.rawValue ?? 0 < card2.currentStarCount?.rawValue ?? 0
             }

@@ -8,14 +8,14 @@
 import Foundation
 import SwiftData
 
-@Model class CardDataModel {
-    @Relationship var targetWordDataModel: WordData
-    @Relationship(inverse: \ReviewResultDataModel.cardDataModel) var reviewResults: [ReviewResultDataModel] /// 여거는 항상 합이 0...5로 유지 되어야 하기 때문에 reviewsuccess, reviewfail로만 관리된다.
+@Model class CardData {
+    @Relationship var wordData: WordData
+    @Relationship(inverse: \ReviewData.cardDataModel) var reviewData: [ReviewData] /// 여거는 항상 합이 0...5로 유지 되어야 하기 때문에 reviewsuccess, reviewfail로만 관리된다.
     
     init(targetWordDataModel: WordData = WordData(pos: "", headWord: "", sense_num: 1),
-         reviewResults: [ReviewResultDataModel] = []) {
-        self.targetWordDataModel = targetWordDataModel
-        self.reviewResults = reviewResults
+         reviewResults: [ReviewData] = []) {
+        self.wordData = targetWordDataModel
+        self.reviewData = reviewResults
     }
     
     
@@ -24,7 +24,7 @@ import SwiftData
 
 
 /// About Review Weight
-extension CardDataModel {
+extension CardData {
     /// weight는 무조건 현재의 시간을 기준으로 계산될 수 밖에 없다.
     /// 외부 공개된 프로퍼티
     enum CurrentStarCount: Int, Codable {
@@ -34,12 +34,12 @@ extension CardDataModel {
     
     
     var isUnseen: Bool {
-        reviewResults.isEmpty
+        reviewData.isEmpty
     }
     
     var lastReviewDate: Date? {
         /// nil인 경우는 unseen card인 경우와 완전히 같다.
-        return reviewResults.last?.reviewDate
+        return reviewData.last?.reviewDate
     }
     
     var timeSinceLastReview: TimeInterval? {
@@ -81,7 +81,7 @@ extension CardDataModel {
         
         var res = 0
         
-        for reviewResult in reviewResults {
+        for reviewResult in reviewData {
             switch reviewResult.result {
             case .success(let s):
                 res += s
@@ -100,9 +100,9 @@ extension CardDataModel {
             fatalError("CardDataModel_reviewSuccessed")
         }
         
-        let newReviewResultDataModel = ReviewResultDataModel(result: ReviewResult_ResultAndRevenue.success(1))
+        let newReviewResultDataModel = ReviewData(result: ReviewResult_ResultAndRevenue.success(1))
         context.insert(newReviewResultDataModel)
-        reviewResults.append(newReviewResultDataModel)
+        reviewData.append(newReviewResultDataModel)
     }
     
     func reviewFailed() throws {
@@ -122,9 +122,9 @@ extension CardDataModel {
         
         }
         
-        let newReviewResultDataModel = ReviewResultDataModel(result: .fail(revenue))
+        let newReviewResultDataModel = ReviewData(result: .fail(revenue))
         context.insert(newReviewResultDataModel)
-        reviewResults.append(newReviewResultDataModel)
+        reviewData.append(newReviewResultDataModel)
 
     }
 }

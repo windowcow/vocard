@@ -14,7 +14,7 @@ struct CardStudyPage_Bottom: View {
     @Environment(CurrentCard.self) var currentCard
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
     
-    @Query var allCards: [CardDataModel]
+    @Query var allCards: [CardData]
 
     @State private var isResultPopoverPresented: Bool = false
     @State private var isRecentReviewSuccessed: Bool = false
@@ -27,10 +27,10 @@ struct CardStudyPage_Bottom: View {
         case .back(.detail):
             Button {
                 do {
-                    try currentCard.currentCard?.reviewFailed()
-                    currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                    try currentCard.cardData?.reviewFailed()
+                    currentCard.cardData = allCards.pickOneByProbabilityOf(50)
                     vm.refresh()
-                    print(currentCard.currentCard)
+                    print(currentCard.cardData)
 
                 } catch {
                     
@@ -47,8 +47,8 @@ struct CardStudyPage_Bottom: View {
             HStack {
                 Button {
                     do {
-                        try currentCard.currentCard?.reviewFailed()
-                        currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                        try currentCard.cardData?.reviewFailed()
+                        currentCard.cardData = allCards.pickOneByProbabilityOf(50)
                         vm.refresh()
 
                     } catch {
@@ -63,13 +63,13 @@ struct CardStudyPage_Bottom: View {
                 
                 Button {
                     do {
-                        if currentCard.currentCard?.targetWordDataModel.quizzes.first?.answer == vm.selectedChoice ?? 0 {
-                            try currentCard.currentCard?.reviewFailed()
-                            currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                        if currentCard.cardData?.wordData.quizzes.first?.answer == vm.selectedChoice ?? 0 {
+                            try currentCard.cardData?.reviewFailed()
+                            currentCard.cardData = allCards.pickOneByProbabilityOf(50)
                             vm.refresh()
                         } else {
-                            try currentCard.currentCard?.reviewFailed()
-                            currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                            try currentCard.cardData?.reviewFailed()
+                            currentCard.cardData = allCards.pickOneByProbabilityOf(50)
                             vm.refresh()
                         }
                         

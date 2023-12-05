@@ -22,7 +22,7 @@ struct MainPage_Bottom_NextWord: View {
                     Spacer()
                     Spacer()
                     
-                    Text(currentCard.currentCard?.targetWordDataModel.headWord ?? "No more card")
+                    Text(currentCard.cardData?.wordData.headWord ?? "No more card")
                         .foregroundStyle(.black)
                         .bold()
                         .font(.system(size: 48))
