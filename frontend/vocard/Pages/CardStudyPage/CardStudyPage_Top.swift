@@ -14,7 +14,7 @@ struct CardStudyPage_Top: View {
     @Query var reviewResultDataModels: [ReviewResultDataModel]
 //    @State private var reviewToday: [ReviewResultDataModel] = []
     @State private var todaysStars: Int = 0
-    
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .center) {
@@ -36,7 +36,7 @@ struct CardStudyPage_Top: View {
             
             Spacer()
             Button("MENU") {
-                
+                dismiss()
             }
             .buttonStyle(.borderedProminent)
             .tint(.white)

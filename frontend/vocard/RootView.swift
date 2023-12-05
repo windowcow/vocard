@@ -10,18 +10,6 @@ import SwiftUI
 enum TabViewItem: Int {
     case cards = 0, home, history
 }
-struct CardsPage: View {
-    var body: some View {
-        EmptyView()
-    }
-}
-
-struct HistoryPage: View {
-    var body: some View {
-        EmptyView()
-    }
-}
-
 struct RootView: View {
     @State private var selectedTab: TabViewItem = .home
     

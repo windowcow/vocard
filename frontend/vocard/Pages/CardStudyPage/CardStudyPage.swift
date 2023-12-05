@@ -14,11 +14,19 @@ struct CardStudyPage: View {
     var body: some View {
         ZStack {
             Color.black
+                .geometryGroup()
+                .ignoresSafeArea()
+
             VStack {
                 CardStudyPage_Top()
+                    .padding(.horizontal)
                 CardStudyPage_Middle()
                     .padding()
                 CardStudyPage_Bottom()
+                    .padding(.horizontal)
+                    .controlSize(.extraLarge)
+
+
             }
             .environment(cardStudyPageViewModel)
         }

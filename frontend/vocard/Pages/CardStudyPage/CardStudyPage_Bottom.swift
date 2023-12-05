@@ -41,6 +41,8 @@ struct CardStudyPage_Bottom: View {
                 Text("NEXT")
                     .frame(maxWidth: .infinity)
             }
+            .buttonStyle(.borderedProminent)
+            .tint(.gray)
         case .back(.quiz):
             HStack {
                 Button {
@@ -56,6 +58,8 @@ struct CardStudyPage_Bottom: View {
                     Text("PASS")
                         .frame(maxWidth: .infinity)
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(.gray)
                 
                 Button {
                     do {
@@ -77,6 +81,8 @@ struct CardStudyPage_Bottom: View {
                     Text("SUBMIT")
                         .frame(maxWidth: .infinity)
                 }
+                .buttonStyle(.borderedProminent)
+                .tint(.pink)
                 .popover(isPresented: $isResultPopoverPresented) {
                         
                     if isRecentReviewSuccessed {

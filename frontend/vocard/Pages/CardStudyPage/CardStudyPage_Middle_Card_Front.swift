@@ -51,6 +51,8 @@ struct CardStudyPage_Middle_Card_Front: View {
                     }
             }
         }
+        .font(.largeTitle)
+        .bold()
         
     }
 }

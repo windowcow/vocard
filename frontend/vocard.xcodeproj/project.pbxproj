@@ -12,6 +12,12 @@
 		8829CBBD2B1E2EC50071C5CA /* CardStudyPage_Middle_Card_Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBBC2B1E2EC50071C5CA /* CardStudyPage_Middle_Card_Quiz.swift */; };
 		8829CBBF2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBBE2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift */; };
 		8829CBC12B1F1B570071C5CA /* CardStudyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBC02B1F1B570071C5CA /* CardStudyPageViewModel.swift */; };
+		8829CBDF2B1F3B8C0071C5CA /* HistoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBDE2B1F3B8C0071C5CA /* HistoryPage.swift */; };
+		8829CBE32B1F3CA50071C5CA /* CardsPage_CardScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBE22B1F3CA50071C5CA /* CardsPage_CardScroll.swift */; };
+		8829CBE52B1F44730071C5CA /* CardsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBE42B1F44730071C5CA /* CardsPage.swift */; };
+		8829CBE72B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBE62B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift */; };
+		8829CBEB2B1F44CF0071C5CA /* CardsPage_Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEA2B1F44CF0071C5CA /* CardsPage_Top.swift */; };
+		8829CBED2B1F46840071C5CA /* CardsPage_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */; };
 		888B57D22B1DAA9600117801 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B12B1DAA9600117801 /* RootView.swift */; };
 		888B57D32B1DAA9600117801 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B32B1DAA9600117801 /* MainPage.swift */; };
 		888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B42B1DAA9600117801 /* MainPage_Middle.swift */; };
@@ -48,6 +54,12 @@
 		8829CBBC2B1E2EC50071C5CA /* CardStudyPage_Middle_Card_Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle_Card_Quiz.swift; sourceTree = "<group>"; };
 		8829CBBE2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Middle_Card.swift; sourceTree = "<group>"; };
 		8829CBC02B1F1B570071C5CA /* CardStudyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStudyPageViewModel.swift; sourceTree = "<group>"; };
+		8829CBDE2B1F3B8C0071C5CA /* HistoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPage.swift; sourceTree = "<group>"; };
+		8829CBE22B1F3CA50071C5CA /* CardsPage_CardScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_CardScroll.swift; sourceTree = "<group>"; };
+		8829CBE42B1F44730071C5CA /* CardsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage.swift; sourceTree = "<group>"; };
+		8829CBE62B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_Middle_FilterSort.swift; sourceTree = "<group>"; };
+		8829CBEA2B1F44CF0071C5CA /* CardsPage_Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_Top.swift; sourceTree = "<group>"; };
+		8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_VM.swift; sourceTree = "<group>"; };
 		883327252AE219E7003D3E6F /* vocard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vocard-Bridging-Header.h"; sourceTree = "<group>"; };
 		888B57B12B1DAA9600117801 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -91,6 +103,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8829CBE02B1F3B8E0071C5CA /* HistoryPage */ = {
+			isa = PBXGroup;
+			children = (
+				8829CBDE2B1F3B8C0071C5CA /* HistoryPage.swift */,
+			);
+			path = HistoryPage;
+			sourceTree = "<group>";
+		};
+		8829CBE12B1F3C960071C5CA /* CardsPage */ = {
+			isa = PBXGroup;
+			children = (
+				8829CBE42B1F44730071C5CA /* CardsPage.swift */,
+				8829CBEA2B1F44CF0071C5CA /* CardsPage_Top.swift */,
+				8829CBE22B1F3CA50071C5CA /* CardsPage_CardScroll.swift */,
+				8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */,
+				8829CBE62B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift */,
+			);
+			path = CardsPage;
+			sourceTree = "<group>";
+		};
 		8833271C2AE219E7003D3E6F = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +158,10 @@
 		888B57AB2B1DAA9600117801 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				8829CBE12B1F3C960071C5CA /* CardsPage */,
 				888B57AC2B1DAA9600117801 /* CardStudyPage */,
 				888B57B22B1DAA9600117801 /* MainPage */,
+				8829CBE02B1F3B8E0071C5CA /* HistoryPage */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -288,12 +322,15 @@
 				8829CBBD2B1E2EC50071C5CA /* CardStudyPage_Middle_Card_Quiz.swift in Sources */,
 				888B57E82B1DAA9700117801 /* vocardApp.swift in Sources */,
 				888B57F12B1DB53500117801 /* CardStudyPage_Bottom.swift in Sources */,
+				8829CBE32B1F3CA50071C5CA /* CardsPage_CardScroll.swift in Sources */,
 				888B57DB2B1DAA9600117801 /* Array+.swift in Sources */,
 				888B57E02B1DAA9600117801 /* CardDataModel+Sample.swift in Sources */,
 				8829CBBF2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift in Sources */,
 				888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */,
+				8829CBEB2B1F44CF0071C5CA /* CardsPage_Top.swift in Sources */,
 				888B57DE2B1DAA9600117801 /* ReviewResultDataModel.swift in Sources */,
 				888B57F42B1DB53500117801 /* CardStudyPage.swift in Sources */,
+				8829CBE52B1F44730071C5CA /* CardsPage.swift in Sources */,
 				888B57D82B1DAA9600117801 /* SampleModelContainer.swift in Sources */,
 				8829CBB92B1E29610071C5CA /* CardMovementModifier.swift in Sources */,
 				888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */,
@@ -309,7 +346,10 @@
 				888B57D32B1DAA9600117801 /* MainPage.swift in Sources */,
 				888B57E62B1DAA9700117801 /* WordMeaningDataModel.swift in Sources */,
 				888B57D52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift in Sources */,
+				8829CBED2B1F46840071C5CA /* CardsPage_VM.swift in Sources */,
+				8829CBE72B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift in Sources */,
 				888B57E42B1DAA9700117801 /* QuizDataModel.swift in Sources */,
+				8829CBDF2B1F3B8C0071C5CA /* HistoryPage.swift in Sources */,
 				888B57DA2B1DAA9600117801 /* Int+.swift in Sources */,
 				8829CBBB2B1E2EB30071C5CA /* CardStudyPage_Middle_Card_Detail.swift in Sources */,
 				888B57E52B1DAA9700117801 /* IllustrationDataModel.swift in Sources */,
