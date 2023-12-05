@@ -9,10 +9,10 @@ import Foundation
 import SwiftData
 
 @Model final class CardDataModel {
-    var targetWordDataModel: TargetWordDataModel
+    var targetWordDataModel: WordDataModel
     var reviewResults: [ReviewResultDataModel] /// 여거는 항상 합이 0...5로 유지 되어야 하기 때문에 reviewsuccess, reviewfail로만 관리된다.
     
-    init(targetWordDataModel: TargetWordDataModel = TargetWordDataModel(pos: "", headWord: "", sense_num: 1),
+    init(targetWordDataModel: WordDataModel = WordDataModel(pos: "", headWord: "", sense_num: 1),
          reviewResults: [ReviewResultDataModel] = []) {
         self.targetWordDataModel = targetWordDataModel
         self.reviewResults = reviewResults

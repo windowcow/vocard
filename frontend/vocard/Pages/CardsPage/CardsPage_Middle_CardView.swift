@@ -61,7 +61,7 @@ struct CardDetailEditPage: View {
 }
 
 struct CardDetailEditPage_Meaning: View {
-    @Bindable var meaning: WordMeaningDataModel
+    @Bindable var meaning: MeaningDataModel
     
     var body: some View {
         ZStack {

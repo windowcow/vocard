@@ -35,11 +35,11 @@
 		888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C22B1DAA9600117801 /* CardDataModel.swift */; };
 		888B57E02B1DAA9600117801 /* CardDataModel+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */; };
 		888B57E12B1DAA9600117801 /* ReviewResultDataModel+Samples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */; };
-		888B57E22B1DAA9600117801 /* ExampleSentenceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C62B1DAA9600117801 /* ExampleSentenceDataModel.swift */; };
-		888B57E32B1DAA9600117801 /* TargetWordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C72B1DAA9600117801 /* TargetWordDataModel.swift */; };
+		888B57E22B1DAA9600117801 /* ExampleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C62B1DAA9600117801 /* ExampleDataModel.swift */; };
+		888B57E32B1DAA9600117801 /* WordDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C72B1DAA9600117801 /* WordDataModel.swift */; };
 		888B57E42B1DAA9700117801 /* QuizDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C82B1DAA9600117801 /* QuizDataModel.swift */; };
 		888B57E52B1DAA9700117801 /* IllustrationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57C92B1DAA9600117801 /* IllustrationDataModel.swift */; };
-		888B57E62B1DAA9700117801 /* WordMeaningDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57CA2B1DAA9600117801 /* WordMeaningDataModel.swift */; };
+		888B57E62B1DAA9700117801 /* MeaningDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57CA2B1DAA9600117801 /* MeaningDataModel.swift */; };
 		888B57E72B1DAA9700117801 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 888B57CC2B1DAA9600117801 /* Preview Assets.xcassets */; };
 		888B57E82B1DAA9700117801 /* vocardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57CD2B1DAA9600117801 /* vocardApp.swift */; };
 		888B57F02B1DB53500117801 /* CardStudyPage_Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57EB2B1DB53500117801 /* CardStudyPage_Top.swift */; };
@@ -80,11 +80,11 @@
 		888B57C22B1DAA9600117801 /* CardDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDataModel.swift; sourceTree = "<group>"; };
 		888B57C32B1DAA9600117801 /* CardDataModel+Sample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CardDataModel+Sample.swift"; sourceTree = "<group>"; };
 		888B57C42B1DAA9600117801 /* ReviewResultDataModel+Samples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReviewResultDataModel+Samples.swift"; sourceTree = "<group>"; };
-		888B57C62B1DAA9600117801 /* ExampleSentenceDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSentenceDataModel.swift; sourceTree = "<group>"; };
-		888B57C72B1DAA9600117801 /* TargetWordDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetWordDataModel.swift; sourceTree = "<group>"; };
+		888B57C62B1DAA9600117801 /* ExampleDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDataModel.swift; sourceTree = "<group>"; };
+		888B57C72B1DAA9600117801 /* WordDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDataModel.swift; sourceTree = "<group>"; };
 		888B57C82B1DAA9600117801 /* QuizDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizDataModel.swift; sourceTree = "<group>"; };
 		888B57C92B1DAA9600117801 /* IllustrationDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IllustrationDataModel.swift; sourceTree = "<group>"; };
-		888B57CA2B1DAA9600117801 /* WordMeaningDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordMeaningDataModel.swift; sourceTree = "<group>"; };
+		888B57CA2B1DAA9600117801 /* MeaningDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDataModel.swift; sourceTree = "<group>"; };
 		888B57CC2B1DAA9600117801 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		888B57CD2B1DAA9600117801 /* vocardApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = vocardApp.swift; sourceTree = "<group>"; };
 		888B57EB2B1DB53500117801 /* CardStudyPage_Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStudyPage_Top.swift; sourceTree = "<group>"; };
@@ -232,11 +232,11 @@
 		888B57C52B1DAA9600117801 /* Non_User_Data */ = {
 			isa = PBXGroup;
 			children = (
-				888B57C62B1DAA9600117801 /* ExampleSentenceDataModel.swift */,
-				888B57C72B1DAA9600117801 /* TargetWordDataModel.swift */,
+				888B57C72B1DAA9600117801 /* WordDataModel.swift */,
+				888B57CA2B1DAA9600117801 /* MeaningDataModel.swift */,
 				888B57C82B1DAA9600117801 /* QuizDataModel.swift */,
+				888B57C62B1DAA9600117801 /* ExampleDataModel.swift */,
 				888B57C92B1DAA9600117801 /* IllustrationDataModel.swift */,
-				888B57CA2B1DAA9600117801 /* WordMeaningDataModel.swift */,
 			);
 			path = Non_User_Data;
 			sourceTree = "<group>";
@@ -337,18 +337,18 @@
 				888B57D82B1DAA9600117801 /* SampleModelContainer.swift in Sources */,
 				8829CBB92B1E29610071C5CA /* CardMovementModifier.swift in Sources */,
 				888B57DF2B1DAA9600117801 /* CardDataModel.swift in Sources */,
-				888B57E22B1DAA9600117801 /* ExampleSentenceDataModel.swift in Sources */,
+				888B57E22B1DAA9600117801 /* ExampleDataModel.swift in Sources */,
 				888B57D72B1DAA9600117801 /* MainPage_Top.swift in Sources */,
 				888B57D62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift in Sources */,
 				8829CBEF2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift in Sources */,
 				888B57DC2B1DAA9600117801 /* Date+.swift in Sources */,
-				888B57E32B1DAA9600117801 /* TargetWordDataModel.swift in Sources */,
+				888B57E32B1DAA9600117801 /* WordDataModel.swift in Sources */,
 				888B57DD2B1DAA9600117801 /* Array+CardDataModel.swift in Sources */,
 				888B57F22B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift in Sources */,
 				888B57F02B1DB53500117801 /* CardStudyPage_Top.swift in Sources */,
 				888B57D22B1DAA9600117801 /* RootView.swift in Sources */,
 				888B57D32B1DAA9600117801 /* MainPage.swift in Sources */,
-				888B57E62B1DAA9700117801 /* WordMeaningDataModel.swift in Sources */,
+				888B57E62B1DAA9700117801 /* MeaningDataModel.swift in Sources */,
 				888B57D52B1DAA9600117801 /* MainPage_Middle_WeekChart.swift in Sources */,
 				8829CBED2B1F46840071C5CA /* CardsPage_VM.swift in Sources */,
 				8829CBE72B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift in Sources */,

@@ -12,9 +12,9 @@ var sharedModelContainer: ModelContainer {
     let schema = Schema([
         CardDataModel.self,
         ReviewResultDataModel.self,
-        TargetWordDataModel.self,
-        WordMeaningDataModel.self,
-        ExampleSentenceDataModel.self,
+        WordDataModel.self,
+        MeaningDataModel.self,
+        ExampleDataModel.self,
         IllustrationDataModel.self,
         QuizDataModel.self
         
@@ -24,15 +24,15 @@ var sharedModelContainer: ModelContainer {
     do {
         let container = try ModelContainer(for: CardDataModel.self,
                                            ReviewResultDataModel.self,
-                                           TargetWordDataModel.self,
-                                           WordMeaningDataModel.self,
-                                           ExampleSentenceDataModel.self,
+                                           WordDataModel.self,
+                                           MeaningDataModel.self,
+                                           ExampleDataModel.self,
                                            IllustrationDataModel.self,
                                            QuizDataModel.self, configurations: modelConfiguration)
         let quizDataModels: [QuizDataModel] = QuizDataModel.samples
-        let wordMeaningDataModels: [WordMeaningDataModel] = WordMeaningDataModel.samples
-        let targetWordDataModels: [TargetWordDataModel] = TargetWordDataModel.samples
-        let exampleSentenceDataModels: [ExampleSentenceDataModel] = ExampleSentenceDataModel.samples
+        let wordMeaningDataModels: [MeaningDataModel] = MeaningDataModel.samples
+        let targetWordDataModels: [WordDataModel] = WordDataModel.samples
+        let exampleSentenceDataModels: [ExampleDataModel] = ExampleDataModel.samples
         let illustrationDataModels: [IllustrationDataModel] = IllustrationDataModel.samples
 
         for q in quizDataModels {
