@@ -17,35 +17,30 @@ struct MainPage: View {
     @Namespace var namespace
     @Query var allCards: [CardDataModel]
     @State private var currentCard: CurrentCard = CurrentCard()
+    @State private var isCardStudyPagePresented = false
 
     var body: some View {
         GeometryReader { g in
-            switch a {
-            case 0:
-                VStack {
-                    MainPage_Top()
-                        .frame(maxHeight: g.size.height * 0.1)
-                    Spacer()
-                    MainPage_Middle()
-                        .frame(maxWidth: g.size.width * 0.9,
-                               maxHeight: g.size.height * 0.2)
+            VStack {
+                MainPage_Top()
+                    .frame(maxHeight: g.size.height * 0.1)
+                Spacer()
+                MainPage_Middle()
+                    .frame(maxWidth: g.size.width * 0.9,
+                           maxHeight: g.size.height * 0.2)
 
-                    Spacer()
-                    MainPage_Bottom_NextWord(a: $a)
-                        .frame(maxWidth: g.size.width * 0.9 ,
-                               maxHeight: g.size.height * 0.4)
-                    
-                        .matchedGeometryEffect(id: "card", in: namespace)
-                    
-                    Spacer()
- 
-                }
-                .background(.black)
-            default:
-                CardStudyPage()
-                    .background(.black)
-                .matchedGeometryEffect(id: "card", in: namespace)
+                Spacer()
+                MainPage_Bottom_NextWord(a: $a)
+                    .frame(maxWidth: g.size.width * 0.9 ,
+                           maxHeight: g.size.height * 0.4)
+                
+                    .matchedGeometryEffect(id: "card", in: namespace)
+                
+                Spacer()
+
             }
+            .background(.black)
+
             
         }
         // geo end

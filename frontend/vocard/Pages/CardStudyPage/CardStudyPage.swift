@@ -13,7 +13,7 @@ struct CardStudyPage: View {
     
     var body: some View {
         ZStack {
-            Color.clear
+            Color.black
             VStack {
                 CardStudyPage_Top()
                 CardStudyPage_Middle()

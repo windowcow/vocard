@@ -13,6 +13,7 @@ struct MainPage_Bottom_NextWord: View {
     @Namespace var namespace
     @Binding var a: Int
     @Environment(CurrentCard.self) var currentCard
+    @State private var isCardStudyPagePresented: Bool = false
     
     var body: some View {
         GeometryReader { geo in
@@ -33,7 +34,7 @@ struct MainPage_Bottom_NextWord: View {
                     Spacer()
 
                     Button{
-                        a = 1
+                        isCardStudyPagePresented.toggle()
                     } label: {
                         Text("시작하기")
                             .frame(width: geo.size.width * 0.8,
@@ -41,6 +42,9 @@ struct MainPage_Bottom_NextWord: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.black)
+                    .fullScreenCover(isPresented: $isCardStudyPagePresented) {
+                        CardStudyPage()
+                    }
                     
                     Spacer()
 
