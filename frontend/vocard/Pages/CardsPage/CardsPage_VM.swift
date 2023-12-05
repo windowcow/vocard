@@ -8,11 +8,11 @@
 import Foundation
 
 @Observable class CardsPage_VM {
+    var allCards: [CardDataModel] = []
     var columnNum: Int = 3
     var selectedDate: Date = Date.now
     var seenFilterType: SeenFilterType = .all
     var filterBy: FilterType = .none(.ascending)
-    var allCards: [CardDataModel] = []
     
     init(allCards: [CardDataModel] = []) {
         self.allCards = allCards
@@ -33,6 +33,16 @@ import Foundation
                 return !card.isUnseen
             case .unseen:
                 return card.isUnseen
+            }
+        }
+        .sorted { card1, card2 in
+            switch filterBy {
+            case .none:
+                true
+            case .alphabet:
+                card1.targetWordDataModel.headWord < card2.targetWordDataModel.headWord
+            case .stars(let sortOrder):
+                card1.currentStarCount?.rawValue ?? 0 < card2.currentStarCount?.rawValue ?? 0
             }
         }
     }

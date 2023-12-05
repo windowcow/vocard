@@ -8,30 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct CardsPage_CardView: View {
-    @Bindable var card: CardDataModel
-    
-    var body: some View {
-        ZStack {
-            Color.clear
-            Text(card.targetWordDataModel.headWord)
-                .foregroundStyle(.white)
 
-        }
-        .background(.gray.gradient)
-        .clipShape(.rect(cornerRadius: 15))
-        .aspectRatio(0.66, contentMode: .fit)
-        .overlay {
-            VStack {
-                StarView(starCount: card.currentStarCount ?? .zero)
-                    .font(.caption)
-                    .foregroundStyle(.yellow)
-                    .padding(.top)
-                Spacer()
-            }
-        }
-    }
-}
 
 struct CardsPage_CardScroll: View {
     let gridItem2: [GridItem] = [
@@ -53,8 +30,8 @@ struct CardsPage_CardScroll: View {
         ScrollView(.vertical) {
             LazyVGrid(columns: vm.columnNum == 2 ? gridItem2 : gridItem3,
                       alignment: .center, spacing: 20) {
-                ForEach(vm.cards, id: \.persistentModelID) { card in
-                    CardsPage_CardView(card: card)
+                ForEach(vm.cards, id: \.id) { card in
+                    CardsPage_Middle_CardView(card: card)
                 }
             }
                      

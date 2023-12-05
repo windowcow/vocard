@@ -69,36 +69,38 @@ struct CardsPage_Top: View {
                 
                 // TODO: 정렬.
                 
-//                Menu {
-//                    Button {
-//                        
-//                    } label: {
-//                        <#code#>
-//                    }
-//                    
-//                    Button {
-//                        
-//                    } label: {
-//                        
-//                    }
-//                    
-//                    Button {
-//                        
-//                    } label: {
-//                        <#code#>
-//                    }
-//                    
-//                } label: {
-//                    switch vm.filterBy {
-//                    case .none:
-//                        Image(systemName: "arrow.up.arrow.down")
-//                    case .stars:
-//                        Image(systemName: "star.fill")
-//                    case .alphabet:
-//                        Image(systemName: "textformat.abc")
-//                    }
-//                }
-//                .padding(.trailing)
+                Menu {
+                    Button {
+                        vm.filterBy = .none(.ascending)
+                    } label: {
+                        Label("no filter", systemImage: "xmark")
+                    }
+                    
+                    Button {
+                        vm.filterBy = .alphabet(.ascending)
+                    } label: {
+                        Label("alphabet", systemImage: "abc")
+
+                    }
+                    
+                    Button {
+                        vm.filterBy = .stars(.ascending)
+                    } label: {
+                        Label("star", systemImage: "star.fill")
+
+                    }
+                    
+                } label: {
+                    switch vm.filterBy {
+                    case .none:
+                        Image(systemName: "arrow.up.arrow.down")
+                    case .stars:
+                        Image(systemName: "star.fill")
+                    case .alphabet:
+                        Image(systemName: "textformat.abc")
+                    }
+                }
+                .padding(.trailing)
                 
 
             }
