@@ -19,16 +19,11 @@ var sharedModelContainer: ModelContainer {
         QuizData.self
         
     ])
-    let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+    let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: true)
     
     do {
-        let container = try ModelContainer(for: CardDataModel.self,
-                                           ReviewResultDataModel.self,
-                                           WordData.self,
-                                           MeaningData.self,
-                                           ExampleData.self,
-                                           IllustrationData.self,
-                                           QuizData.self, configurations: modelConfiguration)
+        let container = try ModelContainer(for: schema, configurations: modelConfiguration)
+        
         let quizData: [QuizData] = QuizData.samples
         let meaningData: [MeaningData] = MeaningData.samples
         let wordData: [WordData] = WordData.samples

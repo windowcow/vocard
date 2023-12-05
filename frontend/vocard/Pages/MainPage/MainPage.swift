@@ -10,6 +10,8 @@ import Charts
 
 @Observable class CurrentCard {
     var currentCard: CardDataModel?
+    
+
 }
 
 struct MainPage: View {
@@ -46,7 +48,6 @@ struct MainPage: View {
         // geo end
         .task {
             currentCard.currentCard = allCards.getCard(unseenCardProb: 50)
-            print(currentCard.currentCard?.targetWordDataModel.quizzes)
         }
         .environment(currentCard)
     }
