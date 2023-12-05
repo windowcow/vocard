@@ -21,86 +21,51 @@ struct CardsPage_Top: View {
                                                   set: { v in
                     vm.selectedDate = v
                 }), displayedComponents: .date)
-                .fixedSize()
+                .datePickerStyle(.automatic)
                 
-                Menu {
-                    Button {
-                        vm.seenFilterType = .all
-                    } label: {
-                        Label("All", 
-                              systemImage: "square.grid.3x3.fill")
-                    }
-                    Button {
-                        vm.seenFilterType = .seen
-
-                    } label: {
-                        Label("Seen", systemImage: "rectangle")
-                    }
-                    Button {
-                        vm.seenFilterType = .unseen
-
-                    } label: {
-                        Label("Unseen", systemImage: "questionmark.square")
-                    }
-                } label: {
-                    Label(
-                        title: {
-                            Text("")
-                                .font(.callout)
-                        },
-                        icon: {
-                            switch vm.seenFilterType {
-                            case .all:
-                                Image(systemName: "square.grid.3x3.fill")
-                            case .seen:
-                                Image(systemName: "rectangle")
-                            case .unseen:
-                                Image(systemName: "questionmark.square")
-
-                            }
-                        }
-                    )
-                    .foregroundStyle(.black)
-                    .font(.title)
-
-                }
                 
                 Spacer()
                 
                 // TODO: 정렬.
-                
-                Menu {
-                    Button {
-                        vm.filterBy = .none(.ascending)
-                    } label: {
-                        Label("no filter", systemImage: "xmark")
-                    }
-                    
-                    Button {
-                        vm.filterBy = .alphabet(.ascending)
-                    } label: {
-                        Label("alphabet", systemImage: "abc")
+                Picker("", selection: Binding(get: {
+                    vm.seenFilterType
+                }, set: { v in
+                    vm.seenFilterType = v
+                })) {
+                    Text("all")
+                        .tag(CardsPage_VM.SeenFilterType.all)
+                    Text("seen")
+                        .tag(CardsPage_VM.SeenFilterType.seen)
 
-                    }
-                    
-                    Button {
-                        vm.filterBy = .stars(.ascending)
-                    } label: {
-                        Label("star", systemImage: "star.fill")
+                    Text("unseen")
+                        .tag(CardsPage_VM.SeenFilterType.unseen)
 
-                    }
-                    
-                } label: {
-                    switch vm.filterBy {
-                    case .none:
-                        Image(systemName: "arrow.up.arrow.down")
-                    case .stars:
-                        Image(systemName: "star.fill")
-                    case .alphabet:
-                        Image(systemName: "textformat.abc")
-                    }
                 }
-                .padding(.trailing)
+                .pickerStyle(.segmented)
+
+                Picker(selection: Binding(get: {
+                    vm.filterBy
+                }, set: { v in
+                    vm.filterBy = v
+                })) {
+                    Label("No Filter", systemImage: "xmark")
+                        .tag(CardsPage_VM.FilterType.none(.ascending))
+
+                    Label("Alphabet", systemImage: "abc")
+                        .tag(CardsPage_VM.FilterType.alphabet(.ascending))
+
+                    Label("Stars", systemImage: "star.fill")
+                        .tag(CardsPage_VM.FilterType.stars(.ascending))
+
+                } label: {
+                    Label(
+                        title: { Text("Label") },
+                        icon: { Image(systemName: "arrow.up.arrow.down") }
+                    )
+                }
+                .background(.white, in: .capsule)
+                .labelStyle(.iconOnly)
+
                 
 
             }

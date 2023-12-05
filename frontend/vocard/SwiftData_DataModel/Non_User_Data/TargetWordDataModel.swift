@@ -38,7 +38,17 @@ extension TargetWordDataModel {
             TargetWordDataModel(pos: "adjective", headWord: "efficient", sense_num: 1),
             TargetWordDataModel(pos: "adverb", headWord: "silently", sense_num: 2),
             TargetWordDataModel(pos: "verb", headWord: "explore", sense_num: 1),
-            TargetWordDataModel(pos: "noun", headWord: "perspective", sense_num: 3)
+            TargetWordDataModel(pos: "noun", headWord: "perspective", sense_num: 3),
+            TargetWordDataModel(pos: "noun", headWord: "happiness", sense_num: 1),
+            TargetWordDataModel(pos: "verb", headWord: "explore", sense_num: 2),
+            TargetWordDataModel(pos: "adjective", headWord: "mysterious", sense_num: 1),
+            TargetWordDataModel(pos: "adverb", headWord: "softly", sense_num: 1),
+            TargetWordDataModel(pos: "verb", headWord: "imagine", sense_num: 2),
+            TargetWordDataModel(pos: "noun", headWord: "freedom", sense_num: 1),
+            TargetWordDataModel(pos: "adjective", headWord: "vibrant", sense_num: 1),
+            TargetWordDataModel(pos: "adverb", headWord: "eagerly", sense_num: 1),
+            TargetWordDataModel(pos: "verb", headWord: "transform", sense_num: 3),
+            TargetWordDataModel(pos: "noun", headWord: "wisdom", sense_num: 2)
         ]
     }
 }

@@ -47,12 +47,12 @@ import Foundation
         }
     }
     
-    enum SeenFilterType {
-        case all, seen, unseen
+    enum SeenFilterType: Int, Hashable {
+        case all = 0, seen, unseen
     }
     
     
-    enum FilterType {
+    enum FilterType: Hashable {
         enum SortOrder {
             case ascending, descending
         }
