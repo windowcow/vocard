@@ -54,6 +54,8 @@ struct StarView: View {
 
 struct CardStudyPage_Middle_Card_Detail: View {
     @Environment(CurrentCard.self) var currentCard
+    @Environment(\.modelContext) private var modelContext
+    
     @Query var quiz: [QuizData]
     
     var body: some View {

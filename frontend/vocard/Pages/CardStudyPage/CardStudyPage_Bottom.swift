@@ -12,8 +12,10 @@ import SwiftData
 struct CardStudyPage_Bottom: View {
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) private var modelContext
+    
     @Environment(CurrentCard.self) var currentCard
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
+    
     @Query var allCards: [CardData]
 
     @State private var isResultPopoverPresented: Bool = false
@@ -21,6 +23,8 @@ struct CardStudyPage_Bottom: View {
 
     
     var body: some View {
+        @Bindable var vm = vm
+        @Bindable var currentCard = currentCard
         switch vm.cardViewStatus {
         case .front:
             EmptyView()
@@ -65,11 +69,12 @@ struct CardStudyPage_Bottom: View {
                         if currentCard.cardData?.wordData.quizzes.first?.answer == vm.selectedChoice ?? 0 {
                             try currentCard.cardData?.reviewFailed()
                             currentCard.cardData = allCards.pickOneByProbabilityOf(50)
-                            vm.refresh()
+                            isResultPopoverPresented.toggle()
                         } else {
-                            try currentCard.cardData?.reviewFailed()
+                            try currentCard.cardData?.reviewSuccessed()
                             currentCard.cardData = allCards.pickOneByProbabilityOf(50)
-                            vm.refresh()
+                            isResultPopoverPresented.toggle()
+
                         }
                         
 
@@ -91,7 +96,7 @@ struct CardStudyPage_Bottom: View {
                                 Text("맞췄습니다")
                                 Button("확인") {
                                     vm.refresh()
-                                    dismiss()
+                                    isResultPopoverPresented.toggle()
                                 }
                             }
                         }
@@ -103,6 +108,8 @@ struct CardStudyPage_Bottom: View {
                                 Text("틀렸습니다.")
                                 Button("확인") {
                                     dismiss()
+                                    isResultPopoverPresented.toggle()
+
                                 }
                             }
                         }

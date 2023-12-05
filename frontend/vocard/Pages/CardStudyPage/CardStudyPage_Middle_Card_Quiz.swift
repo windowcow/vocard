@@ -53,7 +53,8 @@ struct CardStudyPage_Middle_Card_Quiz: View {
     @Query private var quizData: [QuizData]
     
     init(_ word: WordData) {
-        _quizData = Query(filter: QuizData.predicate(headword: word.headWord, senNum: word.senseNum))
+        _quizData = Query(filter: QuizData.predicate(headword: word.headWord, 
+                                                     senNum: word.senseNum))
         print(quizData.debugDescription)
     }
     

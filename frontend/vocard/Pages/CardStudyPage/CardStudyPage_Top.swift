@@ -12,10 +12,11 @@ import SwiftData
 
 struct CardStudyPage_Top: View {
     @Environment(\.modelContext) private var modelContext
-    @Query var reviewResultDataModels: [ReviewData]
-//    @State private var reviewToday: [ReviewResultDataModel] = []
-    @State private var todaysStars: Int = 0
     @Environment(\.dismiss) var dismiss
+
+    @Query var reviewResultDataModels: [ReviewData]
+
+    @State private var todaysStars: Int = 0
     var body: some View {
         HStack(alignment: .top) {
             VStack(alignment: .center) {
