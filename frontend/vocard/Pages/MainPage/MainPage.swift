@@ -13,9 +13,9 @@ import Charts
 }
 
 struct MainPage: View {
-    @State private var a = 0
     @Namespace var namespace
     @Query var allCards: [CardDataModel]
+    
     @State private var currentCard: CurrentCard = CurrentCard()
     @State private var isCardStudyPagePresented = false
 
@@ -30,7 +30,7 @@ struct MainPage: View {
                            maxHeight: g.size.height * 0.2)
 
                 Spacer()
-                MainPage_Bottom_NextWord(a: $a)
+                MainPage_Bottom_NextWord()
                     .frame(maxWidth: g.size.width * 0.9 ,
                            maxHeight: g.size.height * 0.4)
                 
@@ -44,7 +44,6 @@ struct MainPage: View {
             
         }
         // geo end
-        .animation(.bouncy, value: a)
         .task {
             currentCard.currentCard = allCards.getCard(unseenCardProb: 50)
             print(currentCard.currentCard?.targetWordDataModel.quizzes)

@@ -11,7 +11,6 @@ import SwiftData
 
 struct MainPage_Bottom_NextWord: View {
     @Namespace var namespace
-    @Binding var a: Int
     @Environment(CurrentCard.self) var currentCard
     @State private var isCardStudyPagePresented: Bool = false
     
