@@ -12,11 +12,11 @@ var sharedModelContainer: ModelContainer {
     let schema = Schema([
         CardDataModel.self,
         ReviewResultDataModel.self,
-        WordDataModel.self,
-        MeaningDataModel.self,
-        ExampleDataModel.self,
-        IllustrationDataModel.self,
-        QuizDataModel.self
+        WordData.self,
+        MeaningData.self,
+        ExampleData.self,
+        IllustrationData.self,
+        QuizData.self
         
     ])
     let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
@@ -24,16 +24,16 @@ var sharedModelContainer: ModelContainer {
     do {
         let container = try ModelContainer(for: CardDataModel.self,
                                            ReviewResultDataModel.self,
-                                           WordDataModel.self,
-                                           MeaningDataModel.self,
-                                           ExampleDataModel.self,
-                                           IllustrationDataModel.self,
-                                           QuizDataModel.self, configurations: modelConfiguration)
-        let quizDataModels: [QuizDataModel] = QuizDataModel.samples
-        let wordMeaningDataModels: [MeaningDataModel] = MeaningDataModel.samples
-        let targetWordDataModels: [WordDataModel] = WordDataModel.samples
-        let exampleSentenceDataModels: [ExampleDataModel] = ExampleDataModel.samples
-        let illustrationDataModels: [IllustrationDataModel] = IllustrationDataModel.samples
+                                           WordData.self,
+                                           MeaningData.self,
+                                           ExampleData.self,
+                                           IllustrationData.self,
+                                           QuizData.self, configurations: modelConfiguration)
+        let quizDataModels: [QuizData] = QuizData.samples
+        let wordMeaningDataModels: [MeaningData] = MeaningData.samples
+        let targetWordDataModels: [WordData] = WordData.samples
+        let exampleSentenceDataModels: [ExampleData] = ExampleData.samples
+        let illustrationDataModels: [IllustrationData] = IllustrationData.samples
 
         for q in quizDataModels {
             container.mainContext.insert(q)
