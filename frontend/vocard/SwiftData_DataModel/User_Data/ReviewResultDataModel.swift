@@ -11,7 +11,7 @@ import SwiftData
 @Model final class ReviewResultDataModel {
     var reviewDate: Date
     var result: ReviewResult_ResultAndRevenue
-    @Relationship(inverse: \CardDataModel.reviewResults) var cardDataModel: CardDataModel?
+    @Relationship var cardDataModel: CardDataModel?
     
     init(reviewDate: Date = Date.now, result: ReviewResult_ResultAndRevenue) {
         self.reviewDate = reviewDate

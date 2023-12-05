@@ -9,14 +9,12 @@ import Foundation
 import SwiftData
 
 @Model final class IllustrationData {
-    var id: UUID
     var imageStyle: String
     var imageURL: URL
     
-    @Relationship(inverse: \ExampleData.illustrations) var exampleData: ExampleData?
+    @Relationship var exampleData: ExampleData?
     
-    init(id: UUID = UUID(), imageStyle: String, imageURL: URL) {
-        self.id = id
+    init(imageStyle: String, imageURL: URL) {
         self.imageStyle = imageStyle
         self.imageURL = imageURL
     }

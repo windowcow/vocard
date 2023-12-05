@@ -9,18 +9,16 @@ import SwiftData
 import Foundation
 
 @Model final class WordData {
-    var id: UUID
     var pos: String
     var headWord: String
     var senseNum: Int
     
-    @Relationship var wordMeaningDataModels: [MeaningData]
-    @Relationship var quizzes: [QuizData]
+    @Relationship(inverse: \MeaningData.wordData) var wordMeaningDataModels: [MeaningData]
+    @Relationship(inverse: \QuizData.wordData) var quizzes: [QuizData]
     
     
     
-    init(id: UUID = UUID(), pos: String, headWord: String, sense_num: Int, wordMeaningDataModels: [MeaningData] = [], quizzes: [QuizData] = []) {
-        self.id = id
+    init(pos: String, headWord: String, sense_num: Int, wordMeaningDataModels: [MeaningData] = [], quizzes: [QuizData] = []) {
         self.pos = pos
         self.headWord = headWord
         self.senseNum = sense_num

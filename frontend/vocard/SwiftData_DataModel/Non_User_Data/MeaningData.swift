@@ -9,16 +9,14 @@ import Foundation
 import SwiftData
 
 @Model final class MeaningData {
-    var id: UUID
     var meaningNum: Int
     var meaning: String
     var meaningInOtherLanguages: [String:String]
     
-    @Relationship var exampleSentences: [ExampleData]
-    @Relationship(inverse: \WordData.wordMeaningDataModels) var wordData: WordData?
+    @Relationship(inverse: \ExampleData.meaningData) var exampleSentences: [ExampleData]
+    @Relationship var wordData: WordData?
     
-    init(id: UUID = UUID(), meaningNum: Int, meaning: String, meaningInOtherLanguages: [String : String] = [:], exampleSentences: [ExampleData] = []) {
-        self.id = id
+    init(meaningNum: Int, meaning: String, meaningInOtherLanguages: [String : String] = [:], exampleSentences: [ExampleData] = []) {
         self.meaningNum = meaningNum
         self.meaning = meaning
         self.meaningInOtherLanguages = meaningInOtherLanguages

@@ -14,8 +14,8 @@ struct CardStudyPage_Middle_Card_Quiz_ChoiceButton: View {
     var currentChoiceNum: Int
     
     var body: some View {
+        @Bindable var vm = vm
         if let currentQuiz = currentCard.currentCard?.targetWordDataModel.quizzes.first {
-            let _ = print(currentQuiz)
             if vm.selectedChoice ?? 0 == currentChoiceNum  {
                 Button{
                     vm.selectedChoice = currentChoiceNum
@@ -43,8 +43,10 @@ struct CardStudyPage_Middle_Card_Quiz_ChoiceButton: View {
     }
 }
 
+
+
 struct CardStudyPage_Middle_Card_Quiz: View {
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
+    @Environment(CurrentCard.self) var currentCard
     @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
     
     var body: some View {
@@ -52,7 +54,7 @@ struct CardStudyPage_Middle_Card_Quiz: View {
             .shadow(radius: 30)
             .overlay {
                 VStack {
-                    Text(currentCard?.targetWordDataModel.quizzes.first?.question ?? "Which of the following is not typically associated with a meaningful conversation")
+                    Text(currentCard.currentCard?.targetWordDataModel.quizzes.first?.question ?? "Which of the following is not typically associated with a meaningful conversation")
                         .padding(.top, 50)
                     Spacer()
                     VStack {

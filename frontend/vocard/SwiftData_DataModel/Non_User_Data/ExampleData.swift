@@ -9,15 +9,13 @@ import Foundation
 import SwiftData
 
 @Model final class ExampleData {
-    var id: UUID
     var sentence: String
     var sentenceInOtherLanguage: [String:String]
     
-    @Relationship var illustrations: [IllustrationData]
-    @Relationship(inverse: \MeaningData.exampleSentences) var meaningData: MeaningData?
+    @Relationship(inverse: \IllustrationData.exampleData) var illustrations: [IllustrationData]
+    @Relationship var meaningData: MeaningData?
     
-    init(id: UUID = UUID(), sentence: String, sentenceInOtherLanguage: [String : String] = [:], illustrations: [IllustrationData] = []) {
-        self.id = id
+    init(sentence: String, sentenceInOtherLanguage: [String : String] = [:], illustrations: [IllustrationData] = []) {
         self.sentence = sentence
         self.sentenceInOtherLanguage = sentenceInOtherLanguage
         self.illustrations = illustrations

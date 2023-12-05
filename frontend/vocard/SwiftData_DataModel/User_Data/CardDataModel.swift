@@ -10,7 +10,7 @@ import SwiftData
 
 @Model final class CardDataModel {
     @Relationship var targetWordDataModel: WordData
-    @Relationship var reviewResults: [ReviewResultDataModel] /// 여거는 항상 합이 0...5로 유지 되어야 하기 때문에 reviewsuccess, reviewfail로만 관리된다.
+    @Relationship(inverse: \ReviewResultDataModel.cardDataModel) var reviewResults: [ReviewResultDataModel] /// 여거는 항상 합이 0...5로 유지 되어야 하기 때문에 reviewsuccess, reviewfail로만 관리된다.
     
     init(targetWordDataModel: WordData = WordData(pos: "", headWord: "", sense_num: 1),
          reviewResults: [ReviewResultDataModel] = []) {

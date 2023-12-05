@@ -47,7 +47,7 @@ struct MainPage: View {
         .animation(.bouncy, value: a)
         .task {
             currentCard.currentCard = allCards.getCard(unseenCardProb: 50)
-            print(currentCard.currentCard?.targetWordDataModel.headWord)
+            print(currentCard.currentCard?.targetWordDataModel.quizzes)
         }
         .environment(currentCard)
     }

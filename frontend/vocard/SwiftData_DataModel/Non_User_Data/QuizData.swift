@@ -9,16 +9,14 @@ import SwiftData
 import Foundation
 
 @Model final class QuizData {
-    var id: UUID
     
     var question: String
     var choices: [String] // choice 4개
     var answer: Int /// 1...4
     ///
-    @Relationship(inverse: \WordData.quizzes) var wordData: WordData?
+    @Relationship var wordData: WordData?
     
-    init(id: UUID = UUID(), question: String, choices: [String], answer: Int) {
-        self.id = id
+    init(question: String, choices: [String], answer: Int) {
         self.question = question
         self.choices = choices
         self.answer = answer

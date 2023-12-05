@@ -68,6 +68,7 @@ var sharedModelContainer: ModelContainer {
         
         for word in wordData {
             for quiz in quizData {
+                print(quiz)
                 word.quizzes.append(quiz)
                 quiz.wordData = word
             }
