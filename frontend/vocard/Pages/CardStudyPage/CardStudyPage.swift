@@ -8,9 +8,14 @@
 import SwiftUI
 import SwiftData
 
+extension CurrentCard: Equatable {
+    static func == (lhs: CurrentCard, rhs: CurrentCard) -> Bool {
+        lhs.cardData == rhs.cardData
+    }
+}
 struct CardStudyPage: View {
     @State private var cardStudyPageViewModel: CardStudyPageViewModel = CardStudyPageViewModel()
-    
+    @Environment(CurrentCard.self) private var currentCard
     var body: some View {
         ZStack {
             Color.black
@@ -29,6 +34,9 @@ struct CardStudyPage: View {
 
             }
             .environment(cardStudyPageViewModel)
+            .onChange(of: currentCard) { oldValue, newValue in
+                cardStudyPageViewModel.refresh()
+            }
         }
     }
 }

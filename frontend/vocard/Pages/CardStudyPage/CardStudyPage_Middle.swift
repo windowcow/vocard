@@ -9,8 +9,6 @@ import Foundation
 import SwiftUI
 
 struct CardStudyPage_Middle: View {
-    @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
-    
     var body: some View {
         ZStack {
             Color.clear

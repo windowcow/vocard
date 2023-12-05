@@ -188,7 +188,6 @@
 				8829CBBE2B1F003D0071C5CA /* CardStudyPage_Middle_Card.swift */,
 				8829CBBA2B1E2EB30071C5CA /* CardStudyPage_Middle_Card_Detail.swift */,
 				8829CBBC2B1E2EC50071C5CA /* CardStudyPage_Middle_Card_Quiz.swift */,
-				88A7E8B22B1FBE8F00D6F570 /* QuizData+Predicate.swift */,
 				888B57ED2B1DB53500117801 /* CardStudyPage_Middle_Card_Front.swift */,
 				888B57EC2B1DB53500117801 /* CardStudyPage_Bottom.swift */,
 			);
@@ -247,6 +246,7 @@
 				888B57CA2B1DAA9600117801 /* MeaningData.swift */,
 				88C953D12B1FAD810037DB1F /* MeaningData+Predicate.swift */,
 				888B57C82B1DAA9600117801 /* QuizData.swift */,
+				88A7E8B22B1FBE8F00D6F570 /* QuizData+Predicate.swift */,
 				888B57C62B1DAA9600117801 /* ExampleData.swift */,
 				888B57C92B1DAA9600117801 /* IllustrationData.swift */,
 			);

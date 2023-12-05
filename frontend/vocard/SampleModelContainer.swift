@@ -80,7 +80,7 @@ var sharedModelContainer: ModelContainer {
         }
         
         for cardDataModel in cardDataModels {
-            for _ in 0...3 {
+            for _ in 0...2 {
                 let currentReviewResult = ReviewData.makeSample()
                 container.mainContext.insert(currentReviewResult)
                 cardDataModel.reviewData.append(currentReviewResult)

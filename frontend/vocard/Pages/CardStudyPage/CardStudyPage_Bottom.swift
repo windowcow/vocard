@@ -32,7 +32,7 @@ struct CardStudyPage_Bottom: View {
             Button {
                 do {
                     try currentCard.cardData?.reviewFailed()
-                    currentCard.cardData = allCards.pickOneByProbabilityOf(50)
+                    currentCard.cardData = allCards.getCard()
                     vm.refresh()
 
                 } catch {
@@ -51,7 +51,7 @@ struct CardStudyPage_Bottom: View {
                 Button {
                     do {
                         try currentCard.cardData?.reviewFailed()
-                        currentCard.cardData = allCards.pickOneByProbabilityOf(50)
+                        currentCard.cardData = allCards.getCard()
                         vm.refresh()
 
                     } catch {
@@ -66,13 +66,15 @@ struct CardStudyPage_Bottom: View {
                 
                 Button {
                     do {
-                        if currentCard.cardData?.wordData.quizzes.first?.answer == vm.selectedChoice ?? 0 {
-                            try currentCard.cardData?.reviewFailed()
-                            currentCard.cardData = allCards.pickOneByProbabilityOf(50)
+                        if (currentCard.cardData?.wordData.quizzes.first?.answer ?? -1) == (vm.selectedChoice ?? 0) {
+                            try currentCard.cardData?.reviewSuccessed()
+                            currentCard.cardData = allCards.getCard()
+                            isRecentReviewSuccessed = true
                             isResultPopoverPresented.toggle()
                         } else {
-                            try currentCard.cardData?.reviewSuccessed()
-                            currentCard.cardData = allCards.pickOneByProbabilityOf(50)
+                            try currentCard.cardData?.reviewFailed()
+                            currentCard.cardData = allCards.getCard()
+                            isRecentReviewSuccessed = false
                             isResultPopoverPresented.toggle()
 
                         }
@@ -107,7 +109,7 @@ struct CardStudyPage_Bottom: View {
                             VStack {
                                 Text("틀렸습니다.")
                                 Button("확인") {
-                                    dismiss()
+                                    vm.refresh()
                                     isResultPopoverPresented.toggle()
 
                                 }

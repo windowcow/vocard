@@ -47,10 +47,10 @@ struct MainPage: View {
             
         }
         // geo end
+        .environment(currentCard)
         .task {
             currentCard.cardData = allCards.getCard(unseenCardProb: 50)
         }
-        .environment(currentCard)
     }
 }
 

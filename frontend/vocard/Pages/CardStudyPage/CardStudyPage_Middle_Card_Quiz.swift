@@ -18,7 +18,7 @@ struct CardStudyPage_Middle_Card_Quiz_ChoiceButton: View {
     var body: some View {
         @Bindable var vm = vm
 
-        if vm.selectedChoice ?? 0 == currentChoiceNum  {
+        if (vm.selectedChoice ?? 0) == currentChoiceNum  {
             Button{
                 vm.selectedChoice = currentChoiceNum
             } label: {
