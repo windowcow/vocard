@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CardsPage: View {
     @State private var vm: CardsPage_VM = CardsPage_VM()
+    
     var body: some View {
         ZStack(alignment: .top) {
             Color.clear

@@ -23,45 +23,83 @@ struct CardsPage_Top: View {
                 }), displayedComponents: .date)
                 .fixedSize()
                 
-                if vm.isSeenSelected {
-                    Button("Seen") {
-                        vm.isSeenSelected.toggle()
+                Menu {
+                    Button {
+                        vm.seenFilterType = .all
+                    } label: {
+                        Label("All", 
+                              systemImage: "square.grid.3x3.fill")
                     }
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.capsule)
-                } else {
-                    Button("Seen") {
-                        vm.isSeenSelected.toggle()
+                    Button {
+                        vm.seenFilterType = .seen
+
+                    } label: {
+                        Label("Seen", systemImage: "rectangle")
                     }
-                    .buttonStyle(.bordered)
-                    .buttonBorderShape(.capsule)
+                    Button {
+                        vm.seenFilterType = .unseen
+
+                    } label: {
+                        Label("Unseen", systemImage: "questionmark.square")
+                    }
+                } label: {
+                    Label(
+                        title: {
+                            Text("")
+                                .font(.callout)
+                        },
+                        icon: {
+                            switch vm.seenFilterType {
+                            case .all:
+                                Image(systemName: "square.grid.3x3.fill")
+                            case .seen:
+                                Image(systemName: "rectangle")
+                            case .unseen:
+                                Image(systemName: "questionmark.square")
+
+                            }
+                        }
+                    )
+                    .foregroundStyle(.black)
+                    .font(.title)
+
                 }
                 
-                if vm.isUnseenSelected {
-                    Button("Unseen") {
-                        vm.isUnseenSelected.toggle()
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.capsule)
-                } else {
-                    Button("Unseen") {
-                        vm.isUnseenSelected.toggle()
-                    }
-                    .buttonStyle(.bordered)
-                    .buttonBorderShape(.capsule)
-                }
                 Spacer()
                 
+                // TODO: 정렬.
                 
-                Button {
-                    
-                } label: {
-                    VStack{
-                        Text(Image(systemName: "arrow.up.arrow.down"))
-
-                    }
-                }
-                .padding(.trailing)
+//                Menu {
+//                    Button {
+//                        
+//                    } label: {
+//                        <#code#>
+//                    }
+//                    
+//                    Button {
+//                        
+//                    } label: {
+//                        
+//                    }
+//                    
+//                    Button {
+//                        
+//                    } label: {
+//                        <#code#>
+//                    }
+//                    
+//                } label: {
+//                    switch vm.filterBy {
+//                    case .none:
+//                        Image(systemName: "arrow.up.arrow.down")
+//                    case .stars:
+//                        Image(systemName: "star.fill")
+//                    case .alphabet:
+//                        Image(systemName: "textformat.abc")
+//                    }
+//                }
+//                .padding(.trailing)
+                
 
             }
         }

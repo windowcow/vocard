@@ -114,10 +114,10 @@
 		8829CBE12B1F3C960071C5CA /* CardsPage */ = {
 			isa = PBXGroup;
 			children = (
+				8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */,
 				8829CBE42B1F44730071C5CA /* CardsPage.swift */,
 				8829CBEA2B1F44CF0071C5CA /* CardsPage_Top.swift */,
 				8829CBE22B1F3CA50071C5CA /* CardsPage_CardScroll.swift */,
-				8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */,
 				8829CBE62B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift */,
 			);
 			path = CardsPage;
