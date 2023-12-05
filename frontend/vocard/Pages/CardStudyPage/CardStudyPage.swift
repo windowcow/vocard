@@ -12,6 +12,7 @@ struct CardStudyPage: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
     @State private var cardStudyPageViewModel: CardStudyPageViewModel = CardStudyPageViewModel()
     @State private var cardViewStatus: CardViewStatus = .front
+    
     var body: some View {
         ZStack {
             Color.clear
@@ -19,7 +20,7 @@ struct CardStudyPage: View {
                 CardStudyPage_Top()
                 CardStudyPage_Middle(cardViewStatus: $cardViewStatus)
                     .padding()
-                CardStudyPage_Bottom()
+                CardStudyPage_Bottom(cardViewStatus: $cardViewStatus)
             }
             .environment(cardStudyPageViewModel)
         }

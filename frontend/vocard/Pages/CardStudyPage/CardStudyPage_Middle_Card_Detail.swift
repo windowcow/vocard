@@ -7,7 +7,49 @@
 
 import SwiftUI
 
-
+struct StarView: View {
+    let starCount: CardDataModel.CurrentStarCount
+    var body: some View {
+        switch starCount {
+        case .zero:
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star"))
+        case .one:
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star"))
+        case .two:
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star"))
+        case .three:
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star")) +
+            Text(Image(systemName: "star"))
+        case .four:
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star"))
+        case .max:
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill")) +
+            Text(Image(systemName: "star.fill"))
+        }
+    }
+}
 
 struct CardStudyPage_Middle_Card_Detail: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
@@ -18,10 +60,27 @@ struct CardStudyPage_Middle_Card_Detail: View {
                 ZStack {
                     Color.clear
                     VStack {
+                        StarView(starCount: currentCard?.currentStarCount ?? .zero)
                         Text(currentCard?.targetWordDataModel.headWord ?? "")
                             .font(.largeTitle)
                             .bold()
                         Text(currentCard?.targetWordDataModel.wordMeaningDataModels.first?.meaning ?? "To go")
+                        VStack {
+                            Image("sampleImage")
+                                .resizable()
+                                .scaledToFit()
+                                .padding(30)
+                                .shadow(radius: 0)
+                            Text(currentCard?.targetWordDataModel.wordMeaningDataModels.first?.exampleSentences.first?.sentence ?? "I like apple")
+                        }
+                        
+                        .compositingGroup()
+                        .shadow(radius: 10)
+
+                        .foregroundStyle(.white)
+                        .padding()
+//                        .background(.white, in: .rect(cornerRadius: 10))
+                        .padding()
                     }
                 
                 }

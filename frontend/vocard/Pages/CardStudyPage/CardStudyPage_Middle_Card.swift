@@ -11,6 +11,7 @@ struct CardStudyPage_Middle_Card: View {
     @Environment(CardDataModel.self) var currentCard: CardDataModel?
     @State private var vm: CardStudyPageViewModel = CardStudyPageViewModel()
     @Binding var cardViewStatus: CardViewStatus
+    @Binding var selectedChoice: Int?
     
     var body: some View {
         switch cardViewStatus {
@@ -21,7 +22,7 @@ struct CardStudyPage_Middle_Card: View {
         case .detail:
             CardStudyPage_Middle_Card_Detail()
         case .quiz:
-            CardStudyPage_Middle_Card_Quiz()
+            CardStudyPage_Middle_Card_Quiz(selectedChoice: $selectedChoice)
         }
     }
 }
