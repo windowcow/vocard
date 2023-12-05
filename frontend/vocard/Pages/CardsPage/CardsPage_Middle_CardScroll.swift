@@ -10,7 +10,7 @@ import SwiftData
 
 
 
-struct CardsPage_CardScroll: View {
+struct CardsPage_Middle_CardScroll: View {
     let gridItem2: [GridItem] = [
         GridItem(.flexible(), alignment: nil),
         GridItem(.flexible(),  alignment: nil)
