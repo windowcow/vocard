@@ -29,8 +29,6 @@ var sharedModelContainer: ModelContainer {
                                            ExampleSentenceDataModel.self,
                                            IllustrationDataModel.self,
                                            QuizDataModel.self, configurations: modelConfiguration)
-
-        
         let quizDataModels: [QuizDataModel] = QuizDataModel.samples
         let wordMeaningDataModels: [WordMeaningDataModel] = WordMeaningDataModel.samples
         let targetWordDataModels: [TargetWordDataModel] = TargetWordDataModel.samples

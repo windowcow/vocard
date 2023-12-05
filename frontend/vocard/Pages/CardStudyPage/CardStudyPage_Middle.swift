@@ -21,36 +21,9 @@ struct CardStudyPage_Middle: View {
     }
 }
 
-struct CardStudyPage_Middle_Card: View {
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
-    @State private var vm: CardStudyPageViewModel = CardStudyPageViewModel()
-    @Binding var cardViewStatus: CardViewStatus
-    
-    var body: some View {
-        switch cardViewStatus {
-        case .front:
-            CardStudyPage_Middle_Card_Front(headword: currentCard?.targetWordDataModel.headWord ?? "Apple")
-                .environment(vm)
-                .movable(vm, $cardViewStatus)
-        case .detail:
-            CardStudyPage_Middle_Card_Detail()
-        case .quiz:
-            CardStudyPage_Middle_Card_Quiz()
-        }
-    }
-}
 
-struct CardStudyPage_Middle_Card_Detail: View {
-    var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
-    }
-}
 
-struct CardStudyPage_Middle_Card_Quiz: View {
-    var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
-    }
-}
+
 
 enum CardMovementLocation {
     case left, center, right
