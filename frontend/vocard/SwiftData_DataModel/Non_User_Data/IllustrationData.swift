@@ -13,6 +13,8 @@ import SwiftData
     var imageStyle: String
     var imageURL: URL
     
+    @Relationship(inverse: \ExampleData.illustrations) var exampleData: ExampleData?
+    
     init(id: UUID = UUID(), imageStyle: String, imageURL: URL) {
         self.id = id
         self.imageStyle = imageStyle

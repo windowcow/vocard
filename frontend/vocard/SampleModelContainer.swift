@@ -29,43 +29,47 @@ var sharedModelContainer: ModelContainer {
                                            ExampleData.self,
                                            IllustrationData.self,
                                            QuizData.self, configurations: modelConfiguration)
-        let quizDataModels: [QuizData] = QuizData.samples
-        let wordMeaningDataModels: [MeaningData] = MeaningData.samples
-        let targetWordDataModels: [WordData] = WordData.samples
-        let exampleSentenceDataModels: [ExampleData] = ExampleData.samples
-        let illustrationDataModels: [IllustrationData] = IllustrationData.samples
+        let quizData: [QuizData] = QuizData.samples
+        let meaningData: [MeaningData] = MeaningData.samples
+        let wordData: [WordData] = WordData.samples
+        let exampleData: [ExampleData] = ExampleData.samples
+        let illustrationData: [IllustrationData] = IllustrationData.samples
 
-        for q in quizDataModels {
+        for q in quizData {
             container.mainContext.insert(q)
         }
-        for wm in wordMeaningDataModels {
+        for wm in meaningData {
             container.mainContext.insert(wm)
         }
-        for tw in targetWordDataModels {
+        for tw in wordData {
             container.mainContext.insert(tw)
         }
-        for es in exampleSentenceDataModels {
+        for es in exampleData {
             container.mainContext.insert(es)
         }
-        for ill in illustrationDataModels {
+        for ill in illustrationData {
             container.mainContext.insert(ill)
         }
         
-        for targetWordDataModel in targetWordDataModels {
-            for wordMeaningDataModel in wordMeaningDataModels {
-                for exampleSentenceDataModel in exampleSentenceDataModels {
-                    for illustrationDataModel in illustrationDataModels {
-                        exampleSentenceDataModel.illustrations.append(illustrationDataModel)
+        for word in wordData {
+            for meaning in meaningData {
+                for example in exampleData {
+                    for illustration in illustrationData {
+                        example.illustrations.append(illustration)
+                        illustration.exampleData = example
                     }
-                    wordMeaningDataModel.exampleSentences.append(exampleSentenceDataModel)
+                    meaning.exampleSentences.append(example)
+                    example.meaningData = meaning
                 }
-                targetWordDataModel.wordMeaningDataModels.append(wordMeaningDataModel)
+                word.wordMeaningDataModels.append(meaning)
+                meaning.wordData = word
             }
         }
         
-        for targetWordDataModel in targetWordDataModels {
-            for quizDataModel in quizDataModels {
-                targetWordDataModel.quizzes.append(quizDataModel)
+        for word in wordData {
+            for quiz in quizData {
+                word.quizzes.append(quiz)
+                quiz.wordData = word
             }
         }
         
@@ -73,7 +77,7 @@ var sharedModelContainer: ModelContainer {
         /// UserData
         var cardDataModels: [CardDataModel] = []
         
-        for targetWordDataModel in targetWordDataModels {
+        for targetWordDataModel in wordData {
             let currentCardDataModel = CardDataModel()
             container.mainContext.insert(currentCardDataModel)
             currentCardDataModel.targetWordDataModel = targetWordDataModel

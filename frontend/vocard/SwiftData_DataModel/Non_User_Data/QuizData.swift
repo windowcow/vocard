@@ -14,6 +14,8 @@ import Foundation
     var question: String
     var choices: [String] // choice 4개
     var answer: Int /// 1...4
+    ///
+    @Relationship(inverse: \WordData.quizzes) var wordData: WordData?
     
     init(id: UUID = UUID(), question: String, choices: [String], answer: Int) {
         self.id = id

@@ -15,6 +15,7 @@ import SwiftData
     var meaningInOtherLanguages: [String:String]
     
     @Relationship var exampleSentences: [ExampleData]
+    @Relationship(inverse: \WordData.wordMeaningDataModels) var wordData: WordData?
     
     init(id: UUID = UUID(), meaningNum: Int, meaning: String, meaningInOtherLanguages: [String : String] = [:], exampleSentences: [ExampleData] = []) {
         self.id = id
