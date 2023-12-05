@@ -52,7 +52,7 @@ struct StarView: View {
 }
 
 struct CardStudyPage_Middle_Card_Detail: View {
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
+    @Environment(CurrentCard.self) var currentCard
     
     var body: some View {
         CardBackgroundView(backgroundColor: .green)
@@ -60,18 +60,18 @@ struct CardStudyPage_Middle_Card_Detail: View {
                 ZStack {
                     Color.clear
                     VStack {
-                        StarView(starCount: currentCard?.currentStarCount ?? .zero)
-                        Text(currentCard?.targetWordDataModel.headWord ?? "")
+                        StarView(starCount: currentCard.currentCard?.currentStarCount ?? .zero)
+                        Text(currentCard.currentCard?.targetWordDataModel.headWord ?? "example")
                             .font(.largeTitle)
                             .bold()
-                        Text(currentCard?.targetWordDataModel.wordMeaningDataModels.first?.meaning ?? "To go")
+                        Text(currentCard.currentCard?.targetWordDataModel.wordMeaningDataModels.first?.meaning ?? "To go")
                         VStack {
                             Image("sampleImage")
                                 .resizable()
                                 .scaledToFit()
                                 .padding(30)
                                 .shadow(radius: 0)
-                            Text(currentCard?.targetWordDataModel.wordMeaningDataModels.first?.exampleSentences.first?.sentence ?? "I like apple")
+                            Text(currentCard.currentCard?.targetWordDataModel.wordMeaningDataModels.first?.exampleSentences.first?.sentence ?? "I like apple")
                         }
                         
                         .compositingGroup()

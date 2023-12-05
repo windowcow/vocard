@@ -12,7 +12,7 @@ import SwiftData
 struct MainPage_Bottom_NextWord: View {
     @Namespace var namespace
     @Binding var a: Int
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
+    @Environment(CurrentCard.self) var currentCard
     
     var body: some View {
         GeometryReader { geo in
@@ -22,7 +22,7 @@ struct MainPage_Bottom_NextWord: View {
                     Spacer()
                     Spacer()
                     
-                    Text(currentCard?.targetWordDataModel.headWord ?? "No more card")
+                    Text(currentCard.currentCard?.targetWordDataModel.headWord ?? "No more card")
                         .foregroundStyle(.black)
                         .bold()
                         .font(.system(size: 48))

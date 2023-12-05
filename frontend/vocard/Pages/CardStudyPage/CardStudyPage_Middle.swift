@@ -9,14 +9,12 @@ import Foundation
 import SwiftUI
 
 struct CardStudyPage_Middle: View {
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
-    @Binding var cardViewStatus: CardViewStatus
+    @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
     
     var body: some View {
         ZStack {
             Color.clear
-            CardStudyPage_Middle_Card( cardViewStatus: $cardViewStatus)
-            
+            CardStudyPage_Middle_Card()
         }
     }
 }
@@ -40,18 +38,19 @@ enum CardMovementLocation {
     }
 }
 
-
 enum CardViewStatus: Equatable {
-    case front, detail, quiz
+    enum FrontStatus {
+        case middle, left, right
+    }
+    
+    enum BackStatus {
+        case detail, quiz
+    }
+    
+    case front(FrontStatus), back(BackStatus)
 }
 
-enum CardViewFrontStatus: Equatable {
-    case middle, left, right
-}
 
-@Observable  class CardStudyPageViewModel {
-    var cardViewStatus: CardViewFrontStatus = .middle
-}
 
 
 

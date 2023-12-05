@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct CardStudyPage_Middle_Card: View {
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
-    @State private var vm: CardStudyPageViewModel = CardStudyPageViewModel()
-    @Binding var cardViewStatus: CardViewStatus
-    @Binding var selectedChoice: Int?
+    @Environment(CurrentCard.self) var currentCard
+    @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
     
+
     var body: some View {
-        switch cardViewStatus {
-        case .front:
-            CardStudyPage_Middle_Card_Front(headword: currentCard?.targetWordDataModel.headWord ?? "Apple")
-                .environment(vm)
-                .movable(vm, $cardViewStatus)
-        case .detail:
+        switch vm.cardViewStatus {
+        case .front(let frontStatus):
+            CardStudyPage_Middle_Card_Front(headword: currentCard.currentCard?.targetWordDataModel.headWord ?? "Apple", 
+                                            frontStatus: frontStatus)
+                .movable(vm)
+        case .back(.detail):
             CardStudyPage_Middle_Card_Detail()
-        case .quiz:
-            CardStudyPage_Middle_Card_Quiz(selectedChoice: $selectedChoice)
+        case .back(.quiz):
+            CardStudyPage_Middle_Card_Quiz()
         }
     }
 }

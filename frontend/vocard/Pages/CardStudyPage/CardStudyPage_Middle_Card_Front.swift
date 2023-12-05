@@ -10,12 +10,12 @@ import SwiftUI
 
 struct CardStudyPage_Middle_Card_Front: View {
     /// switch view
-    @Environment(CardStudyPageViewModel.self) var vm
     var headword: String
+    var frontStatus: CardViewStatus.FrontStatus
 
     var body: some View {
         ZStack {
-            switch vm.cardViewStatus {
+            switch frontStatus {
             case .middle:
                 CardBackgroundView(backgroundColor: .mint)
                     .overlay {

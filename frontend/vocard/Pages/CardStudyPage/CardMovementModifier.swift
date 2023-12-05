@@ -10,15 +10,14 @@ import SwiftUI
 
 extension View {
     @ViewBuilder
-    func movable(_ viewModel: CardStudyPageViewModel, _ cardViewStatus: Binding<CardViewStatus>) -> some View {
-        self.modifier(CardMovementModifier(viewModel: viewModel, cardViewStatus: cardViewStatus))
+    func movable(_ vm: CardStudyPageViewModel) -> some View {
+        self.modifier(CardMovementModifier(vm: vm))
     }
 }
 
 
 struct CardMovementModifier: ViewModifier {
-    @Bindable var viewModel: CardStudyPageViewModel
-    @Binding var cardViewStatus: CardViewStatus
+    @Bindable var vm: CardStudyPageViewModel
     @GestureState var offsetState: CGSize = .zero
 
     func body(content: Content) -> some View {
@@ -41,24 +40,24 @@ struct CardMovementModifier: ViewModifier {
                         switch state.width {
                         case let x where CardMovementLocation.left.range ~= x:
                             print(111)
-                            viewModel.cardViewStatus = .left
+                            vm.cardViewStatus = .front(.left)
                         case let x where CardMovementLocation.right.range ~= x:
-                            viewModel.cardViewStatus = .right
+                            vm.cardViewStatus = .front(.right)
                         default:
-                            viewModel.cardViewStatus = .middle
+                            vm.cardViewStatus = .front(.middle)
                         }
                     }
                     .onEnded { value in
                         withAnimation {
                             switch value.translation.width {
                             case let x where CardMovementLocation.center.range ~= x:
-                                cardViewStatus = .front
+                                vm.cardViewStatus = .front(.middle)
                             case let x where CardMovementLocation.left.range ~= x:
-                                cardViewStatus = .detail
+                                vm.cardViewStatus = .back(.detail)
                             case let x where CardMovementLocation.right.range ~= x:
-                                cardViewStatus = .quiz
+                                vm.cardViewStatus = .back(.quiz)
                             default:
-                                cardViewStatus = .front
+                                vm.cardViewStatus = .front(.middle)
                             }
                         }
                     }

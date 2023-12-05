@@ -7,39 +7,50 @@
 
 import Foundation
 import SwiftUI
+import SwiftData
 
 struct CardStudyPage_Bottom: View {
-    @Binding var cardViewStatus: CardViewStatus
-    @Environment(CardDataModel.self) var currentCard: CardDataModel?
+    @Environment(\.dismiss) var dismiss
+    @Environment(CurrentCard.self) var currentCard
+    @Environment(CardStudyPageViewModel.self) var vm: CardStudyPageViewModel
+    
+    @Query var allCards: [CardDataModel]
+
+    @State private var isResultPopoverPresented: Bool = false
+    @State private var isRecentReviewSuccessed: Bool = false
+
     
     var body: some View {
-        switch cardViewStatus {
+        switch vm.cardViewStatus {
         case .front:
             EmptyView()
-        case .detail:
+        case .back(.detail):
             Button {
-                if let currentCard = currentCard {
-                    do {
-                        try currentCard.reviewFailed()
+                do {
+                    try currentCard.currentCard?.reviewFailed()
+                    currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                    vm.refresh()
+                    print(currentCard.currentCard)
 
-                    } catch {
-                        
-                    }
+                } catch {
+                    
                 }
+
+                
             } label: {
                 Text("NEXT")
                     .frame(maxWidth: .infinity)
             }
-        case .quiz:
+        case .back(.quiz):
             HStack {
                 Button {
-                    if let currentCard = currentCard {
-                        do {
-                            try currentCard.reviewFailed()
+                    do {
+                        try currentCard.currentCard?.reviewFailed()
+                        currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                        vm.refresh()
 
-                        } catch {
-                            
-                        }
+                    } catch {
+                        
                     }
                 } label: {
                     Text("PASS")
@@ -47,18 +58,51 @@ struct CardStudyPage_Bottom: View {
                 }
                 
                 Button {
-                    if let currentCard = currentCard {
-                        do {
-                            
-                            try currentCard.reviewFailed()
-
-                        } catch {
-                            
+                    do {
+                        if currentCard.currentCard?.targetWordDataModel.quizzes.first?.answer == vm.selectedChoice ?? 0 {
+                            try currentCard.currentCard?.reviewFailed()
+                            currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                            vm.refresh()
+                        } else {
+                            try currentCard.currentCard?.reviewFailed()
+                            currentCard.currentCard = allCards.pickOneByProbabilityOf(50)
+                            vm.refresh()
                         }
+                        
+
+                    } catch {
+                        
                     }
                 } label: {
                     Text("SUBMIT")
                         .frame(maxWidth: .infinity)
+                }
+                .popover(isPresented: $isResultPopoverPresented) {
+                        
+                    if isRecentReviewSuccessed {
+                        ZStack {
+                            Color.white
+                            VStack {
+                                Text("맞췄습니다")
+                                Button("확인") {
+                                    vm.refresh()
+                                    dismiss()
+                                }
+                            }
+                        }
+                        
+                    } else {
+                        ZStack {
+                            Color.white
+                            VStack {
+                                Text("틀렸습니다.")
+                                Button("확인") {
+                                    dismiss()
+                                }
+                            }
+                        }
+                        
+                    }
                 }
             }
         }

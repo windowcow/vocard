@@ -8,12 +8,15 @@ import SwiftUI
 import SwiftData
 import Charts
 
+@Observable class CurrentCard {
+    var currentCard: CardDataModel?
+}
 
 struct MainPage: View {
     @State private var a = 0
     @Namespace var namespace
     @Query var allCards: [CardDataModel]
-    @State private var currentCard: CardDataModel?
+    @State private var currentCard: CurrentCard = CurrentCard()
 
     var body: some View {
         GeometryReader { g in
@@ -48,7 +51,8 @@ struct MainPage: View {
         // geo end
         .animation(.bouncy, value: a)
         .task {
-            currentCard = allCards.getCard(unseenCardProb: 50)
+            currentCard.currentCard = allCards.getCard(unseenCardProb: 50)
+            print(currentCard.currentCard?.targetWordDataModel.headWord)
         }
         .environment(currentCard)
     }
