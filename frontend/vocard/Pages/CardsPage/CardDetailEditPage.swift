@@ -9,11 +9,39 @@ import Foundation
 import SwiftUI
 import SwiftData
 
+extension WordData {
+    static func predicate(
+        headword: String
+    ) -> Predicate<WordData> {
+        return #Predicate<WordData> { word in
+            word.headword == headword
+        }
+    }
+}
+
+extension MeaningData {
+    static func predicate(
+        headword: String
+    ) -> Predicate<MeaningData> {
+        return #Predicate<MeaningData> { meaning in
+            if let word = meaning.wordData {
+                word.headword == headword
+            } else {
+                false
+            }
+        }
+    }
+}
+
 struct CardDetailEditPage: View {
-    @Bindable var card: CardData
     @Environment(\.dismiss) var dismiss
     
-    @Query var cards: [CardData]
+    @Query var meanings: [MeaningData]
+    
+    init(headword: String) {
+        _meanings = Query(filter: MeaningData.predicate(headword: headword))
+    }
+    
     
     var body: some View {
         ZStack {
@@ -22,15 +50,12 @@ struct CardDetailEditPage: View {
                 Button("x"){
                     dismiss()
                 }
-                Text(card.wordData.headWord)
-                Text(card.wordData.wordMeaningDataModels.first?.meaning ?? "no")
             }
             
             
             LazyVStack {
-                ForEach(card.wordData.wordMeaningDataModels) { meaning in
-                    let _ = print(meaning.meaning)
-                    CardDetailEditPage_Meaning(meaning: meaning)
+                ForEach(meanings) { meaning in
+                    Text(meaning.meaning)
                 }
             }
             

@@ -20,6 +20,7 @@
 		8829CBED2B1F46840071C5CA /* CardsPage_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */; };
 		8829CBEF2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEE2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift */; };
 		883B14662B217686004A5D74 /* CardDetailEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B14652B217686004A5D74 /* CardDetailEditPage.swift */; };
+		883B14682B217EE3004A5D74 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 883B14672B217EE3004A5D74 /* File */; };
 		888B57D22B1DAA9600117801 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B12B1DAA9600117801 /* RootView.swift */; };
 		888B57D32B1DAA9600117801 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B32B1DAA9600117801 /* MainPage.swift */; };
 		888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B42B1DAA9600117801 /* MainPage_Middle.swift */; };
@@ -69,6 +70,7 @@
 		8829CBEE2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_Middle_CardView.swift; sourceTree = "<group>"; };
 		883327252AE219E7003D3E6F /* vocard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		883B14652B217686004A5D74 /* CardDetailEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailEditPage.swift; sourceTree = "<group>"; };
+		883B14672B217EE3004A5D74 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 		888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vocard-Bridging-Header.h"; sourceTree = "<group>"; };
 		888B57B12B1DAA9600117801 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		888B57B32B1DAA9600117801 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				888B57CD2B1DAA9600117801 /* vocardApp.swift */,
 				888B57B82B1DAA9600117801 /* SampleModelContainer.swift */,
 				888B57B12B1DAA9600117801 /* RootView.swift */,
+				883B14672B217EE3004A5D74 /* File */,
 				888B57B92B1DAA9600117801 /* Assets.xcassets */,
 				888B57BF2B1DAA9600117801 /* SwiftData_DataModel */,
 				888B57BA2B1DAA9600117801 /* Extensions */,
@@ -325,6 +328,7 @@
 			files = (
 				888B57E72B1DAA9700117801 /* Preview Assets.xcassets in Resources */,
 				888B57D92B1DAA9600117801 /* Assets.xcassets in Resources */,
+				883B14682B217EE3004A5D74 /* File in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

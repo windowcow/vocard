@@ -65,7 +65,7 @@ struct CardStudyPage_Middle_Card_Detail: View {
                     Color.clear
                     VStack {
                         StarView(starCount: currentCard.cardData?.currentStarCount ?? .zero)
-                        Text(currentCard.cardData?.wordData.headWord ?? "example")
+                        Text(currentCard.cardData?.wordData.headword ?? "example")
                             .font(.largeTitle)
                             .bold()
                         Text(currentCard.cardData?.wordData.wordMeaningDataModels.first?.meaning ?? "To go")

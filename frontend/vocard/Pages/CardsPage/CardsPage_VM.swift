@@ -40,7 +40,7 @@ import Foundation
             case .none:
                 true
             case .alphabet:
-                card1.wordData.headWord < card2.wordData.headWord
+                card1.wordData.headword < card2.wordData.headword
             case .stars(let sortOrder):
                 card1.currentStarCount?.rawValue ?? 0 < card2.currentStarCount?.rawValue ?? 0
             }

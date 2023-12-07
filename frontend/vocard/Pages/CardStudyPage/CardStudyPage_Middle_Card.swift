@@ -21,7 +21,7 @@ struct CardStudyPage_Middle_Card: View {
         if let word = currentCard.cardData?.wordData {
             switch vm.cardViewStatus {
             case .front(let frontStatus):
-                CardStudyPage_Middle_Card_Front(headword: word.headWord, 
+                CardStudyPage_Middle_Card_Front(headword: word.headword, 
                                                 frontStatus: frontStatus)
                     .movable(vm)
             case .back(.detail):

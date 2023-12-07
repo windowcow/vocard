@@ -10,7 +10,7 @@ import Foundation
 
 @Model final class WordData {
     var pos: String
-    var headWord: String
+    var headword: String
     var senseNum: Int
     
     @Relationship(inverse: \MeaningData.wordData) var wordMeaningDataModels: [MeaningData]
@@ -20,7 +20,7 @@ import Foundation
     
     init(pos: String, headWord: String, sense_num: Int, wordMeaningDataModels: [MeaningData] = [], quizzes: [QuizData] = []) {
         self.pos = pos
-        self.headWord = headWord
+        self.headword = headWord
         self.senseNum = sense_num
         self.wordMeaningDataModels = wordMeaningDataModels
         self.quizzes = quizzes

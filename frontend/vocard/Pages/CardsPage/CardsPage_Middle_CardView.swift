@@ -16,7 +16,7 @@ struct CardsPage_Middle_CardView: View {
         ZStack {
             Color.clear
             VStack {
-                Text(card.wordData.headWord)
+                Text(card.wordData.headword)
                     .foregroundStyle(.white)
             }
             
@@ -39,7 +39,7 @@ struct CardsPage_Middle_CardView: View {
             isCardsPage_CardView_Detail_Presented.toggle()
         }
         .fullScreenCover(isPresented: $isCardsPage_CardView_Detail_Presented) {
-            CardDetailEditPage(card: card)
+            CardDetailEditPage(headword: card.wordData.headword)
         }
     }
 }
