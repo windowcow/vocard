@@ -19,6 +19,7 @@
 		8829CBEB2B1F44CF0071C5CA /* CardsPage_Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEA2B1F44CF0071C5CA /* CardsPage_Top.swift */; };
 		8829CBED2B1F46840071C5CA /* CardsPage_VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */; };
 		8829CBEF2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829CBEE2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift */; };
+		883B14662B217686004A5D74 /* CardDetailEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883B14652B217686004A5D74 /* CardDetailEditPage.swift */; };
 		888B57D22B1DAA9600117801 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B12B1DAA9600117801 /* RootView.swift */; };
 		888B57D32B1DAA9600117801 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B32B1DAA9600117801 /* MainPage.swift */; };
 		888B57D42B1DAA9600117801 /* MainPage_Middle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888B57B42B1DAA9600117801 /* MainPage_Middle.swift */; };
@@ -67,6 +68,7 @@
 		8829CBEC2B1F46840071C5CA /* CardsPage_VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_VM.swift; sourceTree = "<group>"; };
 		8829CBEE2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPage_Middle_CardView.swift; sourceTree = "<group>"; };
 		883327252AE219E7003D3E6F /* vocard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vocard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		883B14652B217686004A5D74 /* CardDetailEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailEditPage.swift; sourceTree = "<group>"; };
 		888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vocard-Bridging-Header.h"; sourceTree = "<group>"; };
 		888B57B12B1DAA9600117801 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		888B57B32B1DAA9600117801 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				8829CBEA2B1F44CF0071C5CA /* CardsPage_Top.swift */,
 				8829CBE22B1F3CA50071C5CA /* CardsPage_Middle_CardScroll.swift */,
 				8829CBEE2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift */,
+				883B14652B217686004A5D74 /* CardDetailEditPage.swift */,
 				8829CBE62B1F44B70071C5CA /* CardsPage_Middle_FilterSort.swift */,
 			);
 			path = CardsPage;
@@ -353,6 +356,7 @@
 				888B57E22B1DAA9600117801 /* ExampleData.swift in Sources */,
 				888B57D72B1DAA9600117801 /* MainPage_Top.swift in Sources */,
 				888B57D62B1DAA9600117801 /* MainPage_Bottom_NextWord.swift in Sources */,
+				883B14662B217686004A5D74 /* CardDetailEditPage.swift in Sources */,
 				8829CBEF2B1F6F6C0071C5CA /* CardsPage_Middle_CardView.swift in Sources */,
 				888B57DC2B1DAA9600117801 /* Date+.swift in Sources */,
 				888B57E32B1DAA9600117801 /* WordData.swift in Sources */,
