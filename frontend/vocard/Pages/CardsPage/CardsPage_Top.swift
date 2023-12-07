@@ -12,6 +12,8 @@ struct CardsPage_Top: View {
     @Environment(CardsPage_VM.self) var vm
     @Environment(\.dismiss) private var dismiss
     
+//    @State 
+    
     var body: some View {
         ZStack {
             Color.clear
@@ -28,28 +30,13 @@ struct CardsPage_Top: View {
                 Spacer()
                 
                 // TODO: 정렬.
-                Picker("", selection: Binding(get: {
-                    vm.seenFilterType
-                }, set: { v in
-                    vm.seenFilterType = v
-                })) {
-                    Text("all")
-                        .tag(CardsPage_VM.SeenFilterType.all)
-                    Text("seen")
-                        .tag(CardsPage_VM.SeenFilterType.seen)
-
-                    Text("unseen")
-                        .tag(CardsPage_VM.SeenFilterType.unseen)
-
-                }
-                .pickerStyle(.segmented)
 
                 Picker(selection: Binding(get: {
                     vm.filterBy
                 }, set: { v in
                     vm.filterBy = v
                 })) {
-                    Label("No Filter", systemImage: "xmark")
+                    Label("No Sorting", systemImage: "xmark")
                         .tag(CardsPage_VM.FilterType.none(.ascending))
 
                     Label("Alphabet", systemImage: "abc")
