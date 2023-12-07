@@ -10,6 +10,7 @@ import SwiftUI
      
 struct CardsPage_Top: View {
     @Environment(CardsPage_VM.self) var vm
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         ZStack {
@@ -66,7 +67,12 @@ struct CardsPage_Top: View {
                 .background(.white, in: .capsule)
                 .labelStyle(.iconOnly)
 
-                
+                Image(systemName: "x.circle")
+                    .font(.title)
+                    .padding(.trailing)
+                    .onTapGesture {
+                        dismiss()
+                    }
 
             }
         }

@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct MainPage_Top: View {
+    @State private var isCardsPagePresented = false
     var body: some View {
         HStack {
             Image(.logo)
@@ -21,11 +22,14 @@ struct MainPage_Top: View {
             .foregroundStyle(.white)
             .padding(.horizontal)
             
-            Button("Alarm") {
-                
+            Button("Cards") {
+                isCardsPagePresented.toggle()
             }
             .foregroundStyle(.white)
             .padding(.horizontal)
+            .fullScreenCover(isPresented: $isCardsPagePresented) {
+                CardsPage()
+            }
 
 
         }
