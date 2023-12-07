@@ -54,6 +54,7 @@ struct CardDetailPage_ExampleView: View {
     }
 }
 struct CardDetailPage_MeaningView: View {
+    @State private var isGPTPagePresented: Bool = false
     var word: WordData
     
     var body: some View {
@@ -69,16 +70,21 @@ struct CardDetailPage_MeaningView: View {
                         }
                     }
                 }
+                .fullScreenCover(isPresented: $isGPTPagePresented, content: {
+                    CardGPTPage(headword: word.headword,meaning: meaning)
+                })
                 .swipeActions(edge: .trailing) {
                     Button {
-                        
+                        isGPTPagePresented.toggle()
                     } label: {
                         Label("Study", systemImage: "pencil.and.scribble")
                     }
                     .tint(.blue)
+                    
                 }
             }
         }
+        
     }
 }
 struct CardDetailPage: View {
