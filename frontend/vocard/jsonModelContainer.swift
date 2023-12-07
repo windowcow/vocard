@@ -80,11 +80,18 @@ var realContainer: ModelContainer {
         
         for card in cards {
             container.mainContext.insert(card)
-            let a = (0...4).randomElement()!
-            for _ in 0...a {
+            let a = (0...2).randomElement()!
+            for i in 0...a {
                 let reviewData = ReviewData(reviewDate: Date.now.randomPastDate(7.day), result: .success(1))
+                
                 reviewData.cardDataModel = card
                 card.reviewData.append(reviewData)
+                if i == 1 {
+                    let reviewFailData = ReviewData(reviewDate: Date.now.randomPastDate(7.day), result: .fail(-1))
+                    reviewFailData.cardDataModel = card
+                    card.reviewData.append(reviewData)
+                }
+                
             }
         }
         

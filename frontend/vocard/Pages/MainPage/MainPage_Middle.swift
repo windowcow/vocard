@@ -17,11 +17,6 @@ struct MainPage_Middle: View {
     var body: some View {
         HStack(alignment: .top) {
             MainPage_Middle_WeekChart()
-            VStack {
-                Text("WORD COUNT")
-                Text("\(todaysStarRevenue ?? 0)")
-                    .font(.system(size: 64))
-            }
         }
         .task {
             var starRevenue = 0
