@@ -55,6 +55,7 @@ struct StarView: View {
 struct CardStudyPage_Middle_Card_Detail: View {
     @Environment(CurrentCard.self) var currentCard
     @Environment(\.modelContext) private var modelContext
+    var word: WordData
     
     
     var body: some View {

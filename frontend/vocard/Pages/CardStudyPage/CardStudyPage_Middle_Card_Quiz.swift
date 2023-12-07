@@ -79,9 +79,6 @@ struct CardStudyPage_Middle_Card_Quiz: View {
                     }
                 }
             }
-            .task {
-                print(quizData.debugDescription)
-            }
     }
 }
 

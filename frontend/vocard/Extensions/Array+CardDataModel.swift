@@ -8,6 +8,7 @@
 import Foundation
 
 extension Array where Element == CardData {
+    @MainActor
     func getCard(unseenCardProb prob: Int = 50) -> Element? {
 //        print(self.debugDescription)
         /// 본 것 중  복습 가능한 카드
@@ -26,7 +27,9 @@ extension Array where Element == CardData {
         } else if seenReviewable.isEmpty {
             return unseenReviewable.randomElement()!
         } else if unseenReviewable.isEmpty {
-            return seenReviewable.sorted { card1, card2 in
+            return seenReviewable.filter {card in
+                card.weight != nil
+            }.sorted { card1, card2 in
                 card1.weight! > card2.weight!
             }.first!
         } else {

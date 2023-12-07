@@ -35,11 +35,17 @@ extension CardData {
         reviewData.isEmpty
     }
     
+    /// nil인 경우는 unseen card인 경우와 완전히 같다.
+    @MainActor
     var lastReviewDate: Date? {
-        /// nil인 경우는 unseen card인 경우와 완전히 같다.
-        return reviewData.last?.reviewDate
+        var reviewdatas = reviewData.sorted { r1, r2 in
+            r1.reviewDate < r2.reviewDate
+        }
+        
+        return reviewdatas.last?.reviewDate
     }
     
+    @MainActor
     var timeSinceLastReview: TimeInterval? {
         /// 6일 전이면 -6.day가 아니고 6.day반환
         guard let lastReviewDate = lastReviewDate else {
@@ -47,9 +53,14 @@ extension CardData {
         }
         return -lastReviewDate.timeIntervalSinceNow
     }
-    
+
+    @MainActor
     var weight: Double? {
         guard let timeSinceLastReview = timeSinceLastReview else {
+            return nil
+        }
+        
+        if timeSinceLastReview < 30.minute {
             return nil
         }
         
@@ -92,7 +103,7 @@ extension CardData {
     }
     
     
-    
+    @MainActor
     func reviewSuccessed() throws {
         guard let context = self.modelContext else {
             fatalError("CardDataModel_reviewSuccessed")
@@ -103,6 +114,7 @@ extension CardData {
         reviewData.append(newReviewResultDataModel)
     }
     
+    @MainActor
     func reviewFailed() throws {
         guard let context = self.modelContext else {
             fatalError("CardDataModel_reviewFailed")

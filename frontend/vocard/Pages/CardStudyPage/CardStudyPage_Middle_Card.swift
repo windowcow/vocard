@@ -25,7 +25,7 @@ struct CardStudyPage_Middle_Card: View {
                                                 frontStatus: frontStatus)
                     .movable(vm)
             case .back(.detail):
-                CardStudyPage_Middle_Card_Detail()
+                CardStudyPage_Middle_Card_Detail(word: word)
             case .back(.quiz):
                 CardStudyPage_Middle_Card_Quiz(word: word)
             }

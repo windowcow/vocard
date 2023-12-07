@@ -29,11 +29,13 @@ struct CardStudyPage_Bottom: View {
         case .front:
             EmptyView()
         case .back(.detail):
-            Button {
+            Button { @MainActor in
                 do {
                     try currentCard.cardData?.reviewFailed()
                     currentCard.cardData = allCards.getCard()
                     vm.refresh()
+                    print(currentCard.cardData?.wordData.headword)
+                    print(currentCard.cardData?.timeSinceLastReview)
 
                 } catch {
                     
@@ -48,7 +50,7 @@ struct CardStudyPage_Bottom: View {
             .tint(.gray)
         case .back(.quiz):
             HStack {
-                Button {
+                Button { @MainActor in
                     do {
                         try currentCard.cardData?.reviewFailed()
                         currentCard.cardData = allCards.getCard()
@@ -64,11 +66,9 @@ struct CardStudyPage_Bottom: View {
                 .buttonStyle(.borderedProminent)
                 .tint(.gray)
                 
-                Button {
+                Button { @MainActor in
                     do {
                         if let quiz = currentCard.cardData?.wordData.quizzes.first, let choice = vm.selectedChoice {
-                            print(quiz.answer)
-                            print(choice)
                             if quiz.answer == choice {
                                 try currentCard.cardData?.reviewSuccessed()
                                 currentCard.cardData = allCards.getCard()
