@@ -36,7 +36,7 @@ var realContainer: ModelContainer {
                 for senseNum in 1...value.dfnCnt {
                     var meaning = value.meaning[senseNum - 1]
                     var example = value.example[senseNum - 1]
-                    var imageURL = value.example[senseNum - 1]
+                    var imageURL = value.imgUrl[senseNum - 1]
                     var korean = value.krWord[senseNum - 1]
                     var pos = value.pos[senseNum - 1]
                     
@@ -65,6 +65,7 @@ var realContainer: ModelContainer {
                     W.senseNum = senseNum
                     W.meaningDatas.append(M)
                     W.quizzes.append(Q)
+
                     W.pos = pos
                     
                     var card = CardData(targetWordDataModel: W)

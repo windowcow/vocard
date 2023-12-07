@@ -144,6 +144,7 @@
 		8833271C2AE219E7003D3E6F = {
 			isa = PBXGroup;
 			children = (
+				888B57B82B1DAA9600117801 /* SampleModelContainer.swift */,
 				883327272AE219E7003D3E6F /* vocard */,
 				883327262AE219E7003D3E6F /* Products */,
 			);
@@ -163,7 +164,6 @@
 				883B14672B217EE3004A5D74 /* data.json */,
 				888B57CD2B1DAA9600117801 /* vocardApp.swift */,
 				883B14692B218A49004A5D74 /* jsonModelContainer.swift */,
-				888B57B82B1DAA9600117801 /* SampleModelContainer.swift */,
 				888B57B12B1DAA9600117801 /* RootView.swift */,
 				888B57B92B1DAA9600117801 /* Assets.xcassets */,
 				888B57BF2B1DAA9600117801 /* SwiftData_DataModel */,

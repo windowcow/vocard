@@ -15,7 +15,7 @@ struct CardStudyPage_Middle_Card: View {
     
 
     var body: some View {
-        @Bindable var currentCard = currentCard
+//        @Bindable var currentCard = currentCard
         @Bindable var vm = vm
         
         if let word = currentCard.cardData?.wordData {
@@ -27,7 +27,7 @@ struct CardStudyPage_Middle_Card: View {
             case .back(.detail):
                 CardStudyPage_Middle_Card_Detail()
             case .back(.quiz):
-                CardStudyPage_Middle_Card_Quiz(word)
+                CardStudyPage_Middle_Card_Quiz(word: word)
             }
         } else {
             ZStack {

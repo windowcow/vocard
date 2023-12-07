@@ -52,10 +52,9 @@ struct CardStudyPage_Middle_Card_Quiz: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var quizData: [QuizData]
     
-    init(_ word: WordData) {
+    init(word: WordData) {
         _quizData = Query(filter: QuizData.predicate(headword: word.headword, 
                                                      senNum: word.senseNum))
-        print(quizData.debugDescription)
     }
     
     
@@ -80,9 +79,9 @@ struct CardStudyPage_Middle_Card_Quiz: View {
                     }
                 }
             }
-//            .task {
-//                print(quizData.debugDescription)
-//            }
+            .task {
+                print(quizData.debugDescription)
+            }
     }
 }
 

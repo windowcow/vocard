@@ -14,12 +14,11 @@ extension QuizData {
         senNum: Int
     ) -> Predicate<QuizData> {
         return #Predicate<QuizData> { quiz in
-            return true
-//            if let wordData = quiz.wordData {
-//                return wordData.headWord == headword && wordData.senseNum == senNum
-//            } else {
-//                return true
-//            }
+            if let wordData = quiz.wordData {
+                return wordData.headword == headword && wordData.senseNum == senNum
+            } else {
+                return true
+            }
         }
     }
 }

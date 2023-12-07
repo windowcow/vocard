@@ -56,7 +56,6 @@ struct CardStudyPage_Middle_Card_Detail: View {
     @Environment(CurrentCard.self) var currentCard
     @Environment(\.modelContext) private var modelContext
     
-    @Query var quiz: [QuizData]
     
     var body: some View {
         CardBackgroundView(backgroundColor: .green)
@@ -70,12 +69,16 @@ struct CardStudyPage_Middle_Card_Detail: View {
                             .bold()
                         Text(currentCard.cardData?.wordData.meaningDatas.first?.meaning ?? "To go")
                         VStack {
-//                            Image(currentCard.cardData?.wordData.meaningDatas.first?.exampleSentences.first?.illustrations.first?.imageURL ?? SampleImage)
-                            Image("sampleImage")
-                                .resizable()
-                                .scaledToFit()
-                                .padding(30)
-                                .shadow(radius: 0)
+                            AsyncImage(url: currentCard.cardData?.wordData.meaningDatas.first?.exampleSentences.first?.illustrations.first?.imageURL) { image in
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .padding(30)
+                                    .shadow(radius: 0)
+                            } placeholder: {
+                                ProgressView()
+                            }
+
                             Text(currentCard.cardData?.wordData.meaningDatas.first?.exampleSentences.first?.sentence ?? "I like apple")
                         }
                         
@@ -90,9 +93,6 @@ struct CardStudyPage_Middle_Card_Detail: View {
                 
                 }
                 .foregroundStyle(.white)
-            }
-            .task {
-                print(quiz.debugDescription)
             }
     }
 }
