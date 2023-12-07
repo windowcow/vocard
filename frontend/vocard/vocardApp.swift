@@ -14,7 +14,7 @@ struct SwiftDataPractice2App: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            MainPage()
         }
         .modelContainer(sharedModelContainer)
     }

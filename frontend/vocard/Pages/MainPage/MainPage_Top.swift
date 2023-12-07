@@ -18,10 +18,18 @@ struct MainPage_Top: View {
             Button("My Page") {
                 
             }
+            .foregroundStyle(.white)
+            .padding(.horizontal)
+            
             Button("Alarm") {
                 
             }
+            .foregroundStyle(.white)
+            .padding(.horizontal)
+
+
         }
+        .padding(.horizontal)
         
     }
 }
