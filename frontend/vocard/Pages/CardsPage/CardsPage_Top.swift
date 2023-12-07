@@ -12,19 +12,48 @@ struct CardsPage_Top: View {
     @Environment(CardsPage_VM.self) var vm
     @Environment(\.dismiss) private var dismiss
     
-//    @State 
+    @State private var noDate: Bool = true
+    @Namespace var top
     
     var body: some View {
         ZStack {
             Color.clear
             HStack {
-                DatePicker("", selection: Binding(get: {
-                    vm.selectedDate
-                },
-                                                  set: { v in
-                    vm.selectedDate = v
-                }), displayedComponents: .date)
-                .datePickerStyle(.automatic)
+                if let selectedData = vm.selectedDate {
+                    HStack {
+                        DatePicker("", selection: Binding(get: {
+                            vm.selectedDate ?? Date.now
+                        },
+                                                          set: { v in
+                            vm.selectedDate = v
+                        }), displayedComponents: .date)
+                        .datePickerStyle(.automatic)
+                        
+                        Image(systemName: "calendar")
+                            .foregroundStyle(.blue)
+                            .font(.title2)
+                            .onTapGesture {
+                                vm.selectedDate = nil
+                            }
+                            .matchedGeometryEffect(id: "calendar",
+                                                   in: top)
+                            
+                        
+                    }
+                    .fixedSize()
+                    
+                } else {
+                    Image(systemName: "calendar")
+                        .foregroundStyle(.red)
+                        .font(.title2)
+                        .padding(.leading)
+                        .matchedGeometryEffect(id: "calendar",
+                                               in: top)
+                        .onTapGesture {
+                            vm.selectedDate = Date.now
+                        }
+                }
+                
                 
                 
                 Spacer()
@@ -63,6 +92,7 @@ struct CardsPage_Top: View {
 
             }
         }
+        .animation(.bouncy, value: vm.selectedDate)
     }
 }
 

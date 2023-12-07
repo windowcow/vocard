@@ -10,7 +10,7 @@ import Foundation
 @Observable class CardsPage_VM {
     var allCards: [CardData] = []
     var columnNum: Int = 3
-    var selectedDate: Date = Date.now
+    var selectedDate: Date? = Date.now
     var seenFilterType: SeenFilterType = .all
     var filterBy: FilterType = .none(.ascending)
     
@@ -21,7 +21,12 @@ import Foundation
     var cards: [CardData] {
         allCards.filter { card in
             card.reviewData.contains { reviewDataModel in
-                selectedDate.ymd == reviewDataModel.reviewDate.ymd
+                if let selectedDate = selectedDate?.ymd {
+                    selectedDate == reviewDataModel.reviewDate.ymd
+
+                } else {
+                    true
+                }
             }
             
         }
