@@ -16,10 +16,14 @@ struct MainPage_Top: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Spacer()
-            
-            Button("COLLECTION") {
+            Button {
                 isCardsPagePresented.toggle()
+
+            } label: {
+                Image(systemName: "rectangle.portrait.on.rectangle.portrait.angled")
+                    .font(.title)
             }
+            
             .foregroundStyle(.white)
             .padding(.horizontal)
             .fullScreenCover(isPresented: $isCardsPagePresented) {
