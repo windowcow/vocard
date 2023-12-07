@@ -29,7 +29,59 @@ enum CardDetailPageType {
     case dictionary, custom
 }
 
-struct CardDetailEditPage: View {
+struct CardDetailPage_ExampleView: View {
+    var example: ExampleData
+    
+    var body: some View {
+        VStack {
+            Text(example.sentence)
+                .font(.caption)
+                .frame(idealWidth: 500)
+            
+
+            ForEach(example.illustrations) { illust in
+                AsyncImage(url: illust.imageURL){ image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .padding(30)
+                        .shadow(radius: 0)
+                } placeholder: {
+                    ProgressView()
+                }
+            }
+        }
+    }
+}
+struct CardDetailPage_MeaningView: View {
+    var word: WordData
+    
+    var body: some View {
+        List {
+            ForEach(word.meaningDatas, id: \.id) { meaning in
+                VStack(alignment: .leading) {
+                    (Text("\(meaning.meaningNum)") + Text(". ") + Text(meaning.meaning))
+                        .foregroundStyle(.black)
+                    VStack {
+                        ForEach(meaning.exampleSentences) { example in
+                            CardDetailPage_ExampleView(example: example)
+                                
+                        }
+                    }
+                }
+                .swipeActions(edge: .trailing) {
+                    Button {
+                        
+                    } label: {
+                        Label("Study", systemImage: "pencil.and.scribble")
+                    }
+                    .tint(.blue)
+                }
+            }
+        }
+    }
+}
+struct CardDetailPage: View {
     @Environment(\.dismiss) var dismiss
     
     @Query var words: [WordData]
@@ -75,34 +127,18 @@ struct CardDetailEditPage: View {
                     .pickerStyle(.segmented)
                     .frame(maxWidth: 300)
                     
-                    
-                    LazyVStack {
-                        ForEach(word.meaningDatas) { meaning in
-                            HStack {
-                                (Text("\(meaning.meaningNum)") + Text(". ") + Text(meaning.meaning))
-                                    .foregroundStyle(.brown)
-                                Spacer()
-                            }
-                            .padding(.leading)
+                    switch cardDetailPageType {
+                    case .dictionary:
+                        CardDetailPage_MeaningView(word: word)
+
+                    case .custom:
+                        VStack{
                             
-                            ForEach(meaning.exampleSentences) { example in
-                                VStack {
-                                    Text(example.sentence)
-                                    ForEach(example.illustrations) { illust in
-                                        AsyncImage(url: illust.imageURL){ image in
-                                            image
-                                                .resizable()
-                                                .scaledToFit()
-                                                .padding(30)
-                                                .shadow(radius: 0)
-                                        } placeholder: {
-                                            ProgressView()
-                                        }
-                                    }
-                                }
-                            }
                         }
                     }
+                    
+                    
+                    
                 }
             }
         } else {

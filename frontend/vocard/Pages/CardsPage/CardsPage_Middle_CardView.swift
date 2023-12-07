@@ -39,7 +39,7 @@ struct CardsPage_Middle_CardView: View {
             isCardsPage_CardView_Detail_Presented.toggle()
         }
         .fullScreenCover(isPresented: $isCardsPage_CardView_Detail_Presented) {
-            CardDetailEditPage(headword: card.wordData.headword)
+            CardDetailPage(headword: card.wordData.headword)
         }
     }
 }
