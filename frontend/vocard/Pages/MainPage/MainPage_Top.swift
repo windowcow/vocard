@@ -17,7 +17,7 @@ struct MainPage_Top: View {
                 .aspectRatio(contentMode: .fit)
             Spacer()
             
-            Button("Cards") {
+            Button("COLLECTION") {
                 isCardsPagePresented.toggle()
             }
             .foregroundStyle(.white)

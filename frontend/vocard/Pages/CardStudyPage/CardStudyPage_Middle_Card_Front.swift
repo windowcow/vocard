@@ -17,7 +17,7 @@ struct CardStudyPage_Middle_Card_Front: View {
         ZStack {
             switch frontStatus {
             case .middle:
-                CardBackgroundView(backgroundColor: .mint)
+                CardBackgroundView(backgroundColor: .cardFrontYellow)
                     .overlay {
                         Text(headword)
                             .rotation3DEffect(
