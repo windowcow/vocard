@@ -89,7 +89,6 @@ struct CardGPTPage_TextField: View {
         request.httpBody = jsonData
 //        request.allHTTPHeaderFields
         
-        var response: [String:String]? = nil
         
         let (d, r) = try await URLSession.shared.data(for: request)
         print(d)
@@ -102,4 +101,6 @@ struct CardGPTPage_TextField: View {
         }
         
     }
+    
+    
 }

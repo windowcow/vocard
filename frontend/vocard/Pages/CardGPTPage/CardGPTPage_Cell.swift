@@ -18,7 +18,7 @@ struct CardGPTPage_Cell: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             Color.clear
-            if let imageURL = studyMaterial.imageURL {
+            if let imageURL = studyMaterial.imageURL, isImageBig {
                 AsyncImage(url: URL(string: imageURL)) { image in
                     image
                         .resizable()
@@ -43,7 +43,7 @@ struct CardGPTPage_Cell: View {
                     Text("me: ") +
                     Text(studyMaterial.myMessage)
                         .font(.caption)
-
+                    Divider()
                     HStack {
                         if let gptMessage = studyMaterial.gptMessage {
                             Text(gptMessage)
@@ -70,7 +70,12 @@ struct CardGPTPage_Cell: View {
                                 
                             } else {
                                 Button {
-                                    
+                                    Task { @MainActor in
+                                        let gptResponse = try? await getGPTImage(style: "", sentence: studyMaterial.myMessage)
+                                        studyMaterial.imageURL = gptResponse
+
+                                    }
+                                    studyMaterial.imageURL = ""
                                 } label: {
                                     Text(Image(systemName: "photo.badge.plus.fill"))
                                         .font(.largeTitle)
@@ -89,5 +94,30 @@ struct CardGPTPage_Cell: View {
                 .stroke(.black, lineWidth: 1)
         }
         .padding()
+        .animation(.bouncy, value: isImageBig)
+    }
+    
+    func getGPTImage(style: String, sentence: String) async throws -> String {
+        let endpoint = URL(string: "http://13.210.45.211/ai/img/")!
+        let json: [String:String] = ["style" : style, "sentence": sentence]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+
+        var request = URLRequest(url: endpoint)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        request.httpMethod = "POST"
+        request.httpBody = jsonData
+        
+        
+        let (d, r) = try await URLSession.shared.data(for: request)
+        print(d)
+        print(r)
+        
+        if let response = try? JSONDecoder().decode([String:String].self, from: d) {
+            return response["img_url"] ?? "Error"
+        } else {
+            return "ERROR"
+        }
+        
     }
 }
