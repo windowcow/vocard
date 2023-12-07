@@ -8,7 +8,12 @@
 import Foundation
 
 
-
-extension WordData: Identifiable {
-    
+extension WordData {
+    static func predicate(
+        headword: String
+    ) -> Predicate<WordData> {
+        return #Predicate<WordData> { word in
+            word.headword == headword
+        }
+    }
 }

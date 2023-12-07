@@ -18,7 +18,6 @@ struct CardsPage: View {
             VStack {
                 CardsPage_Top()
                     .frame(maxHeight: 50)
-                CardsPage_Middle_FilterSort()
                 CardsPage_Middle_CardScroll()
                 
             }
