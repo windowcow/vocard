@@ -79,6 +79,7 @@
 		883B146F2B21EA2D004A5D74 /* CardGPTPage_Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGPTPage_Cells.swift; sourceTree = "<group>"; };
 		883B14712B21EA44004A5D74 /* CardGPTPage_Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGPTPage_Cell.swift; sourceTree = "<group>"; };
 		883B14732B21EA68004A5D74 /* ChatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatData.swift; sourceTree = "<group>"; };
+		883B14752B220269004A5D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		888B57AA2B1DAA9600117801 /* vocard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vocard-Bridging-Header.h"; sourceTree = "<group>"; };
 		888B57B12B1DAA9600117801 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		888B57B32B1DAA9600117801 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 		883327272AE219E7003D3E6F /* vocard */ = {
 			isa = PBXGroup;
 			children = (
+				883B14752B220269004A5D74 /* Info.plist */,
 				883B14672B217EE3004A5D74 /* data.json */,
 				888B57CD2B1DAA9600117801 /* vocardApp.swift */,
 				883B14692B218A49004A5D74 /* jsonModelContainer.swift */,
@@ -551,6 +553,7 @@
 				DEVELOPMENT_TEAM = 9KPHTM749M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vocard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -561,6 +564,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.windowcow.vocard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -583,6 +587,7 @@
 				DEVELOPMENT_TEAM = 9KPHTM749M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = vocard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -593,6 +598,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.windowcow.vocard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

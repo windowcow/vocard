@@ -23,9 +23,17 @@ struct CardGPTPage_Cells: View {
     
     
     var body: some View {
-        LazyVStack {
-            ForEach(studyMaterials) { studyMaterial in
-                CardGPTPage_Cell(studyMaterial: studyMaterial)
+        ScrollView{
+            LazyVStack {
+                ForEach(studyMaterials) { studyMaterial in
+                    CardGPTPage_Cell(studyMaterial: studyMaterial, 
+                                     my: studyMaterial.myMessage,
+                                     gpt: studyMaterial.gptMessage,
+                                     imageURL: studyMaterial.imageURL)
+                        .task {
+                            print(123)
+                        }
+                }
             }
         }
     }
@@ -49,16 +57,17 @@ struct CardGPTPage_TextField: View {
             
             
             
-            Button{
+            Button { 
                 let currentChatData = ChatData(headword: headword, myMessage: text)
-                text = ""
                 modelContext.insert(currentChatData)
                 var gptResponse: String?
-                Task {
+                Task { @MainActor in
                     gptResponse = try? await getGPTMessage(word: headword, dfn: meaning, sentence: text)
+                    currentChatData.gptMessage = gptResponse
+
                 }
-                print(gptResponse)
-                currentChatData.gptMessage = gptResponse
+                text = ""
+
             } label: {
                 Image(systemName: "arrow.up")
             }
@@ -77,22 +86,23 @@ struct CardGPTPage_TextField: View {
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
 
         var request = URLRequest(url: endpoint)
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
         request.httpMethod = "POST"
         request.httpBody = jsonData
+//        request.allHTTPHeaderFields
         
-        var response: String? = nil
+        var response: [String:String]? = nil
         
         let (d, r) = try await URLSession.shared.data(for: request)
+        print(d)
+        print(r)
         
-        response = try? JSONDecoder().decode(String.self, from: d)
-//        URLSession.shared.dataTask(with: request) { data, response, error in
-//            guard let data = data, error == nil else {
-//                print("error in gptmessage")
-//            }
-//            
-//            response = try? JSONDecoder().decode(String.self, from: data)
-//        }
+        if let response = try? JSONDecoder().decode([String:String].self, from: d) {
+            return response["response"]!
+        } else {
+            return "ERROR"
+        }
         
-        return response ?? "Error"
     }
 }

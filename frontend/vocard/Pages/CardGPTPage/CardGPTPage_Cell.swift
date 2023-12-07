@@ -6,17 +6,24 @@
 //
 
 import SwiftUI
+import SwiftData
 
 
 struct CardGPTPage_Cell: View {
-    var studyMaterial: ChatData
+    @Bindable var studyMaterial: ChatData
+    var my: String
+    var gpt: String?
+    var imageURL: String?
     @State var isImageBig: Bool = false
     @Namespace var cell
+//    @Query var chatData: [ChatData]
+    
+    
     
     var body: some View {
         ZStack(alignment: .topLeading) {
             Color.clear
-            if let imageURL = studyMaterial.imageURL, isImageBig {
+            if let imageURL = imageURL {
                 AsyncImage(url: URL(string: imageURL)) { image in
                     image
                         .resizable()
@@ -39,14 +46,14 @@ struct CardGPTPage_Cell: View {
             } else {
                 VStack(alignment: .leading) {
                     Text("me: ") +
-                    Text(studyMaterial.myMessage)
+                    Text(my)
                         .font(.caption)
 
                     HStack {
-                        if let gptMessage = studyMaterial.gptMessage {
+                        if let gptMessage = gpt {
                             Text(gptMessage)
                             
-                            if let imageURL = studyMaterial.imageURL {
+                            if let imageURL = imageURL {
                                 if imageURL == "" {
                                     ProgressView()
                                 } else {
