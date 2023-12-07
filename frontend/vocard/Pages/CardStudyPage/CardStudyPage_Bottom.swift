@@ -66,19 +66,24 @@ struct CardStudyPage_Bottom: View {
                 
                 Button {
                     do {
-                        if (currentCard.cardData?.wordData.quizzes.first?.answer ?? -1) == (vm.selectedChoice ?? 0) {
-                            try currentCard.cardData?.reviewSuccessed()
-                            currentCard.cardData = allCards.getCard()
-                            isRecentReviewSuccessed = true
-                            isResultPopoverPresented.toggle()
-                        } else {
-                            try currentCard.cardData?.reviewFailed()
-                            currentCard.cardData = allCards.getCard()
-                            isRecentReviewSuccessed = false
-                            isResultPopoverPresented.toggle()
+                        if let quiz = currentCard.cardData?.wordData.quizzes.first, let choice = vm.selectedChoice {
+                            print(quiz.answer)
+                            print(choice)
+                            if quiz.answer == choice {
+                                try currentCard.cardData?.reviewSuccessed()
+                                currentCard.cardData = allCards.getCard()
+                                isRecentReviewSuccessed = true
+                                isResultPopoverPresented.toggle()
+                                print("맞")
+                            } else {
+                                try currentCard.cardData?.reviewFailed()
+                                currentCard.cardData = allCards.getCard()
+                                isRecentReviewSuccessed = false
+                                isResultPopoverPresented.toggle()
+                                print("틀림")
 
+                            }
                         }
-                        
 
                     } catch {
                         

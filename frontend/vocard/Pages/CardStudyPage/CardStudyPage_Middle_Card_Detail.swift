@@ -64,10 +64,14 @@ struct CardStudyPage_Middle_Card_Detail: View {
                     Color.clear
                     VStack {
                         StarView(starCount: currentCard.cardData?.currentStarCount ?? .zero)
+                            .padding(.top)
+                            .foregroundStyle(.yellow)
                         Text(currentCard.cardData?.wordData.headword ?? "example")
                             .font(.largeTitle)
                             .bold()
                         Text(currentCard.cardData?.wordData.meaningDatas.first?.meaning ?? "To go")
+                            .padding(.horizontal)
+                        Spacer()
                         VStack {
                             AsyncImage(url: currentCard.cardData?.wordData.meaningDatas.first?.exampleSentences.first?.illustrations.first?.imageURL) { image in
                                 image
@@ -89,6 +93,7 @@ struct CardStudyPage_Middle_Card_Detail: View {
                         .padding()
 //                        .background(.white, in: .rect(cornerRadius: 10))
                         .padding()
+                        Spacer()
                     }
                 
                 }
