@@ -10,12 +10,16 @@ import SwiftUI
 struct CardsPage_Middle_CardView: View {
     @Bindable var card: CardData
     @State private var isCardsPage_CardView_Detail_Presented = false
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
             Color.clear
-            Text(card.wordData.headWord)
-                .foregroundStyle(.white)
+            VStack {
+                Text(card.wordData.headWord)
+                    .foregroundStyle(.white)
+            }
+            
 
         }
         .background(.gray.gradient)

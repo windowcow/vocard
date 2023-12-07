@@ -7,15 +7,29 @@
 
 import Foundation
 import SwiftUI
+import SwiftData
 
 struct CardDetailEditPage: View {
     @Bindable var card: CardData
+    @Environment(\.dismiss) var dismiss
+    
+    @Query var cards: [CardData]
+    
     var body: some View {
         ZStack {
             Color.white
-            Text("gg")
+            VStack{
+                Button("x"){
+                    dismiss()
+                }
+                Text(card.wordData.headWord)
+                Text(card.wordData.wordMeaningDataModels.first?.meaning ?? "no")
+            }
+            
+            
             LazyVStack {
-                ForEach(card.wordData.wordMeaningDataModels, id: \.self) { meaning in
+                ForEach(card.wordData.wordMeaningDataModels) { meaning in
+                    let _ = print(meaning.meaning)
                     CardDetailEditPage_Meaning(meaning: meaning)
                 }
             }

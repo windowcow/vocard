@@ -17,8 +17,6 @@ import SwiftData
         self.wordData = targetWordDataModel
         self.reviewData = reviewResults
     }
-    
-    
 }
 
 
