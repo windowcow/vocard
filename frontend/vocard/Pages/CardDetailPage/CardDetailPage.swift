@@ -122,16 +122,6 @@ struct CardDetailPage: View {
                     }
                     
                     
-                    Picker(selection: $cardDetailPageType) {
-                        Text("Dictionary")
-                            .tag(CardDetailPageType.dictionary)
-                        Text("custom")
-                            .tag(CardDetailPageType.custom)
-                    } label: {
-                        
-                    }
-                    .pickerStyle(.segmented)
-                    .frame(maxWidth: 300)
                     
                     switch cardDetailPageType {
                     case .dictionary:

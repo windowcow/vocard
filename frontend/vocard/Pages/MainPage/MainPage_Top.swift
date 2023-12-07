@@ -16,11 +16,6 @@ struct MainPage_Top: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
             Spacer()
-            Button("My Page") {
-                
-            }
-            .foregroundStyle(.white)
-            .padding(.horizontal)
             
             Button("Cards") {
                 isCardsPagePresented.toggle()

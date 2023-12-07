@@ -28,7 +28,7 @@ struct CardsPage_Middle_CardView: View {
             
 
         }
-        .background(.gray.gradient)
+//        .background(.gray.gradient)
         .clipShape(.rect(cornerRadius: 15))
         .aspectRatio(0.66, contentMode: .fit)
         .overlay {
@@ -41,6 +41,12 @@ struct CardsPage_Middle_CardView: View {
             }
         }
         .contentShape(.rect)
+        .padding(1)
+        .overlay {
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(.black, lineWidth: 1)
+        }
+        .padding(1)
         .onTapGesture {
             isCardsPage_CardView_Detail_Presented.toggle()
         }

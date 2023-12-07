@@ -66,9 +66,18 @@ struct CardStudyPage_Middle_Card_Detail: View {
                         StarView(starCount: currentCard.cardData?.currentStarCount ?? .zero)
                             .padding(.top)
                             .foregroundStyle(.yellow)
+                        (
                         Text(currentCard.cardData?.wordData.headword ?? "example")
                             .font(.largeTitle)
-                            .bold()
+                            .bold() +
+                        Text("\(currentCard.cardData?.wordData.senseNum ?? 1)")
+                            .font(.caption)
+                            .baselineOffset(8) +
+                        Text("   ") +
+                        Text(currentCard.cardData?.wordData.pos ?? "verb")
+                        )
+                        .padding(.top)
+                        
                         Text(currentCard.cardData?.wordData.meaningDatas.first?.meaning ?? "To go")
                             .padding(.horizontal)
                         Spacer()
