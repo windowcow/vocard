@@ -24,12 +24,17 @@ struct CardMovementModifier: ViewModifier {
         content
             .visualEffect { (content, geometryProxy)  in
                 content
-                    .offset(offsetState)
+                    .scaleEffect(offsetState.width > 0 ? (300 - offsetState.width) / 300 : (300 + offsetState.width) / 300)
                     .rotation3DEffect(
                         .degrees(offsetState.width),
                         axis: (x: 0.0, y: -1.0, z: 0.0),
-                        anchor: offsetState.width > 0 ? .trailing : .leading
+                        anchor: .center
+
+//                        anchor: offsetState.width > 0 ? .trailing : .leading
                     )
+                    .offset(offsetState)
+                    
+                    
             }
             .animation(.spring.speed(2), value: offsetState)
             .gesture(

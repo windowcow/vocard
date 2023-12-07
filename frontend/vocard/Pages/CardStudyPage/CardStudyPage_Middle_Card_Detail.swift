@@ -58,7 +58,7 @@ struct CardStudyPage_Middle_Card_Detail: View {
     
     
     var body: some View {
-        CardBackgroundView(backgroundColor: .green)
+        CardBackgroundView(backgroundColor: .cardDetailGray)
             .overlay {
                 ZStack {
                     Color.clear
@@ -66,17 +66,18 @@ struct CardStudyPage_Middle_Card_Detail: View {
                         StarView(starCount: currentCard.cardData?.currentStarCount ?? .zero)
                             .padding(.top)
                             .foregroundStyle(.yellow)
-                        (
-                        Text(currentCard.cardData?.wordData.headword ?? "example")
-                            .font(.largeTitle)
-                            .bold() +
-                        Text("\(currentCard.cardData?.wordData.senseNum ?? 1)")
-                            .font(.caption)
-                            .baselineOffset(8) +
-                        Text("   ") +
-                        Text(currentCard.cardData?.wordData.pos ?? "verb")
-                        )
-                        .padding(.top)
+                        VStack {
+                            (
+                            Text(currentCard.cardData?.wordData.headword ?? "example")
+                                .font(.largeTitle)
+                                .bold() +
+                            Text("\(currentCard.cardData?.wordData.senseNum ?? 1)")
+                                .font(.caption)
+                                .baselineOffset(8)
+                            )
+                            Text(currentCard.cardData?.wordData.pos ?? "verb")
+                        }
+                        .padding(.vertical)
                         
                         Text(currentCard.cardData?.wordData.meaningDatas.first?.meaning ?? "To go")
                             .padding(.horizontal)
