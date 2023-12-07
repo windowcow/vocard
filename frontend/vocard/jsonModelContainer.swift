@@ -17,7 +17,8 @@ var realContainer: ModelContainer {
         MeaningData.self,
         ExampleData.self,
         IllustrationData.self,
-        QuizData.self
+        QuizData.self,
+        ChatData.self
         
     ])
     let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: true)
