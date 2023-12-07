@@ -48,7 +48,7 @@ struct CardGPTPage: View {
                 
                 
                 Spacer()
-                CardGPTPage_TextField(headword: headword)
+                CardGPTPage_TextField(headword: headword, meaning: meaning.meaning)
                     .padding(.bottom)
             }
             

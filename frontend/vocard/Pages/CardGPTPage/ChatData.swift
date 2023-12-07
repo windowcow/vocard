@@ -12,7 +12,7 @@ import SwiftData
     var headword: String
     var myMessage: String
     var gptMessage: String?
-    var imageURL: URL?
+    var imageURL: String?
     
     init(headword: String, myMessage: String) {
         self.headword = headword
