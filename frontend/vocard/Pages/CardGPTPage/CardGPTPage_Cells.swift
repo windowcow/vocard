@@ -26,10 +26,7 @@ struct CardGPTPage_Cells: View {
         ScrollView{
             LazyVStack {
                 ForEach(studyMaterials) { studyMaterial in
-                    CardGPTPage_Cell(studyMaterial: studyMaterial, 
-                                     my: studyMaterial.myMessage,
-                                     gpt: studyMaterial.gptMessage,
-                                     imageURL: studyMaterial.imageURL)
+                    CardGPTPage_Cell(studyMaterial: studyMaterial)
                         .task {
                             print(123)
                         }
@@ -57,7 +54,7 @@ struct CardGPTPage_TextField: View {
             
             
             
-            Button { 
+            Button {
                 let currentChatData = ChatData(headword: headword, myMessage: text)
                 modelContext.insert(currentChatData)
                 var gptResponse: String?

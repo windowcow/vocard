@@ -10,20 +10,15 @@ import SwiftData
 
 
 struct CardGPTPage_Cell: View {
-    @Bindable var studyMaterial: ChatData
-    var my: String
-    var gpt: String?
-    var imageURL: String?
+    var studyMaterial: ChatData
     @State var isImageBig: Bool = false
     @Namespace var cell
-//    @Query var chatData: [ChatData]
-    
     
     
     var body: some View {
         ZStack(alignment: .topLeading) {
             Color.clear
-            if let imageURL = imageURL {
+            if let imageURL = studyMaterial.imageURL {
                 AsyncImage(url: URL(string: imageURL)) { image in
                     image
                         .resizable()
@@ -46,14 +41,14 @@ struct CardGPTPage_Cell: View {
             } else {
                 VStack(alignment: .leading) {
                     Text("me: ") +
-                    Text(my)
+                    Text(studyMaterial.myMessage)
                         .font(.caption)
 
                     HStack {
-                        if let gptMessage = gpt {
+                        if let gptMessage = studyMaterial.gptMessage {
                             Text(gptMessage)
                             
-                            if let imageURL = imageURL {
+                            if let imageURL = studyMaterial.imageURL {
                                 if imageURL == "" {
                                     ProgressView()
                                 } else {
@@ -74,8 +69,11 @@ struct CardGPTPage_Cell: View {
                                 }
                                 
                             } else {
-                                Button("이미지 생성하기") {
+                                Button {
                                     
+                                } label: {
+                                    Text(Image(systemName: "photo.badge.plus.fill"))
+                                        .font(.largeTitle)
                                 }
                             }
                         } else {
@@ -84,14 +82,12 @@ struct CardGPTPage_Cell: View {
                     }
                 }
             }
-            
-            
-            
         }
         .padding()
         .overlay {
             RoundedRectangle(cornerRadius: 15)
                 .stroke(.black, lineWidth: 1)
         }
+        .padding()
     }
 }
