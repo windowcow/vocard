@@ -13,6 +13,7 @@ struct CardGPTPage_Cell: View {
     var studyMaterial: ChatData
     @State var isImageBig: Bool = false
     @Namespace var cell
+    @State var imageStyle: ImageStyle = .cartoon
     
     
     var body: some View {
@@ -68,17 +69,35 @@ struct CardGPTPage_Cell: View {
                             }
                             
                         } else {
-                            Button {
-                                Task { @MainActor in
-                                    let gptResponse = try? await getGPTImage(style: "", sentence: studyMaterial.myMessage)
-                                    studyMaterial.imageURL = gptResponse
+                            HStack {
+                                
+                                Picker("", selection: $imageStyle) {
+                                    Text("cartoon")
+                                        .tag(ImageStyle.cartoon)
+                                    Text("pencil")
+                                        .tag(ImageStyle.pencilSketch)
+
+                                    Text("watercolor")
+                                        .tag(ImageStyle.watercolor)
+                                    Text("line")
+                                        .tag(ImageStyle.minimalLineArt)
 
                                 }
-                                studyMaterial.imageURL = ""
-                            } label: {
-                                Text(Image(systemName: "photo.badge.plus.fill"))
-                                    .font(.largeTitle)
+                                .pickerStyle(.wheel)
+                                
+                                Button {
+                                    Task { @MainActor in
+                                        let gptResponse = try? await getGPTImage(style: imageStyle.rawValue, sentence: studyMaterial.myMessage)
+                                        studyMaterial.imageURL = gptResponse
+
+                                    }
+                                    studyMaterial.imageURL = ""
+                                } label: {
+                                    Text(Image(systemName: "photo.badge.plus.fill"))
+                                        .font(.largeTitle)
+                                }
                             }
+                           
                         }
                     } else {
                         EmptyView()
@@ -118,4 +137,8 @@ struct CardGPTPage_Cell: View {
         }
         
     }
+}
+
+enum ImageStyle: String, CaseIterable {
+    case cartoon = "cartoon", pencilSketch = "pencil sketch", watercolor = "watercolor", minimalLineArt = "minimal line art"
 }

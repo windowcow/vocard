@@ -55,15 +55,17 @@ struct CardGPTPage_TextField: View {
             
             
             Button {
+                print(text)
                 let currentChatData = ChatData(headword: headword, myMessage: text)
                 modelContext.insert(currentChatData)
                 var gptResponse: String?
                 Task { @MainActor in
-                    gptResponse = try? await getGPTMessage(word: headword, dfn: meaning, sentence: text)
+                    let t = text
+                    text = ""
+                    gptResponse = try? await getGPTMessage(word: headword, dfn: meaning, sentence: t)
                     currentChatData.gptMessage = gptResponse
-
+                    
                 }
-                text = ""
 
             } label: {
                 Image(systemName: "arrow.up")
