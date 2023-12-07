@@ -31,12 +31,13 @@ struct MainPage: View {
                 MainPage_Middle()
                     .frame(maxWidth: g.size.width * 0.9,
                            maxHeight: g.size.height * 0.2)
+                    .padding(.vertical)
 
-                Spacer()
                 MainPage_Bottom_NextWord()
                     .frame(maxWidth: g.size.width * 0.9 ,
                            maxHeight: g.size.height * 0.4)
-                
+                    .padding(.vertical)
+
                     .matchedGeometryEffect(id: "card", in: namespace)
                 
                 Spacer()

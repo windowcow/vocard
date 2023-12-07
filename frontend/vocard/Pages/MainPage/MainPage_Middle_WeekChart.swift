@@ -27,6 +27,7 @@ struct MainPage_Middle_WeekChart: View {
                                 yEnd: .value("", data.value))
                         .foregroundStyle(.blue.gradient)
                         .cornerRadius(10)
+                        
                     case .fail:
                         BarMark(x: .value("", data.key.formattedWeekday), 
                                 yStart: .value("", 0),
