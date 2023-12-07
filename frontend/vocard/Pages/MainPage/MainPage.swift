@@ -10,8 +10,6 @@ import Charts
 
 @Observable class CurrentCard {
     var cardData: CardData?
-    
-
 }
 
 struct MainPage: View {
@@ -21,11 +19,14 @@ struct MainPage: View {
     
     @State private var currentCard: CurrentCard = CurrentCard()
     @State private var isCardStudyPagePresented = false
+    
+    @State private var cardProb = Probability(probability: 30)
 
     var body: some View {
         GeometryReader { g in
             VStack {
                 MainPage_Top()
+                    .environment(cardProb)
                     .frame(maxHeight: g.size.height * 0.1)
                 Spacer()
                 MainPage_Middle()
@@ -39,8 +40,32 @@ struct MainPage: View {
                     .padding(.vertical)
 
                     .matchedGeometryEffect(id: "card", in: namespace)
-                
+                    .environment(cardProb)
+
                 Spacer()
+                
+                VStack {
+                    Slider(value: Binding(get: {
+                        Double(cardProb.probability)
+                    }, set: { value in
+                        cardProb.probability = Int(value)
+                    }),
+                           in: 1...99
+                    ) {
+                        Text("")
+                    } minimumValueLabel: {
+                        Text("1%")
+                    } maximumValueLabel: {
+                        Text("99%")
+
+                    }
+                    .padding(.horizontal)
+                    Text("New Card: \(cardProb.probability)%")
+                        .foregroundStyle(.white)
+                }
+                
+                .padding(.bottom)
+
 
             }
             .background(.black)
@@ -50,7 +75,7 @@ struct MainPage: View {
         // geo end
         .environment(currentCard)
         .task {
-            currentCard.cardData = allCards.getCard(unseenCardProb: 50)
+            currentCard.cardData = allCards.getCard(unseenCardProb: cardProb.probability)
         }
     }
 }

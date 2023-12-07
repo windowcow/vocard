@@ -7,6 +7,15 @@
 
 import SwiftUI
 
+
+@Observable class Probability {
+    var probability: Int // 0...100
+    
+    init(probability: Int) {
+        self.probability = probability
+    }
+}
+
      
 struct CardsPage_Top: View {
     @Environment(CardsPage_VM.self) var vm
