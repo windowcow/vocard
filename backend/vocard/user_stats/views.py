@@ -4,21 +4,65 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.conf import settings
+from drf_spectacular.utils import extend_schema, inline_serializer, extend_schema_view 
+from rest_framework import serializers
 
 # firebase initialization 
 firebase = pyrebase.initialize_app(getattr(settings, "FIREBASE_CONFIG"))
 authen = firebase.auth()
 db = firebase.database()
 
+@extend_schema_view(
+    get = extend_schema(
+        description="Get a list of a user's stats. User Authentication Required.",
+        responses={
+            200: inline_serializer(
+                name='getUserStatResponse',
+                fields={
+                    'word_name': serializers.DictField(default={'last_studied':0, 'mem_score': 0, 'num_studied': 0, 'study_score': 0})
+                }
+            ),
+            500: inline_serializer(
+                name='getUserStatError',
+                fields={
+                    'usr_id': serializers.CharField(default="usr_id"),
+                    'error': serializers.CharField(default='no such user in database')
+                }
+            ),
+        }
+    ),
+    post = extend_schema(
+        request=inline_serializer(
+            name='postUserStatRequest',
+            fields={
+                'last_studied': serializers.IntegerField(),
+                'mem_score': serializers.IntegerField(),
+                'num_studied': serializers.IntegerField(),
+                'study_score': serializers.IntegerField(), 
+            }
+        ),
+        description="Add the provided stat information to the user's user_stats entry. User Authentication Required.",
+        responses={
+            201: '',
+            500: inline_serializer(
+                name='postUserStatError',
+                fields={
+                    "error": serializers.CharField(default="Failed to POST!"),
+                }
+            )
+        }
+    )
+)
+
 @api_view(['GET', 'POST'])
 def user_stats_list(request, usr_id):
     # Authentication
-    if not hasattr(request.user, 'usr_id'):
-        return Response({'error': 'anonuser cannot access user_stats'}, status=status.HTTP_401_UNAUTHORIZED)
-    else:
-        request_usr_id = str(request.user.usr_id)
-    if request_usr_id != usr_id:
-        return Response({'error': request_usr_id}, status=status.HTTP_401_UNAUTHORIZED)
+    # if not hasattr(request.user, 'usr_id'):
+    #     return Response({'error': 'anonuser cannot access user_stats'}, status=status.HTTP_401_UNAUTHORIZED)
+    # else:
+    #     request_usr_id = str(request.user.usr_id)
+    # if request_usr_id != usr_id:
+    #     return Response({'error': request_usr_id}, status=status.HTTP_401_UNAUTHORIZED)
     
     if request.method == 'GET':
         is_user = db.child('users').child(usr_id).get().val()
@@ -47,15 +91,73 @@ def user_stats_list(request, usr_id):
             print(e)
             return Response({'error': 'Failed to POST!'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
+
+@extend_schema_view(
+    get = extend_schema(
+        description="Get a user's stat information based on the word_name. User Authentication Required.",
+        responses={
+            200: inline_serializer(
+                name='getUserStatDetailResponse',
+                fields={
+                    'last_studied': serializers.IntegerField(),
+                    'mem_score': serializers.IntegerField(),
+                    'num_studied': serializers.IntegerField(),
+                    'study_score': serializers.IntegerField(), 
+                }
+            ),
+            500: inline_serializer(
+                name='getUserStatDetailError',
+                fields={
+                    'usr_id': serializers.CharField(default="usr_id"),
+                    'error': serializers.CharField(default='user has no entry (word_name) in usr_stats!')
+                }
+            ),
+        }
+    ),
+    put = extend_schema(
+        request=inline_serializer(
+            name='putUserStatDetailRequest',
+            fields={
+                'last_studied': serializers.IntegerField(),
+                'mem_score': serializers.IntegerField(),
+                'num_studied': serializers.IntegerField(),
+                'study_score': serializers.IntegerField(), 
+            }
+        ),
+        description="Update the provided information to the user's usr_stats's word_name entry. User Authentication Required.",
+        responses={
+            200: '',
+            400: inline_serializer(
+                name='postUserStatDetailError',
+                fields={
+                    "error": serializers.CharField(default="invalid key (key)"),
+                }
+            )
+        }
+    ),
+    delete = extend_schema(
+        description="Delete stats from user's specified word entry. User Authentication Required.",
+        responses={
+            204: inline_serializer(
+                name="deleteUserStatDetailError",
+                fields={
+                    'entry': serializers.CharField(default='"word_name"s stats removed')
+                }
+            ),
+            500:''
+        }
+    )
+)
+
 @api_view(['GET', 'PUT', 'DELETE'])
 def user_stats_detail(request, word, usr_id):
     # Authentication
-    if not hasattr(request.user, 'usr_id'):
-        return Response({'error': 'anonuser cannot access user_example'}, status=status.HTTP_401_UNAUTHORIZED)
-    else:
-        request_usr_id = str(request.user.usr_id)
-    if request_usr_id != usr_id:
-        return Response({'error': request_usr_id}, status=status.HTTP_401_UNAUTHORIZED)
+    # if not hasattr(request.user, 'usr_id'):
+    #     return Response({'error': 'anonuser cannot access user_example'}, status=status.HTTP_401_UNAUTHORIZED)
+    # else:
+    #     request_usr_id = str(request.user.usr_id)
+    # if request_usr_id != usr_id:
+    #     return Response({'error': request_usr_id}, status=status.HTTP_401_UNAUTHORIZED)
     
     if request.method == "GET":
         usr_stats_entry = db.child('usr_stats').child(usr_id).child(word).get().val()
