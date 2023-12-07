@@ -1116,7 +1116,7 @@
             "as soon as"
         ],
         "dfn_cnt": 2,
-        "kr_word": "바로",
+        "kr_word": ["바로", "바로"],
         "img_url": [
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimmediately%2Fimmediately1_1.png?alt=media",
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimmediately%2Fimmediately2_1.png?alt=media"
@@ -1293,7 +1293,7 @@
             "characterized by complete conformity to the standards and requirements of an organization"
         ],
         "dfn_cnt": 2,
-        "kr_word": "조직",
+        "kr_word": ["조직", "조직"],
         "img_url": [
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forganization%2Forganization1_1.png?alt=media",
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forganization%2Forganization2_1.png?alt=media"
@@ -1401,7 +1401,7 @@
             "an object thrown or projected usually so as to strike something at a distance"
         ],
         "dfn_cnt": 2,
-        "kr_word": "미사일",
+        "kr_word": ["미사일", "미사일"],
         "img_url": [
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmissile%2Fmissile1_1.png?alt=media",
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmissile%2Fmissile2_1.png?alt=media"
@@ -1509,7 +1509,7 @@
             "one affected with a neurosis"
         ],
         "dfn_cnt": 2,
-        "kr_word": "신경증.",
+        "kr_word": ["신경증", "신경증 환자"],
         "img_url": [
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fneurotic%2Fneurotic1_1.png?alt=media",
             "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fneurotic%2Fneurotic2_1.png?alt=media"
