@@ -12,16 +12,25 @@ struct CardGPTPage: View {
     var meaning: MeaningData
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .topLeading) {
             Color.clear
             VStack(alignment: .leading) {
-                Text(headword)
+                (
+                Text(meaning.wordData?.headword ?? headword)
                     .font(.largeTitle)
-                    .bold()
+                    .bold() +
+                Text("\(meaning.wordData?.senseNum ?? 1)")
+                    .baselineOffset(8)
+                )
+                Text(meaning.wordData?.pos ?? "verb")
+                    .font(.caption)
+                    .padding(.bottom)
+
                 (Text("\(meaning.meaningNum)") + Text(". ") + Text(meaning.meaning))
                     .foregroundStyle(.black)
             }
         }
+        .padding()
     }
 }
 //
