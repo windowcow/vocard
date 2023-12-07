@@ -39,51 +39,49 @@ struct CardGPTPage_Cell: View {
                 }
                 .matchedGeometryEffect(id: "image", in: cell)
             } else {
-                VStack(alignment: .leading) {
-                    Text("me: ") +
+                VStack(alignment: .center) {
                     Text(studyMaterial.myMessage)
                         .font(.caption)
                     Divider()
-                    HStack {
-                        if let gptMessage = studyMaterial.gptMessage {
-                            Text(gptMessage)
-                            
-                            if let imageURL = studyMaterial.imageURL {
-                                if imageURL == "" {
-                                    ProgressView()
-                                } else {
-                                    AsyncImage(url: URL(string: imageURL)) { image in
-                                        image
-                                            .resizable()
-                                            .scaledToFit()
-                                            .padding(30)
-                                            .shadow(radius: 0)
-                                            .onTapGesture {
-                                                isImageBig.toggle()
-                                            }
-                                            
-                                    } placeholder: {
-                                        ProgressView()
-                                    }
-                                    .matchedGeometryEffect(id: "image", in: cell)
-                                }
-                                
+                    if let gptMessage = studyMaterial.gptMessage {
+                        Text(gptMessage)
+                        
+                        if let imageURL = studyMaterial.imageURL {
+                            if imageURL == "" {
+                                ProgressView()
                             } else {
-                                Button {
-                                    Task { @MainActor in
-                                        let gptResponse = try? await getGPTImage(style: "", sentence: studyMaterial.myMessage)
-                                        studyMaterial.imageURL = gptResponse
-
-                                    }
-                                    studyMaterial.imageURL = ""
-                                } label: {
-                                    Text(Image(systemName: "photo.badge.plus.fill"))
-                                        .font(.largeTitle)
+                                AsyncImage(url: URL(string: imageURL)) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFit()
+                                        .padding(30)
+                                        .shadow(radius: 0)
+                                        .frame(maxWidth: 150)
+                                        .onTapGesture {
+                                            isImageBig.toggle()
+                                        }
+                                        
+                                } placeholder: {
+                                    ProgressView()
                                 }
+                                .matchedGeometryEffect(id: "image", in: cell)
                             }
+                            
                         } else {
-                            EmptyView()
+                            Button {
+                                Task { @MainActor in
+                                    let gptResponse = try? await getGPTImage(style: "", sentence: studyMaterial.myMessage)
+                                    studyMaterial.imageURL = gptResponse
+
+                                }
+                                studyMaterial.imageURL = ""
+                            } label: {
+                                Text(Image(systemName: "photo.badge.plus.fill"))
+                                    .font(.largeTitle)
+                            }
                         }
+                    } else {
+                        EmptyView()
                     }
                 }
             }
