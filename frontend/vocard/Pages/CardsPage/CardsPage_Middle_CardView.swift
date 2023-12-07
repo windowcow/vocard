@@ -16,8 +16,14 @@ struct CardsPage_Middle_CardView: View {
         ZStack {
             Color.clear
             VStack {
+                (
                 Text(card.wordData.headword)
-                    .foregroundStyle(.white)
+                    .bold()
+                + Text("\(card.wordData.senseNum)")
+                    .font(.caption2)
+                    .baselineOffset(5)
+                
+                )
             }
             
 
