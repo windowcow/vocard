@@ -95,12 +95,13 @@ def grade_example(request):
     try:
         prompt = f"Evaluate the correctness of the sentence based on the definition of the word. Word: {request.data['word']}. Definition: {request.data['dfn']}. Sentence: {request.data['sentence']}"
         chat_completion = client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-1106",
             messages=[
                 {'role':'system', 'content': "You are a teacher evaluating the correctness of a student's example sentence. If the example sentence is wrong, provide details on how to make the sentence correct"},
                 {'role':'user', 'content': prompt}
             ],
-            max_tokens=2000
+            max_tokens=2000,
+            seed=1
         )
         response = chat_completion.choices[0].message.content.strip()
         return Response({"response": response}, status=status.HTTP_200_OK)
