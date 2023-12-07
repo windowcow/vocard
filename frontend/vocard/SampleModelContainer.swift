@@ -22,6 +22,7 @@ var sharedModelContainer: ModelContainer {
     let modelConfiguration = ModelConfiguration(isStoredInMemoryOnly: true)
     
     do {
+        let a = cards
         let container = try ModelContainer(for: schema, configurations: modelConfiguration)
         
         let quizData: [QuizData] = QuizData.samples
@@ -56,7 +57,7 @@ var sharedModelContainer: ModelContainer {
                     meaning.exampleSentences.append(example)
                     example.meaningData = meaning
                 }
-                word.wordMeaningDataModels.append(meaning)
+                word.meaningDatas.append(meaning)
                 meaning.wordData = word
             }
         }

@@ -68,14 +68,15 @@ struct CardStudyPage_Middle_Card_Detail: View {
                         Text(currentCard.cardData?.wordData.headword ?? "example")
                             .font(.largeTitle)
                             .bold()
-                        Text(currentCard.cardData?.wordData.wordMeaningDataModels.first?.meaning ?? "To go")
+                        Text(currentCard.cardData?.wordData.meaningDatas.first?.meaning ?? "To go")
                         VStack {
+//                            Image(currentCard.cardData?.wordData.meaningDatas.first?.exampleSentences.first?.illustrations.first?.imageURL ?? SampleImage)
                             Image("sampleImage")
                                 .resizable()
                                 .scaledToFit()
                                 .padding(30)
                                 .shadow(radius: 0)
-                            Text(currentCard.cardData?.wordData.wordMeaningDataModels.first?.exampleSentences.first?.sentence ?? "I like apple")
+                            Text(currentCard.cardData?.wordData.meaningDatas.first?.exampleSentences.first?.sentence ?? "I like apple")
                         }
                         
                         .compositingGroup()

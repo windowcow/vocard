@@ -9,14 +9,15 @@ import Foundation
 import SwiftData
 
 @Model final class MeaningData {
+    @Relationship var wordData: WordData?
+    @Relationship(inverse: \ExampleData.meaningData) var exampleSentences: [ExampleData] = []
+
     var meaningNum: Int
     var meaning: String
     var meaningInOtherLanguages: [String:String]
     
-    @Relationship(inverse: \ExampleData.meaningData) var exampleSentences: [ExampleData]
-    @Relationship var wordData: WordData?
     
-    init(meaningNum: Int, meaning: String, meaningInOtherLanguages: [String : String] = [:], exampleSentences: [ExampleData] = []) {
+    init(exampleSentences: [ExampleData] = [], meaningNum: Int, meaning: String, meaningInOtherLanguages: [String : String] = [:]) {
         self.meaningNum = meaningNum
         self.meaning = meaning
         self.meaningInOtherLanguages = meaningInOtherLanguages

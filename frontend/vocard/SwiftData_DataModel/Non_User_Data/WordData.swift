@@ -13,16 +13,17 @@ import Foundation
     var headword: String
     var senseNum: Int
     
-    @Relationship(inverse: \MeaningData.wordData) var wordMeaningDataModels: [MeaningData]
+    @Relationship(inverse: \MeaningData.wordData) var meaningDatas: [MeaningData]
     @Relationship(inverse: \QuizData.wordData) var quizzes: [QuizData]
     
     
     
-    init(pos: String, headWord: String, sense_num: Int, wordMeaningDataModels: [MeaningData] = [], quizzes: [QuizData] = []) {
+    init(pos: String = "", headWord: String = "", sense_num: Int = 1, 
+         wordMeaningDataModels: [MeaningData] = [], quizzes: [QuizData] = []) {
         self.pos = pos
         self.headword = headWord
         self.senseNum = sense_num
-        self.wordMeaningDataModels = wordMeaningDataModels
+        self.meaningDatas = wordMeaningDataModels
         self.quizzes = quizzes
     }
 }

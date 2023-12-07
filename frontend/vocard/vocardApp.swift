@@ -16,6 +16,6 @@ struct SwiftDataPractice2App: App {
         WindowGroup {
             MainPage()
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(realContainer)
     }
 }
