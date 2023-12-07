@@ -68,7 +68,8 @@ var realContainer: ModelContainer {
 
                     W.pos = pos
                     
-                    var card = CardData(targetWordDataModel: W)
+                    let card = CardData(targetWordDataModel: W)
+                    
                     cards.append(card)
 
                 }
@@ -78,7 +79,13 @@ var realContainer: ModelContainer {
         
         for card in cards {
             container.mainContext.insert(card)
+            for _ in 0...2 {
+                let reviewData = ReviewData(reviewDate: Date.now.randomPastDate(7.day), result: .success(1))
+                reviewData.cardDataModel = card
+                card.reviewData.append(reviewData)
+            }
         }
+        
         
         
         

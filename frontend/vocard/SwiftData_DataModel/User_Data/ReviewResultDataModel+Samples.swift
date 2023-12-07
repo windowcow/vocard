@@ -11,6 +11,5 @@ import Foundation
 extension ReviewData {
     static func makeSample() -> ReviewData {
         ReviewData(reviewDate: Date.now.randomPastDate(7.day), result: .success(1))
-
     }
 }
