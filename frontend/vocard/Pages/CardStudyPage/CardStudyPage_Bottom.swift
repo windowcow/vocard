@@ -71,13 +71,13 @@ struct CardStudyPage_Bottom: View {
                         if let quiz = currentCard.cardData?.wordData.quizzes.first, let choice = vm.selectedChoice {
                             if quiz.answer == choice {
                                 try currentCard.cardData?.reviewSuccessed()
-                                currentCard.cardData = allCards.getCard()
+//                                currentCard.cardData = allCards.getCard()
                                 isRecentReviewSuccessed = true
                                 isResultPopoverPresented.toggle()
                                 print("맞")
                             } else {
                                 try currentCard.cardData?.reviewFailed()
-                                currentCard.cardData = allCards.getCard()
+//                                currentCard.cardData = allCards.getCard()
                                 isRecentReviewSuccessed = false
                                 isResultPopoverPresented.toggle()
                                 print("틀림")
@@ -101,9 +101,10 @@ struct CardStudyPage_Bottom: View {
                             Color.white
                             VStack {
                                 Text("맞췄습니다")
-                                Button("확인") {
+                                Button("확인") { @MainActor in
                                     vm.refresh()
                                     isResultPopoverPresented.toggle()
+                                    currentCard.cardData = allCards.getCard()
                                 }
                             }
                         }
@@ -113,10 +114,10 @@ struct CardStudyPage_Bottom: View {
                             Color.white
                             VStack {
                                 Text("틀렸습니다.")
-                                Button("확인") {
+                                Button("확인") { @MainActor in
                                     vm.refresh()
                                     isResultPopoverPresented.toggle()
-
+                                    currentCard.cardData = allCards.getCard()
                                 }
                             }
                         }

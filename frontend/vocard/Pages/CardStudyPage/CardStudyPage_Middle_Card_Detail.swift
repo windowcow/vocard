@@ -78,7 +78,7 @@ struct CardStudyPage_Middle_Card_Detail: View {
                             )
                             Text(currentCard.cardData?.wordData.pos ?? "verb")
                         }
-                        .padding(.vertical)
+                        .padding(.top)
                         
                         Text(currentCard.cardData?.wordData.meaningDatas.first?.meaning ?? "To go")
                             .padding(.horizontal)
@@ -101,7 +101,7 @@ struct CardStudyPage_Middle_Card_Detail: View {
                         .shadow(radius: 10)
 
                         .foregroundStyle(.white)
-                        .padding()
+                        .padding(.bottom)
 //                        .background(.white, in: .rect(cornerRadius: 10))
                         .padding()
                         Spacer()
