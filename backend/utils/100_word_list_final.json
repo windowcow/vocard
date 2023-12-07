@@ -16,28 +16,30 @@
         "example": [
             "I decided to forgive my friend for forgetting my birthday because I knew it was an honest mistake."
         ],
-        "quiz": {
-            "question": "What does the word 'forgive' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To hold onto resentment and anger."
-                },
-                {
-                    "option": "B",
-                    "text": "To seek revenge on someone who has wronged you."
-                },
-                {
-                    "option": "C",
-                    "text": "To cease to feel resentment against and pardon someone."
-                },
-                {
-                    "option": "D",
-                    "text": "To encourage negative feelings and grudges."
-                }
-            ],
-            "correct_answer": "C"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'forgive' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To hold onto resentment and anger."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To seek revenge on someone who has wronged you."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To cease to feel resentment against and pardon someone."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To encourage negative feelings and grudges."
+                    }
+                ],
+                "correct_answer": "C"
+            }
+        ]
     },
     "oral": {
         "pos": [
@@ -125,28 +127,30 @@
         "example": [
             "The civil rights movement fought for equal rights and protections for all citizens."
         ],
-        "quiz": {
-            "question": "What does the word 'civil' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "Of or relating to citizens."
-                },
-                {
-                    "option": "B",
-                    "text": "A natural disaster affecting a large area."
-                },
-                {
-                    "option": "C",
-                    "text": "A formal ceremony or ritual."
-                },
-                {
-                    "option": "D",
-                    "text": "Relating to military or armed forces."
-                }
-            ],
-            "correct_answer": "A"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'civil' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Of or relating to citizens."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A natural disaster affecting a large area."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A formal ceremony or ritual."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Relating to military or armed forces."
+                    }
+                ],
+                "correct_answer": "A"
+            }
+        ]
     },
     "implement": {
         "pos": [
@@ -303,28 +307,30 @@
         "example": [
             "After a long day of hiking, I felt drowsy and couldn't keep my eyes open."
         ],
-        "quiz": {
-            "question": "What does the word 'drowsy' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "Feeling energetic and awake."
-                },
-                {
-                    "option": "B",
-                    "text": "Ready to fall asleep."
-                },
-                {
-                    "option": "C",
-                    "text": "Being in a state of excitement."
-                },
-                {
-                    "option": "D",
-                    "text": "Having a strong desire for food."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'drowsy' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Feeling energetic and awake."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Ready to fall asleep."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Being in a state of excitement."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Having a strong desire for food."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "act": {
         "pos": [
@@ -757,28 +763,30 @@
         "example": [
             "The briny smell of the ocean filled the air as we walked along the beach."
         ],
-        "quiz": {
-            "question": "What does the word 'briny' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "Sweet and sugary, like a dessert."
-                },
-                {
-                    "option": "B",
-                    "text": "Of, relating to, or resembling brine or the sea : salty."
-                },
-                {
-                    "option": "C",
-                    "text": "Bitter and unpleasant to the taste."
-                },
-                {
-                    "option": "D",
-                    "text": "Pertaining to fresh water or inland bodies of water."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'briny' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Sweet and sugary, like a dessert."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Of, relating to, or resembling brine or the sea : salty."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Bitter and unpleasant to the taste."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Pertaining to fresh water or inland bodies of water."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "junk": {
         "pos": [
@@ -1073,28 +1081,30 @@
         "example": [
             "The cargo ship was filled with crates of fresh fruits and vegetables."
         ],
-        "quiz": {
-            "question": "What does the word 'cargo' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "The passengers traveling in a ship, airplane, or vehicle."
-                },
-                {
-                    "option": "B",
-                    "text": "The goods or merchandise conveyed in a ship, airplane, or vehicle: freight."
-                },
-                {
-                    "option": "C",
-                    "text": "The act of navigating or traveling by sea."
-                },
-                {
-                    "option": "D",
-                    "text": "The personal belongings of the crew on a ship or airplane."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'cargo' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The passengers traveling in a ship, airplane, or vehicle."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The goods or merchandise conveyed in a ship, airplane, or vehicle: freight."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The act of navigating or traveling by sea."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The personal belongings of the crew on a ship or airplane."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "immediately": {
         "pos": [
@@ -1179,28 +1189,30 @@
         "example": [
             "She made a valuable acquisition at the antique store."
         ],
-        "quiz": {
-            "question": "What does the word 'acquisition' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "The act of losing or giving up something."
-                },
-                {
-                    "option": "B",
-                    "text": "The act of acquiring something."
-                },
-                {
-                    "option": "C",
-                    "text": "The process of declining or deteriorating."
-                },
-                {
-                    "option": "D",
-                    "text": "The action of dividing or separating something."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'acquisition' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The act of losing or giving up something."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The act of acquiring something."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The process of declining or deteriorating."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The action of dividing or separating something."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "chant": {
         "pos": [
@@ -1354,28 +1366,30 @@
         "example": [
             "The dentist found a cavity in my tooth during my check-up."
         ],
-        "quiz": {
-            "question": "What does the word 'cavity' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A filled space within a mass."
-                },
-                {
-                    "option": "B",
-                    "text": "A type of dental treatment."
-                },
-                {
-                    "option": "C",
-                    "text": "An unfilled space within a mass."
-                },
-                {
-                    "option": "D",
-                    "text": "A solid, impenetrable surface."
-                }
-            ],
-            "correct_answer": "C"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'cavity' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A filled space within a mass."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A type of dental treatment."
+                    },
+                    {
+                        "option": "C",
+                        "text": "An unfilled space within a mass."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A solid, impenetrable surface."
+                    }
+                ],
+                "correct_answer": "C"
+            }
+        ]
     },
     "missile": {
         "pos": [
@@ -1460,28 +1474,30 @@
         "example": [
             "She made a gesture of apology by bowing her head and raising her hands."
         ],
-        "quiz": {
-            "question": "What does the word 'gesture' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A complex mathematical formula."
-                },
-                {
-                    "option": "B",
-                    "text": "A movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude."
-                },
-                {
-                    "option": "C",
-                    "text": "A type of clothing worn for special occasions."
-                },
-                {
-                    "option": "D",
-                    "text": "A traditional dance from a specific culture."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'gesture' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A complex mathematical formula."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A type of clothing worn for special occasions."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A traditional dance from a specific culture."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "neurotic": {
         "pos": [
@@ -1635,28 +1651,30 @@
         "example": [
             "He received a hefty penalty for his involvement in the embezzlement scheme."
         ],
-        "quiz": {
-            "question": "What does the word 'penalty' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "The reward given for performing a good deed."
-                },
-                {
-                    "option": "B",
-                    "text": "The suffering in person, rights, or property that is annexed by law or judicial decision to the commission of a crime or public offense."
-                },
-                {
-                    "option": "C",
-                    "text": "The act of forgiving someone for an offense."
-                },
-                {
-                    "option": "D",
-                    "text": "A formal ceremony or act that is a part of a social or religious occasion."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'penalty' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The reward given for performing a good deed."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The suffering in person, rights, or property that is annexed by law or judicial decision to the commission of a crime or public offense."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The act of forgiving someone for an offense."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A formal ceremony or act that is a part of a social or religious occasion."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "cassette": {
         "pos": [
@@ -1675,28 +1693,30 @@
         "example": [
             "I found an old cassette in the attic filled with my favorite childhood songs."
         ],
-        "quiz": {
-            "question": "What does the word 'cassette' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A type of fastener used to hold objects together."
-                },
-                {
-                    "option": "B",
-                    "text": "A usually flat case or cartridge that can be easily loaded or unloaded."
-                },
-                {
-                    "option": "C",
-                    "text": "A small container used for storing liquids."
-                },
-                {
-                    "option": "D",
-                    "text": "A musical instrument similar to a trumpet."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'cassette' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of fastener used to hold objects together."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A usually flat case or cartridge that can be easily loaded or unloaded."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A small container used for storing liquids."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A musical instrument similar to a trumpet."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "breed": {
         "pos": [
@@ -1784,28 +1804,30 @@
         "example": [
             "The spy used a cipher to encode the secret message before sending it to headquarters."
         ],
-        "quiz": {
-            "question": "What does the word 'cipher' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A method of transforming a text in order to conceal its meaning."
-                },
-                {
-                    "option": "B",
-                    "text": "A public performance of a dramatic work."
-                },
-                {
-                    "option": "C",
-                    "text": "A device used for calculating mathematical problems."
-                },
-                {
-                    "option": "D",
-                    "text": "A person who has no influence or importance in a situation."
-                }
-            ],
-            "correct_answer": "A"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'cipher' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A method of transforming a text in order to conceal its meaning."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A public performance of a dramatic work."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A device used for calculating mathematical problems."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A person who has no influence or importance in a situation."
+                    }
+                ],
+                "correct_answer": "A"
+            }
+        ]
     },
     "clan": {
         "pos": [
@@ -1824,28 +1846,30 @@
         "example": [
             "The MacGregor clan gathered together for their annual Highland Games."
         ],
-        "quiz": {
-            "question": "What does the word 'clan' refer to?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A modern corporation consisting of various departments."
-                },
-                {
-                    "option": "B",
-                    "text": "A Celtic group especially in the Scottish Highlands comprising a number of households whose heads claim descent from a common ancestor."
-                },
-                {
-                    "option": "C",
-                    "text": "A collection of unrelated people living together in a community."
-                },
-                {
-                    "option": "D",
-                    "text": "A type of medieval weaponry used in Scotland."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'clan' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A modern corporation consisting of various departments."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A Celtic group especially in the Scottish Highlands comprising a number of households whose heads claim descent from a common ancestor."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A collection of unrelated people living together in a community."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A type of medieval weaponry used in Scotland."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "misleading": {
         "pos": [
@@ -1864,28 +1888,30 @@
         "example": [
             "The advertisement was misleading, as it promised a product that would magically make you lose weight overnight."
         ],
-        "quiz": {
-            "question": "What does the word 'misleading' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To guide someone in the correct direction."
-                },
-                {
-                    "option": "B",
-                    "text": "To lead in a wrong direction or into a mistaken action or belief often by deliberate deceit."
-                },
-                {
-                    "option": "C",
-                    "text": "To provide clear and factual information."
-                },
-                {
-                    "option": "D",
-                    "text": "To follow someone else's direction without question."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'misleading' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To guide someone in the correct direction."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To lead in a wrong direction or into a mistaken action or belief often by deliberate deceit."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To provide clear and factual information."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To follow someone else's direction without question."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "brace": {
         "pos": [
@@ -1973,28 +1999,30 @@
         "example": [
             "The glacier carved out the valley as it slowly moved down the slope."
         ],
-        "quiz": {
-            "question": "What is a glacier?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A large body of water moving rapidly through a valley."
-                },
-                {
-                    "option": "B",
-                    "text": "A large body of ice moving slowly down a slope or valley or spreading outward on a land surface."
-                },
-                {
-                    "option": "C",
-                    "text": "A stationary mass of snow and ice that never changes."
-                },
-                {
-                    "option": "D",
-                    "text": "A rapid flow of ice and snow in a mountainous region."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What is a glacier?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A large body of water moving rapidly through a valley."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A large body of ice moving slowly down a slope or valley or spreading outward on a land surface."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A stationary mass of snow and ice that never changes."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A rapid flow of ice and snow in a mountainous region."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "clause": {
         "pos": [
@@ -2013,28 +2041,30 @@
         "example": [
             "The dependent clause in the sentence \"Although it was raining, we still went for a walk\" adds additional information to the main clause."
         ],
-        "quiz": {
-            "question": "What does the word 'clause' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A punctuation mark used to indicate a pause or break in a sentence."
-                },
-                {
-                    "option": "B",
-                    "text": "A group of words containing a subject and predicate and functioning as a member of a complex or compound sentence."
-                },
-                {
-                    "option": "C",
-                    "text": "A long, formal letter or document."
-                },
-                {
-                    "option": "D",
-                    "text": "A legal term for a specific provision or stipulation in a contract or agreement."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'clause' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A punctuation mark used to indicate a pause or break in a sentence."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A group of words containing a subject and predicate and functioning as a member of a complex or compound sentence."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A long, formal letter or document."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A legal term for a specific provision or stipulation in a contract or agreement."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "law": {
         "pos": [
@@ -2536,28 +2566,30 @@
         "example": [
             "The rubber band's elasticity allowed it to stretch and then return to its original shape."
         ],
-        "quiz": {
-            "question": "What does the word 'elasticity' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "The quality or state of being rigid and unchangeable."
-                },
-                {
-                    "option": "B",
-                    "text": "The quality or state of being elastic, such as the ability to resume its normal shape spontaneously after contraction, dilatation, or distortion."
-                },
-                {
-                    "option": "C",
-                    "text": "The quality of being inflexible and unresponsive to change."
-                },
-                {
-                    "option": "D",
-                    "text": "The state of being emotionally unresponsive or indifferent."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'elasticity' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The quality or state of being rigid and unchangeable."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The quality or state of being elastic, such as the ability to resume its normal shape spontaneously after contraction, dilatation, or distortion."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The quality of being inflexible and unresponsive to change."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The state of being emotionally unresponsive or indifferent."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "carpenter": {
         "pos": [
@@ -2714,28 +2746,30 @@
         "example": [
             "My opponent in the chess tournament was a formidable player."
         ],
-        "quiz": {
-            "question": "What does the word 'opponent' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A person who supports and agrees with you in every situation."
-                },
-                {
-                    "option": "B",
-                    "text": "One that takes an opposite position (as in a debate, contest, or conflict)."
-                },
-                {
-                    "option": "C",
-                    "text": "A spectator who watches a debate, contest, or conflict."
-                },
-                {
-                    "option": "D",
-                    "text": "A judge who decides the outcome of a debate, contest, or conflict."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'opponent' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A person who supports and agrees with you in every situation."
+                    },
+                    {
+                        "option": "B",
+                        "text": "One that takes an opposite position (as in a debate, contest, or conflict)."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A spectator who watches a debate, contest, or conflict."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A judge who decides the outcome of a debate, contest, or conflict."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "circular": {
         "pos": [
@@ -2961,28 +2995,30 @@
         "example": [
             "The graduation ceremony was a beautiful event filled with speeches, music, and the presentation of diplomas."
         ],
-        "quiz": {
-            "question": "What does the word 'ceremony' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A spontaneous and informal gathering."
-                },
-                {
-                    "option": "B",
-                    "text": "A formal act or series of acts prescribed by ritual, protocol, or convention."
-                },
-                {
-                    "option": "C",
-                    "text": "A private conversation between two individuals."
-                },
-                {
-                    "option": "D",
-                    "text": "A written document outlining the laws of a country."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'ceremony' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A spontaneous and informal gathering."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A formal act or series of acts prescribed by ritual, protocol, or convention."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A private conversation between two individuals."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A written document outlining the laws of a country."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "peel": {
         "pos": [
@@ -3346,28 +3382,30 @@
         "example": [
             "The survival of all passengers in the plane crash was considered a miracle."
         ],
-        "quiz": {
-            "question": "What does the word 'miracle' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A common occurrence that happens daily."
-                },
-                {
-                    "option": "B",
-                    "text": "An extraordinary event manifesting divine intervention in human affairs."
-                },
-                {
-                    "option": "C",
-                    "text": "A predictable outcome resulting from natural causes."
-                },
-                {
-                    "option": "D",
-                    "text": "A scientific phenomenon that is well understood."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'miracle' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A common occurrence that happens daily."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An extraordinary event manifesting divine intervention in human affairs."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A predictable outcome resulting from natural causes."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A scientific phenomenon that is well understood."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "imperative": {
         "pos": [
@@ -3662,28 +3700,30 @@
         "example": [
             "The beach was littered with pieces of driftwood that had washed ashore during the storm."
         ],
-        "quiz": {
-            "question": "What does the word 'driftwood' refer to?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "Furniture made out of wood."
-                },
-                {
-                    "option": "B",
-                    "text": "Wood that has been painted to look like it's been in water."
-                },
-                {
-                    "option": "C",
-                    "text": "Wood that has been cut down for timber."
-                },
-                {
-                    "option": "D",
-                    "text": "Wood drifted or floated by water."
-                }
-            ],
-            "correct_answer": "D"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'driftwood' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Furniture made out of wood."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Wood that has been painted to look like it's been in water."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Wood that has been cut down for timber."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Wood drifted or floated by water."
+                    }
+                ],
+                "correct_answer": "D"
+            }
+        ]
     },
     "catalogue": {
         "pos": [
@@ -3771,28 +3811,30 @@
         "example": [
             "The donuts were freshly baked and glazed with a sweet icing."
         ],
-        "quiz": {
-            "question": "What does the word 'glazed' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To be covered in a thin layer of ice."
-                },
-                {
-                    "option": "B",
-                    "text": "To be covered or coated with a glaze."
-                },
-                {
-                    "option": "C",
-                    "text": "To be highly polished or shiny."
-                },
-                {
-                    "option": "D",
-                    "text": "To be confused or dazed."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'glazed' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To be covered in a thin layer of ice."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To be covered or coated with a glaze."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To be highly polished or shiny."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To be confused or dazed."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "misguided": {
         "pos": [
@@ -3811,28 +3853,30 @@
         "example": [
             "His misguided attempt to impress his friends led him to make poor choices."
         ],
-        "quiz": {
-            "question": "What does the word 'misguided' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To be led or prompted by strong and well-founded motives."
-                },
-                {
-                    "option": "B",
-                    "text": "To be led or prompted by wrong or inappropriate motives or ideals."
-                },
-                {
-                    "option": "C",
-                    "text": "To have a clear and accurate understanding of the situation."
-                },
-                {
-                    "option": "D",
-                    "text": "To guide others in the right direction with proper advice."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'misguided' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To be led or prompted by strong and well-founded motives."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To be led or prompted by wrong or inappropriate motives or ideals."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To have a clear and accurate understanding of the situation."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To guide others in the right direction with proper advice."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "census": {
         "pos": [
@@ -3851,28 +3895,30 @@
         "example": [
             "The Roman government conducted a census every five years to accurately assess the population and evaluate property."
         ],
-        "quiz": {
-            "question": "What does the word 'census' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A detailed map of a city's infrastructure."
-                },
-                {
-                    "option": "B",
-                    "text": "A count of the population and a property evaluation in early Rome."
-                },
-                {
-                    "option": "C",
-                    "text": "A collection of ancient Roman laws and statutes."
-                },
-                {
-                    "option": "D",
-                    "text": "A religious ceremony conducted in ancient Rome."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'census' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A detailed map of a city's infrastructure."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A count of the population and a property evaluation in early Rome."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A collection of ancient Roman laws and statutes."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A religious ceremony conducted in ancient Rome."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "ministry": {
         "pos": [
@@ -3891,28 +3937,30 @@
         "example": [
             "The ministry of health is responsible for the ministration of healthcare services to the citizens."
         ],
-        "quiz": {
-            "question": "What does the word 'ministry' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A government department headed by a minister."
-                },
-                {
-                    "option": "B",
-                    "text": "The act of serving or aiding."
-                },
-                {
-                    "option": "C",
-                    "text": "A building where administrative work is carried out."
-                },
-                {
-                    "option": "D",
-                    "text": "The profession of a minister of religion."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'ministry' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A government department headed by a minister."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The act of serving or aiding."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A building where administrative work is carried out."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The profession of a minister of religion."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "order": {
         "pos": [
@@ -4000,28 +4048,30 @@
         "example": [
             "The tropical rainforest is a climate characterized by high temperatures and heavy rainfall."
         ],
-        "quiz": {
-            "question": "What does the word 'climate' refer to?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A large community of plants and animals."
-                },
-                {
-                    "option": "B",
-                    "text": "A region of the earth having specified climatic conditions."
-                },
-                {
-                    "option": "C",
-                    "text": "The study of ancient cultures and civilizations."
-                },
-                {
-                    "option": "D",
-                    "text": "A pattern of weather over a long period of time in a specific area."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'climate' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A large community of plants and animals."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A region of the earth having specified climatic conditions."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The study of ancient cultures and civilizations."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A pattern of weather over a long period of time in a specific area."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "carve": {
         "pos": [
@@ -4040,28 +4090,30 @@
         "example": [
             "He used a sharp knife to carve the turkey into thin slices."
         ],
-        "quiz": {
-            "question": "What does the word 'carve' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To glue pieces together."
-                },
-                {
-                    "option": "B",
-                    "text": "To cut with care or precision."
-                },
-                {
-                    "option": "C",
-                    "text": "To draw or sketch with great detail."
-                },
-                {
-                    "option": "D",
-                    "text": "To throw something with force."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'carve' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To glue pieces together."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To cut with care or precision."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To draw or sketch with great detail."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To throw something with force."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "drill": {
         "pos": [
@@ -4356,28 +4408,30 @@
         "example": [
             "She received her certification as a yoga instructor after completing the required training program."
         ],
-        "quiz": {
-            "question": "What does the word 'certification' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "The process of forgetting or disregarding information."
-                },
-                {
-                    "option": "B",
-                    "text": "The act of certifying : the state of being certified."
-                },
-                {
-                    "option": "C",
-                    "text": "A formal process of decreasing the value of currency."
-                },
-                {
-                    "option": "D",
-                    "text": "The act of making something more complicated."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'certification' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The process of forgetting or disregarding information."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The act of certifying : the state of being certified."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A formal process of decreasing the value of currency."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The act of making something more complicated."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "peer": {
         "pos": [
@@ -4465,28 +4519,30 @@
         "example": [
             "I mishear my friend's name and called her by the wrong name."
         ],
-        "quiz": {
-            "question": "What does the word 'mishear' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To listen to something with great attention."
-                },
-                {
-                    "option": "B",
-                    "text": "To hear wrongly."
-                },
-                {
-                    "option": "C",
-                    "text": "To hear exactly what was said."
-                },
-                {
-                    "option": "D",
-                    "text": "To ignore what is being said."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'mishear' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To listen to something with great attention."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To hear wrongly."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To hear exactly what was said."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To ignore what is being said."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "organ": {
         "pos": [
@@ -4505,28 +4561,30 @@
         "example": [
             "The heart is a vital organ that pumps blood throughout the body."
         ],
-        "quiz": {
-            "question": "What does the word 'organ' refer to?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A musical instrument with keys and pipes."
-                },
-                {
-                    "option": "B",
-                    "text": "A differentiated structure (such as a heart, kidney, leaf, or stem) consisting of cells and tissues and performing some specific function in an organism."
-                },
-                {
-                    "option": "C",
-                    "text": "A formal organization or society."
-                },
-                {
-                    "option": "D",
-                    "text": "A tool used for precision work in various crafts."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'organ' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A musical instrument with keys and pipes."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A differentiated structure (such as a heart, kidney, leaf, or stem) consisting of cells and tissues and performing some specific function in an organism."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A formal organization or society."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A tool used for precision work in various crafts."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "circulation": {
         "pos": [
@@ -4545,28 +4603,30 @@
         "example": [
             "The blood's circulation throughout the body ensures that oxygen is delivered to all organs and tissues."
         ],
-        "quiz": {
-            "question": "What does the word 'circulation' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "The act of copying or imitating something."
-                },
-                {
-                    "option": "B",
-                    "text": "Orderly movement through a circuit."
-                },
-                {
-                    "option": "C",
-                    "text": "A state of confusion or disorder."
-                },
-                {
-                    "option": "D",
-                    "text": "The process of voting in an election."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'circulation' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The act of copying or imitating something."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Orderly movement through a circuit."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A state of confusion or disorder."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The process of voting in an election."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "penetrate": {
         "pos": [
@@ -4585,28 +4645,30 @@
         "example": [
             "The arrow was able to penetrate the target's bullseye."
         ],
-        "quiz": {
-            "question": "What does the word 'penetrate' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "To remain on the surface of something."
-                },
-                {
-                    "option": "B",
-                    "text": "To pass into or through."
-                },
-                {
-                    "option": "C",
-                    "text": "To avoid contact with."
-                },
-                {
-                    "option": "D",
-                    "text": "To observe from a distance."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'penetrate' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To remain on the surface of something."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To pass into or through."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To avoid contact with."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To observe from a distance."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "branch": {
         "pos": [
@@ -4763,28 +4825,30 @@
         "example": [
             "The injured bird lay immobile on the ground, unable to fly away."
         ],
-        "quiz": {
-            "question": "What does the word 'immobile' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "Capable of moving quickly and lightly."
-                },
-                {
-                    "option": "B",
-                    "text": "Not moving : motionless."
-                },
-                {
-                    "option": "C",
-                    "text": "To be in a constant state of motion."
-                },
-                {
-                    "option": "D",
-                    "text": "To change location or position frequently."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'immobile' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Capable of moving quickly and lightly."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Not moving : motionless."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To be in a constant state of motion."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To change location or position frequently."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "click": {
         "pos": [
@@ -5010,28 +5074,30 @@
         "example": [
             "I have a certainty that the sun will rise tomorrow."
         ],
-        "quiz": {
-            "question": "What does the word 'certainty' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "A state of being unsure or doubtful."
-                },
-                {
-                    "option": "B",
-                    "text": "Something that is certain."
-                },
-                {
-                    "option": "C",
-                    "text": "A prediction about the future that may not come true."
-                },
-                {
-                    "option": "D",
-                    "text": "A risky or unpredictable situation."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'certainty' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A state of being unsure or doubtful."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Something that is certain."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A prediction about the future that may not come true."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A risky or unpredictable situation."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "breach": {
         "pos": [
@@ -5119,28 +5185,30 @@
         "example": [
             "The sound of the alarm clock was so penetrating that it woke me up instantly."
         ],
-        "quiz": {
-            "question": "What does the word 'penetrating' mean?",
-            "choices": [
-                {
-                    "option": "A",
-                    "text": "Lacking the ability to influence or affect."
-                },
-                {
-                    "option": "B",
-                    "text": "Having the power of entering, piercing, or pervading."
-                },
-                {
-                    "option": "C",
-                    "text": "Being superficial or shallow."
-                },
-                {
-                    "option": "D",
-                    "text": "To withdraw or retract from a position or commitment."
-                }
-            ],
-            "correct_answer": "B"
-        }
+        "quiz": [
+            {
+                "question": "What does the word 'penetrating' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Lacking the ability to influence or affect."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Having the power of entering, piercing, or pervading."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Being superficial or shallow."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To withdraw or retract from a position or commitment."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
     },
     "elderly": {
         "pos": [
