@@ -127,8 +127,8 @@ struct CardGPTPage_Cell: View {
         
         
         let (d, r) = try await URLSession.shared.data(for: request)
-        print(d)
-        print(r)
+//        print(d)
+//        print(r)
         
         if let response = try? JSONDecoder().decode([String:String].self, from: d) {
             return response["img_url"] ?? "Error"

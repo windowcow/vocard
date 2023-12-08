@@ -58,7 +58,7 @@ struct CardStudyPage_Top: View {
         }
         // VIEW END
         .onChange(of: vm.cardViewStatus, { oldValue, newValue in
-            print(111)
+//            print(111)
             todaysStars = reviewResultDataModels.filter { r in
                 r.reviewDate.defaultToMidnight == Date.now.defaultToMidnight
             }.reduce(0){$0 + $1.result.revenue}

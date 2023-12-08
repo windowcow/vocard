@@ -22,7 +22,7 @@ extension Array where Element == CardData {
         }
         
         if seenReviewable.isEmpty && unseenReviewable.isEmpty {
-            print("둘 다 빔")
+//            print("둘 다 빔")
             return nil
         } else if seenReviewable.isEmpty {
             return unseenReviewable.randomElement()!

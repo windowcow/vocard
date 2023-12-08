@@ -34,8 +34,8 @@ struct CardStudyPage_Bottom: View {
                     try currentCard.cardData?.reviewFailed()
                     currentCard.cardData = allCards.getCard(unseenCardProb: cardProb.probability)
                     vm.refresh()
-                    print(currentCard.cardData?.wordData.headword)
-                    print(currentCard.cardData?.timeSinceLastReview)
+//                    print(currentCard.cardData?.wordData.headword)
+//                    print(currentCard.cardData?.timeSinceLastReview)
 
                 } catch {
                     
@@ -73,12 +73,12 @@ struct CardStudyPage_Bottom: View {
                                 try currentCard.cardData?.reviewSuccessed()
                                 isRecentReviewSuccessed = true
                                 isResultPopoverPresented.toggle()
-                                print("맞")
+//                                print("맞")
                             } else {
                                 try currentCard.cardData?.reviewFailed()
                                 isRecentReviewSuccessed = false
                                 isResultPopoverPresented.toggle()
-                                print("틀림")
+//                                print("틀림")
 
                             }
                         }

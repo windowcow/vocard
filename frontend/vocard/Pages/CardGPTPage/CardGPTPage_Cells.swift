@@ -28,7 +28,7 @@ struct CardGPTPage_Cells: View {
                 ForEach(studyMaterials) { studyMaterial in
                     CardGPTPage_Cell(studyMaterial: studyMaterial)
                         .task {
-                            print(123)
+//                            print(123)
                         }
                 }
             }
@@ -55,7 +55,7 @@ struct CardGPTPage_TextField: View {
             
             
             Button {
-                print(text)
+//                print(text)
                 let currentChatData = ChatData(headword: headword, myMessage: text)
                 modelContext.insert(currentChatData)
                 var gptResponse: String?
@@ -93,8 +93,8 @@ struct CardGPTPage_TextField: View {
         
         
         let (d, r) = try await URLSession.shared.data(for: request)
-        print(d)
-        print(r)
+//        print(d)
+//        print(r)
         
         if let response = try? JSONDecoder().decode([String:String].self, from: d) {
             return response["response"]!
