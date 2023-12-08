@@ -99,11 +99,19 @@ struct CardStudyPage_Bottom: View {
                             Color.white
                             VStack {
                                 Text("맞췄습니다")
-                                Button("확인") { @MainActor in
+                                    .font(.largeTitle)
+                                    .bold()
+                                Button { @MainActor in
                                     vm.refresh()
                                     isResultPopoverPresented.toggle()
                                     currentCard.cardData = allCards.getCard(unseenCardProb: cardProb.probability)
+                                } label: {
+                                    Text("확인")
+                                        .frame(maxWidth: .infinity)
                                 }
+                                .padding(.horizontal, 30)
+                                .buttonStyle(.borderedProminent)
+                                
                             }
                         }
                         
@@ -112,11 +120,18 @@ struct CardStudyPage_Bottom: View {
                             Color.white
                             VStack {
                                 Text("틀렸습니다.")
-                                Button("확인") { @MainActor in
+                                    .font(.largeTitle)
+                                    .bold()
+                                Button { @MainActor in
                                     vm.refresh()
                                     isResultPopoverPresented.toggle()
                                     currentCard.cardData = allCards.getCard(unseenCardProb: cardProb.probability)
+                                } label: {
+                                    Text("확인")
+                                        .frame(maxWidth: .infinity)
                                 }
+                                .padding(.horizontal, 30)
+                                .buttonStyle(.borderedProminent)
                             }
                         }
                     }
