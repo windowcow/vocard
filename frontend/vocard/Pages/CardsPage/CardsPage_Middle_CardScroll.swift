@@ -30,7 +30,7 @@ struct CardsPage_Middle_CardScroll: View {
         ScrollView(.vertical) {
             LazyVGrid(columns: vm.columnNum == 2 ? gridItem2 : gridItem3,
                       alignment: .center, spacing: 20) {
-                ForEach(vm.cards, id: \.id) { card in
+                ForEach(vm.cards) { card in
                     CardsPage_Middle_CardView(card: card)
                 }
             }

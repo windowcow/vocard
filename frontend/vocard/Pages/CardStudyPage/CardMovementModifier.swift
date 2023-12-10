@@ -29,8 +29,6 @@ struct CardMovementModifier: ViewModifier {
                         .degrees(offsetState.width),
                         axis: (x: 0.0, y: -1.0, z: 0.0),
                         anchor: .center
-
-//                        anchor: offsetState.width > 0 ? .trailing : .leading
                     )
                     .offset(offsetState)
                     

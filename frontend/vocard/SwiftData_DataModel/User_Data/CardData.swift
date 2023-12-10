@@ -74,11 +74,11 @@ extension CardData {
         case .one:
             return timeSinceLastReview / 3.hour
         case .two:
-            return timeSinceLastReview / 3.hour
+            return timeSinceLastReview / 1.day
         case .three:
-            return timeSinceLastReview / 3.hour
+            return timeSinceLastReview / 3.day
         case .four:
-            return timeSinceLastReview / 3.hour
+            return timeSinceLastReview / 7.day
         }
     }
     

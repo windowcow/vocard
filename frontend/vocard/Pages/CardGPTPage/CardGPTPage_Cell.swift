@@ -24,8 +24,7 @@ struct CardGPTPage_Cell: View {
                     image
                         .resizable()
                         .scaledToFit()
-                        .padding(30)
-                        .shadow(radius: 0)
+                        .shadow(radius: 1)
                         .onTapGesture {
                             isImageBig.toggle()
                         }

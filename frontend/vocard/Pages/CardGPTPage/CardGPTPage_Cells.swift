@@ -55,7 +55,6 @@ struct CardGPTPage_TextField: View {
             
             
             Button {
-//                print(text)
                 let currentChatData = ChatData(headword: headword, myMessage: text)
                 modelContext.insert(currentChatData)
                 var gptResponse: String?

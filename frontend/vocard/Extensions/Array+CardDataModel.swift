@@ -9,7 +9,7 @@ import Foundation
 
 extension Array where Element == CardData {
     @MainActor
-    func getCard(unseenCardProb prob: Int = 50) -> Element? {
+    func getCard(unseenCardProb prob: Int = 30) -> Element? {
 //        print(self.debugDescription)
         /// 본 것 중  복습 가능한 카드
         let seenReviewable = self.filter { card in
@@ -34,7 +34,7 @@ extension Array where Element == CardData {
             }.first!
         } else {
             /// 둘 카드가 1장 이상 있는 경우
-            let isSeenCardSelected = [true, false].pickOneByProbabilityOf(prob) ?? true
+            let isSeenCardSelected = [true, false].pickOneByProbabilityOf(100 - prob) ?? true
             if isSeenCardSelected {
                 return seenReviewable.sorted { card1, card2 in
                     card1.weight! > card2.weight!

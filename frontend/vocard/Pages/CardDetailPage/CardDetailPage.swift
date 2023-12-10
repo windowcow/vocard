@@ -9,22 +9,6 @@ import Foundation
 import SwiftUI
 import SwiftData
 
-
-
-//extension MeaningData {
-//    static func predicate(
-//        headword: String
-//    ) -> Predicate<MeaningData> {
-//        return #Predicate<MeaningData> { meaning in
-//            if let word = meaning.wordData {
-//                word.headword == headword
-//            } else {
-//                false
-//            }
-//        }
-//    }
-//}
-
 enum CardDetailPageType {
     case dictionary, custom
 }
@@ -71,6 +55,7 @@ struct CardDetailPage_MeaningView: View {
                     }
                 }
                 .fullScreenCover(isPresented: $isGPTPagePresented, content: {
+                
                     CardGPTPage(headword: word.headword,meaning: meaning)
                 })
                 .swipeActions(edge: .trailing) {
