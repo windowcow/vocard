@@ -73,13 +73,10 @@ struct CardStudyPage_Bottom: View {
                                 try currentCard.cardData?.reviewSuccessed()
                                 isRecentReviewSuccessed = true
                                 isResultPopoverPresented.toggle()
-//                                print("맞")
                             } else {
                                 try currentCard.cardData?.reviewFailed()
                                 isRecentReviewSuccessed = false
                                 isResultPopoverPresented.toggle()
-//                                print("틀림")
-
                             }
                         }
 
