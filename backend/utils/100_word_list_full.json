@@ -1,0 +1,5081 @@
+{
+    "forgive": {
+        "pos": "verb",
+        "meaning": "to cease to feel resentment against : pardon",
+        "dfn_cnt": 1,
+        "kr_word": "용서하다",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fforgive%2Fforgive_1.png?alt=media",
+        "example": "I decided to forgive my friend for forgetting my birthday because I knew it was an honest mistake.",
+        "quiz": {
+            "question": "What does the word 'forgive' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To hold onto resentment and anger."
+                },
+                {
+                    "option": "B",
+                    "text": "To seek revenge on someone who has wronged you."
+                },
+                {
+                    "option": "C",
+                    "text": "To cease to feel resentment against and pardon someone."
+                },
+                {
+                    "option": "D",
+                    "text": "To encourage negative feelings and grudges."
+                }
+            ],
+            "correct_answer": "C"
+        }
+    },
+    "oral": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "uttered by the mouth or in words : spoken",
+            "an oral examination"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "구두의",
+            "구두로"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Foral%2Foral1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Foral%2Foral2_1.png?alt=media"
+        ],
+        "example": [
+            "During the presentation, the speaker delivered an engaging oral report to the audience.",
+            "The students were nervous about their upcoming oral examination in French class."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'oral' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Relating to the process of hearing."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Uttered by the mouth or in words: spoken."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Involving the use of the hands."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Pertaining to the written form of communication."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the term 'oral' refer to in the context of an examination?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A written test taken on paper."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An examination of one's ability to perform physical tasks."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A test that involves listening to audio recordings."
+                    },
+                    {
+                        "option": "D",
+                        "text": "An examination where answers are given by speaking rather than writing."
+                    }
+                ],
+                "correct_answer": "D"
+            }
+        ]
+    },
+    "civil": {
+        "pos": "adjective",
+        "meaning": "of or relating to citizens",
+        "dfn_cnt": 1,
+        "kr_word": "시민적",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcivil%2Fcivil_1.png?alt=media",
+        "example": "The civil rights movement fought for equal rights and protections for all citizens.",
+        "quiz": {
+            "question": "What does the word 'civil' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "Of or relating to citizens."
+                },
+                {
+                    "option": "B",
+                    "text": "A natural disaster affecting a large area."
+                },
+                {
+                    "option": "C",
+                    "text": "A formal ceremony or ritual."
+                },
+                {
+                    "option": "D",
+                    "text": "Relating to military or armed forces."
+                }
+            ],
+            "correct_answer": "A"
+        }
+    },
+    "implement": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a device used in the performance of a task : tool, utensil",
+            "carry out, accomplish"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "도구",
+            "수행하다."
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimplement%2Fimplement1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimplement%2Fimplement2_1.png?alt=media"
+        ],
+        "example": [
+            "I used a cooking implement to stir the soup.",
+            "The company plans to implement new strategies to increase sales."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'implement' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A formal agreement between countries."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A device used in the performance of a task : tool, utensil."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A musical instrument."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A piece of clothing."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'implement' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To plan or propose an idea."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To carry out or accomplish."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To prevent something from happening."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To repair or fix something."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "chip": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a small usually thin and flat piece cut, struck, or flaked off",
+            "to cut or hew with an edged tool"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "조각",
+            "깎다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchip%2Fchip1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchip%2Fchip2_1.png?alt=media"
+        ],
+        "example": [
+            "I accidentally chipped a piece off the corner of my favorite coffee mug.",
+            "He carefully chipped away at the block of wood to create a sculpture."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chip' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A large, heavy block used for construction."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A small usually thin and flat piece cut, struck, or flaked off."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A device used to store digital data."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A tool used for carving or cutting."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'chip' mean in the context of cutting or hewing?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To glue or attach pieces together."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To cut or hew with an edged tool."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To paint or coat with a brush."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To bend or twist out of shape."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "drowsy": {
+        "pos": "adjective",
+        "meaning": "ready to fall asleep",
+        "dfn_cnt": 1,
+        "kr_word": "졸린",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fdrowsy%2Fdrowsy_1.png?alt=media",
+        "example": "After a long day of hiking, I felt drowsy and couldn't keep my eyes open.",
+        "quiz": {
+            "question": "What does the word 'drowsy' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "Feeling energetic and awake."
+                },
+                {
+                    "option": "B",
+                    "text": "Ready to fall asleep."
+                },
+                {
+                    "option": "C",
+                    "text": "Being in a state of excitement."
+                },
+                {
+                    "option": "D",
+                    "text": "Having a strong desire for food."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "act": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the doing of a thing : deed",
+            "to take action : move"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "행동",
+            "행동하다."
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fact%2Fact1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fact%2Fact2_1.png?alt=media"
+        ],
+        "example": [
+            "She performed a selfless act of kindness by helping the elderly woman cross the street.",
+            "She decided to act on her dream and start her own business."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'act' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The process of thinking about something."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The doing of a thing : deed."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A legal document stating the terms of an agreement."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A break or pause in a performance."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'act' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To remain still and do nothing."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To take action : move."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To perform in a play or movie."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To pretend to be something or someone else."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "cereal": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "relating to grain or to the plants that produce it",
+            "a plant yielding starchy grain suitable for food"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "곡물",
+            "시리얼"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcereal%2Fcereal1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcereal%2Fcereal2_1.png?alt=media"
+        ],
+        "example": [
+            "Wheat, rice, and corn are all examples of cereal crops.",
+            "I enjoy eating cereal with milk for breakfast every morning."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'cereal' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of digital currency."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Relating to grain or to the plants that produce it."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A television series that is broadcast in consecutive parts."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A large, organized group of singers, especially one that performs together with an orchestra."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'cereal' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of clothing material."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A plant yielding starchy grain suitable for food."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A television show for children."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A digital communication platform."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "brief": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "short in duration, extent, or length",
+            "an official letter or mandate"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "간단한",
+            "요약하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbrief%2Fbrief1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbrief%2Fbrief2_1.png?alt=media"
+        ],
+        "example": [
+            "I had a brief conversation with my friend before heading to work.",
+            "The lawyer received a brief from the court outlining the details of the case."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'brief' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Long and detailed."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Short in duration, extent, or length."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Complicated and difficult to understand."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Extremely lengthy and time-consuming."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'brief' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A short summary of a longer work or document."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An official letter or mandate."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A type of men's underwear."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A command given in a concise manner."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "carton": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a box or container usually made of cardboard and often of corrugated cardboard",
+            "to pack or enclose in a carton"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "판지 상자",
+            "포장하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarton%2Fcarton1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarton%2Fcarton2_1.png?alt=media"
+        ],
+        "example": [
+            "I bought a carton of milk from the grocery store.",
+            "I will carton the fragile items to ensure they are protected during transportation."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'carton' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of fabric used for making clothes."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A box or container usually made of cardboard and often of corrugated cardboard."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A small vehicle with two wheels pulled by an animal."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A digital file format used for 3D models."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'carton' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To unpack or remove items from a box."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To pack or enclose in a carton."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To transport goods in a vehicle."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To seal a container with adhesive tape."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "civilian": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "a specialist in Roman or modern civil law",
+            "of, relating to, or made up of civilians"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "민간인",
+            "민간인"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcivilian%2Fcivilian1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcivilian%2Fcivilian2_1.png?alt=media"
+        ],
+        "example": [
+            "The civilian expert was called upon to provide legal advice on the Roman civil law case.",
+            "The civilian population was advised to stay indoors during the military operation."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'civilian' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A member of an armed force or the police."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A person who is not on active duty with a military, naval, police, or fire fighting organization."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A specialist in Roman or modern civil law."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A person who is skilled in the technical aspects of war."
+                    }
+                ],
+                "correct_answer": "C"
+            },
+            {
+                "question": "What does the word 'civilian' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Of, relating to, or characteristic of soldiers or armed forces."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Of, relating to, or made up of civilians."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Pertaining to the natural environment or wildlife."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Involving complicated and technical details."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "breakthrough": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a sudden advance especially in knowledge or technique",
+            "to make a breakthrough"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "획기적인",
+            "발전"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbreakthrough%2Fbreakthrough1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbreakthrough%2Fbreakthrough2_1.png?alt=media"
+        ],
+        "example": [
+            "The scientist's groundbreaking research led to a major breakthrough in cancer treatment.",
+            "After years of research, the scientists finally made a breakthrough in finding a cure for cancer."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'breakthrough' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A return to traditional methods."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A sudden advance especially in knowledge or technique."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A gradual improvement over a long period."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A significant setback or failure."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'breakthrough' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To experience a sudden, dramatic, and important discovery or development."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To physically break through a solid barrier."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To retreat from a challenging situation."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To maintain the status quo without any significant change."
+                    }
+                ],
+                "correct_answer": "A"
+            }
+        ]
+    },
+    "briny": {
+        "pos": "adjective",
+        "meaning": "of, relating to, or resembling brine or the sea : salty",
+        "dfn_cnt": 1,
+        "kr_word": "짠",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbriny%2Fbriny_1.png?alt=media",
+        "example": "The briny smell of the ocean filled the air as we walked along the beach.",
+        "quiz": {
+            "question": "What does the word 'briny' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "Sweet and sugary, like a dessert."
+                },
+                {
+                    "option": "B",
+                    "text": "Of, relating to, or resembling brine or the sea : salty."
+                },
+                {
+                    "option": "C",
+                    "text": "Bitter and unpleasant to the taste."
+                },
+                {
+                    "option": "D",
+                    "text": "Pertaining to fresh water or inland bodies of water."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "junk": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "old iron, glass, paper, or other waste that may be used again in some form",
+            "to get rid of as worthless : scrap"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "폐물",
+            "버리다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fjunk%2Fjunk1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fjunk%2Fjunk2_1.png?alt=media"
+        ],
+        "example": [
+            "I took all the junk from my garage and brought it to the recycling center.",
+            "I need to junk these old magazines because they are taking up too much space."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'junk' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of traditional Chinese sailing ship."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Old iron, glass, paper, or other waste that may be used again in some form."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Food that is considered unhealthy and of low nutritional value."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Items of high value and rarity, often antique or collectible."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'junk' mean when used as a verb?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To repair and restore something to its original condition."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To get rid of as worthless or scrap."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To collect and store items of little value."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To categorize and organize objects meticulously."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "chief": {
+        "pos": [
+            "adjective",
+            "adverb"
+        ],
+        "meaning": [
+            "accorded highest rank or office",
+            "chiefly"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "주요한",
+            "주로"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchief%2Fchief1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchief%2Fchief2_1.png?alt=media"
+        ],
+        "example": [
+            "The chief executive officer is responsible for making important decisions in the company.",
+            "She is chiefly responsible for managing the company's finances."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chief' mean when referring to a person's rank or office?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Having the least authority or importance."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Accorded highest rank or office."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Being in a junior or entry-level position."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Assigned to a supportive or assistant role."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'chief' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Of least importance or rank."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Most importantly or primarily."
+                    },
+                    {
+                        "option": "C",
+                        "text": "In a manner that involves physical effort."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To follow orders from someone."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "chic": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "smart elegance and sophistication especially of dress or manner : style",
+            "cleverly stylish : smart"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "세련된",
+            "멋있는"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchic%2Fchic1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchic%2Fchic2_1.png?alt=media"
+        ],
+        "example": [
+            "She always dresses in a chic and fashionable way, turning heads wherever she goes.",
+            "She always looks so chic in her tailored suits and high heels."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chic' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of fabric used for making casual wear."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Smart elegance and sophistication especially of dress or manner : style."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A trend or fad that is considered outdated or uncool."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A style of cooking that is complicated and involves many steps."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'chic' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Outdated or old-fashioned."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Cleverly stylish : smart."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Lacking in style or fashion sense."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Excessively decorated or embellished."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "elbow": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the joint of the human arm",
+            "to push with the elbow : jostle"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "팔꿈치",
+            "팔"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Felbow%2Felbow1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Felbow%2Felbow2_1.png?alt=media"
+        ],
+        "example": [
+            "I accidentally bumped my elbow on the table and it really hurt.",
+            "As the crowd surged forward, people elbowed each other to get closer to the stage."
+        ],
+        "quiz": [
+            {
+                "question": "What is the meaning of the word 'elbow'?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of pasta shaped like a tube."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The joint of the human arm."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A tool used for bending pipes."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A dance move popular in the 1920s."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'elbow' mean in the context of an action?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To bend the arm at the joint."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To push with the elbow : jostle."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To link arms with another person."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To throw a ball using the arm's joint."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "cargo": {
+        "pos": "noun",
+        "meaning": "the goods or merchandise conveyed in a ship, airplane, or vehicle : freight",
+        "dfn_cnt": 1,
+        "kr_word": "화물",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcargo%2Fcargo_1.png?alt=media",
+        "example": "The cargo ship was filled with crates of fresh fruits and vegetables.",
+        "quiz": {
+            "question": "What does the word 'cargo' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "The passengers traveling in a ship, airplane, or vehicle."
+                },
+                {
+                    "option": "B",
+                    "text": "The goods or merchandise conveyed in a ship, airplane, or vehicle: freight."
+                },
+                {
+                    "option": "C",
+                    "text": "The act of navigating or traveling by sea."
+                },
+                {
+                    "option": "D",
+                    "text": "The personal belongings of the crew on a ship or airplane."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "immediately": {
+        "pos": [
+            "adverb",
+            "conjunction"
+        ],
+        "meaning": [
+            "without interval of time : straightway",
+            "as soon as"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "바로",
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimmediately%2Fimmediately1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimmediately%2Fimmediately2_1.png?alt=media"
+        ],
+        "example": [
+            "I will call you back immediately after I finish this task.",
+            "I will call you immediately after I finish my work."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'immediately' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "With a significant delay."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To do something with hesitation."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Without interval of time : straightway."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To plan to do something in the distant future."
+                    }
+                ],
+                "correct_answer": "C"
+            },
+            {
+                "question": "What does the word 'immediately' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "With a delay or after a long time."
+                    },
+                    {
+                        "option": "B",
+                        "text": "As soon as."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Never or not at any time."
+                    },
+                    {
+                        "option": "D",
+                        "text": "At a convenient time in the future."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "acquisition": {
+        "pos": "noun",
+        "meaning": "the act of acquiring something",
+        "dfn_cnt": 1,
+        "kr_word": "획득",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Facquisition%2Facquisition_1.png?alt=media",
+        "example": "She made a valuable acquisition at the antique store.",
+        "quiz": {
+            "question": "What does the word 'acquisition' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "The act of losing or giving up something."
+                },
+                {
+                    "option": "B",
+                    "text": "The act of acquiring something."
+                },
+                {
+                    "option": "C",
+                    "text": "The process of declining or deteriorating."
+                },
+                {
+                    "option": "D",
+                    "text": "The action of dividing or separating something."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "chant": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to make melodic sounds with the voice",
+            "song sense 1"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "불러요",
+            "노래"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchant%2Fchant1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchant%2Fchant2_1.png?alt=media"
+        ],
+        "example": [
+            "The crowd began to chant the team's name in unison.",
+            "The crowd began to chant the team's victory song after they won the championship."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chant' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To speak rapidly and continuously."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To make melodic sounds with the voice."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To whisper quietly to oneself."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To argue loudly with someone."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'chant' mean in the context of song sense 1?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To speak rapidly and continuously."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To recite something in a monotonous repetitive tone."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To engage in a lively dance."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To perform a piece of music with instruments."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "organization": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "the act or process of organizing or of being organized",
+            "characterized by complete conformity to the standards and requirements of an organization"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "조직",
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forganization%2Forganization1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forganization%2Forganization2_1.png?alt=media"
+        ],
+        "example": [
+            "She showed great organization skills by color-coding her files and creating a detailed schedule.",
+            "The employee's work was highly organized, as it demonstrated complete conformity to the standards and requirements of the organization."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'organization' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The act of causing chaos and disorder."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The act or process of organizing or of being organized."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A group of people who dislike structure and planning."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The process of scattering or dispersing objects or people."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'organization' imply when describing someone's behavior or actions?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Acting in a random and chaotic manner."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Characterized by complete conformity to the standards and requirements of an organization."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Working independently without following any specific rules or patterns."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Showing a lack of structure or planning in personal activities."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "cavity": {
+        "pos": "noun",
+        "meaning": "an unfilled space within a mass",
+        "dfn_cnt": 1,
+        "kr_word": "구멍",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcavity%2Fcavity_1.png?alt=media",
+        "example": "The dentist found a cavity in my tooth during my check-up.",
+        "quiz": {
+            "question": "What does the word 'cavity' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A filled space within a mass."
+                },
+                {
+                    "option": "B",
+                    "text": "A type of dental treatment."
+                },
+                {
+                    "option": "C",
+                    "text": "An unfilled space within a mass."
+                },
+                {
+                    "option": "D",
+                    "text": "A solid, impenetrable surface."
+                }
+            ],
+            "correct_answer": "C"
+        }
+    },
+    "missile": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "capable of being thrown or projected to strike a distant object",
+            "an object thrown or projected usually so as to strike something at a distance"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "미사일",
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmissile%2Fmissile1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmissile%2Fmissile2_1.png?alt=media"
+        ],
+        "example": [
+            "The missile was launched into the air and soared towards its target.",
+            "The missile was launched into the air and soared towards its target."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'missile' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A device that is incapable of movement."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Capable of being thrown or projected to strike a distant object."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A tool used for digging holes."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A musical instrument."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'missile' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A tool used for digging holes."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An object thrown or projected usually so as to strike something at a distance."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A musical instrument played by striking with the hands."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A device used for measuring time."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "gesture": {
+        "pos": "verb",
+        "meaning": "a movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude",
+        "dfn_cnt": 1,
+        "kr_word": "동작",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fgesture%2Fgesture_1.png?alt=media",
+        "example": "She made a gesture of apology by bowing her head and raising her hands.",
+        "quiz": {
+            "question": "What does the word 'gesture' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A complex mathematical formula."
+                },
+                {
+                    "option": "B",
+                    "text": "A movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude."
+                },
+                {
+                    "option": "C",
+                    "text": "A type of clothing worn for special occasions."
+                },
+                {
+                    "option": "D",
+                    "text": "A traditional dance from a specific culture."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "neurotic": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "of, relating to, constituting, or affected with neurosis",
+            "one affected with a neurosis"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "신경증.",
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fneurotic%2Fneurotic1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fneurotic%2Fneurotic2_1.png?alt=media"
+        ],
+        "example": [
+            "She is a neurotic person who constantly worries about every little thing.",
+            "She is a neurotic individual who constantly worries about every little thing."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'neurotic' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Of, relating to, constituting, or affected with neurosis."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Having a calm and balanced state of mind."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Characterized by physical strength and solid health."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Pertaining to the study of the nervous system and its disorders."
+                    }
+                ],
+                "correct_answer": "A"
+            },
+            {
+                "question": "What does the word 'neurotic' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "One who studies the nervous system."
+                    },
+                    {
+                        "option": "B",
+                        "text": "One affected with a neurosis."
+                    },
+                    {
+                        "option": "C",
+                        "text": "One who performs surgery on the brain."
+                    },
+                    {
+                        "option": "D",
+                        "text": "One who is unaffected by stress or psychological issues."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "chew": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to crush, grind, or gnaw (something, such as food) with or as if with the teeth : masticate",
+            "the act of chewing"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "씹다",
+            "씹기"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchew%2Fchew1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchew%2Fchew2_1.png?alt=media"
+        ],
+        "example": [
+            "I always chew my food thoroughly before swallowing to aid in digestion.",
+            "I watched as the dog's chew became slower and slower, indicating that he was getting tired."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chew' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To swallow food whole without using teeth."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To crush, grind, or gnaw (something, such as food) with or as if with the teeth : masticate."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To cook food by boiling it."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To freeze food for preservation."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'chew' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The act of swallowing food whole."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The act of tasting something."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The act of cooking food."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The act of chewing."
+                    }
+                ],
+                "correct_answer": "D"
+            }
+        ]
+    },
+    "penalty": {
+        "pos": "noun",
+        "meaning": "the suffering in person, rights, or property that is annexed by law or judicial decision to the commission of a crime or public offense",
+        "dfn_cnt": 1,
+        "kr_word": "벌칙",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpenalty%2Fpenalty_1.png?alt=media",
+        "example": "He received a hefty penalty for his involvement in the embezzlement scheme.",
+        "quiz": {
+            "question": "What does the word 'penalty' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "The reward given for performing a good deed."
+                },
+                {
+                    "option": "B",
+                    "text": "The suffering in person, rights, or property that is annexed by law or judicial decision to the commission of a crime or public offense."
+                },
+                {
+                    "option": "C",
+                    "text": "The act of forgiving someone for an offense."
+                },
+                {
+                    "option": "D",
+                    "text": "A formal ceremony or act that is a part of a social or religious occasion."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "cassette": {
+        "pos": "noun",
+        "meaning": "a usually flat case or cartridge that can be easily loaded or unloaded",
+        "dfn_cnt": 1,
+        "kr_word": "카세트",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcassette%2Fcassette_1.png?alt=media",
+        "example": "I found an old cassette in the attic filled with my favorite childhood songs.",
+        "quiz": {
+            "question": "What does the word 'cassette' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A type of fastener used to hold objects together."
+                },
+                {
+                    "option": "B",
+                    "text": "A usually flat case or cartridge that can be easily loaded or unloaded."
+                },
+                {
+                    "option": "C",
+                    "text": "A small container used for storing liquids."
+                },
+                {
+                    "option": "D",
+                    "text": "A musical instrument similar to a trumpet."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "breed": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to produce (offspring) by hatching or gestation",
+            "a group of usually domesticated animals or plants presumably related by descent from common ancestors and visibly similar in most characters"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "기르다",
+            "품"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbreed%2Fbreed1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbreed%2Fbreed2_1.png?alt=media"
+        ],
+        "example": [
+            "The chickens on the farm breed every spring, producing a new generation of fluffy chicks.",
+            "The farmer raises a specific breed of chickens known for their large eggs."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'breed' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To mix different substances to create a new one."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To produce (offspring) by hatching or gestation."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To train or educate someone in a particular skill."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To collect and categorize different types of items."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'breed' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A method of training animals."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A group of usually domesticated animals or plants presumably related by descent from common ancestors and visibly similar in most characters."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A type of food specifically formulated for animal consumption."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A classification of animals based on their habitat."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "cipher": {
+        "pos": "noun",
+        "meaning": "a method of transforming a text in order to conceal its meaning",
+        "dfn_cnt": 1,
+        "kr_word": "암호",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcipher%2Fcipher_1.png?alt=media",
+        "example": "The spy used a cipher to encode the secret message before sending it to headquarters.",
+        "quiz": {
+            "question": "What does the word 'cipher' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A method of transforming a text in order to conceal its meaning."
+                },
+                {
+                    "option": "B",
+                    "text": "A public performance of a dramatic work."
+                },
+                {
+                    "option": "C",
+                    "text": "A device used for calculating mathematical problems."
+                },
+                {
+                    "option": "D",
+                    "text": "A person who has no influence or importance in a situation."
+                }
+            ],
+            "correct_answer": "A"
+        }
+    },
+    "clan": {
+        "pos": "noun",
+        "meaning": "a Celtic group especially in the Scottish Highlands comprising a number of households whose heads claim descent from a common ancestor",
+        "dfn_cnt": 1,
+        "kr_word": "씨족",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclan%2Fclan_1.png?alt=media",
+        "example": "The MacGregor clan gathered together for their annual Highland Games.",
+        "quiz": {
+            "question": "What does the word 'clan' refer to?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A modern corporation consisting of various departments."
+                },
+                {
+                    "option": "B",
+                    "text": "A Celtic group especially in the Scottish Highlands comprising a number of households whose heads claim descent from a common ancestor."
+                },
+                {
+                    "option": "C",
+                    "text": "A collection of unrelated people living together in a community."
+                },
+                {
+                    "option": "D",
+                    "text": "A type of medieval weaponry used in Scotland."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "misleading": {
+        "pos": "verb",
+        "meaning": "to lead in a wrong direction or into a mistaken action or belief often by deliberate deceit",
+        "dfn_cnt": 1,
+        "kr_word": "오도하는",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmisleading%2Fmisleading_1.png?alt=media",
+        "example": "The advertisement was misleading, as it promised a product that would magically make you lose weight overnight.",
+        "quiz": {
+            "question": "What does the word 'misleading' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To guide someone in the correct direction."
+                },
+                {
+                    "option": "B",
+                    "text": "To lead in a wrong direction or into a mistaken action or belief often by deliberate deceit."
+                },
+                {
+                    "option": "C",
+                    "text": "To provide clear and factual information."
+                },
+                {
+                    "option": "D",
+                    "text": "To follow someone else's direction without question."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "brace": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "prepare, steel",
+            "something that transmits, directs, resists, or supports weight or pressure: such as"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "준비하다",
+            "강화하"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbrace%2Fbrace1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbrace%2Fbrace2_1.png?alt=media"
+        ],
+        "example": [
+            "I need to brace myself for the upcoming exam by studying hard and staying focused.",
+            "He wore a brace on his injured knee to provide support and stability."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'brace' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To weaken or reduce in strength."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To prepare and strengthen oneself for something difficult."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To physically support with a structure."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To relax or become less vigilant."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'brace' mean in the context of transmitting, directing, resisting, or supporting weight or pressure?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A decorative feature that adds aesthetic value to a building."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Something that transmits, directs, resists, or supports weight or pressure."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A musical instrument used in classical orchestras."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A type of dance move in contemporary dance routines."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "glacier": {
+        "pos": "noun",
+        "meaning": "a large body of ice moving slowly down a slope or valley or spreading outward on a land surface",
+        "dfn_cnt": 1,
+        "kr_word": "빙하",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fglacier%2Fglacier_1.png?alt=media",
+        "example": "The glacier carved out the valley as it slowly moved down the slope.",
+        "quiz": {
+            "question": "What is a glacier?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A large body of water moving rapidly through a valley."
+                },
+                {
+                    "option": "B",
+                    "text": "A large body of ice moving slowly down a slope or valley or spreading outward on a land surface."
+                },
+                {
+                    "option": "C",
+                    "text": "A stationary mass of snow and ice that never changes."
+                },
+                {
+                    "option": "D",
+                    "text": "A rapid flow of ice and snow in a mountainous region."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "clause": {
+        "pos": "noun",
+        "meaning": "a group of words containing a subject and predicate and functioning as a member of a complex or compound sentence",
+        "dfn_cnt": 1,
+        "kr_word": "절",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclause%2Fclause_1.png?alt=media",
+        "example": "The dependent clause in the sentence \"Although it was raining, we still went for a walk\" adds additional information to the main clause.",
+        "quiz": {
+            "question": "What does the word 'clause' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A punctuation mark used to indicate a pause or break in a sentence."
+                },
+                {
+                    "option": "B",
+                    "text": "A group of words containing a subject and predicate and functioning as a member of a complex or compound sentence."
+                },
+                {
+                    "option": "C",
+                    "text": "A long, formal letter or document."
+                },
+                {
+                    "option": "D",
+                    "text": "A legal term for a specific provision or stipulation in a contract or agreement."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "law": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a binding custom or practice of a community : a rule of conduct or action prescribed or formally recognized as binding or enforced by a controlling authority",
+            "litigate"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "법",
+            "소송하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Flaw%2Flaw1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Flaw%2Flaw2_1.png?alt=media"
+        ],
+        "example": [
+            "Breaking the law by speeding can result in a hefty fine and points on your driver's license.",
+            "They hired a lawyer to litigate their case in court."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'law' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A suggestion for behavior that is socially acceptable."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A binding custom or practice of a community: a rule of conduct or action prescribed or formally recognized as binding or enforced by a controlling authority."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A scientific theory that has been repeatedly tested and confirmed."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A personal belief or set of ethics that is not enforced by an authority."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'litigate' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To make or enact laws."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To engage in legal proceedings or take a dispute to court."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To reconcile differences without legal action."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To provide legal advice to someone in need."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "challenge": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to dispute especially as being unjust, invalid, or outmoded : impugn",
+            "a stimulating task or problem"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "도전하다",
+            "도전"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchallenge%2Fchallenge1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchallenge%2Fchallenge2_1.png?alt=media"
+        ],
+        "example": [
+            "He challenged the decision, claiming it was unfair and biased.",
+            "Completing a crossword puzzle is a fun challenge for many people."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'challenge' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To support unconditionally and without question."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To dispute especially as being unjust, invalid, or outmoded : impugn."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To agree with the opinions or actions of someone or something."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To provide assistance or help to someone."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'challenge' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A simple and straightforward task."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A stimulating task or problem."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A situation that requires no effort to resolve."
+                    },
+                    {
+                        "option": "D",
+                        "text": "An agreement or acceptance without question."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "justly": {
+        "pos": [
+            "adjective",
+            "adverb"
+        ],
+        "meaning": [
+            "having a basis in or conforming to fact or reason : reasonable",
+            "exactly, precisely"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "정당하게",
+            "정의로운"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fjustly%2Fjustly1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fjustly%2Fjustly2_1.png?alt=media"
+        ],
+        "example": [
+            "The judge's decision was justly based on the evidence presented in court.",
+            "He justly deserved the award for his outstanding performance."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'justly' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To act without any reason or logic."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Having a basis in or conforming to fact or reason : reasonable."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To treat someone unfairly without any justification."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To ignore all facts and act based on personal biases."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'justly' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "In a manner lacking fairness or equity."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Exactly, precisely."
+                    },
+                    {
+                        "option": "C",
+                        "text": "With a lot of mistakes or errors."
+                    },
+                    {
+                        "option": "D",
+                        "text": "In a way that is not related to the law or justice."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "original": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "of, relating to, or constituting an origin or beginning : initial",
+            "that from which a copy, reproduction, or translation is made"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "원래",
+            "본래"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Foriginal%2Foriginal1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Foriginal%2Foriginal2_1.png?alt=media"
+        ],
+        "example": [
+            "The artist displayed her original painting at the gallery.",
+            "The artist proudly displayed her original painting, which served as the inspiration for many reproductions."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'original' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To copy or imitate something."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Of, relating to, or constituting an origin or beginning : initial."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To be outdated or obsolete."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To follow a traditional approach without change."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'original' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A copy or imitation of something that already exists."
+                    },
+                    {
+                        "option": "B",
+                        "text": "That from which a copy, reproduction, or translation is made."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A newer version of an older item."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Something that is outdated and replaced by a newer version."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "charter": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a written instrument or contract executed in due form",
+            "to establish, enable, or convey by charter"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "헌장",
+            "헌법"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcharter%2Fcharter1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcharter%2Fcharter2_1.png?alt=media"
+        ],
+        "example": [
+            "The company's charter outlined the rights and responsibilities of its members.",
+            "The city council decided to charter a new bus service to provide transportation for the elderly."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'charter' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of medieval weapon."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A written instrument or contract executed in due form."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A small, informal gathering."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A method of organizing data in a computer."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'charter' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To abolish or dismantle an established organization."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To establish, enable, or convey by charter."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To navigate a ship or aircraft."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To challenge or dispute a legal document."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "lay": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            " to put or set down",
+            "covert, lair"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "놓다",
+            "은신처"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Flay%2Flay1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Flay%2Flay2_1.png?alt=media"
+        ],
+        "example": [
+            "Please lay the book on the table.",
+            "The fox found a cozy lay in the thick bushes to hide from its predators."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'lay' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To rise or move upwards."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To put or set down."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To create or compose."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To take into one's possession."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'lay' mean in the context of a covert or lair?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To place something down gently or carefully."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A place where a wild animal sleeps or hides."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A song or melody."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A group of eggs produced by birds, amphibians, or reptiles, often at a single time."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "form": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the shape and structure of something as distinguished from its material",
+            "to give a particular shape to : shape or mold into a certain state or after a particular model"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "형태",
+            "형성하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fform%2Fform1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fform%2Fform2_1.png?alt=media"
+        ],
+        "example": [
+            "The artist used clay to mold and shape the form of a vase.",
+            "She used her hands to form the clay into a beautiful vase."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'form' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The material from which something is made."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The color and size of an object."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The shape and structure of something as distinguished from its material."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The function or purpose of an object."
+                    }
+                ],
+                "correct_answer": "C"
+            },
+            {
+                "question": "What does the word 'form' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To remove all features and characteristics."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To give a particular shape to: shape or mold into a certain state or after a particular model."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To destroy or dismantle."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To leave in an untouched or original state."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "elasticity": {
+        "pos": "noun",
+        "meaning": "the quality or state of being elastic: such as",
+        "dfn_cnt": 1,
+        "kr_word": "탄력성",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Felasticity%2Felasticity_1.png?alt=media",
+        "example": "The rubber band's elasticity allowed it to stretch and then return to its original shape.",
+        "quiz": {
+            "question": "What does the word 'elasticity' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "The quality or state of being rigid and unchangeable."
+                },
+                {
+                    "option": "B",
+                    "text": "The quality or state of being elastic, such as the ability to resume its normal shape spontaneously after contraction, dilatation, or distortion."
+                },
+                {
+                    "option": "C",
+                    "text": "The quality of being inflexible and unresponsive to change."
+                },
+                {
+                    "option": "D",
+                    "text": "The state of being emotionally unresponsive or indifferent."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "carpenter": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a worker who builds or repairs wooden structures or their structural parts",
+            "to follow the trade of a carpenter"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "목수",
+            "목공"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarpenter%2Fcarpenter1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarpenter%2Fcarpenter2_1.png?alt=media"
+        ],
+        "example": [
+            "The carpenter skillfully crafted a beautiful wooden table for the dining room.",
+            "My uncle decided to become a carpenter and now he builds beautiful furniture."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'carpenter' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A person who designs buildings and supervises their construction."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A worker who builds or repairs wooden structures or their structural parts."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A professional who installs and repairs pipes and fixtures for water, gas, or sewage."
+                    },
+                    {
+                        "option": "D",
+                        "text": "An artist who creates sculptures using various materials like stone, metal, or wood."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'carpenter' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To follow the trade of a carpenter."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To design and oversee the construction of buildings."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To engage in the art of sculpting stone."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To cultivate and manage a farm."
+                    }
+                ],
+                "correct_answer": "A"
+            }
+        ]
+    },
+    "cast": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to cause to move or send forth by throwing",
+            "an act of casting"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "던지다",
+            "캐스"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcast%2Fcast1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcast%2Fcast2_1.png?alt=media"
+        ],
+        "example": [
+            "He cast the fishing line into the water.",
+            "She performed a flawless cast during the fishing competition."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'cast' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To catch or receive something being thrown."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To cause to move or send forth by throwing."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To build or construct something."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To repair or fix an object."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'cast' mean in the context of 'an act of casting'?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A group of actors performing in a play or movie."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A hard protective covering for a broken bone."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To throw something forcefully in a specific direction."
+                    },
+                    {
+                        "option": "D",
+                        "text": "An act of throwing a fishing line or net into the water."
+                    }
+                ],
+                "correct_answer": "C"
+            }
+        ]
+    },
+    "opponent": {
+        "pos": "noun",
+        "meaning": "one that takes an opposite position (as in a debate, contest, or conflict)",
+        "dfn_cnt": 1,
+        "kr_word": "상대",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fopponent%2Fopponent_1.png?alt=media",
+        "example": "My opponent in the chess tournament was a formidable player.",
+        "quiz": {
+            "question": "What does the word 'opponent' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A person who supports and agrees with you in every situation."
+                },
+                {
+                    "option": "B",
+                    "text": "One that takes an opposite position (as in a debate, contest, or conflict)."
+                },
+                {
+                    "option": "C",
+                    "text": "A spectator who watches a debate, contest, or conflict."
+                },
+                {
+                    "option": "D",
+                    "text": "A judge who decides the outcome of a debate, contest, or conflict."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "circular": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "having the form of a circle : round",
+            "a paper intended for wide distribution"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "원형",
+            "전단"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcircular%2Fcircular1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcircular%2Fcircular2_1.png?alt=media"
+        ],
+        "example": [
+            "The table had a circular top, perfect for fitting everyone around it.",
+            "I printed out circulars advertising the upcoming sale and handed them out to passersby."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'circular' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Having the form of a square."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Having an elongated shape."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Having the form of a triangle."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Having the form of a circle : round."
+                    }
+                ],
+                "correct_answer": "D"
+            },
+            {
+                "question": "What does the word 'circular' mean in the context of a paper?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A paper that is shaped like a circle."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A paper intended for wide distribution."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A confidential document meant for a small group."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A scientific paper published in a journal."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "claim": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to ask for especially as a right",
+            "a demand for something due or believed to be due"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "주장하다",
+            "요구"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclaim%2Fclaim1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclaim%2Fclaim2_1.png?alt=media"
+        ],
+        "example": [
+            "She decided to claim her inheritance after her father passed away.",
+            "He made a claim for compensation after the accident."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'claim' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To refuse or deny responsibility."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To ask for especially as a right."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To give away something unwillingly."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To ignore or pay no attention to."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'claim' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A promise to do something in the future."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A demand for something due or believed to be due."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A statement of surrender or giving up."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A formal request for permission to do something."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "orderly": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "arranged or disposed in some order or pattern : regular",
+            "a soldier assigned to perform various services for a superior officer"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "정돈된",
+            "규칙"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forderly%2Forderly1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forderly%2Forderly2_1.png?alt=media"
+        ],
+        "example": [
+            "The books on the shelf were placed in an orderly manner, sorted by genre and author.",
+            "The orderly brought the general his morning coffee and newspaper."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'orderly' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To be in a state of chaos and disorganization."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Arranged or disposed in some order or pattern : regular."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To act without planning or system."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To be loud and disruptive."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'orderly' mean in a military context?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A soldier trained for combat and tactical maneuvers."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A soldier assigned to perform various services for a superior officer."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A high-ranking military officer in charge of a battalion."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A soldier who specializes in communication and intelligence gathering."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "ceremony": {
+        "pos": "noun",
+        "meaning": "a formal act or series of acts prescribed by ritual, protocol, or convention",
+        "dfn_cnt": 1,
+        "kr_word": "의식",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fceremony%2Fceremony_1.png?alt=media",
+        "example": "The graduation ceremony was a beautiful event filled with speeches, music, and the presentation of diplomas.",
+        "quiz": {
+            "question": "What does the word 'ceremony' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A spontaneous and informal gathering."
+                },
+                {
+                    "option": "B",
+                    "text": "A formal act or series of acts prescribed by ritual, protocol, or convention."
+                },
+                {
+                    "option": "C",
+                    "text": "A private conversation between two individuals."
+                },
+                {
+                    "option": "D",
+                    "text": "A written document outlining the laws of a country."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "peel": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to strip off an outer layer of",
+            "the skin or rind of a fruit or vegetable"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "벗기다",
+            "껍질"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpeel%2Fpeel1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpeel%2Fpeel2_1.png?alt=media"
+        ],
+        "example": [
+            "She carefully peeled the skin off the apple before eating it.",
+            "She carefully peeled the orange, making sure not to break the segments."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'peel' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To cook something at a very high temperature."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To strip off an outer layer of."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To combine two or more ingredients."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To preserve food by canning or pickling."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'peel' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To cook a fruit or vegetable until tender."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The skin or rind of a fruit or vegetable."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To mix various ingredients into a cohesive whole."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A tool used for grating or slicing food items."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "charm": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the chanting or reciting of a magic spell : incantation",
+            "to affect by or as if by magic : compel"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "주문",
+            "마법"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcharm%2Fcharm1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcharm%2Fcharm2_1.png?alt=media"
+        ],
+        "example": [
+            "The witch began her charm, reciting the ancient incantation to summon a powerful spirit.",
+            "The magician's performance charmed the audience, leaving them in awe."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'charm' mean in the context of magic?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The act of decorating something to make it more attractive."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The chanting or reciting of a magic spell : incantation."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A small ornament worn on a necklace or bracelet."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The quality of being pleasant or attractive."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'charm' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To create a physical object using materials."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To affect by or as if by magic : compel."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To repel or drive away."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To perform a routine task without thought."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "carry": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to move while supporting : transport",
+            "carrying power"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "운반하다",
+            "운반"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarry%2Fcarry1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarry%2Fcarry2_1.png?alt=media"
+        ],
+        "example": [
+            "I will carry the groceries from the car to the kitchen.",
+            "The small car has a limited carrying power, so it can only transport a few bags of groceries at a time."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'carry' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To leave something behind."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To move while supporting : transport."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To sing a melody."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To push something away from oneself."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'carry' mean in the context of 'carrying power'?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The ability to hold or contain something within."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The financial capacity to invest in stocks."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The influence or effectiveness of something."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The physical strength to lift and move objects."
+                    }
+                ],
+                "correct_answer": "C"
+            }
+        ]
+    },
+    "circle": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "ring, halo",
+            "to enclose in or as if in a circle"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "원",
+            "동그라미"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcircle%2Fcircle1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcircle%2Fcircle2_1.png?alt=media"
+        ],
+        "example": [
+            "She wore a beautiful diamond circle on her finger.",
+            "She circled her answer on the test paper."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'circle' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A straight line connecting two points."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A square with equal sides."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A ring or halo."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A type of triangle."
+                    }
+                ],
+                "correct_answer": "C"
+            },
+            {
+                "question": "What does the word 'circle' mean when used as a verb?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To move in a straight line."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To enclose in or as if in a circle."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To divide into equal parts."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To change the direction abruptly."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "ken": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the range of perception, understanding, or knowledge",
+            "see"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "인식",
+            "보다."
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fken%2Fken1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fken%2Fken2_1.png?alt=media"
+        ],
+        "example": [
+            "Her ken of world history is quite impressive; she can discuss events from ancient civilizations to modern times.",
+            "I stood on the hilltop, my eyes scanning the horizon, trying to ken any sign of the approaching storm."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'ken' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A family member or relative."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The range of perception, understanding, or knowledge."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A type of lightweight canoe."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A small, circular window often found on ships."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'ken' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To forget or overlook."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To see or understand."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To confuse or complicate."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To predict or foresee the future."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "miracle": {
+        "pos": "noun",
+        "meaning": "an extraordinary event manifesting divine intervention in human affairs",
+        "dfn_cnt": 1,
+        "kr_word": "기적",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmiracle%2Fmiracle_1.png?alt=media",
+        "example": "The survival of all passengers in the plane crash was considered a miracle.",
+        "quiz": {
+            "question": "What does the word 'miracle' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A common occurrence that happens daily."
+                },
+                {
+                    "option": "B",
+                    "text": "An extraordinary event manifesting divine intervention in human affairs."
+                },
+                {
+                    "option": "C",
+                    "text": "A predictable outcome resulting from natural causes."
+                },
+                {
+                    "option": "D",
+                    "text": "A scientific phenomenon that is well understood."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "imperative": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "not to be avoided or evaded : necessary",
+            "something that is imperative"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "필수적인",
+            "필요한."
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimperative%2Fimperative1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimperative%2Fimperative2_1.png?alt=media"
+        ],
+        "example": [
+            "It is imperative that you finish your homework before going out to play.",
+            "It is imperative that you finish your homework before going out to play."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'imperative' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To be open to interpretation or suggestion."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Not to be avoided or evaded : necessary."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To be done according to personal whim or arbitrarily."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To be of little or no importance."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'imperative' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A suggestion that can be ignored."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Something that is optional or unnecessary."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Something that is of little importance."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Something that is imperative."
+                    }
+                ],
+                "correct_answer": "D"
+            }
+        ]
+    },
+    "chase": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the hunting of wild animals",
+            "to follow rapidly : pursue"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "사냥",
+            "추격"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchase%2Fchase1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchase%2Fchase2_1.png?alt=media"
+        ],
+        "example": [
+            "The hunters set off on a chase through the dense forest in search of the elusive deer.",
+            "The dog chased after the squirrel in the park."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chase' mean in the context of hunting?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "The act of capturing domestic animals."
+                    },
+                    {
+                        "option": "B",
+                        "text": "The hunting of wild animals."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The process of training hunting dogs."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The act of fishing in a river or stream."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'chase' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To follow rapidly : pursue."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To lead or guide someone."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To walk slowly without a clear destination."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To remain stationary."
+                    }
+                ],
+                "correct_answer": "A"
+            }
+        ]
+    },
+    "classic": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "serving as a standard of excellence : of recognized value",
+            "a literary work of ancient Greece or Rome"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "클래식",
+            "고전"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclassic%2Fclassic1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclassic%2Fclassic2_1.png?alt=media"
+        ],
+        "example": [
+            "The novel \"Pride and Prejudice\" is considered a classic in English literature.",
+            "\"The Odyssey is considered a classic of ancient Greek literature.\""
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'classic' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "New and experimental in nature or style."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Serving as a standard of excellence : of recognized value."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Being old and outdated."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Having no special or extra features; ordinary."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'classic' refer to in the context of literature?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A modern literary work that has achieved great popularity."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A literary work of ancient Greece or Rome."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A recently published novel that has received critical acclaim."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A collection of contemporary poems."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "cement": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "concrete",
+            "to unite or make firm by or as if by cement"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "시멘트",
+            "시멘트하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcement%2Fcement1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcement%2Fcement2_1.png?alt=media"
+        ],
+        "example": [
+            "The workers poured the cement into the molds to create the foundation of the building.",
+            "The strong bond between the two friends was cemented by their shared experiences."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'cement' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of heavy-duty fabric."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A binding material used in construction, often a precursor to concrete."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A method of knitting."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A process of fermenting grapes for wine."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'cement' mean when used as a verb?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To break apart or cause to disintegrate."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To unite or make firm by or as if by cement."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To change the color or appearance of a surface."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To decrease the strength or solidity of a material."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "driftwood": {
+        "pos": "noun",
+        "meaning": "wood drifted or floated by water",
+        "dfn_cnt": 1,
+        "kr_word": "떠다닌 나무",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fdriftwood%2Fdriftwood_1.png?alt=media",
+        "example": "The beach was littered with pieces of driftwood that had washed ashore during the storm.",
+        "quiz": {
+            "question": "What does the word 'driftwood' refer to?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "Furniture made out of wood."
+                },
+                {
+                    "option": "B",
+                    "text": "Wood that has been painted to look like it's been in water."
+                },
+                {
+                    "option": "C",
+                    "text": "Wood that has been cut down for timber."
+                },
+                {
+                    "option": "D",
+                    "text": "Wood drifted or floated by water."
+                }
+            ],
+            "correct_answer": "D"
+        }
+    },
+    "catalogue": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "list, register",
+            "to make a catalog of"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "목록",
+            "등록하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcatalogue%2Fcatalogue1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcatalogue%2Fcatalogue2_1.png?alt=media"
+        ],
+        "example": [
+            "I need to update the catalogue of books in the library.",
+            "I spent hours cataloguing all the books in the library."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'catalogue' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To erase or delete information."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To list or register items systematically."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To confuse or complicate a situation."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To predict future events or trends."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'catalogue' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To express confusion or doubt."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To make a catalog of."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To engage in physical exercise."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To perform a musical piece."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "glazed": {
+        "pos": "adjective",
+        "meaning": "covered or coated with a glaze",
+        "dfn_cnt": 1,
+        "kr_word": "도금된",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fglazed%2Fglazed_1.png?alt=media",
+        "example": "The donuts were freshly baked and glazed with a sweet icing.",
+        "quiz": {
+            "question": "What does the word 'glazed' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To be covered in a thin layer of ice."
+                },
+                {
+                    "option": "B",
+                    "text": "To be covered or coated with a glaze."
+                },
+                {
+                    "option": "C",
+                    "text": "To be highly polished or shiny."
+                },
+                {
+                    "option": "D",
+                    "text": "To be confused or dazed."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "misguided": {
+        "pos": "adjective",
+        "meaning": "led or prompted by wrong or inappropriate motives or ideals",
+        "dfn_cnt": 1,
+        "kr_word": "잘못된",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmisguided%2Fmisguided_1.png?alt=media",
+        "example": "His misguided attempt to impress his friends led him to make poor choices.",
+        "quiz": {
+            "question": "What does the word 'misguided' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To be led or prompted by strong and well-founded motives."
+                },
+                {
+                    "option": "B",
+                    "text": "To be led or prompted by wrong or inappropriate motives or ideals."
+                },
+                {
+                    "option": "C",
+                    "text": "To have a clear and accurate understanding of the situation."
+                },
+                {
+                    "option": "D",
+                    "text": "To guide others in the right direction with proper advice."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "census": {
+        "pos": "noun",
+        "meaning": "a count of the population and a property evaluation in early Rome",
+        "dfn_cnt": 1,
+        "kr_word": "인구조사",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcensus%2Fcensus_1.png?alt=media",
+        "example": "The Roman government conducted a census every five years to accurately assess the population and evaluate property.",
+        "quiz": {
+            "question": "What does the word 'census' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A detailed map of a city's infrastructure."
+                },
+                {
+                    "option": "B",
+                    "text": "A count of the population and a property evaluation in early Rome."
+                },
+                {
+                    "option": "C",
+                    "text": "A collection of ancient Roman laws and statutes."
+                },
+                {
+                    "option": "D",
+                    "text": "A religious ceremony conducted in ancient Rome."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "ministry": {
+        "pos": "noun",
+        "meaning": "ministration",
+        "dfn_cnt": 1,
+        "kr_word": "부처",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fministry%2Fministry_1.png?alt=media",
+        "example": "The ministry of health is responsible for the ministration of healthcare services to the citizens.",
+        "quiz": {
+            "question": "What does the word 'ministry' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A government department headed by a minister."
+                },
+                {
+                    "option": "B",
+                    "text": "The act of serving or aiding."
+                },
+                {
+                    "option": "C",
+                    "text": "A building where administrative work is carried out."
+                },
+                {
+                    "option": "D",
+                    "text": "The profession of a minister of religion."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "order": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to put in order : arrange",
+            "a group of people united in a formal way: such as"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "정렬하다",
+            "질서"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forder%2Forder1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forder%2Forder2_1.png?alt=media"
+        ],
+        "example": [
+            "I need to order my books alphabetically on the shelf.",
+            "The Knights of the Round Table were an order of noble warriors in King Arthur's court."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'order' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To mix things up and create chaos."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To put in order : arrange."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To remove all items from a particular space."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To ignore the state of things and leave as is."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'order' mean in the context of a group of people?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A random gathering of individuals without any specific purpose."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A group of people united in a formal way, such as a society or brotherhood."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A command given by a superior."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A request for food or goods in a restaurant or store."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "climate": {
+        "pos": "noun",
+        "meaning": "a region of the earth having specified climatic conditions",
+        "dfn_cnt": 1,
+        "kr_word": "기후",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclimate%2Fclimate_1.png?alt=media",
+        "example": "The tropical rainforest is a climate characterized by high temperatures and heavy rainfall.",
+        "quiz": {
+            "question": "What does the word 'climate' refer to?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A large community of plants and animals."
+                },
+                {
+                    "option": "B",
+                    "text": "A region of the earth having specified climatic conditions."
+                },
+                {
+                    "option": "C",
+                    "text": "The study of ancient cultures and civilizations."
+                },
+                {
+                    "option": "D",
+                    "text": "A pattern of weather over a long period of time in a specific area."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "carve": {
+        "pos": "verb",
+        "meaning": "to cut with care or precision",
+        "dfn_cnt": 1,
+        "kr_word": "새기다",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcarve%2Fcarve_1.png?alt=media",
+        "example": "He used a sharp knife to carve the turkey into thin slices.",
+        "quiz": {
+            "question": "What does the word 'carve' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To glue pieces together."
+                },
+                {
+                    "option": "B",
+                    "text": "To cut with care or precision."
+                },
+                {
+                    "option": "C",
+                    "text": "To draw or sketch with great detail."
+                },
+                {
+                    "option": "D",
+                    "text": "To throw something with force."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "drill": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to fix something in the mind or habit pattern of by repetitive instruction",
+            "an instrument with an edged or pointed end for making holes in hard substances by revolving or by a succession of blows"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "반복하다",
+            "드릴"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fdrill%2Fdrill1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fdrill%2Fdrill2_1.png?alt=media"
+        ],
+        "example": [
+            "The teacher used a mnemonic device to drill the multiplication tables into the students' minds.",
+            "He used a drill to make holes in the wall for hanging up the picture frames."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'drill' mean in the context of learning?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To create a hole in something by using a rotating tool."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To fix something in the mind or habit pattern of by repetitive instruction."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To plant seeds in the ground using a farming tool."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To perform a military ceremony."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'drill' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A dance move involving synchronized steps."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An instrument with an edged or pointed end for making holes in hard substances by revolving or by a succession of blows."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A method of planting seeds in agriculture."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A type of military formation."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "casual": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "subject to, resulting from, or occurring by chance",
+            "a casual or migratory worker"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "우연한",
+            "일용직"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcasual%2Fcasual1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcasual%2Fcasual2_1.png?alt=media"
+        ],
+        "example": [
+            "I ran into my old friend at the grocery store in a casual encounter.",
+            "The farm hired several casual workers to help with the harvest season."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'casual' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Characterized by a formal and serious manner."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Subject to, resulting from, or occurring by chance."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Following a planned and organized pattern."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Involving intense concentration or application."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'casual' mean in the context of employment?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A worker with a permanent, long-term contract."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A casual or migratory worker."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A high-ranking executive in a company."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A professional in a highly specialized field."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "brilliant": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "very bright : glittering",
+            "a gem cut in a particular form with numerous facets so as to have special brightness or brilliance"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "빛나는",
+            "다이아"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbrilliant%2Fbrilliant1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbrilliant%2Fbrilliant2_1.png?alt=media"
+        ],
+        "example": [
+            "The sun's rays reflected off the water, creating a brilliant sparkle.",
+            "She wore a brilliant diamond necklace that sparkled in the sunlight."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'brilliant' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Lacking clarity or dull."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Very bright : glittering."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Extremely heavy or dense."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Marked by darkness or gloom."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'brilliant' mean in the context of gemstones?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A gem that is uncut and in its natural state."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A gem cut in a particular form with numerous facets so as to have special brightness or brilliance."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A gem that is considered to be of the lowest quality."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A gem that is artificially created in a laboratory."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "chord": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "three or more musical tones sounded simultaneously",
+            "accord"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "코드",
+            "일치"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchord%2Fchord1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fchord%2Fchord2_1.png?alt=media"
+        ],
+        "example": [
+            "The musician played a beautiful chord on the piano.",
+            "The musicians played in perfect chord, creating a harmonious and beautiful melody."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'chord' mean in music?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A sequence of musical notes played in a series."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A single musical tone that is held for a duration."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Three or more musical tones sounded simultaneously."
+                    },
+                    {
+                        "option": "D",
+                        "text": "The background rhythm of a piece of music."
+                    }
+                ],
+                "correct_answer": "C"
+            },
+            {
+                "question": "What does the word 'chord' mean in the context of 'accord'?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A group of three or more notes sounded together in harmony."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A feeling of tension or conflict."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A straight line connecting two points on a curve."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Agreement or harmony between people or groups."
+                    }
+                ],
+                "correct_answer": "D"
+            }
+        ]
+    },
+    "certification": {
+        "pos": "noun",
+        "meaning": "the act of certifying : the state of being certified",
+        "dfn_cnt": 1,
+        "kr_word": "인증",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcertification%2Fcertification_1.png?alt=media",
+        "example": "She received her certification as a yoga instructor after completing the required training program.",
+        "quiz": {
+            "question": "What does the word 'certification' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "The process of forgetting or disregarding information."
+                },
+                {
+                    "option": "B",
+                    "text": "The act of certifying : the state of being certified."
+                },
+                {
+                    "option": "C",
+                    "text": "A formal process of decreasing the value of currency."
+                },
+                {
+                    "option": "D",
+                    "text": "The act of making something more complicated."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "peer": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "one that is of equal standing with another : equal",
+            "to look narrowly or curiously"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "동료",
+            "엿보다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpeer%2Fpeer1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpeer%2Fpeer2_1.png?alt=media"
+        ],
+        "example": [
+            "In the group project, I worked closely with my peer to ensure that our ideas were equally represented.",
+            "She peered out the window, trying to catch a glimpse of the mysterious figure outside."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'peer' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A person who has authority over others."
+                    },
+                    {
+                        "option": "B",
+                        "text": "One that is of equal standing with another: equal."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A person who is less experienced or less knowledgeable."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A mythical creature often spoken of in folklore."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'peer' mean when used as a verb?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To have equal standing with another."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To look narrowly or curiously."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To become cloudy or gloomy."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To judge or criticize someone."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "mishear": {
+        "pos": "verb",
+        "meaning": "to hear wrongly",
+        "dfn_cnt": 1,
+        "kr_word": "들리다",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fmishear%2Fmishear_1.png?alt=media",
+        "example": "I mishear my friend's name and called her by the wrong name.",
+        "quiz": {
+            "question": "What does the word 'mishear' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To listen to something with great attention."
+                },
+                {
+                    "option": "B",
+                    "text": "To hear wrongly."
+                },
+                {
+                    "option": "C",
+                    "text": "To hear exactly what was said."
+                },
+                {
+                    "option": "D",
+                    "text": "To ignore what is being said."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "organ": {
+        "pos": "noun",
+        "meaning": "a differentiated structure (such as a heart, kidney, leaf, or stem) consisting of cells and tissues and performing some specific function in an organism",
+        "dfn_cnt": 1,
+        "kr_word": "기관",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Forgan%2Forgan_1.png?alt=media",
+        "example": "The heart is a vital organ that pumps blood throughout the body.",
+        "quiz": {
+            "question": "What does the word 'organ' refer to?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A musical instrument with keys and pipes."
+                },
+                {
+                    "option": "B",
+                    "text": "A differentiated structure (such as a heart, kidney, leaf, or stem) consisting of cells and tissues and performing some specific function in an organism."
+                },
+                {
+                    "option": "C",
+                    "text": "A formal organization or society."
+                },
+                {
+                    "option": "D",
+                    "text": "A tool used for precision work in various crafts."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "circulation": {
+        "pos": "noun",
+        "meaning": "orderly movement through a circuit",
+        "dfn_cnt": 1,
+        "kr_word": "순환",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcirculation%2Fcirculation_1.png?alt=media",
+        "example": "The blood's circulation throughout the body ensures that oxygen is delivered to all organs and tissues.",
+        "quiz": {
+            "question": "What does the word 'circulation' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "The act of copying or imitating something."
+                },
+                {
+                    "option": "B",
+                    "text": "Orderly movement through a circuit."
+                },
+                {
+                    "option": "C",
+                    "text": "A state of confusion or disorder."
+                },
+                {
+                    "option": "D",
+                    "text": "The process of voting in an election."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "penetrate": {
+        "pos": "verb",
+        "meaning": "to pass into or through",
+        "dfn_cnt": 1,
+        "kr_word": "꿰뚫다",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpenetrate%2Fpenetrate_1.png?alt=media",
+        "example": "The arrow was able to penetrate the target's bullseye.",
+        "quiz": {
+            "question": "What does the word 'penetrate' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "To remain on the surface of something."
+                },
+                {
+                    "option": "B",
+                    "text": "To pass into or through."
+                },
+                {
+                    "option": "C",
+                    "text": "To avoid contact with."
+                },
+                {
+                    "option": "D",
+                    "text": "To observe from a distance."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "branch": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a natural subdivision of a plant stem",
+            "to put forth secondary shoots or stems : to put forth branches : ramify"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "가지",
+            "가지치다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbranch%2Fbranch1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbranch%2Fbranch2_1.png?alt=media"
+        ],
+        "example": [
+            "The tree had many branches that reached out in different directions.",
+            "The tree began to branch out, sending new shoots in different directions."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'branch' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A type of root system underground."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A natural subdivision of a plant stem."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The main trunk of a tree."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A leaf that falls off a tree."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'branch' mean in the context of growth?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To lose leaves or wither away."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To put forth secondary shoots or stems : to put forth branches : ramify."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To grow in a straight line without any offshoots."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To decrease in size or amount over time."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "clash": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to make a clash",
+            "a noisy usually metallic sound of collision"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "충돌하다",
+            "충돌 소리"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclash%2Fclash1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclash%2Fclash2_1.png?alt=media"
+        ],
+        "example": [
+            "The clash of cymbals added excitement to the musical performance.",
+            "I heard a loud clash when the pots and pans fell from the kitchen cabinet."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'clash' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To agree or come into harmony."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To make a loud, resonant sound."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To enhance or complement."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To make a clash."
+                    }
+                ],
+                "correct_answer": "D"
+            },
+            {
+                "question": "What does the word 'clash' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A harmonious and quiet blending of colors."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A noisy usually metallic sound of collision."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A peaceful resolution to a disagreement."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A type of soft and soothing music."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "immobile": {
+        "pos": "adjective",
+        "meaning": "not moving : motionless",
+        "dfn_cnt": 1,
+        "kr_word": "움직이지 않는",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimmobile%2Fimmobile_1.png?alt=media",
+        "example": "The injured bird lay immobile on the ground, unable to fly away.",
+        "quiz": {
+            "question": "What does the word 'immobile' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "Capable of moving quickly and lightly."
+                },
+                {
+                    "option": "B",
+                    "text": "Not moving : motionless."
+                },
+                {
+                    "option": "C",
+                    "text": "To be in a constant state of motion."
+                },
+                {
+                    "option": "D",
+                    "text": "To change location or position frequently."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "click": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to strike, move, or produce with a click",
+            "a slight sharp noise"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "클릭하다",
+            "클릭"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclick%2Fclick1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fclick%2Fclick2_1.png?alt=media"
+        ],
+        "example": [
+            "I heard a click when I pressed the button on the remote control.",
+            "I heard a click when I pressed the button on my computer mouse."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'click' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To strike, move, or produce with a click."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To glide smoothly without making any sound."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To attach or fasten something securely."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To hesitate or be reluctant to do something."
+                    }
+                ],
+                "correct_answer": "A"
+            },
+            {
+                "question": "What does the word 'click' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A loud echoing sound."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A musical note played on a string instrument."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A form of verbal communication."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A slight sharp noise."
+                    }
+                ],
+                "correct_answer": "D"
+            }
+        ]
+    },
+    "impact": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "an impinging or striking especially of one body against another",
+            "to have a direct effect or impact on : impinge on"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "충격",
+            "영향"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimpact%2Fimpact1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fimpact%2Fimpact2_1.png?alt=media"
+        ],
+        "example": [
+            "The impact of the car crash caused significant damage to both vehicles.",
+            "The new regulations will impact the way businesses operate."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'impact' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A gentle touch or caress."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An impinging or striking especially of one body against another."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The act of avoiding something."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A formal agreement between two parties."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'impact' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To have no effect or relevance to."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To have a direct effect or impact on : impinge on."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To completely ignore or avoid."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To physically dismantle or take apart."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "lease": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a contract by which one conveys real estate, equipment, or facilities for a specified term and for a specified rent",
+            "to grant by lease"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "임대",
+            "임대하다"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Flease%2Flease1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Flease%2Flease2_1.png?alt=media"
+        ],
+        "example": [
+            "I signed a lease for my new apartment, agreeing to pay a monthly rent for a year.",
+            "The landlord agreed to lease the apartment to the tenant for one year."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'lease' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A legal agreement to borrow something temporarily without payment."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A contract by which one conveys real estate, equipment, or facilities for a specified term and for a specified rent."
+                    },
+                    {
+                        "option": "C",
+                        "text": "The act of purchasing property with the intent to sell it for a higher price."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A formal declaration of war against another country."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'lease' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To purchase a property outright."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To grant by lease."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To inherit property."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To lend money for a purchase."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "certainty": {
+        "pos": "noun",
+        "meaning": "something that is certain",
+        "dfn_cnt": 1,
+        "kr_word": "확실함",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fcertainty%2Fcertainty_1.png?alt=media",
+        "example": "I have a certainty that the sun will rise tomorrow.",
+        "quiz": {
+            "question": "What does the word 'certainty' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "A state of being unsure or doubtful."
+                },
+                {
+                    "option": "B",
+                    "text": "Something that is certain."
+                },
+                {
+                    "option": "C",
+                    "text": "A prediction about the future that may not come true."
+                },
+                {
+                    "option": "D",
+                    "text": "A risky or unpredictable situation."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "breach": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "infraction or violation of a law, obligation, tie, or standard",
+            "to make a gap in by battering : to make a breach in"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "위반",
+            "침해"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbreach%2Fbreach1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fbreach%2Fbreach2_1.png?alt=media"
+        ],
+        "example": [
+            "The company was sued for breach of contract after failing to deliver the promised goods on time.",
+            "The soldiers breached the enemy's defenses by breaking down the wall."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'breach' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To create a strong bond or agreement."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Infraction or violation of a law, obligation, tie, or standard."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To repair or mend something that is broken."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A formal ceremony or act of upholding a tradition."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'breach' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To repair and restore to a whole state."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To make a gap in by battering : to make a breach in."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To bridge a gap or difference."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To create a permanent seal in a surface."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "penetrating": {
+        "pos": "adjective",
+        "meaning": "having the power of entering, piercing, or pervading",
+        "dfn_cnt": 1,
+        "kr_word": "관통하는.",
+        "img_url": "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fpenetrating%2Fpenetrating_1.png?alt=media",
+        "example": "The sound of the alarm clock was so penetrating that it woke me up instantly.",
+        "quiz": {
+            "question": "What does the word 'penetrating' mean?",
+            "choices": [
+                {
+                    "option": "A",
+                    "text": "Lacking the ability to influence or affect."
+                },
+                {
+                    "option": "B",
+                    "text": "Having the power of entering, piercing, or pervading."
+                },
+                {
+                    "option": "C",
+                    "text": "Being superficial or shallow."
+                },
+                {
+                    "option": "D",
+                    "text": "To withdraw or retract from a position or commitment."
+                }
+            ],
+            "correct_answer": "B"
+        }
+    },
+    "elderly": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "rather old",
+            "an elderly person"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "늙은",
+            "노인"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Felderly%2Felderly1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Felderly%2Felderly2_1.png?alt=media"
+        ],
+        "example": [
+            "The elderly couple enjoyed taking leisurely walks in the park.",
+            "My grandmother is an elderly woman who enjoys knitting and gardening."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'elderly' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To be in the early stages of life."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To be rather old."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To be at the peak of physical health."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To be extremely young."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'elderly' refer to?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A young and energetic person."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An advanced technological device."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A person of advanced age, typically someone who is retired."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A type of ancient building."
+                    }
+                ],
+                "correct_answer": "C"
+            }
+        ]
+    },
+    "neutral": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "one that is neutral",
+            "not engaged on either side"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "중립자",
+            "중립적인"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fneutral%2Fneutral1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Fneutral%2Fneutral2_1.png?alt=media"
+        ],
+        "example": [
+            "The referee remained neutral throughout the game, making fair decisions for both teams.",
+            "During the debate, the moderator remained neutral and did not show any favoritism towards either candidate."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'neutral' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "One that exhibits strong opinions or bias."
+                    },
+                    {
+                        "option": "B",
+                        "text": "One that is neutral."
+                    },
+                    {
+                        "option": "C",
+                        "text": "One that is actively engaged in a conflict."
+                    },
+                    {
+                        "option": "D",
+                        "text": "One that is brightly colored and stands out."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'neutral' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "Having a strong opinion or taking a side."
+                    },
+                    {
+                        "option": "B",
+                        "text": "Not engaged on either side."
+                    },
+                    {
+                        "option": "C",
+                        "text": "Being actively involved in a conflict."
+                    },
+                    {
+                        "option": "D",
+                        "text": "Supporting both sides equally."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "option": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "an act of choosing",
+            "to grant or take an option on"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "선택",
+            "옵션"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Foption%2Foption1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Foption%2Foption2_1.png?alt=media"
+        ],
+        "example": [
+            "I have the option to go to the movies or stay home and read a book.",
+            "The company decided to option the rights to the bestselling novel for a potential film adaptation."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'option' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A mandatory action that one must take."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An act of choosing."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A type of financial investment."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A mathematical operation."
+                    }
+                ],
+                "correct_answer": "B"
+            },
+            {
+                "question": "What does the word 'option' mean in the context of 'to grant or take an option on'?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "To refuse or decline a choice or possibility."
+                    },
+                    {
+                        "option": "B",
+                        "text": "To grant or take an opportunity to choose something or to make a decision."
+                    },
+                    {
+                        "option": "C",
+                        "text": "To physically take or handle an object."
+                    },
+                    {
+                        "option": "D",
+                        "text": "To ignore all choices or possibilities presented."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    },
+    "accountant": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "one that gives an account or is accountable",
+            "accountable, answerable"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "회계사",
+            "책임"
+        ],
+        "img_url": [
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Faccountant%2Faccountant1_1.png?alt=media",
+            "https://firebasestorage.googleapis.com/v0/b/vocard-4d01e.appspot.com/o/words%2Faccountant%2Faccountant2_1.png?alt=media"
+        ],
+        "example": [
+            "The accountant carefully reviewed the company's financial statements to ensure accuracy.",
+            "As an accountant, I am accountable for managing the company's financial records."
+        ],
+        "quiz": [
+            {
+                "question": "What does the word 'accountant' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A professional who performs accounting functions such as audits or financial statement analysis."
+                    },
+                    {
+                        "option": "B",
+                        "text": "An individual who is responsible for maintaining and interpreting historical records."
+                    },
+                    {
+                        "option": "C",
+                        "text": "One that gives an account or is accountable."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A person who is trained in the art of storytelling and historical documentation."
+                    }
+                ],
+                "correct_answer": "C"
+            },
+            {
+                "question": "What does the word 'accountant' mean?",
+                "choices": [
+                    {
+                        "option": "A",
+                        "text": "A person who is responsible or liable for something."
+                    },
+                    {
+                        "option": "B",
+                        "text": "A professional who practices accounting or accountancy."
+                    },
+                    {
+                        "option": "C",
+                        "text": "A machine used for calculations."
+                    },
+                    {
+                        "option": "D",
+                        "text": "A legal term for someone who has committed a crime."
+                    }
+                ],
+                "correct_answer": "B"
+            }
+        ]
+    }
+}

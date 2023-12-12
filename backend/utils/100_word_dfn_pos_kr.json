@@ -1,0 +1,1079 @@
+{
+    "forgive": {
+        "pos": "verb",
+        "meaning": "to cease to feel resentment against : pardon",
+        "dfn_cnt": 1,
+        "kr_word": "용서하다"
+    },
+    "oral": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "uttered by the mouth or in words : spoken",
+            "an oral examination"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "구두의",
+            "구두로"
+        ]
+    },
+    "civil": {
+        "pos": "adjective",
+        "meaning": "of or relating to citizens",
+        "dfn_cnt": 1,
+        "kr_word": "시민적"
+    },
+    "implement": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a device used in the performance of a task : tool, utensil",
+            "carry out, accomplish"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "도구",
+            "수행하다."
+        ]
+    },
+    "chip": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a small usually thin and flat piece cut, struck, or flaked off",
+            "to cut or hew with an edged tool"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "조각",
+            "깎다"
+        ]
+    },
+    "drowsy": {
+        "pos": "adjective",
+        "meaning": "ready to fall asleep",
+        "dfn_cnt": 1,
+        "kr_word": "졸린"
+    },
+    "act": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the doing of a thing : deed",
+            "to take action : move"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "행동",
+            "행동하다."
+        ]
+    },
+    "cereal": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "relating to grain or to the plants that produce it",
+            "a plant yielding starchy grain suitable for food"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "곡물",
+            "시리얼"
+        ]
+    },
+    "brief": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "short in duration, extent, or length",
+            "an official letter or mandate"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "간단한",
+            "요약하다"
+        ]
+    },
+    "carton": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a box or container usually made of cardboard and often of corrugated cardboard",
+            "to pack or enclose in a carton"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "판지 상자",
+            "포장하다"
+        ]
+    },
+    "civilian": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "a specialist in Roman or modern civil law",
+            "of, relating to, or made up of civilians"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "민간인",
+            "민간인"
+        ]
+    },
+    "breakthrough": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a sudden advance especially in knowledge or technique",
+            "to make a breakthrough"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "획기적인" ,
+            "발전"
+        ]
+    },
+    "briny": {
+        "pos": "adjective",
+        "meaning": "of, relating to, or resembling brine or the sea : salty",
+        "dfn_cnt": 1,
+        "kr_word": "짠"
+    },
+    "junk": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "old iron, glass, paper, or other waste that may be used again in some form",
+            "to get rid of as worthless : scrap"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "폐물",
+            "버리다"
+        ]
+    },
+    "chief": {
+        "pos": [
+            "adjective",
+            "adverb"
+        ],
+        "meaning": [
+            "accorded highest rank or office",
+            "chiefly"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "주요한",
+            "주로"
+        ]
+    },
+    "chic": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "smart elegance and sophistication especially of dress or manner : style",
+            "cleverly stylish : smart"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "세련된",
+            "멋있는"
+        ]
+    },
+    "elbow": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the joint of the human arm",
+            "to push with the elbow : jostle"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "팔꿈치",
+            "팔"
+        ]
+    },
+    "cargo": {
+        "pos": "noun",
+        "meaning": "the goods or merchandise conveyed in a ship, airplane, or vehicle : freight",
+        "dfn_cnt": 1,
+        "kr_word": "화물"
+    },
+    "immediately": {
+        "pos": [
+            "adverb",
+            "conjunction"
+        ],
+        "meaning": [
+            "without interval of time : straightway",
+            "as soon as"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "바로"
+    },
+    "acquisition": {
+        "pos": "noun",
+        "meaning": "the act of acquiring something",
+        "dfn_cnt": 1,
+        "kr_word": "획득"
+    },
+    "chant": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to make melodic sounds with the voice",
+            "song sense 1"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "불러요",
+            "노래"
+        ]
+    },
+    "organization": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "the act or process of organizing or of being organized",
+            "characterized by complete conformity to the standards and requirements of an organization"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "조직"
+    },
+    "cavity": {
+        "pos": "noun",
+        "meaning": "an unfilled space within a mass",
+        "dfn_cnt": 1,
+        "kr_word": "구멍"
+    },
+    "missile": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "capable of being thrown or projected to strike a distant object",
+            "an object thrown or projected usually so as to strike something at a distance"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "미사일"
+    },
+    "gesture": {
+        "pos": "verb",
+        "meaning": "a movement usually of the body or limbs that expresses or emphasizes an idea, sentiment, or attitude",
+        "dfn_cnt": 1,
+        "kr_word": "동작"
+    },
+    "neurotic": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "of, relating to, constituting, or affected with neurosis",
+            "one affected with a neurosis"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": "신경증."
+    },
+    "chew": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to crush, grind, or gnaw (something, such as food) with or as if with the teeth : masticate",
+            "the act of chewing"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "씹다",
+            "씹기"
+        ]
+    },
+    "penalty": {
+        "pos": "noun",
+        "meaning": "the suffering in person, rights, or property that is annexed by law or judicial decision to the commission of a crime or public offense",
+        "dfn_cnt": 1,
+        "kr_word": "벌칙"
+    },
+    "cassette": {
+        "pos": "noun",
+        "meaning": "a usually flat case or cartridge that can be easily loaded or unloaded",
+        "dfn_cnt": 1,
+        "kr_word": "카세트"
+    },
+    "breed": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to produce (offspring) by hatching or gestation",
+            "a group of usually domesticated animals or plants presumably related by descent from common ancestors and visibly similar in most characters"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "기르다",
+            "품"
+        ]
+    },
+    "cipher": {
+        "pos": "noun",
+        "meaning": "a method of transforming a text in order to conceal its meaning",
+        "dfn_cnt": 1,
+        "kr_word": "암호"
+    },
+    "clan": {
+        "pos": "noun",
+        "meaning": "a Celtic group especially in the Scottish Highlands comprising a number of households whose heads claim descent from a common ancestor",
+        "dfn_cnt": 1,
+        "kr_word": "씨족"
+    },
+    "misleading": {
+        "pos": "verb",
+        "meaning": "to lead in a wrong direction or into a mistaken action or belief often by deliberate deceit",
+        "dfn_cnt": 1,
+        "kr_word": "오도하는"
+    },
+    "brace": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "prepare, steel",
+            "something that transmits, directs, resists, or supports weight or pressure: such as"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "준비하다",
+            "강화하"
+        ]
+    },
+    "glacier": {
+        "pos": "noun",
+        "meaning": "a large body of ice moving slowly down a slope or valley or spreading outward on a land surface",
+        "dfn_cnt": 1,
+        "kr_word": "빙하"
+    },
+    "clause": {
+        "pos": "noun",
+        "meaning": "a group of words containing a subject and predicate and functioning as a member of a complex or compound sentence",
+        "dfn_cnt": 1,
+        "kr_word": "절"
+    },
+    "law": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a binding custom or practice of a community : a rule of conduct or action prescribed or formally recognized as binding or enforced by a controlling authority",
+            "litigate"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "법",
+            "소송하다"
+        ]
+    },
+    "challenge": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to dispute especially as being unjust, invalid, or outmoded : impugn",
+            "a stimulating task or problem"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "도전하다",
+            "도전"
+        ]
+    },
+    "justly": {
+        "pos": [
+            "adjective",
+            "adverb"
+        ],
+        "meaning": [
+            "having a basis in or conforming to fact or reason : reasonable",
+            "exactly, precisely"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "정당하게",
+            "정의로운"
+        ]
+    },
+    "original": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "of, relating to, or constituting an origin or beginning : initial",
+            "that from which a copy, reproduction, or translation is made"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "원래",
+            "본래"
+        ]
+    },
+    "charter": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a written instrument or contract executed in due form",
+            "to establish, enable, or convey by charter"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "헌장",
+            "헌법"
+        ]
+    },
+    "lay": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            " to put or set down",
+            "covert, lair"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "놓다",
+            "은신처"
+        ]
+    },
+    "form": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the shape and structure of something as distinguished from its material",
+            "to give a particular shape to : shape or mold into a certain state or after a particular model"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "형태",
+            "형성하다"
+        ]
+    },
+    "elasticity": {
+        "pos": "noun",
+        "meaning": "the quality or state of being elastic: such as",
+        "dfn_cnt": 1,
+        "kr_word": "탄력성"
+    },
+    "carpenter": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a worker who builds or repairs wooden structures or their structural parts",
+            "to follow the trade of a carpenter"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "목수",
+            "목공"
+        ]
+    },
+    "cast": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to cause to move or send forth by throwing",
+            "an act of casting"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "던지다",
+            "캐스"
+        ]
+    },
+    "opponent": {
+        "pos": "noun",
+        "meaning": "one that takes an opposite position (as in a debate, contest, or conflict)",
+        "dfn_cnt": 1,
+        "kr_word": "상대"
+    },
+    "circular": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "having the form of a circle : round",
+            "a paper intended for wide distribution"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "원형",
+            "전단"
+        ]
+    },
+    "claim": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to ask for especially as a right",
+            "a demand for something due or believed to be due"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "주장하다",
+            "요구"
+        ]
+    },
+    "orderly": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "arranged or disposed in some order or pattern : regular",
+            "a soldier assigned to perform various services for a superior officer"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "정돈된",
+            "규칙"
+        ]
+    },
+    "ceremony": {
+        "pos": "noun",
+        "meaning": "a formal act or series of acts prescribed by ritual, protocol, or convention",
+        "dfn_cnt": 1,
+        "kr_word": "의식"
+    },
+    "peel": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to strip off an outer layer of",
+            "the skin or rind of a fruit or vegetable"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "벗기다",
+            "껍질"
+        ]
+    },
+    "charm": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the chanting or reciting of a magic spell : incantation",
+            "to affect by or as if by magic : compel"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "주문",
+            "마법"
+        ]
+    },
+    "carry": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to move while supporting : transport",
+            "carrying power"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "운반하다",
+            "운반"
+        ]
+    },
+    "circle": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "ring, halo",
+            "to enclose in or as if in a circle"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "원",
+            "동그라미"
+        ]
+    },
+    "ken": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the range of perception, understanding, or knowledge",
+            "see"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "인식",
+            "보다."
+        ]
+    },
+    "miracle": {
+        "pos": "noun",
+        "meaning": "an extraordinary event manifesting divine intervention in human affairs",
+        "dfn_cnt": 1,
+        "kr_word": "기적"
+    },
+    "imperative": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "not to be avoided or evaded : necessary",
+            "something that is imperative"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "필수적인",
+            "필요한."
+        ]
+    },
+    "chase": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "the hunting of wild animals",
+            "to follow rapidly : pursue"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "사냥",
+            "추격"
+        ]
+    },
+    "classic": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "serving as a standard of excellence : of recognized value",
+            "a literary work of ancient Greece or Rome"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "클래식",
+            "고전"
+        ]
+    },
+    "cement": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "concrete",
+            "to unite or make firm by or as if by cement"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "시멘트",
+            "시멘트하다"
+        ]
+    },
+    "driftwood": {
+        "pos": "noun",
+        "meaning": "wood drifted or floated by water",
+        "dfn_cnt": 1,
+        "kr_word": "떠다닌 나무"
+    },
+    "catalogue": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "list, register",
+            "to make a catalog of"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "목록",
+            "등록하다"
+        ]
+    },
+    "glazed": {
+        "pos": "adjective",
+        "meaning": "covered or coated with a glaze",
+        "dfn_cnt": 1,
+        "kr_word": "도금된"
+    },
+    "misguided": {
+        "pos": "adjective",
+        "meaning": "led or prompted by wrong or inappropriate motives or ideals",
+        "dfn_cnt": 1,
+        "kr_word": "잘못된"
+    },
+    "census": {
+        "pos": "noun",
+        "meaning": "a count of the population and a property evaluation in early Rome",
+        "dfn_cnt": 1,
+        "kr_word": "인구조사"
+    },
+    "ministry": {
+        "pos": "noun",
+        "meaning": "ministration",
+        "dfn_cnt": 1,
+        "kr_word": "부처"
+    },
+    "order": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to put in order : arrange",
+            "a group of people united in a formal way: such as"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "정렬하다",
+            "질서"
+        ]
+    },
+    "climate": {
+        "pos": "noun",
+        "meaning": "a region of the earth having specified climatic conditions",
+        "dfn_cnt": 1,
+        "kr_word": "기후"
+    },
+    "carve": {
+        "pos": "verb",
+        "meaning": "to cut with care or precision",
+        "dfn_cnt": 1,
+        "kr_word": "새기다"
+    },
+    "drill": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to fix something in the mind or habit pattern of by repetitive instruction",
+            "an instrument with an edged or pointed end for making holes in hard substances by revolving or by a succession of blows"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "반복하다",
+            "드릴"
+        ]
+    },
+    "casual": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "subject to, resulting from, or occurring by chance",
+            "a casual or migratory worker"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "우연한",
+            "일용직"
+        ]
+    },
+    "brilliant": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "very bright : glittering",
+            "a gem cut in a particular form with numerous facets so as to have special brightness or brilliance"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "빛나는",
+            "다이아"
+        ]
+    },
+    "chord": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "three or more musical tones sounded simultaneously",
+            "accord"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "코드",
+            "일치"
+        ]
+    },
+    "certification": {
+        "pos": "noun",
+        "meaning": "the act of certifying : the state of being certified",
+        "dfn_cnt": 1,
+        "kr_word": "인증"
+    },
+    "peer": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "one that is of equal standing with another : equal",
+            "to look narrowly or curiously"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "동료",
+            "엿보다"
+        ]
+    },
+    "mishear": {
+        "pos": "verb",
+        "meaning": "to hear wrongly",
+        "dfn_cnt": 1,
+        "kr_word": "들리다"
+    },
+    "organ": {
+        "pos": "noun",
+        "meaning": "a differentiated structure (such as a heart, kidney, leaf, or stem) consisting of cells and tissues and performing some specific function in an organism",
+        "dfn_cnt": 1,
+        "kr_word": "기관"
+    },
+    "circulation": {
+        "pos": "noun",
+        "meaning": "orderly movement through a circuit",
+        "dfn_cnt": 1,
+        "kr_word": "순환"
+    },
+    "penetrate": {
+        "pos": "verb",
+        "meaning": "to pass into or through",
+        "dfn_cnt": 1,
+        "kr_word": "꿰뚫다"
+    },
+    "branch": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a natural subdivision of a plant stem",
+            "to put forth secondary shoots or stems : to put forth branches : ramify"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "가지",
+            "가지치다"
+        ]
+    },
+    "clash": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to make a clash",
+            "a noisy usually metallic sound of collision"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "충돌하다",
+            "충돌 소리"
+        ]
+    },
+    "immobile": {
+        "pos": "adjective",
+        "meaning": "not moving : motionless",
+        "dfn_cnt": 1,
+        "kr_word": "움직이지 않는"
+    },
+    "click": {
+        "pos": [
+            "verb",
+            "noun"
+        ],
+        "meaning": [
+            "to strike, move, or produce with a click",
+            "a slight sharp noise"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "클릭하다",
+            "클릭"
+        ]
+    },
+    "impact": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "an impinging or striking especially of one body against another",
+            "to have a direct effect or impact on : impinge on"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "충격",
+            "영향"
+        ]
+    },
+    "lease": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "a contract by which one conveys real estate, equipment, or facilities for a specified term and for a specified rent",
+            "to grant by lease"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "임대",
+            "임대하다"
+        ]
+    },
+    "certainty": {
+        "pos": "noun",
+        "meaning": "something that is certain",
+        "dfn_cnt": 1,
+        "kr_word": "확실함"
+    },
+    "breach": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "infraction or violation of a law, obligation, tie, or standard",
+            "to make a gap in by battering : to make a breach in"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "위반",
+            "침해"
+        ]
+    },
+    "penetrating": {
+        "pos": "adjective",
+        "meaning": "having the power of entering, piercing, or pervading",
+        "dfn_cnt": 1,
+        "kr_word": "관통하는."
+    },
+    "elderly": {
+        "pos": [
+            "adjective",
+            "noun"
+        ],
+        "meaning": [
+            "rather old",
+            "an elderly person"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "늙은",
+            "노인"
+        ]
+    },
+    "neutral": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "one that is neutral",
+            "not engaged on either side"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "중립자",
+            "중립적인"
+        ]
+    },
+    "option": {
+        "pos": [
+            "noun",
+            "verb"
+        ],
+        "meaning": [
+            "an act of choosing",
+            "to grant or take an option on"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "선택",
+            "옵션"
+        ]
+    },
+    "accountant": {
+        "pos": [
+            "noun",
+            "adjective"
+        ],
+        "meaning": [
+            "one that gives an account or is accountable",
+            "accountable, answerable"
+        ],
+        "dfn_cnt": 2,
+        "kr_word": [
+            "회계사",
+            "책임"
+        ]
+    }
+}

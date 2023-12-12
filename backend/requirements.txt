@@ -1,0 +1,9 @@
+django
+djangorestframework
+pyrebase4
+django-allauth
+dj-rest-auth
+djangorestframework-simplejwt
+openai
+django_filters
+drf-spectacular
